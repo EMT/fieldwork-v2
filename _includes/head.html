@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+
+	<!-- This @font-face is declared here so the webfont path is correct on both the local and remote servers. -->
+	<style>
+		@font-face {
+		  font-family: 'Neuzeit';
+		  src: url('{{ site.baseurl }}/fonts/neuzeit-book.eot'); /* IE9 Compat Modes */
+		  src: url('{{ site.baseurl }}/fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		       url('{{ site.baseurl }}/fonts/neuzeit-book.woff') format('woff'), /* Modern Browsers */
+		       url('{{ site.baseurl }}/fonts/neuzeit-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+		       url('{{ site.baseurl }}/fonts/neuzeit-book.svg#svgFontName') format('svg'); /* Legacy iOS */
+		}
+	</style>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/main.css">
 
 </head>
