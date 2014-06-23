@@ -1,2 +1,99 @@
 ---
 ---
+
+// Basic Styles
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+// Mixins
+
+@mixin border-box{
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+@mixin fixed-ratio-wrapper-generator($x: 16,$y: 9){
+  position: relative;
+  padding-bottom: ($y / $x) * 100%;
+  height: 0;
+}
+
+//Grid
+$column-count: 20;
+$gutter-width: 20px;
+$column-width: (100% / $column-count);
+
+
+
+[class^="grid-col-"] {
+  float: left;
+  min-height: 1px;
+  padding:0 $gutter-width/2 $gutter-width;
+
+  @include border-box;
+}
+
+
+@for $i from 1 through $column-count {
+
+  .grid-col-#{$i} {
+    width: $column-width*$i;
+  }
+
+  .grid-row-#{$i} {
+    height: $column-width*$i;
+  }
+
+}
+
+
+.grid{
+  margin: 20px (-$gutter-width/2);
+  overflow:hidden;
+  padding-top: 20px;
+
+  [class^="grid-col-"] {
+    .col-content{
+      background: rgb(147,149,152);
+    }
+  }
+}
+
+.col-r {
+  float: right;
+}
+
+.col-content {
+  @include fixed-ratio-wrapper-generator(16,9);
+}
+
+// .grid .tiny-cube .col-content{
+//   height: 350px;
+// }
+
+// .grid .medium-cube .col-content {
+//   height: 530px;
+// }
+
+.grid .vertical-cube .col-content {
+  @include fixed-ratio-wrapper-generator(9,16);
+}
+
+// .grid .wide-cube .col-content {
+//   height: 714px;
+// }
+
+.grid .tall-cube .col-content {
+  @include fixed-ratio-wrapper-generator(9,16);
+}
+
+// .grid .full-size-cube .col-content {
+//   height: 1080px;
+// }
+
