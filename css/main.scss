@@ -3,6 +3,10 @@
 
 // Basic Styles
 
+body {
+  font-family: 'Neuzeit';
+}
+
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -31,14 +35,55 @@ $column-width: (100% / $column-count);
 
 
 
-[class^="grid-col-"] {
-  float: left;
-  min-height: 1px;
-  padding:0 $gutter-width/2 $gutter-width;
 
+.grid .text .col-content {
+  background: rgb(244,36,52);
+  color: rgb(255,255,255);
+  padding: 0.5em;
   @include border-box;
+
+  // Styles - because we have no typography sass for this test - Don't include later.
+
+  line-height: 1.4;
+
 }
 
+.grid {
+  overflow: hidden;
+}
+
+[class^="grid-col-"] {
+  // background: rgb(255, 0, 0);
+  float: left;
+  position: relative;
+
+  &.tall-cube {
+    padding-bottom: 80%;
+  }
+  &.med-cube {
+    padding-bottom: 40%;
+  }
+  &.vertical-cube {
+    padding-bottom: 40%;
+  }
+  &.tiny-cube {
+    padding-bottom: 20%;
+  }
+  &.wide-cube {
+    padding-bottom: 40%;
+  }
+
+
+
+  .col-content {
+    background: rgb(147,149,152);
+    position: absolute;
+    top: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: 0.5em;
+  }
+}
 
 @for $i from 1 through $column-count {
 
@@ -46,54 +91,10 @@ $column-width: (100% / $column-count);
     width: $column-width*$i;
   }
 
-  .grid-row-#{$i} {
-    height: $column-width*$i;
-  }
-
-}
-
-
-.grid{
-  margin: 20px (-$gutter-width/2);
-  overflow:hidden;
-  padding-top: 20px;
-
-  [class^="grid-col-"] {
-    .col-content{
-      background: rgb(147,149,152);
-    }
-  }
 }
 
 .col-r {
   float: right;
 }
 
-.col-content {
-  @include fixed-ratio-wrapper-generator(16,9);
-}
-
-// .grid .tiny-cube .col-content{
-//   height: 350px;
-// }
-
-// .grid .medium-cube .col-content {
-//   height: 530px;
-// }
-
-.grid .vertical-cube .col-content {
-  @include fixed-ratio-wrapper-generator(9,16);
-}
-
-// .grid .wide-cube .col-content {
-//   height: 714px;
-// }
-
-.grid .tall-cube .col-content {
-  @include fixed-ratio-wrapper-generator(9,16);
-}
-
-// .grid .full-size-cube .col-content {
-//   height: 1080px;
-// }
 
