@@ -1,0 +1,156 @@
+// Structure
+
+.main-content {
+	float: left;
+	width: 65%;	
+	margin-right: 10%;
+}
+
+.sidebar {
+	float:left;
+	width: 25%;
+}
+
+$blog-pink: rgb(238,70,123);
+$blog-yellow: rgb(254,221,60);
+$blog-turquoise: rgb(63,212,173);
+$blog-blue: rgb(0,105,166);
+$blog-pink--light: rgb(241,133,206);
+$blog-lime-green: rgb(196,231,106);
+$blog-red: rgb(244,36,52);
+$blog-blue--light: rgb(155,230,215);
+$blog-orange: rgb(255,157,107);
+$blog-pale-green: rgb(227,231,51);
+
+// Category links
+
+.category-links {
+
+	.code a:hover, .code.active a {
+		color: $blog-pink;
+	}
+
+	.insipiring a:hover, .inspiring.active a {
+		color: $blog-yellow;
+	}
+
+	.made a:hover, .made.active a {
+		color: $blog-turquoise;
+	}
+
+	.out-and-about a:hover, .out-and-about.active a {
+		color: $blog-blue;
+	}
+
+	.people a:hover, .people.active a {
+		color: $blog-pink--light;
+	}
+
+	.process a:hover, .process.active a {
+		color: $blog-lime-green;
+	}
+
+	.ideas a:hover, .ideas.active a {
+		color: $blog-red;
+	}
+
+	.found a:hover, .found.active a {
+		color: $blog-blue--light;
+	}
+
+	.present a:hover, .present.active a {
+		color: $blog-orange;
+	}
+
+	.studio a:hover, .studio.active a {
+		color: $blog-pale-green;
+	}
+
+	// .uncategorized {
+	// 	color: ;
+	// }
+}
+
+.sidebar h3 {
+	background: rgb(255,255,255);
+	padding: 0.6em 0.5em;
+}
+
+.category-links {
+	list-style: none;
+	padding: 1em 0;
+}
+
+.category-links a {
+	text-decoration: none;
+	color: rgb(170,170,170);
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	display: block;
+	padding: 0.5em 0;
+	margin-top: -1px;
+}
+
+.category-links a:hover {
+	z-index: 20;
+	position: relative;
+}
+
+.category-icons {
+	list-style: none;
+	padding: 1em 0;
+}
+
+.category-icons a {
+	display: block;
+	height: 15px;
+	width: 15px;
+	border-radius: 15px;
+	background: rgb(255,255,255);
+}
+
+.category-icons li {
+	display: inline-block;
+}
+
+.category-icons {
+	.code a {
+		background: $blog-pink;
+	}
+
+	.insipiring a {
+		background: $blog-yellow;
+	}
+
+	.made a {
+		background: $blog-turquoise;
+	}
+
+	.out-and-about a {
+		background: $blog-blue;
+	}
+
+	.people a {
+		background: $blog-pink--light;
+	}
+
+	.process a {
+		background: $blog-lime-green;
+	}
+
+	.ideas a {
+		background: $blog-red;
+	}
+
+	.found a {
+		background: $blog-blue--light;
+	}
+
+	.present a {
+		background: $blog-orange;
+	}
+
+	.studio a {
+		background: $blog-pale-green;
+	}
+}
