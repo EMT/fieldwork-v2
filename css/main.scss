@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1300px;
   width: 90%;
   margin: 0 auto;
 }
@@ -148,6 +148,10 @@ p.caption-l, p.caption-r {
   float: right;
 }
 
+
+
+// Captions 
+
 .caption-l {
     float: left;
 }
@@ -157,13 +161,38 @@ p.caption-l, p.caption-r {
   @include border-box;
   padding: 3em 0.5em;
   margin: 2em 0;
+  position: relative;
 }
 
-.arrow {
+.arrow-up:after, .arrow-down:after {
   background-image: url("../images/arrow.png");
   background-repeat: no-repeat;
+  background-size: 23px 58px;
+  content: '';
+  display: block;
+  width: 25px;
+  height: 29px;
+  position: absolute;
+}
+
+.arrow-up:after {
+  top: 0;
   background-position: 1% 1%;
 }
+
+.arrow-down:after {
+  bottom: 0;
+  background-position: 1% 100%;
+}
+
+.left, .left:after {
+  left: 1%;
+}
+
+.right, .right:after {
+  right: 1%;
+}
+
 
 .caption-l:after {
   content: '';
