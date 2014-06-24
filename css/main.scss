@@ -5,10 +5,12 @@
 
 body {
   font-family: 'Neuzeit';
+  color: rgb(109,110,113);
+  background: rgb(239,239,239);
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1580px;
   width: 90%;
   margin: 0 auto;
 }
@@ -46,10 +48,12 @@ $column-width: (100% / $column-count);
 
   line-height: 1.4;
 
+
 }
 
 .grid {
   overflow: hidden;
+  clear: both;
 }
 
 [class^="grid-col-"] {
@@ -72,6 +76,9 @@ $column-width: (100% / $column-count);
   &.wide-cube {
     padding-bottom: 40%;
   }
+  &.full-size-cube {
+    padding-bottom: 65%;
+  }
 
 
 
@@ -82,6 +89,13 @@ $column-width: (100% / $column-count);
     bottom: 0.5em;
     left: 0.5em;
     right: 0.5em;
+
+    // Background image ?
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
   }
 }
 
@@ -93,8 +107,30 @@ $column-width: (100% / $column-count);
 
 }
 
-.col-r {
+.col-r, .caption-r {
   float: right;
 }
 
+.caption-l {
+    float: left;
+}
+
+.caption-l, .caption-r {
+  width: 50%;
+  @include border-box;
+  padding: 3em 0.5em;
+  margin: 2em 0;
+}
+
+.arrow {
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: 1% 1%;
+}
+
+.caption-l:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
