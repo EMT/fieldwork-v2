@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1580px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
@@ -79,8 +79,9 @@ $column-width: (100% / $column-count);
   &.full-size-cube {
     padding-bottom: 65%;
   }
-
-
+  &.extra-tall-cube {
+    padding-bottom: 150%;
+  }
 
   .col-content {
     background: rgb(147,149,152);
@@ -97,6 +98,42 @@ $column-width: (100% / $column-count);
     background-position: center;
 
   }
+}
+
+
+
+@media screen and (max-width: 700px) {
+.grid [class^="grid-col-"] {
+  width: 100%;
+
+  &.tall-cube {
+    padding-bottom: 125%;
+  }
+  &.med-cube {
+    padding-bottom: 60%;
+  }
+  &.vertical-cube {
+    padding-bottom: 40%;
+  }
+  &.tiny-cube {
+    padding-bottom: 60%;
+  }
+  &.wide-cube {
+    padding-bottom: 40%;
+  }
+  &.full-size-cube {
+    padding-bottom: 65%;
+  }
+  &.extra-tall-cube {
+    padding-bottom: 150%;
+  }
+
+}
+
+p.caption-l, p.caption-r {
+  width: 100%;
+}
+
 }
 
 @for $i from 1 through $column-count {
