@@ -121,6 +121,8 @@ li.studio a:hover, li.studio.active a {
 // }
 
 
+// Sidebar
+
 .sidebar h3 {
 	padding: 0.6em 0.5em 0.6em 0;
 }
@@ -135,7 +137,7 @@ li.studio a:hover, li.studio.active a {
 	color: rgb(170,170,170);
 	border-bottom: 1px solid rgb(170,170,170);
 	display: block;
-	padding: 1em 0;
+	padding: 0.8em 0;
 	position: relative;
 }
 
@@ -183,6 +185,36 @@ li.studio a:hover, li.studio.active a {
 	position: absolute;
 }
 
+// Contact form
+
+.contact-form {
+	margin-bottom: 2em;
+}
+.contact-form > div {
+	border-bottom: 1px solid rgb(170,170,170);
+	margin-bottom: 0.3em;
+}
+.contact-form input.text {
+	border: 0;
+	background: transparent;
+	padding: 0.8em 0;
+	color: rgb(111,124,124);
+	font-size: 1em;
+}
+.contact-form input.text:focus {
+	outline: none;
+}
+.contact-form input.button {
+	border: 0;
+	background: transparent;
+	padding: 0.3em 0;
+	font-size: 1em;
+	color: inherit;
+}
+.contact-form input.button:hover {
+	cursor: pointer;
+	color: darken(rgb(170,170,170),15%);
+}
 
 // Posts lists
 
@@ -210,7 +242,8 @@ li.studio a:hover, li.studio.active a {
 	height: 0;
 	padding: 3% 3% 59.4% 3%;
 	margin: 0 0 1em 0;
-
+	overflow: hidden;
+	
 	// Temp Typography stuff - please remove me!
 	font-size: 22px;
 
