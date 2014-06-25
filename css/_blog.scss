@@ -135,10 +135,10 @@ li.studio a:hover, li.studio.active a {
 .category-links a {
 	text-decoration: none;
 	color: rgb(170,170,170);
-	border-bottom: 1px solid rgb(170,170,170);
 	display: block;
-	padding: 1em 0;
+	padding: 0.3em 0;
 	position: relative;
+	font-size: 0.9em;
 }
 
 .category-icons {
@@ -154,8 +154,8 @@ li.studio a:hover, li.studio.active a {
 .category-icons a.tag, .category-links a:after  {
 	content: '';
 	display: block;
-	height: 15px;
-	width: 15px;
+	height: 10px;
+	width: 10px;
 	border-radius: 15px;
 	position: relative;
 	background: rgb(209, 211, 212);
@@ -330,3 +330,51 @@ li.studio a:hover, li.studio.active a {
 .pagination .prev {
 	float: left;
 }
+
+
+// Single Post
+
+.single-post:after, .images:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.single-post .meta-data {
+	float: left;
+	width: 10%;
+}
+
+.images .image-col-3 {
+	width: 30%;
+	float: left;
+	margin: 0 1.5%;
+}
+
+.single-post img {
+	max-width: 100%;
+	display: block;
+}
+
+.title-img {
+	margin-bottom: 2em;
+}
+
+.text {
+	width: 90%;
+	float: right;
+}
+
+.single-post p, .single-post ul {
+	margin: 1em 0;
+	line-height: 1.5;
+}
+
+.single-post a {
+	color: rgb(167,169,172);
+}
+
+.single-post ul li {
+	color: rgb(167,169,172);
+}
+
