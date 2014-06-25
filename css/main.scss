@@ -1,6 +1,8 @@
 ---
 ---
 
+@import 'reset';
+
 // Basic Styles
 
 body {
@@ -12,7 +14,7 @@ body {
 .wrapper {
   max-width: 1500px;
   width: 90%;
-  margin: 0 auto;
+  margin: 5% auto;
 }
 
 
