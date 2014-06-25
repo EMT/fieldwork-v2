@@ -11,6 +11,14 @@
 	width: 25%;
 }
 
+.sidebar {
+	color: rgb(167, 169, 172);
+}
+
+.sidebar h3 {
+	color: rgb(109, 110, 113);
+}
+
 $blog-pink: rgb(238,70,123);
 $blog-yellow: rgb(254,221,60);
 $blog-turquoise: rgb(63,212,173);
@@ -22,58 +30,99 @@ $blog-blue--light: rgb(155,230,215);
 $blog-orange: rgb(255,157,107);
 $blog-pale-green: rgb(227,231,51);
 
-// Category links
+// Category colors + backgrounds
 
-.category-links {
+// Background
 
-	.code a:hover, .code.active a {
-		color: $blog-pink;
-	}
-
-	.insipiring a:hover, .inspiring.active a {
-		color: $blog-yellow;
-	}
-
-	.made a:hover, .made.active a {
-		color: $blog-turquoise;
-	}
-
-	.out-and-about a:hover, .out-and-about.active a {
-		color: $blog-blue;
-	}
-
-	.people a:hover, .people.active a {
-		color: $blog-pink--light;
-	}
-
-	.process a:hover, .process.active a {
-		color: $blog-lime-green;
-	}
-
-	.ideas a:hover, .ideas.active a {
-		color: $blog-red;
-	}
-
-	.found a:hover, .found.active a {
-		color: $blog-blue--light;
-	}
-
-	.present a:hover, .present.active a {
-		color: $blog-orange;
-	}
-
-	.studio a:hover, .studio.active a {
-		color: $blog-pale-green;
-	}
-
-	// .uncategorized {
-	// 	color: ;
-	// }
+li.code a.tag, li.code:hover a:after, li.code.active a:after, .code .post-image {
+	background: $blog-pink;
 }
 
+li.inspiring a.tag, li.inspiring:hover a:after, li.inspiring.active a:after, .inspiring .post-image {
+	background: $blog-yellow;
+}
+
+li.made a.tag, li.made:hover a:after, li.made.active a:after, .made .post-image {
+	background: $blog-turquoise;
+}
+
+li.out-and-about a.tag, li.out-and-about:hover a:after, li.out-and-about.active a:after, .out-and-about .post-image {
+	background: $blog-blue;
+}
+
+li.people a.tag, li.people:hover a:after, li.people.active a:after, .people .post-image {
+	background: $blog-pink--light;
+}
+
+li.process a.tag, li.process:hover a:after, li.process.active a:after, .process .post-image {
+	background: $blog-lime-green;
+}
+
+li.ideas a.tag, li.ideas:hover a:after,l i.ideas.active a:after, .ideas .post-image {
+	background: $blog-red;
+}
+
+li.found a.tag, li.found:hover a:after, li.found.active a:after, .found .post-image {
+	background: $blog-blue--light;
+}
+
+li.present a.tag, li.present:hover a:after, li.present.active a:after, .present .post-image {
+	background: $blog-orange;
+}
+
+li.studio a.tag, li.studio:hover a:after, li.studio.active a:after, .studio .post-image {
+	background: $blog-pale-green;
+}
+
+// Color
+
+li.code a:hover, li.code.active a {
+	color: $blog-pink;
+}
+
+li.inspiring a:hover, li.inspiring.active a {
+	color: $blog-yellow;
+}
+
+li.made a:hover, li.made.active a {
+	color: $blog-turquoise;
+}
+
+li.out-and-about a:hover, li.out-and-about.active a {
+	color: $blog-blue;
+}
+
+li.people a:hover, li.people.active a {
+	color: $blog-pink--light;
+}
+
+li.process a:hover, li.process.active a {
+	color: $blog-lime-green;
+}
+
+li.ideas a:hover, li.ideas.active a {
+	color: $blog-red;
+}
+
+li.found a:hover, li.found.active a {
+	color: $blog-blue--light;
+}
+
+li.present a:hover, li.present.active a {
+	color: $blog-orange;
+}
+
+li.studio a:hover, li.studio.active a {
+	color: $blog-pale-green;
+}
+
+// .uncategorized {
+// 	color: ;
+// }
+
+
 .sidebar h3 {
-	background: rgb(255,255,255);
-	padding: 0.6em 0.5em;
+	padding: 0.6em 0.5em 0.6em 0;
 }
 
 .category-links {
@@ -84,17 +133,12 @@ $blog-pale-green: rgb(227,231,51);
 .category-links a {
 	text-decoration: none;
 	color: rgb(170,170,170);
-	border-top: 1px solid;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid rgb(170,170,170);
 	display: block;
-	padding: 0.5em 0;
-	margin-top: -1px;
-}
-
-.category-links a:hover {
-	z-index: 20;
+	padding: 1em 0;
 	position: relative;
 }
+
 
 .category-icons {
 	list-style: none;
@@ -102,87 +146,56 @@ $blog-pale-green: rgb(227,231,51);
 	padding: 0;
 }
 
-.category-icons a {
-	display: block;
-	height: 15px;
-	width: 15px;
-	border-radius: 15px;
-	background: rgb(255,255,255);
-}
-
 .category-icons li {
 	display: inline-block;
 }
 
-.category-icons, .post-list {
-
-	.code {
-		a.tag, .post-image {
-			background: $blog-pink;
-		}
-	}
-
-	.insipiring {
-		a.tag, .post-image {
-			background: $blog-yellow;
-		}
-	}
-
-	.made {
-		a.tag, .post-image {
-			background: $blog-turquoise;
-		}
-	}
-
-	.out-and-about {
-		a.tag, .post-image {
-			background: $blog-blue;
-		}
-	}
-
-	.people {
-		a.tag, .post-image {
-			background: $blog-pink--light;
-		}
-	}
-
-	.process {
-		a.tag, .post-image {
-			background: $blog-lime-green;
-		}
-	}
-
-	.ideas {
-		a.tag, .post-image {
-			background: $blog-red;
-		}
-	}
-
-	.found {
-		a.tag, .post-image {
-			background: $blog-blue--light;
-		}
-	}
-
-	.present {
-		a.tag, .post-image {
-			background: $blog-orange;
-		}
-	}
-
-	.studio {
-		a.tag, .post-image {
-			background: $blog-pale-green;
-		}
-	}
+.category-icons a.tag, .category-links a:after  {
+	content: '';
+	display: block;
+	height: 15px;
+	width: 15px;
+	border-radius: 15px;
+	position: relative;
+	background: rgb(209, 211, 212);
 }
 
-// Posts
+.category-links a:after {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.category-icons a.tag:hover:after, .category-icons a.tag.active:after {
+	content: '';
+	display: block;
+	top: 4px;
+	left: 4px;
+	right: 4px;
+	bottom: 4px;
+	border-radius: 15px;
+	background: rgb(255,255,255);
+	position: absolute;
+}
+
+
+// Posts lists
 
 .post-list {
 	padding: 0;
 	list-style: none;
 }
+
+.post-list > li {
+	margin: 2em 0;
+}
+
+// No Image styles
 
 .post img {
 	width: 100%;
@@ -195,17 +208,20 @@ $blog-pale-green: rgb(227,231,51);
 .post-image {
 	position: relative;
 	height: 0;
-	padding: 3% 3% 59.5% 3%;
-	margin: 0 0 0.3em 0;
-	// Temp Typography stuff - please remove me!
+	padding: 3% 3% 59.4% 3%;
+	margin: 0 0 1em 0;
 
+	// Temp Typography stuff - please remove me!
 	font-size: 22px;
 
 }
 
 .post-image .category {
 	color: rgba(255,255,255,0.5);
+	margin: 0;
 
+	// Temp Typography stuff - please remove me!
+	font-size: 22px;
 }
 
 .post-image p {
@@ -213,6 +229,46 @@ $blog-pale-green: rgb(227,231,51);
 	margin: 0.5em 0;
 }
 
+.post .category-icons {
+	float: left;
+	width: 100%;
+}
+
+.post-meta-data:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+
+// Post -- Clean this up - seems a bit meh.
+
 .post .title {
 	text-align: center;
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.post .date {
+	float: left;
+	width: 25%;
+	display: block;
+}
+
+.post .go-to {
+	float: left;
+	width: 25%;
+	display: block;
+}
+
+// a needs a hover state.
+
+.post .go-to a {
+	display: block;
+	height: 21px;
+	width: 37px;
+	background: url("../images/blog-arrow.png");
+	float: right;
 }
