@@ -137,14 +137,13 @@ li.studio a:hover, li.studio.active a {
 	color: rgb(170,170,170);
 	border-bottom: 1px solid rgb(170,170,170);
 	display: block;
-	padding: 0.8em 0;
+	padding: 1em 0;
 	position: relative;
 }
 
-
 .category-icons {
 	list-style: none;
-	margin: 1em 0;
+	margin: 0.8em 0;
 	padding: 0;
 }
 
@@ -176,10 +175,10 @@ li.studio a:hover, li.studio.active a {
 .category-icons a.tag:hover:after, .category-icons a.tag.active:after {
 	content: '';
 	display: block;
-	top: 4px;
-	left: 4px;
-	right: 4px;
-	bottom: 4px;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
 	border-radius: 15px;
 	background: rgb(255,255,255);
 	position: absolute;
@@ -197,7 +196,7 @@ li.studio a:hover, li.studio.active a {
 .contact-form input.text {
 	border: 0;
 	background: transparent;
-	padding: 0.8em 0;
+	padding: 0.7em 0;
 	color: rgb(111,124,124);
 	font-size: 1em;
 }
@@ -240,10 +239,10 @@ li.studio a:hover, li.studio.active a {
 .post-image {
 	position: relative;
 	height: 0;
-	padding: 3% 3% 59.4% 3%;
+	padding: 5% 5% 57.4% 5%;
 	margin: 0 0 1em 0;
 	overflow: hidden;
-	
+
 	// Temp Typography stuff - please remove me!
 	font-size: 22px;
 
@@ -282,6 +281,16 @@ li.studio a:hover, li.studio.active a {
 	display: block;
 	float: left;
 	width: 50%;
+	color: rgb(88,89,91);
+}
+
+.post .title-long, .post .date {
+	color: rgb(167,169,172);
+}
+
+.post .under {
+	display: block;
+	margin: 0.5em 0;
 }
 
 .post .date {
@@ -304,4 +313,20 @@ li.studio a:hover, li.studio.active a {
 	width: 37px;
 	background: url("../images/blog-arrow.png");
 	float: right;
+}
+
+// Post list pagination
+
+.pagination a {
+	text-decoration: none;
+	color: rgb(167,169,172);
+	padding: 2em 0;
+}
+
+.pagination .next {
+	float: right;
+}
+
+.pagination .prev {
+	float: left;
 }
