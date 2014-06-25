@@ -98,7 +98,8 @@ $blog-pale-green: rgb(227,231,51);
 
 .category-icons {
 	list-style: none;
-	padding: 1em 0;
+	margin: 1em 0;
+	padding: 0;
 }
 
 .category-icons a {
@@ -113,44 +114,105 @@ $blog-pale-green: rgb(227,231,51);
 	display: inline-block;
 }
 
-.category-icons {
-	.code a {
-		background: $blog-pink;
+.category-icons, .post-list {
+
+	.code {
+		a.tag, .post-image {
+			background: $blog-pink;
+		}
 	}
 
-	.insipiring a {
-		background: $blog-yellow;
+	.insipiring {
+		a.tag, .post-image {
+			background: $blog-yellow;
+		}
 	}
 
-	.made a {
-		background: $blog-turquoise;
+	.made {
+		a.tag, .post-image {
+			background: $blog-turquoise;
+		}
 	}
 
-	.out-and-about a {
-		background: $blog-blue;
+	.out-and-about {
+		a.tag, .post-image {
+			background: $blog-blue;
+		}
 	}
 
-	.people a {
-		background: $blog-pink--light;
+	.people {
+		a.tag, .post-image {
+			background: $blog-pink--light;
+		}
 	}
 
-	.process a {
-		background: $blog-lime-green;
+	.process {
+		a.tag, .post-image {
+			background: $blog-lime-green;
+		}
 	}
 
-	.ideas a {
-		background: $blog-red;
+	.ideas {
+		a.tag, .post-image {
+			background: $blog-red;
+		}
 	}
 
-	.found a {
-		background: $blog-blue--light;
+	.found {
+		a.tag, .post-image {
+			background: $blog-blue--light;
+		}
 	}
 
-	.present a {
-		background: $blog-orange;
+	.present {
+		a.tag, .post-image {
+			background: $blog-orange;
+		}
 	}
 
-	.studio a {
-		background: $blog-pale-green;
+	.studio {
+		a.tag, .post-image {
+			background: $blog-pale-green;
+		}
 	}
+}
+
+// Posts
+
+.post-list {
+	padding: 0;
+	list-style: none;
+}
+
+.post img {
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.post-image {
+	position: relative;
+	height: 0;
+	padding: 3% 3% 59.5% 3%;
+	margin: 0 0 0.3em 0;
+	// Temp Typography stuff - please remove me!
+
+	font-size: 22px;
+
+}
+
+.post-image .category {
+	color: rgba(255,255,255,0.5);
+
+}
+
+.post-image p {
+	color: rgb(255,255,255);
+	margin: 0.5em 0;
+}
+
+.post .title {
+	text-align: center;
 }
