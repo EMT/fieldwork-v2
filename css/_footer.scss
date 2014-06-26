@@ -1,0 +1,53 @@
+
+
+// Slightly Modified footer code from the old site, needs a bit of touching up.
+
+
+footer {
+	color: rgb(153,153,153);
+	background: rgb(255,255,255);
+	border-top: 1px solid rgb(231,227,222);
+	padding: 1em 0;
+}
+footer > div {
+	overflow: hidden;
+}
+footer .social {
+	border-top: 0;
+	margin: 0;
+}
+
+footer .social {
+text-align: right;
+width: 50%;
+float: right;
+padding: 1em 0;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social a {
+	text-decoration: none;
+	color: rgb(153, 153, 153);
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.social li a:before {
+	content: ' / ';
+}
+
+.social li:first-child a:before {
+	content: '';
+}
+
+footer div > p {
+	float: left;
+width: 50%;
+margin: 1em 0;
+}
