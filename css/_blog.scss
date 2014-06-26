@@ -1,5 +1,17 @@
 // Structure
 
+.banner {
+	width: 100%;
+	float: left;
+	margin-bottom: 2em;
+}
+
+// Temp Header Styles
+.banner h1 {
+	font-size: 2em;
+	line-height: 1.2;
+}
+
 .main-content {
 	float: left;
 	width: 65%;	
@@ -9,15 +21,13 @@
 .sidebar {
 	float:left;
 	width: 25%;
+	font-size: 0.9em;
 }
 
 .sidebar {
 	color: rgb(167, 169, 172);
 }
 
-.sidebar h3 {
-	color: rgb(109, 110, 113);
-}
 
 $blog-pink: rgb(238,70,123);
 $blog-yellow: rgb(254,221,60);
@@ -124,13 +134,15 @@ li.studio a:hover, li.studio.active a {
 // Sidebar
 
 .sidebar h3 {
-	padding: 0.6em 0.5em 0.6em 0;
+	padding: 1em 0;
+	color: rgb(109, 110, 113);
+	font-size: 1.2em;
 }
 
-.category-links {
-	list-style: none;
-	padding: 1em 0;
+.sidebar h3:first-of-type {
+	padding-top: 0;
 }
+
 
 .category-links a {
 	text-decoration: none;
@@ -138,7 +150,7 @@ li.studio a:hover, li.studio.active a {
 	display: block;
 	padding: 0.3em 0;
 	position: relative;
-	font-size: 0.9em;
+	// font-size: 0.9em;
 }
 
 .category-icons {
@@ -224,6 +236,10 @@ li.studio a:hover, li.studio.active a {
 
 .post-list > li {
 	margin: 2em 0;
+}
+
+.post-list > li:first-of-type {
+	margin: 0 0 2em 0;
 }
 
 // No Image styles
@@ -332,6 +348,7 @@ li.studio a:hover, li.studio.active a {
 }
 
 
+
 // Single Post
 
 .single-post:after, .images:after {
@@ -340,15 +357,59 @@ li.studio a:hover, li.studio.active a {
 	clear: both;
 }
 
+
+.single-post {
+	margin-bottom: 2em;
+}
+
+// !!! These are using category specific colors, duplicate this for all other colors
+
+.single-post .caption, .single-post .caption-alt {
+	font-size: 0.9em;
+	margin: 0.1em;
+}
+
+.single-post .title {
+	color: $blog-turquoise;
+}
+
+.single-post .caption {
+	color: $blog-turquoise;
+}
+
+.single-post .caption-alt {
+	color: rgb(167, 169, 172);
+}
+
+
 .single-post .meta-data {
 	float: left;
 	width: 10%;
 }
 
+.single-post .meta-data .category-icons {
+	margin: 0.2em 0;
+}
+
 .images .image-col-3 {
-	width: 30%;
+	width: 33.33%;
 	float: left;
-	margin: 0 1.5%;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+.images img {
+	margin-bottom: 0.5em;
+}
+
+.image-col-1 {
+	float: left;
+	margin: 2em 0;
+}
+
+.single-post .images {
+	margin: 1em -10px;
+	float: left;
 }
 
 .single-post img {
@@ -356,11 +417,11 @@ li.studio a:hover, li.studio.active a {
 	display: block;
 }
 
-.title-img {
+.single-post .title-img {
 	margin-bottom: 2em;
 }
 
-.text {
+.single-post .text {
 	width: 90%;
 	float: right;
 }
