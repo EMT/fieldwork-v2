@@ -9,12 +9,15 @@ body {
   font-family: 'Neuzeit';
   color: rgb(109,110,113);
   background: rgb(239,239,239);
+  margin-top: 5%;
 }
 
+header > div,
+footer > div,
 .wrapper {
   max-width: 1500px;
   width: 90%;
-  margin: 5% auto;
+  margin: 0 auto;
 }
 
 

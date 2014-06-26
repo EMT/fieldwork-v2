@@ -68,7 +68,7 @@ li.process a.tag, li.process:hover a:after, li.process.active a:after, .process 
 	background: $blog-lime-green;
 }
 
-li.ideas a.tag, li.ideas:hover a:after,l i.ideas.active a:after, .ideas .post-image {
+li.ideas a.tag, li.ideas:hover a:after, li.ideas.active a:after, .ideas .post-image {
 	background: $blog-red;
 }
 
@@ -86,43 +86,44 @@ li.studio a.tag, li.studio:hover a:after, li.studio.active a:after, .studio .pos
 
 // Color
 
-li.code a:hover, li.code.active a {
+
+li.code a:hover, li.code.active a, .single-post.code .title, .single-post.code .caption, .single-post.code h3 {
 	color: $blog-pink;
 }
 
-li.inspiring a:hover, li.inspiring.active a {
+li.inspiring a:hover, li.inspiring.active a, .single-post.inspiring .title, .single-post.inspiring .caption, .single-post.inspiring h3 {
 	color: $blog-yellow;
 }
 
-li.made a:hover, li.made.active a {
+li.made a:hover, li.made.active a, .single-post.made .title, .single-post.made .caption, .single-post.made h3 {
 	color: $blog-turquoise;
 }
 
-li.out-and-about a:hover, li.out-and-about.active a {
+li.out-and-about a:hover, li.out-and-about.active a, .single-post.out-and-about .title, .single-post.out-and-about .caption, .single-post.out-and-about h3 {
 	color: $blog-blue;
 }
 
-li.people a:hover, li.people.active a {
+li.people a:hover, li.people.active a, .single-post.people .title, .single-post.people .caption, .single-post.people h3 {
 	color: $blog-pink--light;
 }
 
-li.process a:hover, li.process.active a {
+li.process a:hover, li.process.active a, .single-post.process .title, .single-post.process .caption, .single-post.process h3 {
 	color: $blog-lime-green;
 }
 
-li.ideas a:hover, li.ideas.active a {
+li.ideas a:hover, li.ideas.active a, .single-post.ideas .title, .single-post.ideas .caption, .single-post.ideas h3 {
 	color: $blog-red;
 }
 
-li.found a:hover, li.found.active a {
+li.found a:hover, li.found.active a, .single-post.found .title, .single-post.found .caption, .single-post.found h3 {
 	color: $blog-blue--light;
 }
 
-li.present a:hover, li.present.active a {
+li.present a:hover, li.present.active a, .single-post.present .title, .single-post.present .caption, .single-post.present h3 {
 	color: $blog-orange;
 }
 
-li.studio a:hover, li.studio.active a {
+li.studio a:hover, li.studio.active a, .single-post.studio .title, .single-post.studio .caption, .single-post.studio h3 {
 	color: $blog-pale-green;
 }
 
@@ -244,7 +245,7 @@ li.studio a:hover, li.studio.active a {
 
 // No Image styles
 
-.post img {
+.post-image img {
 	width: 100%;
 	display: block;
 	position: absolute;
@@ -288,7 +289,9 @@ li.studio a:hover, li.studio.active a {
 	clear: both;
 }
 
-
+.post a {
+	text-decoration: none;
+}
 
 // Post -- Clean this up - seems a bit meh.
 
@@ -300,7 +303,7 @@ li.studio a:hover, li.studio.active a {
 	color: rgb(88,89,91);
 }
 
-.post .title-long, .post .date {
+.post .title-long, .post .date, .single-post .title-long, .single-post .date {
 	color: rgb(167,169,172);
 }
 
@@ -351,12 +354,31 @@ li.studio a:hover, li.studio.active a {
 
 // Single Post
 
-.single-post:after, .images:after {
+.single-post:after, .images:after, .sidebar:after, .wrapper:after {
 	content: '';
 	display: block;
 	clear: both;
 }
 
+.single-post em {
+	font-style: italic;
+}
+
+.single-post strong {
+	font-weight: bold;
+}
+
+.single-post blockquote, .single-post q {
+	margin-left: 2em;
+	border-left: 3px solid rgb(204, 204, 204);
+	padding-left: 1em;
+}
+
+.single-post {
+	h1, h2, h3, h4, h5, h6 {
+		margin: 1em 0;
+	}
+}
 
 .single-post {
 	margin-bottom: 2em;
@@ -398,7 +420,14 @@ li.studio a:hover, li.studio.active a {
 	padding: 0 10px;
 }
 
-.images img {
+.images .image-col-2 {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+.single-post img {
 	margin-bottom: 0.5em;
 }
 
@@ -410,6 +439,7 @@ li.studio a:hover, li.studio.active a {
 .single-post .images {
 	margin: 1em -10px;
 	float: left;
+	width: 100%;
 }
 
 .single-post img {
@@ -439,3 +469,165 @@ li.studio a:hover, li.studio.active a {
 	color: rgb(167,169,172);
 }
 
+// TEMP - SEPERATE INTO ELEMENTS
+
+
+
+
+header {
+	background: rgb(255,255,255);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0.25em 0;
+	z-index: 2;
+}
+.index-open header {
+	border-bottom-color: rgb(0,77,89);
+}
+.search-open header {
+	border-bottom-color: rgb(0,207,202);
+}
+
+header .marque img {
+    margin-top: 0.85em;
+    height: 20px;
+}
+
+header nav {
+	float: right;
+	overflow: hidden;
+}
+header nav a {
+	text-decoration: none;
+	line-height: 3em;
+	color: rgb(102,102,102);
+	border-bottom: 1px solid transparent;
+	display: block;
+	padding: 0 0.6em;
+	float: left;
+}
+header nav a:hover,
+.work nav a.work,
+.us nav a.us,
+.journal nav a.journal {
+	border-bottom: 1px solid rgb(255,48,67);
+}
+nav .search,
+nav .index {
+	padding: 0;
+}
+nav .search {
+	text-indent: -999em;
+	background: transparent url('../images/icon-sprite.png') -70px 17px no-repeat;
+	height: 3em;
+	width: 14px;
+	margin: 0 0 0 0.6em;
+	position: relative;
+}
+.search-open nav .search,
+nav .search:hover {
+	border-bottom-color: transparent;
+	background-position: -70px -33px;
+}
+.search-open nav .search:after {
+	content: ' ';
+	position: absolute;
+	z-index: 10;
+	bottom: -1px;
+	right: -1px;
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid rgb(0,207,202);
+}
+nav .index {
+	text-indent: -999em;
+	background: transparent url('../images/icon-sprite.svg') no-repeat 0 14px;
+	background-size: 200%;
+	height: 3em;
+	width: 16px;
+	margin: 0 0 0 0.6em;
+	position: relative;
+}
+.index-open nav .index,
+nav .index:hover {
+	border-bottom-color: transparent;
+	background-position: -16px 14px;
+}
+.no-svg nav .index {
+	background-image: url('../images/icon-sprite.png');
+}
+/*
+.no-svg .index-open nav .index,
+.no-svg nav .index:hover {
+	background-position: -16px 14px;
+}
+*/
+.index-open nav .index:after {
+	content: ' ';
+	position: absolute;
+	z-index: 10;
+	bottom: -1px;
+	right: 1px;
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid rgb(0,77,89);
+}
+
+
+
+
+
+footer {
+	color: rgb(153,153,153);
+	background: rgb(255,255,255);
+	border-top: 1px solid rgb(231,227,222);
+	padding: 1em 0;
+}
+footer > div {
+	overflow: hidden;
+}
+footer .social {
+	border-top: 0;
+	margin: 0;
+}
+
+footer .social {
+text-align: right;
+width: 50%;
+float: right;
+padding: 1em 0;
+}
+
+.social li {
+	display: inline-block;
+}
+
+.social a {
+	text-decoration: none;
+	color: rgb(153, 153, 153);
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.social li a:before {
+	content: ' / ';
+}
+
+.social li:first-child a:before {
+	content: '';
+}
+
+footer div > p {
+	float: left;
+width: 30%;
+margin: 1em 0;
+}
