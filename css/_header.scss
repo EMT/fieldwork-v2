@@ -18,9 +18,16 @@ header {
 	border-bottom-color: rgb(0,207,202);
 }
 
-header .marque img {
+header .marque {
     margin-top: 0.85em;
     height: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+header .marque img {
+	position: absolute;
+	height: 100%;
 }
 
 header nav {
@@ -48,7 +55,7 @@ nav .index {
 }
 nav .search {
 	text-indent: -999em;
-	background: transparent url('../images/icon-sprite.png') -70px 17px no-repeat;
+	background: transparent url('images/icon-sprite.png') -70px 17px no-repeat;
 	height: 3em;
 	width: 14px;
 	margin: 0 0 0 0.6em;
@@ -73,7 +80,7 @@ nav .search:hover {
 }
 nav .index {
 	text-indent: -999em;
-	background: transparent url('../images/icon-sprite.svg') no-repeat 0 14px;
+	background: transparent url('images/icon-sprite.svg') no-repeat 0 14px;
 	background-size: 200%;
 	height: 3em;
 	width: 16px;
@@ -86,14 +93,9 @@ nav .index:hover {
 	background-position: -16px 14px;
 }
 .no-svg nav .index {
-	background-image: url('../images/icon-sprite.png');
+	background-image: url('images/icon-sprite.png');
 }
-/*
-.no-svg .index-open nav .index,
-.no-svg nav .index:hover {
-	background-position: -16px 14px;
-}
-*/
+
 .index-open nav .index:after {
 	content: ' ';
 	position: absolute;

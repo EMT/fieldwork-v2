@@ -6,8 +6,8 @@
 footer {
 	color: rgb(153,153,153);
 	background: rgb(255,255,255);
-	border-top: 1px solid rgb(231,227,222);
 	padding: 1em 0;
+
 }
 footer > div {
 	overflow: hidden;
@@ -15,11 +15,11 @@ footer > div {
 footer .social {
 	border-top: 0;
 	margin: 0;
-}
+}	
 
 footer .social {
 text-align: right;
-width: 50%;
+width: 40%;
 float: right;
 padding: 1em 0;
 }
@@ -48,6 +48,6 @@ padding: 1em 0;
 
 footer div > p {
 	float: left;
-width: 50%;
+width: 60%;
 margin: 1em 0;
 }
