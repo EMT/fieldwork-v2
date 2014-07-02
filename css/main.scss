@@ -9,7 +9,16 @@ body {
   font-family: 'Neuzeit';
   color: rgb(109,110,113);
   background: rgb(239,239,239);
-  margin-top: 5%;
+  margin-top: 6em;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Neuzeit';
+  color: rgb(109,110,113);
+  background: rgb(239,239,239);
+  margin-top: 6em;
 }
 
 header > div,
@@ -208,3 +217,4 @@ p.caption-l, p.caption-r {
 @import 'blog';
 @import 'header';
 @import 'footer';
+@import 'project';

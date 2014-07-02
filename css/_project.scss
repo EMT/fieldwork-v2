@@ -1,0 +1,123 @@
+
+header nav a {
+	color: rgb(255,255,255);
+	transition: all 0.2s ease-in;
+}
+
+header .red-marque {
+	display: none;
+	opacity: 0;
+}
+
+.visible {
+	background: rgba(255,255,255,1);
+
+	nav a {
+		color: rgb(102, 102, 102);
+	}
+
+	.white-marque {
+		display: none;
+		opacity: 0;
+	}
+
+	.red-marque {
+		display: inherit;
+		opacity: 1;
+	}
+}
+
+header {
+	transition: all 0.2s ease-in;
+	background: rgba(255,255,255,0);
+}
+
+.hero {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 5em;
+	
+	.wrapper {
+		padding-top: 5%;
+	}
+
+	.text {
+		height: 35%;
+		width: 100%;
+		background: white;
+	}
+
+	.picture {
+		height: 65%;
+		width: 100%;
+		background-image: url('../images/cn-danwoods.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.project-description {
+		width: 60%;
+		float: left;
+		margin-right: 10%;
+	}
+	
+	.project-info {
+		width: 30%;
+		float: left;
+	}
+	
+	h1 {
+	    margin-bottom: 1.2em;
+	    font-size: 1.3em;
+	    color: red;
+	}
+
+	p {
+		line-height: 1.55;
+	}
+
+	li, .client {
+		color: rgb(167,169,172);
+	}
+
+	li {
+		margin: 0.5em 0;
+	}
+
+	span {
+		display: block;
+	}
+	
+	.elements {
+		margin-top: 2.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.clients {
+		margin-bottom: 0.5em;
+	}
+	
+
+}
+
+
+
+.wrapper:after, .grid:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+body, html {
+	height: 100%;
+	margin-top: 0;
+}
+
+.wrap {
+	height: 100%;
+}
+
+.page-content {
+	height: 100%;
+}
+

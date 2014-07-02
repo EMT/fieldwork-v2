@@ -1,6 +1,30 @@
 ---
 layout: default
 ---
+
+<div class="hero">
+	<div class="picture"></div>
+	<div class="text">
+		<div class="wrapper">
+			<div class="project-description">
+				<h1>Camp Nothing</h1>
+				<p>The Answer to the Great Question... Of Life the Universe and Everything... Is... Forty-two ' said Deep Thought with infinite majesty and calm. Is there any tea on this spaceship? For a moment nothing happened. Then after a second or so nothing continued to happen. Ford... you're turning into a penguin. Stop it. This must be Thursday ' said Arthur to himself sinking low over his beer. 'I never could get the hang of Thursdays. there's an infinite number of monkeys outside who want to talk to us about this script for Hamlet they've worked out. 42 I'd far rather be happy than right any day. Towel.</p>
+			</div>
+			<div class="project-info">
+				<span class="clients">Client</span>
+				<span class="client">Arthur</span>
+				<span class="elements">Disciplines</span>
+				<ul>
+					<li>UI/UX</li>
+					<li>Branding</li>
+					<li>Design</li>
+					<li>Development</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+</div>
+
 <div class="wrapper">
 
 	<div class="grid">
@@ -156,3 +180,23 @@ layout: default
 	</div>
 
 </div>
+
+<script>
+
+
+$(window).scroll(function() {
+
+	var bheight = $(window).height();
+	var percent = 0.6;
+	var hpercent = bheight * percent;
+
+    if ($(window).scrollTop() > hpercent) {
+        $('header').css("background", "rgba(255,255,255,1)");
+        $('header').addClass('visible');
+    }
+    else{
+        $('header').css("background", "rgba(255,255,255,0)");
+        $('header').removeClass('visible');
+    }
+});
+</script>
