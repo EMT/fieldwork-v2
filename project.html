@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 ---
 
 <div class="hero">
@@ -182,21 +182,20 @@ layout: default
 </div>
 
 <script>
+	$(window).scroll(function() {
 
+		var bheight = $(window).height(),
+			percent = 0.6,
+			hpercent = bheight * percent,
+			header = $('.project header');
 
-$(window).scroll(function() {
-
-	var bheight = $(window).height();
-	var percent = 0.6;
-	var hpercent = bheight * percent;
-
-    if ($(window).scrollTop() > hpercent) {
-        $('header').css("background", "rgba(255,255,255,1)");
-        $('header').addClass('visible');
-    }
-    else{
-        $('header').css("background", "rgba(255,255,255,0)");
-        $('header').removeClass('visible');
-    }
-});
+	    if ($(window).scrollTop() > hpercent) {
+	        header.css("background", "rgba(255,255,255,1)");
+	        header.addClass('visible');
+	    }
+	    else{
+	        header.css("background", "rgba(255,255,255,0)");
+	        header.removeClass('visible');
+	    }
+	});
 </script>

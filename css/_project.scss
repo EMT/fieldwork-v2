@@ -1,15 +1,15 @@
 
-header nav a {
+.project header nav a {
 	color: rgb(255,255,255);
 	transition: all 0.2s ease-in;
 }
 
-header .red-marque {
+.project header .red-marque {
 	display: none;
 	opacity: 0;
 }
 
-.visible {
+.project .visible {
 	background: rgba(255,255,255,1);
 
 	nav a {
@@ -27,7 +27,7 @@ header .red-marque {
 	}
 }
 
-header {
+.project header {
 	transition: all 0.2s ease-in;
 	background: rgba(255,255,255,0);
 }
