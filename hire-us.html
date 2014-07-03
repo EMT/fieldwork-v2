@@ -1,0 +1,197 @@
+---
+layout: hire-us
+---
+<!-- 
+
+	TO:DO
+	- Name
+	- Email
+	- Phone ?
+	- What you want ? - radio buttons - revealing more detailed options (has a 'i don't know' option)
+	- Budget 0 -> All of your monies (or possibly just 1 million)
+	- Description
+	- How urgent ? 
+		- Within 3 months
+		- Within 6 months
+		- Long Long Commitment
+
+
+ -->
+
+<div class="wrapper">
+		
+<h1>Project Planner	</h1>
+ <form>
+			    
+			    <p><label for="name">Name</label>
+			    <input type="text" name="name" id="name" /></p>
+
+			    <p><label for="email">Email</label>
+			      <input class="test" name="email" id="email" type="email">
+			    </p>
+
+			    <p><label for="tel">Telephone</label>
+			      <input name="phone" type="tel" id="tel">
+			    </p>
+
+			    <p><label class="radio-label" for="radio_buttons">What ?</label><br>
+					<input type="radio" class="radio1" name="what" value="Digital" /><label>Digital</label><br>
+					<input type="radio" class="radio" name="what" value="Print" /><label>Print</label><br>
+					<input type="radio" class="radio" name="what" value="Other" /><label>Other</label><br>
+			    </p>
+			    
+			    <p class="details"><label for="select_element">Digital - Refined</label><br>
+					<input type="checkbox" name="dev-what" value="Website"> <label>Website</label><br>
+					<input type="checkbox" name="dev-what" value="Web App" ><label>Web App</label><br>
+					<input type="checkbox" name="dev-what" value="iOS App"> <label>iOS App</label><br>
+					<input type="checkbox" name="dev-what" value="Other"> <label>Other</label><br>
+				</p>
+			    
+			    <p><label for="text_area">Description ?</label>
+			    <textarea id="text_area" name="description"></textarea></p>
+
+			    <p><input class="button" type="reset" value="Clear" /> 
+				    <input class="button submit" type="submit" value="Submit" />
+				    <input class="button error" type="submit" value="Error" />
+			    </p>
+
+			    <div class="ui-slider">
+					<div class="slider" ></div>
+					<input type="text" name="budget" class="value"/>
+				</div>
+			    
+			  </form>
+
+</div> 
+
+
+
+
+
+<script>
+
+var valueInput = $('.value');
+var sliderDiv = $('.slider');
+var minBudget = 0;
+var maxBudget = 20000;
+
+	sliderDiv.noUiSlider({
+	start: [1000],
+	step: 250,
+	behaviour: 'tap-drag',
+	range: {
+		'min': minBudget,
+		'max': maxBudget
+	},
+	serialization: {
+		lower: [
+			$.Link({
+				target: valueInput,
+				format: {
+					prefix: '£',
+					decimals: 0
+				}
+			})
+		]
+	}
+});
+
+
+sliderDiv.on('slide set', function() {
+	if( valueInput.val() == '£' + maxBudget ) {
+		valueInput.val('All your money');
+	}
+	if( valueInput.val() == '£' + minBudget ) {
+		valueInput.val('No budget');
+	}
+});
+
+
+var successMsg = '<div class="msg success"><div class="wrapper"><p>Everything checks out, submitting now!</p><span class="loader"></span></div></div>',
+	errorMsg = '<div class="msg error"><div class="wrapper"><p>Hey dummy, your information is wrong. Fix it.</p><span class="loader"></span></div></div>',
+	success = '.msg.success',
+	error = '.msg.error',
+	loader = '.loader';
+
+
+	$(document).ready(function(){
+
+		$('.submit').on('click',function(){
+
+			// Show Message and loader.
+
+			// Append to container
+			$('body').append(successMsg);
+			
+			// Start that loader spinnin'
+			$( loader ).addClass('spin');
+
+			// Wait briefly before adding the class so it drops down ( might change it to a keyframe animation instead getting rid of this issue)
+			setTimeout(function(){
+				$(success).addClass('active');
+			}, 1);
+
+			// Stop the spin and add the tick, change text. - This would fire on ajax done
+			setTimeout(function(){
+				$(loader).removeClass('spin');
+				$(loader).addClass('done');
+				$(success).find('p').html('Sent!');
+			}, 2500);
+
+			// Display for 4 seconds then hide. - Put a delay after ajax done of a few seconds then hide
+			setTimeout(function(){
+					$(success).removeClass('active');
+			}, 4000);
+
+			// Remove from DOM
+			setTimeout(function(){
+				$(success).remove();
+			}, 4500);
+
+
+			// Testing Purposes.
+
+			$('.test').removeClass('issue');
+   			   
+   			console.log($(this).closest('form').serialize());
+			
+			// Killing the form.
+			return false;
+
+		});
+
+		$('.error').on('click',function(){
+			$('body').append(errorMsg);
+
+			setTimeout(function(){
+				$(error).addClass('active');
+			}, 1);
+
+			setTimeout(function(){
+				$(error).removeClass('active');
+			}, 4000);
+
+			setTimeout(function(){
+				$(error).remove();
+			}, 4500);
+
+			$('.test').addClass('issue');
+
+			return false;
+		});
+
+		// Show and hide sections based on whats selected - this also unchecks options if they are hidden away.
+
+		$('form').on('click', function(){
+			if ($('.radio1').is(':checked')) {
+				$('.details').slideDown("slow");
+			} else {
+				$('.details').slideUp("slow");
+        		$('.details input:checkbox').removeAttr('checked');
+        		// Add radio buttons as well. 
+			}
+		});
+
+
+	});
+</script>
