@@ -3,7 +3,7 @@ layout: project
 ---
 
 <div class="hero">
-	<div class="picture"></div>
+	<div style="background-image: url('/images/cn-danwoods.jpg');" class="picture"></div>
 	<div class="text">
 		<div class="wrapper">
 			<div class="project-description">
@@ -180,22 +180,3 @@ layout: project
 	</div>
 
 </div>
-
-<script>
-	$(window).scroll(function() {
-
-		var bheight = $(window).height(),
-			percent = 0.6,
-			hpercent = bheight * percent,
-			header = $('.project header');
-
-	    if ($(window).scrollTop() > hpercent) {
-	        header.css("background", "rgba(255,255,255,1)");
-	        header.addClass('visible');
-	    }
-	    else{
-	        header.css("background", "rgba(255,255,255,0)");
-	        header.removeClass('visible');
-	    }
-	});
-</script>
