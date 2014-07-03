@@ -1,4 +1,6 @@
 
+// All of this could do with double checking - it got quite messy at this point with the blog and the site in two different directories.
+
 .project header nav a {
 	color: rgb(255,255,255);
 	transition: all 0.2s ease-in;
@@ -50,7 +52,6 @@
 	.picture {
 		height: 65%;
 		width: 100%;
-		background-image: url('../images/cn-danwoods.jpg');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -110,6 +111,9 @@
 
 body, html {
 	height: 100%;
+}
+
+body.project {
 	margin-top: 0;
 }
 
@@ -121,3 +125,6 @@ body, html {
 	height: 100%;
 }
 
+footer {
+	margin-top: 5em;
+}
