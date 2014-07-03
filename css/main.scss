@@ -158,6 +158,10 @@ p.caption-l, p.caption-r {
 
 }
 
+  .grid-col-third {
+    width: 33.3%;
+  }
+
 .col-r, .caption-r {
   float: right;
 }
@@ -218,3 +222,4 @@ p.caption-l, p.caption-r {
 @import 'header';
 @import 'footer';
 @import 'project';
+@import 'form';
