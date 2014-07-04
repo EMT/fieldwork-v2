@@ -114,13 +114,12 @@ body, html {
 }
 
 .wrap {
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 }
 
 .page-content {
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 }
 
-footer {
-	margin-top: 5em;
-}
