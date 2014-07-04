@@ -1,3 +1,59 @@
+.hire-us form, .hire-us .thanks {
+  width: 60%;
+  margin: 2em auto;
+}
+
+.thanks {
+  display: none;
+}
+
+.button {
+padding: 1em 2em;
+color: rgb(255, 255, 255);
+text-decoration: none;
+
+-webkit-transition: background 0.3s;
+-moz-transition: background 0.3s;
+-ms-transition: background 0.3s;
+-o-transition: background 0.3s;
+transition: background 0.3s;
+border: none;
+cursor: pointer;
+}
+
+.submit {
+  background: rgb(5, 206, 123);
+  
+  &:hover {
+    background: darken(rgb(5, 206, 123), 12%);
+  }
+
+}
+
+.error {
+  background: rgb(255, 91, 53);
+
+  &:hover {
+    background: darken(rgb(255, 91, 53), 12%);
+  }
+
+}
+
+.hire-us form {
+  .what {
+    label {
+      margin-bottom: 1em;
+      margin-left: 0.5em;
+      margin-top: 0.1em;
+    }
+  }
+  
+  label:hover {
+    cursor: pointer;
+  }
+
+}
+
 .form-group{
 	margin-bottom:20px;
 }
@@ -12,6 +68,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="url"], i
 	margin-bottom: 0.4em;
 	width: 100%;
 	vertical-align: middle;
+  font-family: 'Neuzeit';
 }
 
 label {
@@ -30,12 +87,39 @@ textarea {
 	min-height: 200px;
 }
 
-.details {
+.digital-details, .print-details {
 	display: none;
+  border-top: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+  padding: 1em 0;
+
+  input {
+    display: none;
+  }
+  
+  .grid-col-third {
+    text-align: center;
+    margin: 10px 0;
+  }
+
 }
 
-form p {
-  margin: 20px 0;
+
+input[type=text].value {
+  background: none;
+  border: none;
+  text-align: center;
+}
+
+
+input[type=checkbox]:checked + label {
+    color: red;
+}
+
+
+
+form > p, form > div, p.title {
+  margin: 0 0 20px 0;
 }
 
 // Ajax loader on the submit button
@@ -169,7 +253,7 @@ input[type="email"].issue {
 
 .ui-slider {
   width: 60%;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 /* Functional styling;
@@ -223,13 +307,15 @@ input[type="email"].issue {
 /* Slider size and handle placement;
  */
 .noUi-horizontal {
-  height: 18px;
+  height: 2px;
+  margin: 20px;
 }
 .noUi-horizontal .noUi-handle {
-  width: 34px;
+  width: 28px;
+  border-radius: 200px;
   height: 28px;
   left: -17px;
-  top: -6px;
+  top: -12px;
   margin: 0;
 }
 .noUi-horizontal.noUi-extended {
@@ -283,26 +369,13 @@ input[type="email"].issue {
   cursor: n-resize;
 }
 .noUi-handle {
-  background: rgb(64,182,228);
+  background: rgb(88, 89, 91);
   cursor: default;
 }
 .noUi-active {
 
 }
 
-/* Handle stripes;
- */
-.noUi-handle:before,
-.noUi-handle:after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 14px;
-  width: 1px;
-  background: #E8E7E6;
-  left: 14px;
-  top: 6px;
-}
 .noUi-handle:after {
   left: 17px;
 }
