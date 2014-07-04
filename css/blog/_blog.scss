@@ -1,33 +1,21 @@
 // Structure
 
 .banner {
-	width: 100%;
-	float: left;
-	margin-bottom: 2em;
+  width: 100%;
+  float: left;
+  margin-bottom: 2em;
 }
-
-// Temp Header Styles
-.banner h1 {
-	font-size: 2em;
-	line-height: 1.2;
-}
-
 .main-content {
-	float: left;
-	width: 65%;	
-	margin-right: 10%;
+  float: left;
+  width: 65%; 
+  margin-right: 10%;
 }
-
 .sidebar {
-	float:left;
-	width: 25%;
-	font-size: 0.9em;
+  float: right;
+  width: 25%;
+  font-size: 0.9em;
 }
-
-.sidebar {
-	color: rgb(167, 169, 172);
-}
-
+// Colors!
 
 $blog-pink: rgb(238,70,123);
 $blog-yellow: rgb(254,221,60);
@@ -44,86 +32,165 @@ $blog-pale-green: rgb(227,231,51);
 
 // Background
 
-li.code a.tag, li.code:hover a:after, li.code.active a:after, .code .post-image {
+li.code a.tag,
+li.code:hover a:after,
+.wrapper.code-main li.code a:after, 
+.post-list .code-main .no-image, .code-main .post-content .no-image {
 	background: $blog-pink;
 }
 
-li.inspiring a.tag, li.inspiring:hover a:after, li.inspiring.active a:after, .inspiring .post-image {
+li.inspiring a.tag,
+li.inspiring:hover a:after,
+.wrapper.inspiring-main li.inspiring a:after,
+.post-list .inspiring-main .no-image, .inspiring-main .post-content .no-image {
 	background: $blog-yellow;
 }
 
-li.made a.tag, li.made:hover a:after, li.made.active a:after, .made .post-image {
+li.made a.tag,
+li.made:hover a:after,
+.wrapper.made-main li.made a:after,
+.post-list .made-main .no-image, .made-main .post-content .no-image {
 	background: $blog-turquoise;
 }
 
-li.out-and-about a.tag, li.out-and-about:hover a:after, li.out-and-about.active a:after, .out-and-about .post-image {
+li.out-and-about a.tag,
+li.out-and-about:hover a:after,
+.wrapper.out-and-about-main li.out-and-about a:after,
+.post-list .out-and-about-main .no-image, .out-and-about-main .post-content .no-image {
 	background: $blog-blue;
 }
 
-li.people a.tag, li.people:hover a:after, li.people.active a:after, .people .post-image {
+li.people a.tag,
+li.people:hover a:after,
+.wrapper.people-main li.people a:after,
+.post-list .people-main .no-image, .people-main .post-content .no-image {
 	background: $blog-pink--light;
 }
 
-li.process a.tag, li.process:hover a:after, li.process.active a:after, .process .post-image {
+li.process a.tag,
+li.process:hover a:after,
+.wrapper.process-main li.process a:after,
+.post-list .process-main .no-image, .process-main .post-content .no-image {
 	background: $blog-lime-green;
 }
 
-li.ideas a.tag, li.ideas:hover a:after, li.ideas.active a:after, .ideas .post-image {
+li.ideas a.tag,
+li.ideas:hover a:after,
+.wrapper.ideas-main li.ideas a:after,
+.post-list .ideas-main .no-image, .ideas-main .post-content .no-image {
 	background: $blog-red;
 }
 
-li.found a.tag, li.found:hover a:after, li.found.active a:after, .found .post-image {
+li.found a.tag,
+li.found:hover a:after,
+.wrapper.found-main li.found a:after,
+.post-list .found-main .no-image, .found-main .post-content .no-image {
 	background: $blog-blue--light;
 }
 
-li.present a.tag, li.present:hover a:after, li.present.active a:after, .present .post-image {
+li.present a.tag,
+li.present:hover a:after,
+.wrapper.present-main li.present a:after,
+.post-list .present-main .no-image, .present-main .post-content .no-image {
 	background: $blog-orange;
 }
 
-li.studio a.tag, li.studio:hover a:after, li.studio.active a:after, .studio .post-image {
+li.studio a.tag,
+li.studio:hover a:after,
+.wrapper.studio-main li.studio a:after,
+.post-list .studio-main .no-image, .studio-main .post-content .no-image {
 	background: $blog-pale-green;
 }
 
 // Color
 
-
-li.code a:hover, li.code.active a, .single-post.code .title, .single-post.code .caption, .single-post.code h3 {
+li.code a:hover,
+.wrapper.code-main li.code a,
+.wrapper.code-main .post-content .title,
+.wrapper.code-main .post-content .caption,
+.wrapper.code-main .post-content h3,
+.wrapper.code-main .post-content h4 {
 	color: $blog-pink;
 }
 
-li.inspiring a:hover, li.inspiring.active a, .single-post.inspiring .title, .single-post.inspiring .caption, .single-post.inspiring h3 {
+li.inspiring a:hover,
+.wrapper.inspiring-main li.inspiring a,
+.wrapper.inspiring-main .post-content .title,
+.wrapper.inspiring-main .post-content .caption,
+.wrapper.inspiring-main .post-content h3,
+.wrapper.inspiring-main .post-content h4 {
 	color: $blog-yellow;
 }
 
-li.made a:hover, li.made.active a, .single-post.made .title, .single-post.made .caption, .single-post.made h3 {
+li.made a:hover,
+.wrapper.made-main li.made a,
+.wrapper.made-main .post-content .title,
+.wrapper.made-main .post-content .caption,
+.wrapper.made-main .post-content h3,
+.wrapper.made-main .post-content h4 {
 	color: $blog-turquoise;
 }
 
-li.out-and-about a:hover, li.out-and-about.active a, .single-post.out-and-about .title, .single-post.out-and-about .caption, .single-post.out-and-about h3 {
+li.out-and-about a:hover,
+.wrapper.out-and-about-main li.out-and-about a,
+.wrapper.out-and-about-main .post-content .title,
+.wrapper.out-and-about-main .post-content .caption,
+.wrapper.out-and-about-main .post-content h3,
+.wrapper.out-and-about-main .post-content h4 {
 	color: $blog-blue;
 }
 
-li.people a:hover, li.people.active a, .single-post.people .title, .single-post.people .caption, .single-post.people h3 {
+li.people a:hover,
+.wrapper.people-main li.people a,
+.wrapper.people-main .post-content .title,
+.wrapper.people-main .post-content .caption,
+.wrapper.people-main .post-content h3,
+.wrapper.people-main .post-content h4 {
 	color: $blog-pink--light;
 }
 
-li.process a:hover, li.process.active a, .single-post.process .title, .single-post.process .caption, .single-post.process h3 {
+li.process a:hover,
+.wrapper.process-main li.process a,
+.wrapper.process-main .post-content .title,
+.wrapper.process-main .post-content .caption,
+.wrapper.process-main .post-content h3,
+.wrapper.process-main .post-content h4 {
 	color: $blog-lime-green;
 }
 
-li.ideas a:hover, li.ideas.active a, .single-post.ideas .title, .single-post.ideas .caption, .single-post.ideas h3 {
+li.ideas a:hover,
+.wrapper.ideas-main li.ideas a,
+.wrapper.ideas-main .post-content .title,
+.wrapper.ideas-main .post-content .caption,
+.wrapper.ideas-main .post-content h3,
+.wrapper.ideas-main .post-content h4 {
 	color: $blog-red;
 }
 
-li.found a:hover, li.found.active a, .single-post.found .title, .single-post.found .caption, .single-post.found h3 {
+li.found a:hover,
+.wrapper.found-main li.found a,
+.wrapper.found-main .post-content .title,
+.wrapper.found-main .post-content .caption,
+.wrapper.found-main .post-content h3,
+.wrapper.found-main .post-content h4 {
 	color: $blog-blue--light;
 }
 
-li.present a:hover, li.present.active a, .single-post.present .title, .single-post.present .caption, .single-post.present h3 {
+li.present a:hover,
+.wrapper.present-main li.present a,
+.wrapper.present-main .post-content .title,
+.wrapper.present-main .post-content .caption,
+.wrapper.present-main .post-content h3,
+.wrapper.present-main .post-content h4 {
 	color: $blog-orange;
 }
 
-li.studio a:hover, li.studio.active a, .single-post.studio .title, .single-post.studio .caption, .single-post.studio h3 {
+li.studio a:hover,
+.wrapper.studio-main li.studio a,
+.wrapper.studio-main .post-content .title,
+.wrapper.studio-main .post-content .caption, 
+.wrapper.studio-main .post-content h3,
+.wrapper.studio-main .post-content h4 {
 	color: $blog-pale-green;
 }
 
@@ -134,37 +201,36 @@ li.studio a:hover, li.studio.active a, .single-post.studio .title, .single-post.
 
 // Sidebar
 
-.sidebar h3 {
-	padding: 1em 0;
-	color: rgb(109, 110, 113);
-	font-size: 1.2em;
+.sidebar {
+	margin: 0 0 2em 0;
+
+	h3 {
+		padding: 1em 0;
+		color: rgb(109, 110, 113);
+		font-size: 1.2em;
+	}
+
+	h3:first-of-type {
+		padding-top: 0;
+	}
+
+	.newsletter {
+		margin-top: 1em;
+	}
+
 }
 
-.sidebar h3:first-of-type {
-	padding-top: 0;
-}
-
-
+// Categories links 
 .category-links a {
 	text-decoration: none;
 	color: rgb(170,170,170);
 	display: block;
 	padding: 0.3em 0;
 	position: relative;
-	// font-size: 0.9em;
 }
 
-.category-icons {
-	list-style: none;
-	margin: 0.8em 0;
-	padding: 0;
-}
 
-.category-icons li {
-	display: inline-block;
-}
-
-.category-icons a.tag, .category-links a:after  {
+.category-links a:after, .category-icons a.tag  {
 	content: '';
 	display: block;
 	height: 10px;
@@ -185,6 +251,19 @@ li.studio a:hover, li.studio.active a, .single-post.studio .title, .single-post.
 	transform: translateY(-50%);
 }
 
+// Icons
+
+.category-icons {
+	list-style: none;
+	margin: 0.8em 0;
+	padding: 0;
+}
+
+.category-icons li {
+	display: inline-block;
+	margin: 0 0.1em;
+}
+
 .category-icons a.tag:hover:after, .category-icons a.tag.active:after {
 	content: '';
 	display: block;
@@ -197,7 +276,7 @@ li.studio a:hover, li.studio.active a, .single-post.studio .title, .single-post.
 	position: absolute;
 }
 
-// Contact form
+// Contact form ( modified old styles )
 
 .contact-form {
 	margin-bottom: 2em;
@@ -228,6 +307,8 @@ li.studio a:hover, li.studio.active a, .single-post.studio .title, .single-post.
 	color: darken(rgb(170,170,170),15%);
 }
 
+
+
 // Posts lists
 
 .post-list {
@@ -243,176 +324,241 @@ li.studio a:hover, li.studio.active a, .single-post.studio .title, .single-post.
 	margin: 0 0 2em 0;
 }
 
-// No Image styles
 
-.post-image img {
-	width: 100%;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
+
+// Shared between Single + Post list
+
+.title-long, .date {
+	color: rgb(167,169,172);
+	line-height: 1.2;
 }
 
 .post-image {
 	position: relative;
-	height: 0;
-	padding: 5% 5% 57.4% 5%;
-	margin: 0 0 1em 0;
+	margin: 0 0 2em 0;
 	overflow: hidden;
 
-	// Temp Typography stuff - please remove me!
-	font-size: 22px;
-
+	img {
+		width: 100%;
+		display: block;
+	}
 }
 
-.post-image .category {
-	color: rgba(255,255,255,0.5);
-	margin: 0;
+.no-image {
+	position: relative;
+	height: 0;
+	padding: 5% 5% 57.4% 5%;
+	margin: 0 0 2em 0;
+	overflow: hidden;
 
-	// Temp Typography stuff - please remove me!
-	font-size: 22px;
+	.category {
+		color: rgba(255,255,255,0.5);
+		margin: 0;
+		font-size: 2em;
+	}
+
+	p {
+		color: rgb(255,255,255);
+		margin: 0.5em 0;
+		font-size: 1.3em;
+		line-height: 1.2;
+	}
 }
 
-.post-image p {
-	color: rgb(255,255,255);
-	margin: 0.5em 0;
+// Post
+
+.post {
+
+	.category-icons {
+		float: left;
+		width: 100%;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.title {
+		text-align: center;
+		display: block;
+		float: left;
+		width: 50%;
+		color: rgb(88,89,91);
+	}
+
+	.under {
+		display: block;
+		margin: 0.5em 0;
+	}
+
+	.date, .go-to {
+		float: left;
+		width: 25%;
+		display: block;
+	}
+
+	.go-to a {
+		display: block;
+		height: 21px;
+		width: 37px;
+		background: url("images/blog-arrow.png");
+		float: right;
+	}
 }
 
-.post .category-icons {
-	float: left;
-	width: 100%;
+
+.pagination {
+
+	a {
+		text-decoration: none;
+		color: rgb(167,169,172);
+		padding: 2em 0;
+	}
+
+	span {
+		display: block;
+		margin: 1em 0 3em 0;
+	}
+
+	.next {
+		float: right;
+	}
+
+	.prev {
+		float: left;
+	}
+
 }
-
-.post-meta-data:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.post a {
-	text-decoration: none;
-}
-
-// Post -- Clean this up - seems a bit meh.
-
-.post .title {
-	text-align: center;
-	display: block;
-	float: left;
-	width: 50%;
-	color: rgb(88,89,91);
-}
-
-.post .title-long, .post .date, .single-post .title-long, .single-post .date {
-	color: rgb(167,169,172);
-}
-
-.post .under {
-	display: block;
-	margin: 0.5em 0;
-}
-
-.post .date {
-	float: left;
-	width: 25%;
-	display: block;
-}
-
-.post .go-to {
-	float: left;
-	width: 25%;
-	display: block;
-}
-
-// a needs a hover state.
-
-.post .go-to a {
-	display: block;
-	height: 21px;
-	width: 37px;
-	background: url("../images/blog-arrow.png");
-	float: right;
-}
-
-// Post list pagination
-
-.pagination a {
-	text-decoration: none;
-	color: rgb(167,169,172);
-	padding: 2em 0;
-}
-
-.pagination .next {
-	float: right;
-}
-
-.pagination .prev {
-	float: left;
-}
-
 
 
 // Single Post
 
-.single-post:after, .images:after, .sidebar:after, .wrapper:after {
+.post-content:after, .images:after, .sidebar:after, .wrapper:after, .post-meta-data:after {
 	content: '';
 	display: block;
 	clear: both;
 }
 
-.single-post em {
-	font-style: italic;
-}
-
-.single-post strong {
-	font-weight: bold;
-}
-
-.single-post blockquote, .single-post q {
-	margin-left: 2em;
-	border-left: 3px solid rgb(204, 204, 204);
-	padding-left: 1em;
-}
-
-.single-post {
-	h1, h2, h3, h4, h5, h6 {
-		margin: 1em 0;
-	}
-}
-
-.single-post {
+.post-content {
 	margin-bottom: 2em;
+
+	a {
+		color: rgb(167,169,172);
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	blockquote, q {
+		margin-left: 2em;
+		border-left: 3px solid rgb(204, 204, 204);
+		padding-left: 1em;
+	}
+
+	img {
+		margin-bottom: 0.5em;
+		max-width: 100%;
+		display: block;
+	}
+
+	// !!! Group up with image styles
+	.caption, .caption-alt {
+		font-size: 0.9em;
+	}
+
+	.caption-alt {
+		color: rgb(167, 169, 172);
+		margin-top: 0.4em;
+		display: block;
+	}
+
+	.meta-data {
+		float: left;
+		width: 10%;
+		margin-right: 5%;
+	}
+
+	.category-icons {
+		margin: 0.2em 0;
+	}
+
+	.images {
+		margin: 1em -10px;
+		float: left;
+	}
+
+	.title-img {
+		margin-bottom: 2em;
+	}
+
+	.meta-data ul {
+		float: none;
+		width: auto;
+	}
+
+	.gist {
+		font-size: 0.9em;
+		margin: 2em 0;
+	}
+
+	.inner-content {
+		
+		h1, h2, h3, h4, h5, h6 {
+			margin: 1em 0;
+		}
+
+		.title {
+			display: inline-block;
+			margin: inherit;
+		}
+
+		li {
+			color: rgb(167,169,172);
+			margin: 0.7em 0;
+			position: relative;
+			padding: 0 0 0 0.8em;
+		}
+
+		li:after {
+			content: '-';
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+
+		p, ul, .author, h3, h4, h5, ol, blockquote, q {
+			margin: 0.5em 0;
+			line-height: 1.5;
+			width: 85%;
+			float: right;
+		}
+
+
+		h4 {
+			font-size: 0.9em;
+		}
+
+		h5 {
+			font-size: 0.8em;
+		}
+
+		.gist {
+			width: 100%;
+			float: left;
+		}
+
+	}
+
 }
 
-// !!! These are using category specific colors, duplicate this for all other colors
-
-.single-post .caption, .single-post .caption-alt {
-	font-size: 0.9em;
-	margin: 0.1em;
-}
-
-.single-post .title {
-	color: $blog-turquoise;
-}
-
-.single-post .caption {
-	color: $blog-turquoise;
-}
-
-.single-post .caption-alt {
-	color: rgb(167, 169, 172);
-}
 
 
-.single-post .meta-data {
-	float: left;
-	width: 10%;
-}
-
-.single-post .meta-data .category-icons {
-	margin: 0.2em 0;
-}
-
+// !!! Group up with caption - little note on how dey be used.
 .images .image-col-3 {
 	width: 33.33%;
 	float: left;
@@ -427,43 +573,91 @@ li.studio a:hover, li.studio.active a, .single-post.studio .title, .single-post.
 	padding: 0 10px;
 }
 
-.single-post img {
-	margin-bottom: 0.5em;
-}
 
 .image-col-1 {
 	float: left;
 	margin: 2em 0;
+	width: 100%;
 }
 
-.single-post .images {
-	margin: 2em -10px;
+
+
+//  Videos
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	margin: 2em 0;
+	height: 0;
+	overflow: hidden;
+	width: 100%;
 	float: left;
 }
 
-.single-post img {
-	max-width: 100%;
-	display: block;
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }
 
-.single-post .title-img {
-	margin-bottom: 2em;
+@media only screen and (max-width: 650px) {
+
+.post-image {
+	font-size: 0.7em;
 }
 
-.single-post .text {
-	width: 90%;
-	float: right;
+
+.main-content {
+	width: 100%;
+	margin: 0;
 }
 
-.single-post p, .single-post ul {
-	margin: 1em 0;
-	line-height: 1.5;
+.sidebar {
+	width: 100%;
 }
 
-.single-post a {
-	color: rgb(167,169,172);
+// Temp hiding style.
+.newsletter {
+	display: none;	
 }
 
-.single-post ul li {
-	color: rgb(167,169,172);
+.category-links {
+	display: none;
+}
+
+.post-content .inner-content {
+	p, ul, .author, h3, h4, h5, ol, blockquote, q {
+		width: 100%;
+		margin: 0.75em 0;
+		font-size: 0.95em;
+	}
+}
+
+.post-content .meta-data {
+	width: auto;
+	margin-bottom: 1em;
+}
+
+.no-image {
+	height: auto;
+	padding: 5% 5% 20% 5%;
+}
+
+.post-content .gist {
+	font-size: 0.8em;
+}
+
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+.post-image {
+	font-size: 0.85em;
+}
+
 }

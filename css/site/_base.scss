@@ -1,6 +1,15 @@
 
 // Basic Styles
 
+@font-face {
+  font-family: 'Neuzeit';
+  src: url('fonts/neuzeit-book.eot'); /* IE9 Compat Modes */
+  src: url('fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/neuzeit-book.woff') format('woff'), /* Modern Browsers */
+       url('fonts/neuzeit-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/neuzeit-book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 body {
   font-family: 'Neuzeit';
   color: rgb(109,110,113);

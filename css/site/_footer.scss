@@ -52,3 +52,24 @@ footer div > p {
 	width: 60%;
 	margin: 1em 0;
 }
+
+
+@media only screen and (max-width: 700px) {
+	footer {
+		font-size: 0.95em;
+	}
+
+	footer div > p {
+		width: 100%;
+	}
+
+	footer .social {
+		width: 100%;	
+		text-align: left;
+	}
+
+	body {
+		padding-bottom: 8em;
+	}
+
+}
