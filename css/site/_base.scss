@@ -1,0 +1,42 @@
+
+// Basic Styles
+
+body {
+  font-family: 'Neuzeit';
+  color: rgb(109,110,113);
+  background: rgb(239,239,239);
+  margin-top: 6em;
+  position: relative;
+  min-height: 100%;
+}
+
+header > div,
+footer > div,
+.wrapper {
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper:after, .grid:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+body, html {
+  height: 100%;
+}
+
+.wrap, .page-content {
+  min-height: 100%;
+  height: auto;
+}
+
+// Mixins
+
+@mixin border-box{
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+

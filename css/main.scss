@@ -1,218 +1,26 @@
 ---
 ---
 
-@import 'reset';
+// Variables
 
-// Basic Styles
+@import 'variables.scss';
 
-body {
-  font-family: 'Neuzeit';
-  color: rgb(109,110,113);
-  background: rgb(239,239,239);
-  margin-top: 6em;
-  position: relative;
-  min-height: 100%;
-}
+// Basic site styles.
+@import 'site/reset';
+@import 'site/base';
+@import 'site/header';
+@import 'site/footer';
 
-header > div,
-footer > div,
-.wrapper {
-  max-width: 1500px;
-  width: 90%;
-  margin: 0 auto;
-}
+// Blog styles
+@import 'blog/blog';
 
+// Project styles
+@import 'projects/project';
+@import 'projects/grid';
+@import 'projects/captions';
 
-// Mixins
-
-@mixin border-box{
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-}
-
-
-@mixin fixed-ratio-wrapper-generator($x: 16,$y: 9){
-  position: relative;
-  padding-bottom: ($y / $x) * 100%;
-  height: 0;
-}
-
-//Grid
-$column-count: 20;
-$gutter-width: 20px;
-$column-width: (100% / $column-count);
-
-
-
-
-.grid .text .col-content {
-  background: rgb(244,36,52);
-  color: rgb(255,255,255);
-  padding: 0.5em;
-  @include border-box;
-
-  // Styles - because we have no typography sass for this test - Don't include later.
-
-  line-height: 1.4;
-
-
-}
-
-.grid {
-  overflow: hidden;
-  clear: both;
-}
-
-[class^="grid-col-"] {
-  // background: rgb(255, 0, 0);
-  float: left;
-  position: relative;
-
-  &.tall-cube {
-    padding-bottom: 70%;
-  }
-  &.med-cube {
-    padding-bottom: 35%;
-  }
-  &.vertical-cube {
-    padding-bottom: 40%;
-  }
-  &.tiny-cube {
-    padding-bottom: 20%;
-  }
-  &.wide-cube {
-    padding-bottom: 40%;
-  }
-  &.full-size-cube {
-    padding-bottom: 65%;
-  }
-  &.extra-tall-cube {
-    padding-bottom: 150%;
-  }
-
-  .col-content {
-    background: rgb(147,149,152);
-    position: absolute;
-    top: 0.5em;
-    bottom: 0.5em;
-    left: 0.5em;
-    right: 0.5em;
-
-    // Background image ?
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-  }
-}
-
-
-
-@media screen and (max-width: 700px) {
-.grid [class^="grid-col-"] {
-  width: 100%;
-
-  &.tall-cube {
-    padding-bottom: 125%;
-  }
-  &.med-cube {
-    padding-bottom: 60%;
-  }
-  &.vertical-cube {
-    padding-bottom: 40%;
-  }
-  &.tiny-cube {
-    padding-bottom: 60%;
-  }
-  &.wide-cube {
-    padding-bottom: 40%;
-  }
-  &.full-size-cube {
-    padding-bottom: 65%;
-  }
-  &.extra-tall-cube {
-    padding-bottom: 150%;
-  }
-
-}
-
-p.caption-l, p.caption-r {
-  width: 100%;
-}
-
-}
-
-@for $i from 1 through $column-count {
-
-  .grid-col-#{$i} {
-    width: $column-width*$i;
-  }
-
-}
-
-  .grid-col-third {
-    width: 33.3%;
-  }
-
-.col-r, .caption-r {
-  float: right;
-}
-
-
-
-// Captions 
-
-.caption-l {
-    float: left;
-}
-
-.caption-l, .caption-r {
-  width: 50%;
-  @include border-box;
-  padding: 3em 0.5em;
-  margin: 2em 0;
-  position: relative;
-}
-
-.arrow-up:after, .arrow-down:after {
-  background-image: url("../images/arrow.png");
-  background-repeat: no-repeat;
-  background-size: 23px 58px;
-  content: '';
-  display: block;
-  width: 25px;
-  height: 29px;
-  position: absolute;
-}
-
-.arrow-up:after {
-  top: 0;
-  background-position: 1% 1%;
-}
-
-.arrow-down:after {
-  bottom: 0;
-  background-position: 1% 100%;
-}
-
-.left, .left:after {
-  left: 1%;
-}
-
-.right, .right:after {
-  right: 1%;
-}
-
-
-.caption-l:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-@import 'blog';
-@import 'header';
-@import 'footer';
-@import 'project';
-@import 'form';
+// Form Styles for Project planner.
+@import 'form/form';
+@import 'form/loader';
+@import 'form/notifications';
+@import 'form/nouislider';

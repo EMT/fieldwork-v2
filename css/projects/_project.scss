@@ -1,6 +1,11 @@
 
 // All of this could do with double checking - it got quite messy at this point with the blog and the site in two different directories.
 
+.project header {
+	transition: all 0.2s ease-in;
+	background: rgba(255,255,255,0);
+}
+
 .project header nav a {
 	color: rgb(255,255,255);
 	transition: all 0.2s ease-in;
@@ -11,7 +16,7 @@
 	opacity: 0;
 }
 
-.project .visible {
+.project header.visible {
 	background: rgba(255,255,255,1);
 
 	nav a {
@@ -29,10 +34,6 @@
 	}
 }
 
-.project header {
-	transition: all 0.2s ease-in;
-	background: rgba(255,255,255,0);
-}
 
 .hero {
 	height: 100%;
@@ -100,26 +101,3 @@
 	
 
 }
-
-
-
-.wrapper:after, .grid:after {
-	content: '';
-	clear: both;
-	display: block;
-}
-
-body, html {
-	height: 100%;
-}
-
-.wrap {
-	min-height: 100%;
-	height: auto;
-}
-
-.page-content {
-	min-height: 100%;
-	height: auto;
-}
-

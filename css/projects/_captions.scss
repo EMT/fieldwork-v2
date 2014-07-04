@@ -1,0 +1,57 @@
+.col-r, .caption-r {
+  float: right;
+}
+
+p.caption-l, p.caption-r {
+  width: 100%;
+}
+
+// Captions 
+
+.caption-l {
+    float: left;
+}
+
+.caption-l, .caption-r {
+  width: 50%;
+  @include border-box;
+  padding: 3em 0.5em;
+  margin: 2em 0;
+  position: relative;
+}
+
+.arrow-up:after, .arrow-down:after {
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 23px 58px;
+  content: '';
+  display: block;
+  width: 25px;
+  height: 29px;
+  position: absolute;
+}
+
+.arrow-up:after {
+  top: 0;
+  background-position: 1% 1%;
+}
+
+.arrow-down:after {
+  bottom: 0;
+  background-position: 1% 100%;
+}
+
+.left, .left:after {
+  left: 1%;
+}
+
+.right, .right:after {
+  right: 1%;
+}
+
+
+.caption-l:after {
+  content: '';
+  display: table;
+  clear: both;
+}
