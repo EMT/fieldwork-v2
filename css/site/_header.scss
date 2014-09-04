@@ -11,6 +11,11 @@ header {
 	padding: 0.25em 0;
 	z-index: 2;
 }
+
+header.visible {
+	border-bottom: 3px solid red;
+}
+
 .index-open header {
 	border-bottom-color: rgb(0,77,89);
 }
