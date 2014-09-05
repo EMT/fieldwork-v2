@@ -3,32 +3,38 @@
 // Slightly Modified footer code from the old site, needs a bit of touching up.
 
 
+
 footer {
 	color: rgb(153,153,153);
+	font-size: 0.875em;
 	background: rgb(255,255,255);
-	padding: 1em 0;
+	padding: 4% 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	border-top: 1px solid rgba(109,110,113,0.25);
+	line-height: 1.35;
 }
-
 footer > div {
 	overflow: hidden;
 }
+
 footer .social {
 	border-top: 0;
 	margin: 0;
 }	
 
-footer .social {
-	text-align: right;
-	width: 40%;
-	float: right;
-	padding: 1em 0;
+footer a {
+	color: rgb(167, 169, 172);
 }
 
-.social li {
-	display: inline-block;
+footer a:hover {
+	opacity: 0.8;
 }
 
-.social a {
+footer a {
 	text-decoration: none;
 	color: rgb(153, 153, 153);
 	-webkit-transition: all .3s ease-out;
@@ -38,24 +44,129 @@ footer .social {
 	transition: all .3s ease-out;
 }
 
-.social li a:before {
-	content: ' / ';
-}
-
-.social li:first-child a:before {
-	content: '';
+.social li {
+	margin: 0.2em 0;
 }
 
 footer div > p {
-	float: left;
 	width: 60%;
-	margin: 1em 0;
+	margin: 0.5em 0;
 }
 
 
-@media only screen and (max-width: 700px) {
+.address {
+	margin: 0;
+}
+
+.address:first-of-type {
+	margin-top: 0.5em
+}
+
+.tel {
+	margin-bottom: 0;
+}
+
+.email {
+	margin-top: 0.2em;
+}
+
+
+
+
+
+
+footer input[type="email"] {
+	border-bottom: 1px solid rgba(109, 110, 113, 0.25);
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	background: rgba(0, 0, 0, 0);
+	padding: 0;
+	color: rgb(167, 169, 172);
+	font-size: 1em;
+	font-family: 'Neuzeit';
+	margin-bottom: 0.4em;
+	width: 50%;
+	padding: 0.4em 0;
+}
+
+footer input[type="submit"] {
+	border: 0;
+	border-bottom: 1px solid rgba(109, 110, 113, 0.25);
+	background: rgba(0, 0, 0, 0);
+	padding: 0;
+	color: rgb(167, 169, 172);
+	font-size: 1em;
+	display: block;
+	font-family: 'Neuzeit';
+	margin-bottom: 0.4em;
+	padding: 0.4em 0;
+	cursor: pointer;
+}
+
+
+footer a {
+	text-decoration: none;
+}
+
+footer h3 {
+	color: rgb(109, 110, 113);
+}
+
+.email a, .project-planner a {
+	border: none;
+	padding: 0;
+	border-bottom: 1px solid rgba(109, 110, 113, 0.25);
+	padding: 0.4em 0;
+	margin-bottom: 0.4em;
+}
+
+.our-info {
+	float: left;
+	width: 15%;
+	margin-right: 5%;
+}
+
+.project-planner {
+	width: 25%;
+	margin-right: 5%;
+	float: left;
+}
+
+.join-newsletter {
+	width: 35%;
+	margin-right: 5%;
+	float: left;
+}
+
+.social-wrapper {
+	width: 10%;
+	float: right;
+}
+
+.social {
+display: table;
+float: right;
+}
+
+@media only screen and (max-width: 900px) {
 	footer {
-		font-size: 0.95em;
+		font-size: 0.90em;
+		line-height: 1.2;
+	}
+
+	.our-info {
+		width: 25%;
+		margin-right: 5%;
+	}
+
+	.join-newsletter {
+		width: 25%;
+		margin-right: 5%;
+	}
+
+	.join-newsletter input[type="email"] {
+		width: 100%;
 	}
 
 	footer div > p {
@@ -64,11 +175,23 @@ footer div > p {
 
 	footer .social {
 		width: 100%;	
-		text-align: left;
 	}
 
 	body {
 		padding-bottom: 8em;
 	}
+
+	input {
+		border-radius: 0;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.our-info, .join-newsletter, .social-wrapper, .project-planner {
+	width: 100%;
+	margin: 1.5em 0;
+}
 
 }
