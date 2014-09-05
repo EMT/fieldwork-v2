@@ -12,8 +12,14 @@ header {
 	z-index: 2;
 }
 
+.project header {
+	background: rgba(255,255,255,0);
+	transition: all 0.3s ease-out;
+} 
+
 header.visible {
-	border-bottom: 3px solid red;
+	border-bottom: 1px solid rgba(109,110,113,0.25);
+	background: rgba(255,255,255,1);
 }
 
 .index-open header {
@@ -114,3 +120,52 @@ nav .index:hover {
 	border-bottom: 8px solid rgb(0,77,89);
 }
 
+
+
+// TEMP ICON/HEADER STUFF.
+
+
+header.visible .social-icons a {
+	color: rgb(102,102,102);
+}
+
+header .marque {
+	float: left;
+}
+
+header nav {
+	float: right;
+	overflow: hidden;
+	width: 30%;
+}
+
+header nav a:first-of-type {
+	padding-left: 0;
+}
+
+.social-icons {
+	float: right;
+	width: 20%;
+	display: inline-block;
+	line-height: 3em;
+	text-align: right;
+
+	a {
+		color: rgb(255, 255, 255);
+		text-decoration: none;
+		font-size: 1.2em;
+		transition: all 0.3s ease-out;
+	}
+
+	li {
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+
+header nav {
+	width: 40%;
+}
+
+}
