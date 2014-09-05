@@ -10,6 +10,7 @@
 .grid {
   overflow: hidden;
   clear: both;
+  margin: 0 -10px;
 }
 
 [class^="grid-col-"] {
@@ -40,7 +41,6 @@
   }
 
   .col-content {
-    background: rgb(147,149,152);
     position: absolute;
     top: 0.5em;
     bottom: 0.5em;
@@ -50,6 +50,11 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  
+  .col-content.test {
+    background: rgb(147,149,152);
+  }
+
 }
 
 
