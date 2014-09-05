@@ -58,70 +58,72 @@ cursor: pointer;
 	margin-bottom:20px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], textarea {
-	box-sizing: border-box;
-	background-color: rgb(252, 252, 252);
-	border: 1px solid rgb(220, 220, 220);
-	display: block;
-	font-size: 1em;
-	padding: 0.4em;
-	margin-bottom: 0.4em;
-	width: 100%;
-	vertical-align: middle;
-  font-family: 'Neuzeit';
-}
-
-label {
-	color: rgb(88, 89, 91);
-	border: 0;
-	display: inline-block;
-	font-size: 1em;
-	font-weight: bold;
-	line-height: 1.4em;
-	margin-bottom: 0.25em;
-	position: relative;
-	text-transform: none;
-}
-
-textarea {
-	min-height: 200px;
-}
-
-.digital-details, .print-details {
-	display: none;
-  border-top: 2px solid lightgrey;
-  border-bottom: 2px solid lightgrey;
-  padding: 1em 0;
-
-  input {
-    display: none;
+.hire-us  {
+  input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+  	box-sizing: border-box;
+  	background-color: rgb(252, 252, 252);
+  	border: 1px solid rgb(220, 220, 220);
+  	display: block;
+  	font-size: 1em;
+  	padding: 0.4em;
+  	margin-bottom: 0.4em;
+  	width: 100%;
+  	vertical-align: middle;
+    font-family: 'Neuzeit';
   }
   
-  .grid-col-third {
-    text-align: center;
-    margin: 10px 0;
+
+  label {
+  	color: rgb(88, 89, 91);
+  	border: 0;
+  	display: inline-block;
+  	font-size: 1em;
+  	font-weight: bold;
+  	line-height: 1.4em;
+  	margin-bottom: 0.25em;
+  	position: relative;
+  	text-transform: none;
   }
 
+  textarea {
+  	min-height: 200px;
+  }
+
+  .digital-details, .print-details {
+  	display: none;
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+    padding: 1em 0;
+
+    input {
+      display: none;
+    }
+    
+    .grid-col-third {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+  }
+
+
+  input[type=text].value {
+    background: none;
+    border: none;
+    text-align: center;
+  }
+
+
+  input[type=checkbox]:checked + label {
+      color: red;
+  }
+
+
+
+  form > p, form > div, p.title {
+    margin: 0 0 20px 0;
+  }
 }
-
-
-input[type=text].value {
-  background: none;
-  border: none;
-  text-align: center;
-}
-
-
-input[type=checkbox]:checked + label {
-    color: red;
-}
-
-
-
-form > p, form > div, p.title {
-  margin: 0 0 20px 0;
-}
-
 
 // Fade in animation testing from display none
 

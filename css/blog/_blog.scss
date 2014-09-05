@@ -506,8 +506,10 @@ li.studio a:hover,
 		margin: 2em 0;
 	}
 
-	.inner-content {
-		
+	.inner-content {	
+	width: 85%;
+	float: right;
+
 		h1, h2, h3, h4, h5, h6 {
 			margin: 1em 0;
 		}
@@ -534,8 +536,8 @@ li.studio a:hover,
 		p, ul, .author, h3, h4, h5, ol, blockquote, q {
 			margin: 0.5em 0;
 			line-height: 1.5;
-			width: 85%;
-			float: right;
+			// width: 85%;
+			// float: right;
 		}
 
 
@@ -558,7 +560,7 @@ li.studio a:hover,
 
 
 
-// !!! Group up with caption - little note on how dey be used.
+// !!! Group up with caption - little note on how they are used.
 .images .image-col-3 {
 	width: 33.33%;
 	float: left;
