@@ -1,7 +1,13 @@
 ---
 title: "Up"
-layout: project
+runner: "Helping organisations turn talented young employees and interns into skilled team members."
+meta:
+- UI/UX
+- Branding
+- Design
+- Development
 header_img: /images/up/up-headershot.jpg
+layout: project
 ---
 
 
@@ -9,24 +15,9 @@ header_img: /images/up/up-headershot.jpg
 <div class="hero">
 	<div class="text">
 		<div class="wrapper">
-			<div class="project-title">
-				<h1>Up</h1>
-				<p>Helping organisations turn talented young employees and interns into skilled team members.</p>
-				<ul class="project-meta">
-					<li>UI/UX</li>
-					<li>Branding</li>
-					<li>Design</li>
-					<li>Development</li>
-				</ul>
-				<div class="project-social">
-					<ul>
-						<li><a href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}{{ site.title_appendage | cgi_escape }}&amp;related=madebyfieldwork&amp;url={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}" target="_blank">Tweet</a></li>
-						<li><a href="https://www.facebook.com/dialog/feed?picture=http%3A%2F%2F35c587949a5e6c4ab4cc-fe99d1e1a6eca87157ebc4c97a827cc2.r58.cf2.rackcdn.com%2Fimg%2Fwork%2Fcamp-nothing%2Fcn-header.jpg&amp;name=Camp+Nothing+%E2%80%93+Fieldwork&amp;link=http%3A%2F%2Fmadebyfieldwork.com%2Fwork%2Fcamp-nothing&amp;app_id=456569247759258&amp;redirect_uri=http%3A%2F%2Fmadebyfieldwork.com%2Fwork%2Fcamp-nothing" target="_blank">Share</a></li>
-						<li><a href="http://pinterest.com/pin/create/button/?media=http%3A%2F%2F35c587949a5e6c4ab4cc-fe99d1e1a6eca87157ebc4c97a827cc2.r58.cf2.rackcdn.com%2Fimg%2Fwork%2Fcamp-nothing%2Fcn-header.jpg&amp;url=http%3A%2F%2Fmadebyfieldwork.com%2Fwork%2Fcamp-nothing" target="_blank">Pin</a></li>
-						<li><a href="http://www.tumblr.com/share/photo?source=http%3A%2F%2F35c587949a5e6c4ab4cc-fe99d1e1a6eca87157ebc4c97a827cc2.r58.cf2.rackcdn.com%2Fimg%2Fwork%2Fcamp-nothing%2Fcn-header.jpg&amp;caption=Camp+Nothing+%E2%80%93+Fieldwork.+In+September+2013+Camp+Nothing+brought+together+50+people+from+15+cities+across+the+UK+to+kickstart+new+Good+for+Nothing+chapters%2C+spreading+the+social-innovation+bug+far+and+wide.&amp;click_thru=http%3A%2F%2F35c587949a5e6c4ab4cc-fe99d1e1a6eca87157ebc4c97a827cc2.r58.cf2.rackcdn.com%2Fimg%2Fwork%2Fcamp-nothing%2Fcn-header.jpg" target="_blank">Tumbl</a></li>
-					</ul>
-</div>
-			</div>
+			
+			{% include project-title.html %}
+			
 			<div class="project-description">
 				<h2>The Challenge</h2>
 				<p>Up helps employers confidently train and support young employees in their professional development. Having done some discovery and UX work on the project already, the client brought us in to help define key workflows, wireframe, and design and build the user interfaces.</p>
@@ -38,6 +29,7 @@ header_img: /images/up/up-headershot.jpg
 		</div>	
 	</div>
 </div>
+
 
 <div class="wrapper">
 
@@ -55,17 +47,15 @@ header_img: /images/up/up-headershot.jpg
 			<div><img src="{{ site.baseurl }}/images/up/pointing.jpg" alt="" /></div>
 		</div>
 		<img src="{{ site.baseurl }}/images/up/up-icons2.svg" alt="" />
-
 	</div>
 
-
-			<div class="project-info">
-				<span class="elements">Related</span>
-				<ul>
-					<li>Up</li>
-					<li>Journey Tracker</li>
-				</ul>
-			</div>
-
+	<div class="project-info">
+		<span class="elements">Related</span>
+		<ul>
+			<li>Up</li>
+			<li>Journey Tracker</li>
+		</ul>
+	</div>
 
 </div>
+

@@ -1,17 +1,24 @@
 ---
+title: "Plan.Do"
+runner: "Helping young people develop employability skills through social action projects."
+additional: "As a finalist in the Google Global Impact Awards, Plan.Do won £200,000 to continue development of the project."
+meta:
+- UI/UX
+- Branding
+- Design
+- Development
 layout: project
+header_img: /images/plando/pd-andyipad.jpg
 ---
 
 
-<div style="background-image: url('{{ site.baseurl }}/images/plando/pd-andyipad.jpg');" class="hero-picture"></div>
+<div style="background-image: url('{{ site.baseurl }}{{ page.header_img }}');" class="hero-picture"></div>
 <div class="hero">
 	<div class="text">
 		<div class="wrapper">
-			<div class="project-title">
-				<h1>Plan.Do</h1>
-				<p>Helping young people develop employability skills through social action projects.</p>
-				<p class="additional">As a finalist in the Google Global Impact Awards, Plan.Do won £200,000 to continue development of the project.</p>
-			</div>
+			
+			{% include project-title.html %}
+
 			<div class="project-description">
 				<p>Catch-22 came to us having identified an opportunity to involve more young people with social action projects, helping them gain and evidence skills for employment at the same time.</p>
 				<p>The organisation were keen to involve their target audience in the discovery phase—something we like to do at Fieldwork. We collaborated with Catch-22 staff and groups of young people from Young Advisors on a series of workshops to define key design objectives, user motivations, and product features. Workshops devised to make the group feel like a team working on a new product, rather than like a focus group, made for productive and insightful sessions.</p>
@@ -25,86 +32,44 @@ layout: project
 
 <div class="wrapper">
 
-	<div class="grid">
-		<div class="grid-col-20 full-size-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-ipadprojectdash.svg);" class="col-content"></div>
+	<div class="project-grid">
+
+		<img src="{{ site.baseurl }}/images/plando/pd-ipadprojectdash.svg" alt="" />
+
+		<p class="caption-r arrow-down right">Discovery Workshops</p>
+
+		<div class="project-grid-col-2">
+			<div><img src="{{ site.baseurl }}/images/plando/pd-workshop2.jpg" alt="" /></div>
+			<div><img src="{{ site.baseurl }}/images/plando/pd-workshop3.jpg" alt="" /></div>
 		</div>
+		<div class="project-grid-col-2">
+			<div><img src="{{ site.baseurl }}/images/plando/pd-workshop4.jpg" alt="" /></div>
+			<div><img src="{{ site.baseurl }}/images/plando/pd-workshop1.jpg" alt="" /></div>
+		</div>
+
+		<p class="caption-r arrow-down right">UX/UI Design &amp; Development</p>
+		
+		<img src="{{ site.baseurl }}/images/plando/pd-iphonetasklist.svg" alt="" />
+		<img src="{{ site.baseurl }}/images/plando/pd-userdash.jpg" alt="" />
+		<img src="{{ site.baseurl }}/images/plando/pd-cinemadisplaydash.svg" alt="" />
+		<img src="{{ site.baseurl }}/images/plando/pd-browserhomepage.jpg" alt="" />
+
+		<p class="caption-r arrow-down right">Branding &amp; Iconography</p>
+
+		<div class="project-grid-col-2">
+			<div><img src="{{ site.baseurl }}/images/plando/pd-marque.svg" alt="" /></div>
+			<div><img src="{{ site.baseurl }}/images/plando/pd-icons.svg" alt="" /></div>
+		</div>
+		<img src="{{ site.baseurl }}/images/plando/pd-icons.svg" alt="" />
+
 	</div>
 
-	<p class="caption-r arrow-down right">
-		Discovery Workshops
-	</p>
-
-	<div class="grid">
-		<div class="grid-col-10 med-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-workshop2.jpg);" class="col-content"></div>
-		</div>
-		<div class="grid-col-10 med-cube col-r">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-workshop3.jpg);" class="col-content">
-			</div>
-		</div>
-		<div class="grid-col-10 col-r med-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-workshop4.jpg);" class="col-content"></div>
-		</div>
-		<div class="grid-col-10 med-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-workshop1.jpg);" class="col-content"></div>
-		</div>
+	<div class="project-info">
+		<span class="elements">Related</span>
+		<ul>
+			<li>Up</li>
+			<li>Journey Tracker</li>
+		</ul>
 	</div>
-	<p class="caption-r arrow-down right">
-		UX/UI Design &amp; Development
-	</p>
-	<div class="grid">
-		<div class="grid-col-20 full-size-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-iphonetasklist.svg);" class="col-content"></div>
-		</div>
-		<div class="grid-col-20 full-size-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-userdash.jpg);" class="col-content"></div>
-		</div>
-		<div class="grid-col-20 full-size-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-cinemadisplaydash.svg);" class="col-content"></div>
-		</div>
-		<div class="grid-col-20 full-size-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-browseruserdash.svg);" class="col-content"></div>
-		</div>
-	</div>
-
-
-
-	<p class="caption-r arrow-down right">
-		Branding &amp; Iconography
-	</p>
-
-	<div class="grid">
-		<div class="grid-col-10 med-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-marque.svg);" class="col-content"></div>
-		</div>
-		<div class="grid-col-10 med-cube">
-			<div style="background-image: url({{ site.baseurl }});" class="col-content test"></div>
-		</div>
-		<div class="grid-col-20 full-size-cube">
-			<div style="background-image: url({{ site.baseurl }}/images/plando/pd-icons.svg);" class="col-content"></div>
-		</div>
-	</div>
-
-
-			<div class="project-info">
-				<span class="info-title">Project Info</span>
-				<span class="clients">Client</span>
-				<span class="client">Arthur</span>
-				<span class="elements">Disciplines</span>
-				<ul>
-					<li>Product discovery</li>
-					<li>UI/UX</li>
-					<li>Branding</li>
-					<li>Design</li>
-					<li>Development</li>
-				</ul>
-				<span class="elements">Related</span>
-				<ul>
-					<li>Up</li>
-					<li>Journey Tracker</li>
-				</ul>
-			</div>
-
 
 </div>

@@ -1,0 +1,18 @@
+<div class="project-title">
+	<h1>{{ page.title }}</h1>
+	<p>{{ page.runner }}</p>
+
+	{% if page.additional %}
+		<p class="additional">{{ page.additional }}</p>
+	{% endif %}
+	
+	{% if page.meta %}
+		<ul class="project-meta">
+			{% for meta in page.meta %}
+				<li>{{ meta }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+	{% include project-social.html %}
+</div>

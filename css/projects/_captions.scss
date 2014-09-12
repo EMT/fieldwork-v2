@@ -1,24 +1,18 @@
-.col-r, .caption-r {
-  float: right;
-}
-
 
 // Captions 
 
-.caption-l {
-    float: left;
-}
-
-.caption-l, .caption-r {
-  width: 50%;
+.caption-l, 
+.caption-r {
+  // width: 50%;
   @include border-box;
-  padding: 3em 0.5em;
+  padding: 3em 0 3em 50%;
   margin: 2em 0;
   position: relative;
   color: rgb(167,169,172);
 }
 
-.arrow-up:after, .arrow-down:after {
+.arrow-up:after, 
+.arrow-down:after {
   background-image: url("../images/arrow.png");
   background-repeat: no-repeat;
   background-size: 23px 58px;
@@ -33,7 +27,8 @@
   background-position: 1% 1%;
 }
 
-.arrow-up:after, .arrow-down:after {
+.arrow-up:after, 
+.arrow-down:after {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -45,26 +40,24 @@
   background-position: 1% 100%;
 }
 
-.left, .left:after {
-  left: 1%;
+.left, 
+.left:after {
+  left: 0;
 }
 
-.right, .right:after {
-  right: 1%;
+.right, 
+.right:after {
+  right: 0;
 }
 
-
-.caption-l:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 
 
 @media screen and (max-width: 600px) {
 
-.caption-l, .caption-r {
-  width: 100%;
-}
+  .caption-l, 
+  .caption-r {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 }
