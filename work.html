@@ -9,7 +9,7 @@ layout: default
   <ul class="projects">
     {% for project in site.work %}
       <li>
-        <a href="{{ project.url }}">
+        <a href="{{ site.baseurl }}{{ project.url }}">
           <h2>{{ project.title }}<h2>
           <p class="content-text">{{ project.runner }}</p>
         </h2>
