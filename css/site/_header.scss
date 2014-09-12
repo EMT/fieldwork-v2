@@ -160,10 +160,9 @@ header nav a:first-of-type {
 
 .hero-header header .social-icons a {
 	color: rgb(255,255,255);
-
-	&.visible {
-		color: rgb(102,102,102);
-	}
+}
+.hero-header header.visible .social-icons a {
+	color: rgb(102,102,102);
 }
 
 
