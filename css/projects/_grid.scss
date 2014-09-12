@@ -11,6 +11,11 @@
   overflow: hidden;
   clear: both;
   margin: 0 -10px;
+
+  > img {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
 }
 
 [class^="grid-col-"] {

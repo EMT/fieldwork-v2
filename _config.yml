@@ -3,10 +3,11 @@ title: "Fieldwork — We Make Things"
 title_appendage: " – Fieldwork"
 description: "This is a description."
 baseurl: "/fieldwork-v2"
-url: "http://yourdomain.com"
+url: "http://madebyfieldwork.com"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 sass: 
   sass_dir: css
+  sourcemap: true

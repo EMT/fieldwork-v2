@@ -1,34 +1,18 @@
 
 // Basic Styles
 
-@font-face {
-  font-family: 'Neuzeit';
-  src: url('/fonts/neuzeit-book.eot'); /* IE9 Compat Modes */
-  src: url('/fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/neuzeit-book.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/neuzeit-book.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/neuzeit-book.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'fontello';
-  src: url('/fonts/fontello.eot?67832890');
-  src: url('/fonts/fontello.eot?67832890#iefix') format('embedded-opentype'),
-       url('/fonts/fontello.woff?67832890') format('woff'),
-       url('/fonts/fontello.ttf?67832890') format('truetype'),
-       url('/fonts/fontello.svg?67832890#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
   font-family: 'Neuzeit';
+  font-size: 15px;
+  line-height: 1.4em;
   color: rgb(109,110,113);
   background: rgb(239,239,239);
   margin-top: 6em;
   position: relative;
   min-height: 100%;
 }
+
 
  
  [class^="icon-"]:before, [class*=" icon-"]:before {
@@ -98,5 +82,17 @@ body {
 @mixin border-box{
   -moz-box-sizing:border-box;
   box-sizing:border-box;
+}
+
+@mixin column($count, $width, $gutter) {
+  -webkit-column-count: $count;
+  -moz-column-count: $count;
+  column-count: $count;
+  -webkit-column-width: $width;
+  -moz-column-width: $width;
+  column-width: $width;
+  -webkit-column-gap: $gutter;
+  -moz-column-gap: $gutter;
+  column-gap: $gutter;
 }
 

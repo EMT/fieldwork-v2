@@ -37,12 +37,10 @@
 <script>
 	$(window).on('scroll', function() {
 		// Opacity for the header on project pages
-		var bheight = $(window).height(),
-			percent = 0.6,
-			hpercent = bheight * percent,
+		var hero_height = $('.hero-picture').height(),
 			header = $('.project header');
 
-	    if ($(window).scrollTop() > hpercent) {
+	    if ($(window).scrollTop() > hero_height) {
 	        header.addClass('visible');
 	    }
 	    else{
