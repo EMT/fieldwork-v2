@@ -1,0 +1,53 @@
+---
+title: "Carbon Coop"
+runner: "Carbon Co-op are a groundbreaking group of residents and housing experts who are pioneering a new model for making homes in Greater Manchester more energy efficient."
+meta:
+- UI/UX
+- Branding
+- Design
+- Development
+layout: project
+header_img: /images/plando/pd-andyipad.jpg
+related:
+- "Plan.Do": /work/plando
+- "Up": /work/up
+---
+
+
+<div style="background-image: url('{{ site.baseurl }}{{ page.header_img }}');" class="hero-picture"></div>
+<div class="hero">
+	<div class="text">
+		<div class="wrapper">
+			
+			{% include project-title.html %}
+
+			<div class="project-description">
+				<p>Designing and developing a new website for TILT gave us the opportunity to explore ways to tell the stories of their innovative process. The challenge here was in creating a content managed site that would use the lovely imagery they’ve collected throughout their work to showcase the story of each project and product.</p>
+				<p>We devised a grid system with strict image dimensions to provide a consistent sense of order at varying screen sizes and across various devices. This grid combined with a minimal design allows TILT’s wealth of content to do the talking, and their work to shine.</p>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="wrapper">
+
+	<div class="project-grid">
+
+		<img src="{{ site.baseurl }}/images/tilt/tilt-1.jpg" alt="" />
+		
+	</div>
+
+	{% if page.related %}
+		<div class="project-info">
+			<h2 class="elements">Related</h2>
+			<ul>
+				{% for link in page.related %}
+					{% for l in link %}
+						<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
+					{% endfor %}
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
+
+</div>
