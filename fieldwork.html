@@ -1,0 +1,68 @@
+---
+title: "Fieldwork"
+runner: "We love our client work, but our in-house projects are also an important part of what we do. We developed our own identity with an eye on both sides of Fieldwork."
+meta:
+- UI/UX
+- Branding
+- Design
+- Development
+layout: project
+header_img: /images/fieldwork/fw-buscardheader.jpg
+related:
+- "Plan.Do": /plando
+- "Up": /up
+---
+
+
+<div style="background-image: url('{{ site.baseurl }}{{ page.header_img }}');" class="hero-picture"></div>
+<div class="hero">
+	<div class="text">
+		<div class="wrapper">
+			
+			{% include project-title.html %}
+
+			<div class="project-description">
+				<p>At Fieldwork, we make sure to keep a good balance between client work and in-house projects. We needed a visual identity flexible enough to work across anything from project proposals and invoices, through fun prints and publications, all the way to super geeky stuff like code projects and gadgets.</p>
+				<p>After establishing some guiding principals about how we want to work, who we’d most like to work with, and what we want to work on, we wrote a short and simple manifesto for Fieldwork, and collected some visual inspiration based around those ideas.</p>
+				<p>Through a process of iteration, we developed the simple identity you see on this page and across the website. Then we worked on a collection of visual materials to bring the character of our company to life. It’s a work-in-progress, and always will be.</p>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="wrapper">
+
+	<div class="project-grid">
+
+		<img src="{{ site.baseurl }}/images/fieldwork/fw-1.jpg" alt="" />
+		<div class="project-grid-col-2">
+			<div><img src="{{ site.baseurl }}/images/fieldwork/fw-1.jpg" alt="" /></div>
+			<div><img src="{{ site.baseurl }}/images/fieldwork/fw-1.jpg" alt="" /></div>
+		</div>
+		<img src="{{ site.baseurl }}/images/fieldwork/fw-7.jpg" alt="" />
+		<img src="{{ site.baseurl }}/images/fieldwork/fw-3.jpg" alt="" />
+		<img src="{{ site.baseurl }}/images/fieldwork/fw-5.jpg" alt="" />
+		<img src="{{ site.baseurl }}/images/fieldwork/fw-9.jpg" alt="" />
+		<div class="project-grid-col-2">
+			<div><img src="{{ site.baseurl }}/images/fieldwork/fw-11.jpg" alt="" /></div>
+			<div><img src="{{ site.baseurl }}/images/fieldwork/fw-12.jpg" alt="" /></div>
+		</div>
+		<img src="{{ site.baseurl }}/images/fieldwork/fw-10.jpg" alt="" />
+		<img src="{{ site.baseurl }}/images/fieldwork/fw-2.jpg" alt="" />
+
+	</div>
+
+	{% if page.related %}
+		<div class="project-info">
+			<h2 class="elements">Related</h2>
+			<ul>
+				{% for link in page.related %}
+					{% for l in link %}
+						<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
+					{% endfor %}
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
+
+</div>
