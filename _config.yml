@@ -4,6 +4,9 @@ title_appendage: " – Fieldwork"
 description: "This is a description."
 baseurl: "/fieldwork-v2"
 url: "http://madebyfieldwork.com"
+collections:
+  work:
+    output: true
 
 # Build settings
 markdown: kramdown
