@@ -4,17 +4,18 @@ description: "Our Projects"
 layout: default
 ---
 
-<div class="home wrapper">
+<div class="wrapper">
 
-  <h1>Projects</h1>
+  <!-- <h1>Projects</h1> -->
 
   <ul class="projects">
     {% for project in site.work %}
       <li>
         <a href="{{ site.baseurl }}{{ project.url }}">
-          <h2>{{ project.title }}<h2>
-          <p class="content-text">{{ project.runner }}</p>
-        </h2>
+          <h2>{{ project.title }}</h2>
+          <img src="{{ site.baseurl }}{{ project.header_img }}" alt="" />
+          <p class="project-index-content">{{ project.runner }}</p>
+        </a>
       </li>
     {% endfor %}
   </ul>

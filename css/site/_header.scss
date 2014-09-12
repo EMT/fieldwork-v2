@@ -3,7 +3,7 @@
 
 
 header {
-	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.9);
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -125,10 +125,6 @@ nav .index:hover {
 // TEMP ICON/HEADER STUFF.
 
 
-header.visible .social-icons a {
-	color: rgb(102,102,102);
-}
-
 header .marque {
 	float: left;
 }
@@ -151,7 +147,7 @@ header nav a:first-of-type {
 	text-align: right;
 
 	a {
-		color: rgb(255, 255, 255);
+		color: rgb(102,102,102);
 		text-decoration: none;
 		font-size: 1.2em;
 		transition: all 0.3s ease-out;
@@ -162,10 +158,19 @@ header nav a:first-of-type {
 	}
 }
 
+.hero-header header .social-icons a {
+	color: rgb(255,255,255);
+
+	&.visible {
+		color: rgb(102,102,102);
+	}
+}
+
+
 @media only screen and (max-width: 900px) {
 
-header nav {
-	width: 40%;
-}
+	header nav {
+		width: 40%;
+	}
 
 }

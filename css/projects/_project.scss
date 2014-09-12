@@ -1,13 +1,64 @@
 
+/**
+ * Projects index page styles
+ */
+
+.projects {
+	overflow: hidden;
+	margin: 0 -0.5em;
+	padding-bottom: 4em;
+
+	li {
+		@include border-box();
+		width: 33.33%;
+		float: left;
+		padding: 0 0.5em 1em;
+		position: relative;
+	}
+	img {
+		max-width: 100%;
+	}
+	a {
+		text-decoration: none;
+		color: rgb(102,102,102);
+	}
+	h2 {
+		font-size: 1.5em;
+		line-height: 1.5em;
+		// color: rgb(244,52,67);
+		color: rgb(255,255,255);
+		position: absolute;
+		top: 1em;
+		bottom: 1em;
+		left: 1.5em;
+		right: 1.5em;
+	}
+	p {
+		background: rgba(255,255,255,0.9);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0.5em;
+		right: 0.5em;
+		padding: 1em;
+		opacity: 0;
+		transition: all .3s ease-out;
+	}
+	p:hover {
+		opacity: 1;
+	}
+}
+
+
+/**
+ * Individual project page styles
+ */
+
 // All of this could do with double checking - it got quite messy at this point with the blog and the site in two different directories.
 
 body.project {
 	margin-top: 0;
 	background: rgb(255,255,255);
-}
-
-body.project footer {
-	position: static;
 }
 
 .project header {
