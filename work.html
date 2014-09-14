@@ -14,7 +14,9 @@ layout: default
         <a href="{{ site.baseurl }}{{ project.url }}">
           <h2>{{ project.title }}</h2>
           <img src="{{ site.baseurl }}{{ project.header_img }}" alt="" />
-          <p class="project-index-content">{{ project.runner }}</p>
+          <p class="project-index-content">
+            {{ project.meta | array_to_sentence_string }}
+          </p>
         </a>
       </li>
     {% endfor %}
