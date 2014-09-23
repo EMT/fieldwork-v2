@@ -128,7 +128,7 @@ cursor: pointer;
 // Fade in animation testing from display none
 
 .shown {
-	display: block;
+	display: block !important;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
