@@ -140,11 +140,8 @@ header nav a:first-of-type {
 }
 
 .social-icons {
-	float: right;
-	width: 20%;
 	display: inline-block;
 	line-height: 3em;
-	text-align: right;
 
 	a {
 		color: rgb(102,102,102);
@@ -156,6 +153,12 @@ header nav a:first-of-type {
 	li {
 		display: inline-block;
 	}
+}
+
+.header-social-icons {
+	float: right;
+	width: 20%;
+	text-align: right;
 }
 
 .hero-header header .social-icons a {

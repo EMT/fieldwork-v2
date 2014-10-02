@@ -1,0 +1,71 @@
+
+/**
+ * Styles for page setions
+ */
+
+.hero {
+	
+	.hero-description {
+		width: 50%;
+		float: left;
+
+		h2 {
+			color: red;
+			margin-bottom: 0.5em;
+		}
+
+		p {
+			font-size: 1.4666em;
+			line-height: 1.4545em;
+		}
+	}
+
+	&.pop-it-section {
+		h1 {
+			color: rgb(255,255,255);
+		}
+		.text {
+			color: rgb(255,255,255);
+			background: rgb(243,51,68);
+		}
+	}
+
+}
+
+.content-section-body {
+	width: 50%;
+	float: left;
+	margin-bottom: 2em;
+	overflow: hidden;
+	@include column(2, 300px, 2em);
+
+	.pop-it-col-2-1 {
+		padding-bottom: 3em;
+	}
+
+	h2 {
+		margin: 3em 0 1em;
+		&:first-child {
+			margin-top: 0;
+		}
+
+		span {
+			display: block;
+		}
+	}
+
+	ul {
+		list-style: disc;
+		padding-left: 1em;
+
+		&.social-icons {
+			padding: 0;
+			list-style: none;
+
+			a {
+				color: rgb(164,165,168);
+			}
+		}
+	}
+}
+
