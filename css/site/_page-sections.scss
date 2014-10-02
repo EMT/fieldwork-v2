@@ -37,10 +37,27 @@
 	float: left;
 	margin-bottom: 2em;
 	overflow: hidden;
-	@include column(2, 300px, 2em);
 
 	.pop-it-col-2-1 {
 		padding-bottom: 3em;
+		@include column(2, 300px, 2em);
+	}
+
+	.pop-it-mod-2-1 {
+		box-sizing: border-box;
+		padding-bottom: 3em;
+		padding-right: 2em;
+		width: 50%;
+		float: left;
+	}
+
+	.pop-it-mod-2-1:nth-child(odd) {
+		padding-right: 1em;
+		padding-left: 0;
+	}
+	.pop-it-mod-2-1:nth-child(even) {
+		padding-right: 0;
+		padding-left: 1em;
 	}
 
 	h2 {
