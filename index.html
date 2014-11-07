@@ -1,20 +1,46 @@
 ---
-layout: default
+layout: home
+header_img: /images/home/header-illustration.svg
 ---
 
 <div class="home">
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="home-page-grid">
+    <div class="grid-item">
+      <a href=""><img src="{{site.baseurl}}/images/home/studio.jpg" alt=""></a>
+    </div>
+    <div class="grid-item">
+      <img src="{{site.baseurl}}/images/home/common-seas.png" alt=""></a>
+    </div>
+    <div class="grid-item">
+      <img src="{{site.baseurl}}/images/home/dragon.png" alt=""></a>
+    </div>
+    <div class="grid-item"></div>
+  </div>
 
 </div>
+
+<style>
+
+.home-page .hero-picture {
+  background-position: bottom;
+}
+
+.home{
+  margin:80px 0;
+  overflow: hidden;
+}
+
+.grid-item{
+  height: 0;
+  padding-bottom:67.9%; /* only works if width is 100%*/
+  padding-bottom:34%;
+  width: 50%;
+  background: lightgreen;
+  float: left;
+}
+
+.grid-item img{
+  width:100%;
+}
+</style>
