@@ -1,0 +1,65 @@
+.homepage-header {
+	background: rgb(244,241,227);
+	padding-top: 15%;
+	position: relative;
+}
+
+.homepage-header > svg {
+	display: block;
+margin-bottom: 0px;
+position: relative;
+bottom: -2px;
+}
+
+.home-page {
+	margin-top: 0;
+}
+
+.home-page-intro {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	width: 30%;
+	font-size: 1.5em;
+	color: rgb(147, 149, 152);
+	line-height: 1.4;
+
+	h1 {
+		color: rgb(244, 52, 67);
+		margin-bottom: 0.6em;
+	}
+}
+
+.inner-content {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	left: 10px;
+	background: lightgreen;
+	bottom: 10px;
+}
+
+.grid-item {
+	position: relative;
+}
+
+.home-page .hero-picture {
+  background-position: bottom;
+}
+
+.home{
+  margin:80px 0;
+  overflow: hidden;
+}
+
+.grid-item{
+  height: 0;
+  padding-bottom:67.9%; /* only works if width is 100%*/
+  padding-bottom:34.4%;
+  width: 50%;
+  float: left;
+}
+
+.grid-item img{
+  width:100%;
+}
