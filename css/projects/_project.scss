@@ -100,15 +100,11 @@ body.project {
 	height: 65%;
 	width: 100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	-webkit-background-size:cover;
 	background-size: cover;
-}
-
-@media screen and (min-width: 950px) {
-	.hero-picture {
-		background-attachment: fixed;
-	}
+	position: relative;
+	z-index: -1;
 }
 
 .hero {
