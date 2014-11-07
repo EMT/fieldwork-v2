@@ -35,7 +35,7 @@
 
 
 <script>
-	$(window).on('scroll', function() {
+	$(window).on('scroll load', function() {
 		// Opacity for the header on project pages
 		var hero_height = $('.hero-picture').height(),
 			header = $('.project header');
@@ -47,12 +47,11 @@
 	        header.removeClass('visible');
 	    }
 
-	});
-
-	$(window).scroll(function() {
 	if ( $(window).outerWidth() >= 900 ) {
 		var scrolledY = $(window).scrollTop();
 		$('.hero-picture').css('transform', 'translateY(' + ((scrolledY)) + 'px)');
-	}
-});
+	}	
+	});
+
+
 </script>
