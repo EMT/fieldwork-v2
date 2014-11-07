@@ -17,11 +17,6 @@ header {
 // 	transition: all 0.3s ease-out;
 // } 
 
-header.visible {
-	border-bottom: 1px solid rgba(109,110,113,0.25);
-	background: rgba(255,255,255,1);
-}
-
 .index-open header {
 	border-bottom-color: rgb(0,77,89);
 }
@@ -159,13 +154,6 @@ header nav a:first-of-type {
 	float: right;
 	width: 20%;
 	text-align: right;
-}
-
-.hero-header header .social-icons a {
-	color: rgb(255,255,255);
-}
-.hero-header header.visible .social-icons a {
-	color: rgb(102,102,102);
 }
 
 
