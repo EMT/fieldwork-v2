@@ -1,0 +1,73 @@
+---
+title: "MAVIS"
+runner: "A print making, internet connected, musical keyboard to encourage hands-on play and teamwork at an exhibition."
+meta:
+- UI/UX
+- Branding
+- Design
+- Development
+layout: project
+header_img: /images/mavis/mavis-topimage.jpg
+related:
+- "Plan.Do": /work/plando
+- "Up": /work/up
+---
+
+
+<div class="hero">
+	<div class="text">
+		<div class="wrapper">
+			
+			{% include project-title.html %}
+
+			<div class="project-description">
+				<p>When asked if we’d like to contribute a print for an exhibition called The Science of Play–as part of Design Manchester, and to raise money for Play360–we thought we’d take the brief and throw it around a bit. So we built a machine that could be used to generate one-of-a-kind prints to take away from the exhibition.</p>
+				<p>MAVIS (Musically Articulated Visual Illustration System) is a hand-built keyboard, connected to a computer and the internet via an Arduino. Play the keys to make sounds as someone else turns the handle, and MAVIS draws lines on the spooling paper as you go. When youre done, cut off your print and take it with you.</p>
+				<p>MAVIS has her own website, where she automatically posts her players’ sessions, in real-time, as digital representations of the prints they produce.</p>
+				<ul>
+					<li><a href="http://mavis.madebyfieldwork.com">MAVIS live on the web</a></li>
+					<li><a href="">Read more about MAVIS</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="wrapper">
+
+	<div class="project-grid">
+
+		<img src="{{ site.baseurl }}/images/mavis/mavis-2.jpg" alt="" />
+		<img src="{{ site.baseurl }}/images/mavis/mavis-6.jpg" alt="" />
+		<img src="{{ site.baseurl }}/images/mavis/mavis-5.jpg" alt="" />
+		<div class="project-grid-col-2">
+			<div><img src="{{ site.baseurl }}/images/mavis/mavis-type.jpg" alt="" /></div>
+			<div><img src="{{ site.baseurl }}/images/mavis/mavis-4.jpg" alt="" /></div>
+		</div>
+		<img src="{{ site.baseurl }}/images/mavis/mavis-5.jpg" alt="" />
+		<div class="project-grid-col-2">
+			<div><img src="{{ site.baseurl }}/images/mavis/mavis-woodcut.jpg" alt="" /></div>
+			<div><img src="{{ site.baseurl }}/images/mavis/mavis-painting.jpg" alt="" /></div>
+		</div>
+		<div class="project-grid-col-2">
+			<div><img src="{{ site.baseurl }}/images/mavis/mavis-stuff.jpg" alt="" /></div>
+			<div><img src="{{ site.baseurl }}/images/mavis/mavis-spring.jpg" alt="" /></div>
+		</div>
+		<img src="{{ site.baseurl }}/images/mavis/mavis-playing.jpg" alt="" />
+		
+	</div>
+
+	{% if page.related %}
+		<div class="project-info">
+			<h2 class="elements">Related</h2>
+			<ul>
+				{% for link in page.related %}
+					{% for l in link %}
+						<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
+					{% endfor %}
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
+
+</div>
