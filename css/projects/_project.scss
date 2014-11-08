@@ -19,6 +19,9 @@
 		figure {
 			background-color: rgb(232,57,68);
 			overflow: hidden;
+			position: relative;
+			height: 0;
+			padding-bottom: 60%;
 		}
 		img {
 			display: block;
@@ -39,9 +42,9 @@
 		.project-index-content {
 			color: rgb(255,255,255);
 			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0.5em;
+			top: auto;
+			bottom: 2em;
+			left: 25%;
 			right: 0.5em;
 			max-width: 20em;
 			padding-top: 2em;
