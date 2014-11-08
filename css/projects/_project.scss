@@ -10,42 +10,49 @@
 
 	li {
 		@include border-box();
-		width: 33.33%;
+		width: 50%;
 		float: left;
-		padding: 0 0.5em 1em;
+		padding: 0 0.5em 0;
+		margin-bottom: 3em;
 		position: relative;
-	}
-	img {
-		max-width: 100%;
-	}
-	a {
-		text-decoration: none;
-		color: rgb(102,102,102);
-	}
-	h2 {
-		font-size: 1.5em;
-		line-height: 1.5em;
-		// color: rgb(244,52,67);
-		color: rgb(255,255,255);
-		position: absolute;
-		top: 1em;
-		bottom: 1em;
-		left: 1.5em;
-		right: 1.5em;
-	}
-	p {
-		background: rgba(255,255,255,0.9);
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0.5em;
-		right: 0.5em;
-		padding: 1em;
-		opacity: 0;
-		transition: all .3s ease-out;
-	}
-	p:hover {
-		opacity: 1;
+	
+		img {
+			max-width: 100%;
+			transition: all .3s ease-out;
+		}
+		a {
+			text-decoration: none;
+			color: rgb(102,102,102);
+		}
+		h2 {
+			
+		}
+		.project-index-meta {
+			opacity: 0.6;
+		}
+		.project-index-content {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0.5em;
+			right: 0.5em;
+			max-width: 20em;
+			padding-top: 2em;
+			padding-right: 1em;
+			opacity: 0;
+			transition: all .3s ease-out;
+		}
+		h2,
+		p {
+			padding-left: 30%; 
+		}
+
+		&:hover img {
+			opacity: 0.1;
+		}
+		&:hover .project-index-content {
+			opacity: 1;
+		}
 	}
 }
 
@@ -180,6 +187,22 @@ body.project {
 
 }
 
+.project-description {
+	a {
+		color: rgb(23,77,89);
+		text-decoration: none;
+		-webkit-transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out;
+		-ms-transition: all .3s ease-out;
+		-o-transition: all .3s ease-out;
+		transition: all .3s ease-out;
+
+		&:hover {
+			color: rgb(81,206,201);
+		}
+	}
+}
+
 .project-social {
 	float: left;
 	font-size: 0.6666em;
@@ -191,15 +214,15 @@ body.project {
 	li {
 		display: inline-block;
 	}
-	li a:before {
+	li:before {
 		content: '  /  ';
 	}
-	li:first-child a:before {
+	li:first-child:before {
 		content: '';
 	}
 	a {
 		text-decoration: none;
-		color: rgb(153,153,153);
+		color: rgb(23,77,89);
 		-webkit-transition: all .3s ease-out;
 		-moz-transition: all .3s ease-out;
 		-ms-transition: all .3s ease-out;
@@ -207,7 +230,7 @@ body.project {
 		transition: all .3s ease-out;
 	}
 	a:hover {
-		color: rgb(23,77,89);
+		color: rgb(81,206,201);
 	}
 }
 

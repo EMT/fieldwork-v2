@@ -12,10 +12,13 @@ layout: default
     {% for project in site.work %}
       <li>
         <a href="{{ site.baseurl }}{{ project.url }}">
-          <h2>{{ project.title }}</h2>
           <img src="{{ site.baseurl }}{{ project.header_img }}" alt="" />
-          <p class="project-index-content">
+          <h2>{{ project.title }}</h2>
+          <p class="project-index-meta">
             {{ project.meta | array_to_sentence_string }}
+          </p>
+          <p class="project-index-content">
+            {{ project.runner }}
           </p>
         </a>
       </li>
