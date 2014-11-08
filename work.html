@@ -12,7 +12,9 @@ layout: default
     {% for project in site.work %}
       <li>
         <a href="{{ site.baseurl }}{{ project.url }}">
-          <img src="{{ site.baseurl }}{{ project.header_img }}" alt="" />
+          <figure>
+            <img src="{{ site.baseurl }}{{ project.header_img }}" alt="" />
+          </figure>
           <h2>{{ project.title }}</h2>
           <p class="project-index-meta">
             {{ project.meta | array_to_sentence_string }}

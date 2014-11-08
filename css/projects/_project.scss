@@ -16,9 +16,15 @@
 		margin-bottom: 3em;
 		position: relative;
 	
+		figure {
+			background-color: rgb(232,57,68);
+			overflow: hidden;
+		}
 		img {
+			display: block;
 			max-width: 100%;
 			transition: all .3s ease-out;
+			-webkit-backface-visibility: hidden;
 		}
 		a {
 			text-decoration: none;
@@ -31,6 +37,7 @@
 			opacity: 0.6;
 		}
 		.project-index-content {
+			color: rgb(255,255,255);
 			position: absolute;
 			top: 0;
 			bottom: 0;
@@ -49,6 +56,7 @@
 
 		&:hover img {
 			opacity: 0.1;
+			-webkit-backface-visibility: hidden;
 		}
 		&:hover .project-index-content {
 			opacity: 1;
