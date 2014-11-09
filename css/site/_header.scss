@@ -8,7 +8,7 @@ header {
 	left: 0;
 	right: 0;
 	top: 0;
-	padding: 0.25em 0;
+	padding: 0;
 	z-index: 2;
 }
 
@@ -25,7 +25,7 @@ header {
 }
 
 header .marque {
-    margin-top: 0.85em;
+    margin-top: 1em;
     height: 20px;
     display: inline-block;
     position: relative;
@@ -44,16 +44,17 @@ header nav a {
 	text-decoration: none;
 	line-height: 3em;
 	color: rgb(102,102,102);
-	border-bottom: 1px solid transparent;
+	border-bottom: 3px solid transparent;
 	display: block;
 	padding: 0 0.6em;
 	float: left;
+	-webkit-transition: all .3s ease-out;
 }
 header nav a:hover,
 .work nav a.work,
 .us nav a.us,
 .journal nav a.journal {
-	border-bottom: 1px solid rgb(255,48,67);
+	border-bottom: 3px solid rgb(255,48,67);
 }
 nav .search,
 nav .index {
@@ -92,6 +93,7 @@ nav .index {
 	width: 16px;
 	margin: 0 0 0 0.6em;
 	position: relative;
+	-webkit-transition: none;
 }
 .index-open nav .index,
 nav .index:hover {
@@ -128,10 +130,11 @@ header nav {
 	float: right;
 	overflow: hidden;
 	width: 30%;
+	margin-right: 0.6em;
 }
 
 header nav a:first-of-type {
-	padding-left: 0;
+	// padding-left: 0;
 }
 
 .social-icons {
