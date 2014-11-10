@@ -47,11 +47,61 @@
 	        header.removeClass('visible');
 	    }
 
-	if ( $(window).outerWidth() >= 900 ) {
-		var scrolledY = $(window).scrollTop();
-		$('.hero-picture').css('transform', 'translateY(' + ((scrolledY)) + 'px)');
-	}	
+		if ( $(window).outerWidth() >= 900 ) {
+			var scrolledY = $(window).scrollTop();
+			$('.hero-picture').css('transform', 'translateY(' + ((scrolledY)) + 'px)');
+		}	
 	});
 
+
+  var snapA = Snap(".home-illustration");
+
+  //"Squiggly" Path
+  var myPathA = snapA.path("M1088.3,627.8V473.5c0,0-4.3-41.9-45.5-41.9c-41.3,0-43,30.8-43,30.8v93.8c0,0-5.6,13.8-39.8,14.2c-34.2,0.4-44.2-22.1-44.2-22.1v-82.7c0,0-10.5-33.5-44.2-33.6c-33.7-0.1-46.7,27.3-46.7,27.3v168.6H1088.3z").attr({
+    id: "squiggle",
+    fill: "none",
+    stroke: "none",
+  });
+
+  // Draw Path
+  var len = myPathA.getTotalLength();
+
+  // SVG Circle
+  var CircleA = snapA.circle(32,32,16);
+  CircleA.attr({
+    fill: "#3f4445",
+    stroke: "#fff",
+    strokeWidth: 2,
+    id: "ball"
+  });
+
+  // Put our ball and path in the same group.
+  var newGroup = snapA.paper.g(myPathA, CircleA);
+  // Give that group an id.
+  newGroup.attr({
+	  id: "ball-tube"
+  });
+
+  // Move that group up in the svg cause we don't need no z-index styles.
+  var theTubes = Snap('#arches')
+  newGroup.appendTo(theTubes);
+
+
+  // Animate!
+
+  animateBalls();
+
+  setInterval( function() {
+  	animateBalls();
+  },6000);
+
+  function animateBalls() {
+	  setTimeout( function() {
+	    Snap.animate(0, len, function( value ) {
+	       movePoint = myPathA.getPointAtLength( value );
+	       CircleA.attr({ cx: movePoint.x, cy: movePoint.y }); // move along path via cx & cy attributes
+	    }, 6000,mina.easeinout);
+	  });
+  }
 
 </script>
