@@ -22,9 +22,9 @@ thumb: /images/project-thumbs/fwlanding-fwbranding.jpg
 			{% include project-title.html %}
 
 			<div class="project-description">
-				<p>At Fieldwork, we make sure to keep a good balance between client work and in-house projects. We needed a visual identity flexible enough to work across anything from project proposals and invoices, through fun prints and publications, all the way to super geeky stuff like code projects and gadgets.</p>
-				<p>After establishing some guiding principals about how we want to work, who we’d most like to work with, and what we want to work on, we wrote a short and simple manifesto for Fieldwork, and collected some visual inspiration based around those ideas.</p>
-				<p>Through a process of iteration, we developed the simple identity you see on this page and across the website. Then we worked on a collection of visual materials to bring the character of our company to life. It’s a work-in-progress, and always will be.</p>
+				<p>At Fieldwork, we try to keep a good balance between client work and in-house projects. We needed a visual identity flexible enough to work across anything from project proposals and invoices, through fun prints and publications, all the way to super geeky stuff like code projects and gadgets.</p>
+				<p>After establishing some guiding principals about how we want to work, who we’d most like to work with, and what we want to work on, we started by collecting visual inspiration based around these ideas.</p>
+				<p>Through a process of iteration, we developed the simple identity you see on this page and across this website. Then we worked on a collection of visual materials to bring the character of our company to life. It’s a work-in-progress, and always will be.</p>
 			</div>
 		</div>	
 	</div>
@@ -52,17 +52,6 @@ thumb: /images/project-thumbs/fwlanding-fwbranding.jpg
 
 	</div>
 
-	{% if page.related %}
-		<div class="project-info">
-			<h2 class="elements">Related</h2>
-			<ul>
-				{% for link in page.related %}
-					{% for l in link %}
-						<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
-					{% endfor %}
-				{% endfor %}
-			</ul>
-		</div>
-	{% endif %}
+	{% include project-footer.html %}
 
 </div>

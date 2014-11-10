@@ -58,17 +58,6 @@ thumb: /images/project-thumbs/fwlanding-mavis.jpg
 		
 	</div>
 
-	{% if page.related %}
-		<div class="project-info">
-			<h2 class="elements">Related</h2>
-			<ul>
-				{% for link in page.related %}
-					{% for l in link %}
-						<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
-					{% endfor %}
-				{% endfor %}
-			</ul>
-		</div>
-	{% endif %}
+	{% include project-footer.html %}
 
 </div>

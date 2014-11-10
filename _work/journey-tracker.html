@@ -1,6 +1,6 @@
 ---
 title: "Journey Tracker"
-runner: "A mobile app using GPS to record and log journeys for sustainable travel challenges."
+runner: "A mobile app using GPS to record and log journeys for sustainable travel challenges, encouraging people to travel more actively and sustainably."
 meta:
 - UI/UX
 - Branding
@@ -22,8 +22,8 @@ thumb: /images/project-thumbs/fwlanding-journeytracker.jpg
 			{% include project-title.html %}
 
 			<div class="project-description">
-				<p>Sustrans help organisations like local authorities and universities run challenge events that encourage people to change their travel habits and move around in more active and sustainable ways. They wanted a quick, simple and mobile-friendly way for participants to get involved and regularly log journeys.</p>
-				<p>We devised a very simple mobile app, for iOS and Android devices, that allows particpants to track and log their journeys in just a few taps.</p>
+				<p>Sustrans help organisations like local authorities and universities run challenge events that encourage people to change their travel habits and move around in more active and sustainable ways. As we’d already worked on the web platform for these events, they asked us to help them build a quick, simple and mobile-friendly way for participants to get involved and log journeys.</p>
+				<p>Since so many people carry GPS enabled devices around in their pockets every day, we devised a very simple mobile app, for iOS and Android devices, that allows participants to track and log their journeys in just a few taps.</p>
 			</div>
 		</div>	
 	</div>
@@ -40,17 +40,6 @@ thumb: /images/project-thumbs/fwlanding-journeytracker.jpg
 		
 	</div>
 
-	{% if page.related %}
-		<div class="project-info">
-			<h2 class="elements">Related</h2>
-			<ul>
-				{% for link in page.related %}
-					{% for l in link %}
-						<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
-					{% endfor %}
-				{% endfor %}
-			</ul>
-		</div>
-	{% endif %}
+	{% include project-footer.html %}
 
 </div>

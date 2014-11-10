@@ -35,7 +35,16 @@
 		a {
 			text-decoration: none;
 			color: rgb(102,102,102);
+
+			&:hover img {
+				opacity: 0.1;
+				-webkit-backface-visibility: hidden;
+			}
+			&:hover .project-index-content {
+				opacity: 1;
+			}
 		}
+
 		h2 {
 			padding-top: 0.3em;
 		}
@@ -58,14 +67,6 @@
 		h2,
 		p {
 			padding-left: 25%; 
-		}
-
-		&:hover img {
-			opacity: 0.1;
-			-webkit-backface-visibility: hidden;
-		}
-		&:hover .project-index-content {
-			opacity: 1;
 		}
 	}
 }
