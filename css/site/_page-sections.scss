@@ -4,19 +4,42 @@
  */
 
 .hero {
+
+	h2, 
+	h3 {
+		color: rgb(232,57,68);
+	}
 	
 	.hero-description {
 		width: 50%;
-		float: left;
+		float: right;
 
 		h2 {
-			color: red;
+			color: rgb(232,57,68);
 			margin-bottom: 0.5em;
 		}
 
 		p {
 			font-size: 1.4666em;
 			line-height: 1.4545em;
+		}
+	}
+
+	.content-columns {
+		// font-size: 1.4666em;
+		// line-height: 1.4545em;
+		@include column(2, 240px, 2em);
+
+		ul {
+			padding-left: 0;
+		}
+		li {
+			list-style: none;
+
+			&:before {
+				content: '– ',
+
+			}
 		}
 	}
 
@@ -34,7 +57,7 @@
 
 .content-section-body {
 	width: 50%;
-	float: left;
+	float: right;
 	margin-bottom: 2em;
 	overflow: hidden;
 
@@ -60,6 +83,28 @@
 		padding-left: 1em;
 	}
 
+	.pop-it-col-3-1 {
+		padding-bottom: 3em;
+		@include column(3, 180px, 2em);
+	}
+
+	.pop-it-mod-3-1 {
+		box-sizing: border-box;
+		padding-bottom: 3em;
+		padding-right: 2em;
+		width: 33%;
+		float: left;
+	}
+
+	.pop-it-mod-3-1:nth-child(3n + 1) {
+		padding-right: 1em;
+		padding-left: 0;
+	}
+	.pop-it-mod-3-1:nth-child(3n) {
+		padding-right: 0;
+		padding-left: 1em;
+	}
+
 	h2 {
 		margin: 3em 0 1em;
 		&:first-child {
@@ -68,6 +113,7 @@
 
 		span {
 			display: block;
+			color: rgb(109,110,113);
 		}
 	}
 

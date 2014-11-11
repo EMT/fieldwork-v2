@@ -1,12 +1,13 @@
 {% if page.related %}
 	<div class="project-info">
-		<h2 class="elements">Related</h2>
-		<ul>
+		<h2 class="elements">Share</h2>
+		{% include project-social.html %}
+		<!-- <ul>
 			{% for link in page.related %}
 				{% for l in link %}
 					<li><a href="{{ site.baseurl }}{{ l[1] }}">{{ l[0] }}</a></li>
 				{% endfor %}
 			{% endfor %}
-		</ul>
+		</ul> -->
 	</div>
 {% endif %}
