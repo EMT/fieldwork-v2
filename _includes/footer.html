@@ -67,7 +67,7 @@
   var len = myPathA.getTotalLength();
 
   // SVG Circle
-  var CircleA = snapA.circle(32,32,16);
+  var CircleA = snapA.circle(16,16,8);
   CircleA.attr({
     fill: "#3f4445",
     stroke: "#fff",
@@ -93,14 +93,15 @@
 
   setInterval( function() {
   	animateBalls();
-  },6000);
+  },15000);
 
   function animateBalls() {
 	  setTimeout( function() {
 	    Snap.animate(0, len, function( value ) {
 	       movePoint = myPathA.getPointAtLength( value );
 	       CircleA.attr({ cx: movePoint.x, cy: movePoint.y }); // move along path via cx & cy attributes
-	    }, 6000,mina.easeinout);
+	    // }, 6000,mina.easeinout);
+	    }, 15000);
 	  });
   }
 

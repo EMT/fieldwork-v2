@@ -64,7 +64,11 @@ bottom: -2px;
   width:100%;
 }
 
-.pipe{
+.circle{
+	transform-origin: center center;
+}
+
+.pipe, .arc{
 	cursor: pointer;
 	transition: all 1s;
 }
