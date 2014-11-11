@@ -8,6 +8,10 @@
 	h2, 
 	h3 {
 		color: rgb(232,57,68);
+
+		a {
+			color: rgb(232,57,68);
+		}
 	}
 	
 	.hero-description {
@@ -20,13 +24,13 @@
 		}
 
 		p {
-			font-size: 1.4666em;
+			font-size: 1.3333em;
 			line-height: 1.4545em;
 		}
 	}
 
 	.content-columns {
-		// font-size: 1.4666em;
+		// font-size: 1.3333em;
 		// line-height: 1.4545em;
 		@include column(2, 240px, 2em);
 
@@ -128,6 +132,16 @@
 			a {
 				color: rgb(164,165,168);
 			}
+		}
+	}
+
+	a {
+		color: rgb(23,77,89);
+		text-decoration: none;
+		-webkit-transition: all .3s ease-out;
+
+		&:hover {
+			color: rgb(82,206,201);
 		}
 	}
 }

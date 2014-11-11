@@ -52,7 +52,7 @@
 			opacity: 0.6;
 		}
 		.project-index-content {
-			font-size: 1.4666em;
+			font-size: 1.3333em;
 			line-height: 1.3em;
 			color: rgb(255,255,255);
 			position: absolute;
@@ -170,7 +170,7 @@ body.project {
 	}
 
 	.project-title {
-		font-size: 1.4666em;	
+		font-size: 1.3333em;	
 		width: 35%;
 		max-width: 400px;
 		float: left;
@@ -188,6 +188,10 @@ body.project {
 	    margin-bottom: 0.3em;
 	    line-height: 1.4545em;
 	    color: rgb(244,52,67);
+
+	    a {
+	    	color: rgb(244,52,67);
+	    }
 	}
 
 	p {
