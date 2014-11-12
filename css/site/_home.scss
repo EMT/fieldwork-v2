@@ -111,23 +111,23 @@ bottom: -2px;
    }
 }
 
-@include keyframes(slide) { {
+@include keyframes(slide) {
 	0%   { transform: translateX(0); }
 	100% { transform: translateX(-261px); }
 }
 
-@include keyframes(slide-vert) { {
+@include keyframes(slide-vert) {
 	0%   { transform: translateY(0); }
 	100% { transform: translateY(90px); }
 }
 
-@include keyframes(float) { {
+@include keyframes(float) {
 	0%   { transform: translateY(0px); }
 	100% { transform: translateY(-10px); }
 }
 
 
-@include keyframes(little-ball-spin) { {
+@include keyframes(little-ball-spin) {
 	0%  { transform: rotate(0deg);}
 	25% { transform: rotate(270deg);}
 	50% { transform: rotate(270deg);}
