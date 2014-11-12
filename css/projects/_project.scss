@@ -30,7 +30,8 @@
 			transition: all .3s ease-out;
 			/* prevent weird 1px width/height/position changes on hover in Chrome */
 			position: relative;
-			-webkit-backface-visibility: hidden; 
+			-webkit-backface-visibility: hidden;
+			border: 1px solid rgb(255,255,255); 
 		}
 		a {
 			text-decoration: none;
@@ -85,51 +86,6 @@ body.project {
 	background: rgb(255,255,255);
 }
 
-// .project header {
-// 	transition: all 0.2s ease-in;
-// 	background: rgba(255,255,255,0);
-// 	border-bottom: 0;
-// }
-
-// .project header nav a {
-// 	color: rgb(255,255,255);
-// 	transition: border 0.2s ease-in;
-// }
-
-// .project header .red-marque {
-// 	display: none;
-// 	opacity: 0;
-// }
-
-// .project header.visible {
-// 	background: rgba(255,255,255,0.9);
-
-// 	nav a {
-// 		color: rgb(102, 102, 102);
-// 	}
-
-// 	.white-marque {
-// 		display: none;
-// 		opacity: 0;
-// 	}
-
-// 	.red-marque {
-// 		display: inherit;
-// 		opacity: 1;
-// 	}
-// }
-
-// .hero-header header .social-icons a {
-// 	color: rgb(255,255,255);
-// }
-// .hero-header header.visible .social-icons a {
-// 	color: rgb(102,102,102);
-// }
-
-// header.visible {
-// 	border-bottom: 1px solid rgba(109,110,113,0.25);
-// 	background: rgba(255,255,255,1);
-// }
 
 
 .hero-picture {
@@ -315,6 +271,7 @@ body.project {
 	.project-grid-col-2 {
 		margin-bottom: 1em;
 		overflow: hidden;
+		position: relative;
 
 		> * {
 			@include border-box();
@@ -327,6 +284,16 @@ body.project {
 				padding-right: 0.5em;
 			}
 		}
+	}
+
+	.gird-content-block {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: $fw-red;
+		color: rgb(255,255,255)
 	}
 }
 
