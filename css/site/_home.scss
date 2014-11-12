@@ -65,14 +65,80 @@ bottom: -2px;
 }
 
 .circle{
-	-webkit-transform-origin: center center;
-	-moz-transform-origin: center center;
-	-ms-transform-origin: center center;
-	-o-transform-origin: center center;
-	transform-origin: center center;
+	@include vendorize(transform-origin, center center);
 }
 
 .pipe, .arc{
 	cursor: pointer;
 	transition: all 1s;
+}
+
+.square{
+	@include vendorize(animation, slide 3.5s infinite ease-in-out alternate);
+}
+
+.square--vert{
+	@include vendorize(animation, slide-vert 2s infinite ease-in-out alternate);
+}
+
+.square--vert-2{
+	@include vendorize(animation-delay, -2000ms);
+}
+
+.floating-eye{
+	@include vendorize(animation, float 3s infinite ease-in-out alternate);
+}
+
+.little-ball{
+	@include vendorize(animation, little-ball-spin 4s infinite cubic-bezier(0.680, -0.550, 0.265, 1.550));
+	@include vendorize(transform-origin, center center);
+}
+
+.little-ball-2{
+	@include vendorize(animation-delay,-1s);
+}
+
+.pulsating-circles g{
+	@include vendorize(transform, scale(0.75));
+	@include vendorize(transform-origin, center center);
+	@include vendorize(animation, pulsate 3s infinite cubic-bezier(0.450, -0.600, 0.570, 1.650));
+
+}
+
+@for $i from 1 through 6{
+   .pulsating-circles g:nth-child(#{$i}){ 
+      @include vendorize(animation-delay, (#{$i * 100}ms));
+   }
+}
+
+@include keyframes(slide) { {
+	0%   { transform: translateX(0); }
+	100% { transform: translateX(-261px); }
+}
+
+@include keyframes(slide-vert) { {
+	0%   { transform: translateY(0); }
+	100% { transform: translateY(90px); }
+}
+
+@include keyframes(float) { {
+	0%   { transform: translateY(0px); }
+	100% { transform: translateY(-10px); }
+}
+
+
+@include keyframes(little-ball-spin) { {
+	0%  { transform: rotate(0deg);}
+	25% { transform: rotate(270deg);}
+	50% { transform: rotate(270deg);}
+	75% { transform: rotate(0deg);}
+}
+
+
+@include keyframes(pulsate) {
+	0%    { transform: scale(0.75); }
+	20%   { transform: scale(1.3); }
+	50%   { transform: scale(1.3); }
+	70%   { transform: scale(0.75); }
+	100%  { transform: scale(0.75); }
 }
