@@ -42,7 +42,8 @@ $(document).ready(function(){
 		this.translateX = translateX;
 		this.translateY = translateY;
 		this.rotation = rotation;
-		this.gravity = 0.08;
+		this.gravity = 0.18;
+		this.gravity = 0.6;
 		this.vy = 0;
 	}
 
@@ -56,9 +57,9 @@ $(document).ready(function(){
 		window.requestAnimationFrame(animate);
 
 		for (var i = 0 ; i < balls.length ; i++){
-			balls[i].translateX += 1.5;
-			balls[i].rotation += 2;
-			if (balls[i].translateX > 220){
+			balls[i].translateX += 2.5;
+			balls[i].rotation += 3;
+			if (balls[i].translateX > 235){
 				balls[i].vy+=balls[i].gravity;
 				balls[i].translateY+=balls[i].vy;
 			}
@@ -68,7 +69,8 @@ $(document).ready(function(){
 				balls[i].vy = 0;
 			}
 
-			$(".js-circle").eq(i).css("transform", "translateX("+balls[i].translateX+"px) translateY("+balls[i].translateY+"px) rotate("+balls[i].rotation+"deg)");
+			// $(".js-circle").eq(i).css("transform", "translateX("+balls[i].translateX+"px) translateY("+balls[i].translateY+"px) rotate("+balls[i].rotation+"deg)");
+			$(".js-circle").eq(i).attr("transform", "translate("+balls[i].translateX+" "+balls[i].translateY+") rotate("+balls[i].rotation+" 138.8 329.292)");
 
 		}
 
