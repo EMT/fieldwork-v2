@@ -8,7 +8,7 @@ footer {
 	color: rgb(153,153,153);
 	// font-size: 0.875em;
 	background: rgb(255,255,255);
-	padding: 4% 0;
+	// padding: 4% 0;
 	position: static;
 	bottom: 0;
 	left: 0;
@@ -16,23 +16,52 @@ footer {
 	z-index: 100;
 	border-top: 1px solid rgba(109,110,113,0.25);
 	line-height: 1.35;
+	margin-left: -2em;
 }
-footer > div {
-	overflow: hidden;
+.footer-wrapper {
+	// overflow: hidden;
+	display: table;
 }
+
+.footer-block {
+	display: table-cell;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 25%;
+	padding: 4% 2em;
+
+	&.project-planner {
+		&:hover {
+			background: rgb(240,240,240);
+		}
+	}
+	&.join-newsletter {
+		width: 35%;
+	}
+	&.social-wrapper {
+		width: 15%;
+	}
+}
+
 
 footer .social {
 	border-top: 0;
 	margin: 0;
 }	
 
-footer a {
-	color: rgb(167, 169, 172);
+footer h3 {
+	color: rgb(109, 110, 113);
+	margin-bottom: 0.3em;
 }
 
-footer a:hover {
-	opacity: 0.8;
+footer a {
+	color: rgb(167, 169, 172);
+	text-decoration: none;
 }
+
+// footer a:hover {
+// 	opacity: 0.8;
+// }
 
 footer a {
 	text-decoration: none;
@@ -48,27 +77,27 @@ footer a {
 	margin: 0.2em 0;
 }
 
-footer div > p {
-	width: 60%;
-	margin: 0.5em 0;
-}
+// footer div > p {
+// 	width: 60%;
+// 	margin: 0.5em 0;
+// }
 
 
-.address {
-	margin: 0;
-}
+// .address {
+// 	margin: 0;
+// }
 
-.address:first-of-type {
-	margin-top: 0.5em
-}
+// .address:first-of-type {
+// 	margin-top: 0.5em
+// }
 
-.tel {
-	margin-bottom: 0;
-}
+// .tel {
+// 	margin-bottom: 0;
+// }
 
-.email {
-	margin-top: 0.2em;
-}
+// .email {
+// 	margin-top: 0.2em;
+// }
 
 
 
@@ -105,15 +134,9 @@ footer input[type="submit"] {
 }
 
 
-footer a {
-	text-decoration: none;
-}
 
-footer h3 {
-	color: rgb(109, 110, 113);
-}
 
-.email a, .project-planner a {
+.email a {
 	border: none;
 	padding: 0;
 	border-bottom: 1px solid rgba(109, 110, 113, 0.25);
@@ -121,71 +144,71 @@ footer h3 {
 	margin-bottom: 0.4em;
 }
 
-.our-info {
-	float: left;
-	width: 20%;
-	margin-right: 5%;
-}
+// .our-info {
+// 	float: left;
+// 	width: 20%;
+// 	margin-right: 5%;
+// }
 
-.project-planner {
-	width: 20%;
-	margin-right: 5%;
-	float: left;
-}
+// .project-planner {
+// 	width: 20%;
+// 	margin-right: 5%;
+// 	float: left;
+// }
 
-.join-newsletter {
-	width: 20%;
-	margin-right: 5%;
-	float: left;
-}
+// .join-newsletter {
+// 	width: 20%;
+// 	margin-right: 5%;
+// 	float: left;
+// }
 
-.social-wrapper {
-	width: 25%;
-	float: left;
-}
+// .social-wrapper {
+// 	width: 25%;
+// 	float: left;
+// }
 
-.social {
-display: table;
-float: right;
-}
+// .social {
+// display: table;
+// float: right;
+// }
 
-@media only screen and (max-width: 900px) {
-	footer {
-		font-size: 0.90em;
-		line-height: 1.2;
-	}
+// @media only screen and (max-width: 900px) {
+// 	footer {
+// 		font-size: 0.90em;
+// 		line-height: 1.2;
+// 	}
 
-	.our-info {
-		width: 25%;
-		margin-right: 5%;
-	}
+// 	.our-info {
+// 		width: 25%;
+// 		margin-right: 5%;
+// 	}
 
-	.join-newsletter {
-		width: 25%;
-		margin-right: 5%;
-	}
+// 	.join-newsletter {
+// 		width: 25%;
+// 		margin-right: 5%;
+// 	}
 
-	.join-newsletter input[type="email"] {
-		width: 100%;
-	}
+// 	.join-newsletter input[type="email"] {
+// 		width: 100%;
+// 	}
 
-	footer div > p {
-		width: 100%;
-	}
+// 	footer div > p {
+// 		width: 100%;
+// 	}
 
-	footer .social {
-		width: 100%;	
-	}
+// 	footer .social {
+// 		width: 100%;	
+// 	}
 
-	body {
-		padding-bottom: 8em;
-	}
+// 	body {
+// 		padding-bottom: 8em;
+// 	}
 
-	input {
-		border-radius: 0;
-	}
+// 	input {
+// 		border-radius: 0;
+// 	}
 
-}
+// }
 
 @media only screen and (max-width: 600px) {
 
