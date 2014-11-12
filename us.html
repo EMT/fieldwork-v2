@@ -104,6 +104,43 @@ header_img: /images/us/fieldwork-hero.jpg
 <section class="hero">
   <div class="text">
     <div class="wrapper">
+      
+      <div class="project-title">
+        <h1>Every project is different, but they all work better when we remember the two main keys: 1, undertand the context and; 2, pay attention to the details.</h1>
+        <p>{{ page.runner }}</p>
+
+        {% if page.additional %}
+          <p class="additional">{{ page.additional }}</p>
+        {% endif %}
+        
+        {% if page.meta %}
+          <ul class="project-meta">
+            {% for meta in page.meta %}
+              <li>{{ meta }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <div class="content-section-body">
+        <h3>Learn</h3>
+        <p>Together, we learn about your organisation and the project’s context, define goals, devise a high level strategy, and outline a scope of work.</p>
+        
+        <h3>Make</h3>
+        <p>We prototype ideas, test elements of the project, figure out how the things we’re making will work as a larger system, and refine the successful parts.</p>
+
+        <h3>Deliver</h3>
+        <p>We write code, finalise designs, test and deploy. Then we add that extra special shine before working out how best to launch the project for the most positive impact.</p>
+      </div>
+    </div>  
+  </div>
+</section>
+
+
+
+<section class="hero">
+  <div class="text">
+    <div class="wrapper">
 
       <div class="project-grid">
         <div class="project-grid-col-2">
@@ -113,7 +150,7 @@ header_img: /images/us/fieldwork-hero.jpg
       </div>
       
       <div class="project-title">
-        <h1>We’re a focused team of makers and do-ers who specialise in crafting engaging experiences across digital, web and brand.</h1>
+        <h1>We’re a focused team of makers and do-ers who love what we do and constantly push to improve.</h1>
       </div>
 
       <div class="content-section-body">
