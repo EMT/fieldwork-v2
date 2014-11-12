@@ -43,48 +43,94 @@ header_img: /images/us/fieldwork-hero.jpg
       </div>
 
       <div class="content-section-body content-columns">
-          <h2>Websites</h2>
-          <p>We bring together multiple disciplines to design and build websites that meet the needs of your organisation and it’s content.</p>
-          <ul>
-            <li>Content strategy</li>
-            <li>Website design</li>
-            <li>Responsive web development</li>
-            <li>Ecommerce</li>
-          </ul>
+        <div class="content-col-wrapper">
+          <div class="content-col-2-1">
+            <h2>Websites</h2>
+            <p>We bring together multiple disciplines to design and build websites that meet the needs of your organisation and it’s content.</p>
+            <ul>
+              <li>Content strategy</li>
+              <li>Website design</li>
+              <li>Responsive web development</li>
+              <li>Ecommerce</li>
+            </ul>
+          </div>
+          
+          <div class="content-col-2-1">
+            <h2>Brand Identity</h2>
+            <p>We create identity systems ranging from simple visual identities for small, focussed brands to strategic communications for large organisations with varied activities.</p>
+            <ul>
+              <li>Research & strategy</li>
+              <li>Tone of voice</li>
+              <li>Logo design</li>
+              <li>Identity systems</li>
+              <li>Brand guidelines</li>
+            </ul>
+          </div>
+          
+          <div class="content-col-2-1">
+            <h2>Digital Products</h2>
+            <p>We make digital products for the web and mobile platforms, and help organisations discover opportunities to be more impactful by building bespoke applications.</p>
+            <ul>
+              <li>Product discovery</li>
+              <li>User research</li>
+              <li>User experience</li>
+              <li>User interface design</li>
+              <li>Agile product management</li>
+              <li>Ruby on Rails</li>
+              <li>PHP</li>
+            </ul>
+          </div>
 
-          <h2>Digital Products</h2>
-          <p>We make digital products for the web and mobile platforms, and help organisations discover opportunities to be more impactful by building bespoke applications.</p>
-          <ul>
-            <li>Product discovery</li>
-            <li>User research</li>
-            <li>User experience</li>
-            <li>User interface design</li>
-            <li>Agile product management</li>
-            <li>Ruby on Rails</li>
-            <li>PHP</li>
-          </ul>
+          <div class="content-col-2-1">
+            <h2>Visual Communication</h2>
+            <p>We also do…</p>
+            <ul>
+              <li>Illustration</li>
+              <li>Print & editorial design</li>
+              <li>Photography</li>
+              <li>Videography</li>
+              <li>Packaging Design</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>  
+  </div>
+</section>
+
+
+
+<section class="hero">
+  <div class="text">
+    <div class="wrapper">
+      
+      <div class="project-title">
+        <h1>Every project is different, but they all work better when we remember the two main keys: 1, undertand the context and; 2, pay attention to the details.</h1>
+        <p>{{ page.runner }}</p>
+
+        {% if page.additional %}
+          <p class="additional">{{ page.additional }}</p>
+        {% endif %}
         
-          <h2>Brand Identity</h2>
-          <p>We create identity systems ranging from simple visual identities for small, focussed brands to strategic communications for large organisations with varied activities.</p>
-          <ul>
-            <li>Research & strategy</li>
-            <li>Tone of voice</li>
-            <li>Logo design</li>
-            <li>Identity systems</li>
-            <li>Brand guidelines</li>
+        {% if page.meta %}
+          <ul class="project-meta">
+            {% for meta in page.meta %}
+              <li>{{ meta }}</li>
+            {% endfor %}
           </ul>
+        {% endif %}
+      </div>
 
-          <h2>Visual Communication</h2>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <ul>
-            <li>Illustration</li>
-            <li>Print & editorial design</li>
-            <li>Photography</li>
-            <li>Videography</li>
-            <li>Packaging Design</li>
-          </ul>
+      <div class="content-section-body">
+        <h3>Learn</h3>
+        <p>Together, we learn about your organisation and the project’s context, define goals, devise a high level strategy, and outline a scope of work.</p>
         
+        <h3>Make</h3>
+        <p>We prototype ideas, test elements of the project, figure out how the things we’re making will work as a larger system, and refine the successful parts.</p>
 
+        <h3>Deliver</h3>
+        <p>We write code, finalise designs, test and deploy. Then we add that extra special shine before working out how best to launch the project for the most positive impact.</p>
       </div>
     </div>  
   </div>
@@ -104,7 +150,7 @@ header_img: /images/us/fieldwork-hero.jpg
       </div>
       
       <div class="project-title">
-        <h1>We’re a focused team of makers and do-ers who specialise in crafting engaging experiences across digital, web and brand.</h1>
+        <h1>We’re a focused team of makers and do-ers who love what we do and constantly push to improve.</h1>
       </div>
 
       <div class="content-section-body">
