@@ -42,7 +42,7 @@ $(document).ready(function(){
 		this.translateX = translateX;
 		this.translateY = translateY;
 		this.rotation = rotation;
-		this.gravity = 0.075;
+		this.gravity = 0.08;
 		this.vy = 0;
 	}
 
