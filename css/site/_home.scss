@@ -126,44 +126,44 @@ bottom: -2px;
 }
 
 @include keyframes(slide) {
-	0%   { transform: translateX(0); @include vendorize(animation-timing-function, cubic-bezier(0.325, 0.005, 0.350, 0.995)); /* easeInQuad */}
-	40%   { transform: translateX(-261px); }
-	50%   { transform: translateX(-261px); @include vendorize(animation-timing-function, cubic-bezier(0.575, 0.005, 0.515, 1.005) /* easeInCubic */);}
-	90%   { transform: translateX(0); }
-	100% { transform: translateX(0); }
+	0%   { @include vendorize(transform, translateX(0)); @include vendorize(animation-timing-function, cubic-bezier(0.325, 0.005, 0.350, 0.995));}
+	40%   { @include vendorize(transform, translateX(-261px)); }
+	50%   { @include vendorize(transform, translateX(-261px)); @include vendorize(animation-timing-function, cubic-bezier(0.575, 0.005, 0.515, 1.005));}
+	90%   { @include vendorize(transform, translateX(0)); }
+	100% { @include vendorize(transform, translateX(0)); }
 }
 
 @include keyframes(slide-alt) {
-	0%   { transform: translateX(0); @include vendorize(animation-timing-function, cubic-bezier(0.575, 0.005, 0.515, 1.005) /* easeInCubic */);}
-	40%   { transform: translateX(-261px); }
-	50%   { transform: translateX(-261px); @include vendorize(animation-timing-function, cubic-bezier(0.325, 0.005, 0.350, 0.995)); /* easeInQuad */}
-	90%   { transform: translateX(0); }
-	100% { transform: translateX(0); }
+	0%   { @include vendorize(transform, translateX(0)); @include vendorize(animation-timing-function, cubic-bezier(0.575, 0.005, 0.515, 1.005));}
+	40%   { @include vendorize(transform, translateX(-261px)); }
+	50%   { @include vendorize(transform, translateX(-261px)); @include vendorize(animation-timing-function, cubic-bezier(0.325, 0.005, 0.350, 0.995));}
+	90%   { @include vendorize(transform, translateX(0)); }
+	100% { @include vendorize(transform, translateX(0)); }
 }
 
 @include keyframes(slide-vert) {
-	0%   { transform: translateY(0); }
-	100% { transform: translateY(90px); }
+	0%   { @include vendorize(transform, translateY(0));}
+	100% { @include vendorize(transform, translateY(90px));}
 }
 
 @include keyframes(float) {
-	0%   { transform: translateY(0px); }
-	100% { transform: translateY(-10px); }
+	0%   { @include vendorize(transform, translateY(0px));}
+	100% { @include vendorize(transform, translateY(-10px));}
 }
 
 
 @include keyframes(little-ball-spin) {
-	0%  { transform: rotate(0deg);}
-	25% { transform: rotate(270deg);}
-	50% { transform: rotate(270deg);}
-	75% { transform: rotate(0deg);}
+	0%  { @include vendorize(transform, rotate(0deg));}
+	25% { @include vendorize(transform, rotate(270deg));}
+	50% { @include vendorize(transform, rotate(270deg));}
+	75% { @include vendorize(transform, rotate(0deg));}
 }
 
 
 @include keyframes(pulsate) {
-	0%    { transform: scale(0.75); }
-	20%   { transform: scale(1); }
-	50%   { transform: scale(1); }
-	70%   { transform: scale(0.75); }
-	100%  { transform: scale(0.75); }
+	0%    { @include vendorize(transform, scale(0.75));}
+	20%   { @include vendorize(transform, scale(1));}
+	50%   { @include vendorize(transform, scale(1));}
+	70%   { @include vendorize(transform, scale(0.75));}
+	100%  { @include vendorize(transform, scale(0.75));}
 }
