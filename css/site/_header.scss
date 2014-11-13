@@ -50,6 +50,9 @@ header nav a {
 	float: left;
 	-webkit-transition: all .3s ease-out;
 }
+nav a.selected{
+	color:$fw-red;
+}
 header nav a:hover,
 .work nav a.work,
 .us nav a.us,
