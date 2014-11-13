@@ -1,3 +1,31 @@
 .map{
 	height:600px;
 }
+
+.contact .category-links{
+	width:50%;
+	float:right;
+
+	a{
+		display: inline-block;
+		float:left;
+		margin-right: 40px;
+		padding-left:1.2em;
+
+		&:after{
+			left:0;
+		}
+
+		&.eating:after{
+			background: $turquoise;
+		}
+
+		&.drinking:after{
+			background: $orange;
+		}
+
+		&.us:after{
+			background: $fw-red;
+		}
+	}
+}
