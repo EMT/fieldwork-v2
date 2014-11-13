@@ -75,111 +75,17 @@
 }
 
 
+
 /**
  * Individual project page styles
  */
 
-// All of this could do with double checking - it got quite messy at this point with the blog and the site in two different directories.
-
-// body.project {
-// 	margin-top: 0;
-// 	background: rgb(255,255,255);
-// }
-
-
-
-
-
-.project .hero {
-	margin-bottom: 5%;
-}
-.hero {
-	width: 100%;
-
-	&:first-child {
-		margin-top: 5%;
-	}
-
-	&.team {
-		margin-bottom: 2%;
-	}
-
-	.wrapper {
-		// padding-top: 5%;
-	}
-
-	.text {
-		width: 100%;
-		background: white;
-	}
-	
-	.project-description {
-		width: 50%;
-		float: right;
-		@include column(2, 300px, 2em);
-
-		h2 {
-			color: red;
-			margin-bottom: 0.5em;
-		}
-	}
-
-	.project-title {
-		font-size: 1.3333em;	
-		width: 35%;
-		max-width: 400px;
-		float: left;
-		margin-right: 15%;
-		color: rgb(147,149,152);
-	}
-
-	.wrapper:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-
-	h1 {
-	    margin-bottom: 0.3em;
-	    line-height: 1.4545em;
-	    color: rgb(244,52,67);
-
-	    a {
-	    	color: rgb(244,52,67);
-	    }
-	}
-
-	p {
-		line-height: 1.3;
-		margin-bottom: 1em;
-		// color: rgb(0,0,0);
-	}
-	
-	.project-meta {
-		font-size: 0.6666em;
-		list-style: none;
-	}
-
-	.project-grid {
-		margin-bottom: 5em;
-	}
-
-}
-
-.project-description {
-	a {
-		color: rgb(23,77,89);
-		text-decoration: none;
-		-webkit-transition: all .3s ease-out;
-		-moz-transition: all .3s ease-out;
-		-ms-transition: all .3s ease-out;
-		-o-transition: all .3s ease-out;
-		transition: all .3s ease-out;
-
-		&:hover {
-			color: rgb(81,206,201);
-		}
-	}
+.project-info {
+	width: 50%;
+	float: right;
+	padding: 3.5em 0 5em;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .project-social {
@@ -212,47 +118,6 @@
 		color: rgb(81,206,201);
 	}
 }
-
-.project-info {
-	width: 50%;
-	float: right;
-	padding: 1em 0 5em;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-
-	li, .client {
-		color: rgb(167,169,172);
-	}
-
-	li {
-		// margin: 0.5em 0;
-	}
-
-	span {
-		display: block;
-	}
-
-	.elements {
-		margin-top: 2.5em;
-		margin-bottom: 0;
-	}
-
-	a {
-		color: rgb(153,153,153);
-		text-decoration: none;
-	}
-
-	.clients {
-		margin-bottom: 0.5em;
-	}
-
-	.info-title {
-		margin-bottom: 2.5em;
-	}
-
-}
-
-
 
 .project-grid {
 	overflow: hidden;
@@ -297,29 +162,4 @@
 }
 
 
-@media screen and (max-width: 900px) {
 
-.hero {
-	.project-description {
-		width: 100%;
-		margin: 0;
-	}
-
-	.project-title {
-		width: 100%;
-		margin: 0 0 5% 0;
-	}
-
-	.wrapper {
-		padding-top: 10%;
-	}
-}
-}
-
-@media screen and (max-width: 600px) {
-
-.project-info {
-	width: 100%;
-}
-
-}

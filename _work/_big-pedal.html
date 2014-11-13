@@ -6,7 +6,7 @@ meta:
 - Branding
 - Design
 - Development
-layout: project
+layout: default
 header_img: /images/plando/pd-andyipad.jpg
 related:
 - "Plan.Do": /work/plando
@@ -14,23 +14,24 @@ related:
 ---
 
 
-<div class="hero">
-	<div class="text">
-		<div class="wrapper">
-			
-			{% include project-title.html %}
+<div class="page-section">
 
-			<div class="project-description">
-				<p>Sustrans are a charity working on infrasturcture and behaviour change projects to encourage more active and sustainble travel. Their annual Big Pedal event for schools encourages pupils to swap the car for a bicycle to become more active and independent travellers. When we started working on the project, the event was adminstrated using spreadsheets and email—a system that was creaking at the seems, and underserving participants.</p>
-				<p>We built a website that ties together administrative tools, up-to-the-minute feedback for participating schools, and a promotional platform for the event. With over a million journeys logged during each event, there’s also a wealth of data for Sustrans to analyse to help make decisions about next year’s edition.</p>
-				<p>Schools now have more incetives to get involved. They have access to information about their progress—including comparisons with other schools—as well as useful statitics to aid with travel planning. Photos uploaded by schools highlight the sense of fun and community around the event.</p>
-				<p>Since making the first version of the Big Pedal website, we’ve worked with Sustrans to iterate, improve and tweak it for each successive year.</p>
-			</div>
-		</div>	
-	</div>
+	<div class="section-inner">
+		
+		{% include project-title.html %}
+
+		<div class="project-description">
+			<p>Sustrans are a charity working on infrasturcture and behaviour change projects to encourage more active and sustainble travel. Their annual Big Pedal event for schools encourages pupils to swap the car for a bicycle to become more active and independent travellers. When we started working on the project, the event was adminstrated using spreadsheets and email—a system that was creaking at the seems, and underserving participants.</p>
+			<p>We built a website that ties together administrative tools, up-to-the-minute feedback for participating schools, and a promotional platform for the event. With over a million journeys logged during each event, there’s also a wealth of data for Sustrans to analyse to help make decisions about next year’s edition.</p>
+			<p>Schools now have more incetives to get involved. They have access to information about their progress—including comparisons with other schools—as well as useful statitics to aid with travel planning. Photos uploaded by schools highlight the sense of fun and community around the event.</p>
+			<p>Since making the first version of the Big Pedal website, we’ve worked with Sustrans to iterate, improve and tweak it for each successive year.</p>
+		</div>
+	</div>	
+
 </div>
 
-<div class="wrapper">
+
+<div class="section-inner">
 
 	<div class="project-grid">
 
@@ -38,17 +39,6 @@ related:
 		
 	</div>
 
-	{% if page.related %}
-		<div class="project-info">
-			<h2 class="elements">Related</h2>
-			<ul>
-				{% for link in page.related %}
-					{% for l in link %}
-						<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
-					{% endfor %}
-				{% endfor %}
-			</ul>
-		</div>
-	{% endif %}
+	{% include project-footer.html %}
 
 </div>
