@@ -6,7 +6,7 @@ meta:
 - Branding
 - Design
 - Development
-layout: project
+layout: default
 header_img: /images/plando/pd-andyipad.jpg
 related:
 - "Plan.Do": /work/plando
@@ -14,8 +14,8 @@ related:
 ---
 
 
-<div class="hero">
-	<div class="text">
+<div class="page-section">
+
 		<div class="wrapper">
 			
 			{% include project-title.html %}
@@ -25,10 +25,11 @@ related:
 				<p>We devised a grid system with strict image dimensions to provide a consistent sense of order at varying screen sizes and across various devices. This grid combined with a minimal design allows TILT’s wealth of content to do the talking, and their work to shine.</p>
 			</div>
 		</div>	
-	</div>
+
 </div>
 
-<div class="wrapper">
+
+<div class="section-inner">
 
 	<div class="project-grid">
 
@@ -36,17 +37,6 @@ related:
 		
 	</div>
 
-	{% if page.related %}
-		<div class="project-info">
-			<h2 class="elements">Related</h2>
-			<ul>
-				{% for link in page.related %}
-					{% for l in link %}
-						<li><a href="{{ l[1] }}">{{ l[0] }}</a></li>
-					{% endfor %}
-				{% endfor %}
-			</ul>
-		</div>
-	{% endif %}
+	{% include project-footer.html %}
 
 </div>
