@@ -43,12 +43,12 @@ body.no-hero {
 		}
 	}
 	a {
-		color: rgb(23,77,89);
+		color: $link-color;
 		text-decoration: none;
 		-webkit-transition: all .3s ease-out;
 
 		&:hover {
-			color: rgb(82,206,201);
+			color: $link-hover-color;
 		}
 	}
 }
