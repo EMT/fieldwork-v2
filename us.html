@@ -1,53 +1,41 @@
 ---
 title: "Us"
 description: "Fieldwork"
-layout: project
+layout: default
 header_img: /images/us/fieldwork-hero.jpg
 ---
 
-<section class="hero">
-  <div class="text">
-    <div class="wrapper">
-      
-      <div class="project-title">
-        <h1>We love making things, collaborating, identifying interesting problems and figuring out what we can build to help solve them.</h1>
-        <p>{{ page.runner }}</p>
+<section class="page-section">
 
-        {% if page.additional %}
-          <p class="additional">{{ page.additional }}</p>
-        {% endif %}
-        
-        {% if page.meta %}
-          <ul class="project-meta">
-            {% for meta in page.meta %}
-              <li>{{ meta }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
+    <div class="section-inner">
+      
+      <div class="section-title">
+        <h1>We love making things, collaborating, identifying interesting problems and figuring out what we can build to help solve them.</h1>
       </div>
 
-      <div class="hero-description">
+      <div class="section-text section-text--large">
         <p>We build things with you, collaboratively, to support and enhance the work that you do. Combining your knowledge of your organisation and its work, with our experience and design process, to produce things that have real impact.</p>
         <p>The best way to explore possibilities and generate new ideas, is to get started. Less talking, more doing. If you were to visit our studio right now, you’d probably find us tinkering with something, making things with pixels, wires or paper. This is what we love doing, and we pour that energy and excitement into every project we undertake.</p>
       </div>
     </div>  
-  </div>
+
 </section>
 
-<section class="hero">
-  <div class="text">
-    <div class="wrapper">
+
+<section class="page-section">
+
+    <div class="section-inner">
       
-      <div class="project-title">
+      <div class="section-title">
         <h1>We work with strategy, design and technology to produce coherent and effective results on a broad range of projects.</h1>
       </div>
 
-      <div class="content-section-body content-columns">
+      <div class="section-text content-columns">
         <div class="content-col-wrapper">
-          <div class="content-col-2-1">
+          <div class="content-col content-col--2-1">
             <h2>Websites</h2>
             <p>We bring together multiple disciplines to design and build websites that meet the needs of your organisation and it’s content.</p>
-            <ul>
+            <ul class="bulleted-list">
               <li>Content strategy</li>
               <li>Website design</li>
               <li>Responsive web development</li>
@@ -55,10 +43,10 @@ header_img: /images/us/fieldwork-hero.jpg
             </ul>
           </div>
           
-          <div class="content-col-2-1">
+          <div class="content-col content-col--2-1">
             <h2>Brand Identity</h2>
             <p>We create identity systems ranging from simple visual identities for small, focussed brands to strategic communications for large organisations with varied activities.</p>
-            <ul>
+            <ul class="bulleted-list">
               <li>Research & strategy</li>
               <li>Tone of voice</li>
               <li>Logo design</li>
@@ -67,10 +55,10 @@ header_img: /images/us/fieldwork-hero.jpg
             </ul>
           </div>
           
-          <div class="content-col-2-1">
+          <div class="content-col content-col--2-1">
             <h2>Digital Products</h2>
             <p>We make digital products for the web and mobile platforms, and help organisations discover opportunities to be more impactful by building bespoke applications.</p>
-            <ul>
+            <ul class="bulleted-list">
               <li>Product discovery</li>
               <li>User research</li>
               <li>User experience</li>
@@ -81,10 +69,10 @@ header_img: /images/us/fieldwork-hero.jpg
             </ul>
           </div>
 
-          <div class="content-col-2-1">
+          <div class="content-col content-col--2-1">
             <h2>Visual Communication</h2>
             <p>We also do…</p>
-            <ul>
+            <ul class="bulleted-list">
               <li>Illustration</li>
               <li>Print & editorial design</li>
               <li>Photography</li>
@@ -96,33 +84,19 @@ header_img: /images/us/fieldwork-hero.jpg
 
       </div>
     </div>  
-  </div>
+
 </section>
 
 
+<section class="page-section">
 
-<section class="hero">
-  <div class="text">
-    <div class="wrapper">
+    <div class="section-inner">
       
-      <div class="project-title">
+      <div class="section-title">
         <h1>Every project is different, but they all work better when we remember the two main keys: 1, undertand the context and; 2, pay attention to the details.</h1>
-        <p>{{ page.runner }}</p>
-
-        {% if page.additional %}
-          <p class="additional">{{ page.additional }}</p>
-        {% endif %}
-        
-        {% if page.meta %}
-          <ul class="project-meta">
-            {% for meta in page.meta %}
-              <li>{{ meta }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
       </div>
 
-      <div class="content-section-body">
+      <div class="section-text">
         <h3>Learn</h3>
         <p>Together, we learn about your organisation and the project’s context, define goals, devise a high level strategy, and outline a scope of work.</p>
         
@@ -133,93 +107,134 @@ header_img: /images/us/fieldwork-hero.jpg
         <p>We write code, finalise designs, test and deploy. Then we add that extra special shine before working out how best to launch the project for the most positive impact.</p>
       </div>
     </div>  
-  </div>
+
 </section>
 
 
+<section class="page-section">
 
-<section class="hero">
-  <div class="text">
-    <div class="wrapper">
-
+    <div class="section-inner">
       <div class="project-grid">
         <div class="project-grid-col-2">
           <div><img src="{{ site.baseurl }}/images/us/fieldwork-shelf.jpg" alt="" /></div>
           <div><img src="{{ site.baseurl }}/images/us/fieldwork-window.jpg" alt="" /></div>
         </div>
       </div>
+    </div>  
+
+</section>
+
+
+<section class="page-section team">
+
+    <div class="section-inner">
       
-      <div class="project-title">
+      <div class="section-title">
         <h1>We’re a focused team of makers and do-ers who love what we do and constantly push to improve.</h1>
       </div>
 
-      <div class="content-section-body">
-        <div class="pop-it-mod-3-1">
-          <h2>Andy Gott<span>Co-founder</span></h2>
-          <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
-          <ul class="social-icons">
-            <li><a href="https://twitter.com/_andygott" class="icon-twitter"></a></li>
-            <li><a href="http://instagram.com/andygott" class="icon-instagram"></a></li>
-            <li><a href="http://www.pinterest.com/andygott/" class="icon-pinterest"></a></li>
-            <li><a href="https://github.com/andygott" class="icon-github"></a></li>
-          </ul>
-        </div>
+      <div class="section-text content-columns">
+        <div class="content-col-wrapper">
+          <div class="content-col content-col--3-1">
+            <h2>Andy Gott<span>Co-founder</span></h2>
+            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
+            <ul class="social-icons">
+              <li><a href="https://twitter.com/_andygott" class="icon-twitter"></a></li>
+              <li><a href="http://instagram.com/andygott" class="icon-instagram"></a></li>
+              <li><a href="http://www.pinterest.com/andygott/" class="icon-pinterest"></a></li>
+              <li><a href="https://github.com/andygott" class="icon-github"></a></li>
+            </ul>
+          </div>
 
-        <div class="pop-it-mod-3-1">
-          <h2>Loz Ives<span>Co-founder</span></h2>
-          <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
-          <ul class="social-icons">
-            <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
-            <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
-            <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
-            <li><a href="https://github.com/EMT" class="icon-github"></a></li>
-          </ul>
-        </div>
+          <div class="content-col content-col--3-1">
+            <h2>Loz Ives<span>Co-founder</span></h2>
+            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
+            <ul class="social-icons">
+              <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
+              <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
+              <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
+              <li><a href="https://github.com/EMT" class="icon-github"></a></li>
+            </ul>
+          </div>
 
-        <div class="pop-it-mod-3-1">
-          <h2>Sadie Evans<span>Designer</span></h2>
-          <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
-          <ul class="social-icons">
-            <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
-            <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
-            <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
-            <li><a href="https://github.com/EMT" class="icon-github"></a></li>
-          </ul>
-        </div>
+          <div class="content-col content-col--3-1">
+            <h2>Sadie Evans<span>Designer</span></h2>
+            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
+            <ul class="social-icons">
+              <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
+              <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
+              <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
+              <li><a href="https://github.com/EMT" class="icon-github"></a></li>
+            </ul>
+          </div>
 
-        <div class="pop-it-mod-3-1">
-          <h2>Ed Ball<span>Developer</span></h2>
-          <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
-          <ul class="social-icons">
-            <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
-            <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
-            <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
-            <li><a href="https://github.com/EMT" class="icon-github"></a></li>
-          </ul>
-        </div>
+          <div class="content-col content-col--3-1">
+            <h2>Ed Ball<span>Developer</span></h2>
+            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
+            <ul class="social-icons">
+              <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
+              <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
+              <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
+              <li><a href="https://github.com/EMT" class="icon-github"></a></li>
+            </ul>
+          </div>
 
-        <div class="pop-it-mod-3-1">
-          <h2>Harry Parton<span>Developer</span></h2>
-          <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
-          <ul class="social-icons">
-            <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
-            <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
-            <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
-            <li><a href="https://github.com/EMT" class="icon-github"></a></li>
-          </ul>
-        </div>
+          <div class="content-col content-col--3-1">
+            <h2>Harry Parton<span>Developer</span></h2>
+            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
+            <ul class="social-icons">
+              <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
+              <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
+              <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
+              <li><a href="https://github.com/EMT" class="icon-github"></a></li>
+            </ul>
+          </div>
 
-        <div class="pop-it-mod-3-1">
-          <h2>Eve Warren<span>Designer</span></h2>
-          <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
-          <ul class="social-icons">
-            <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
-            <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
-            <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
-            <li><a href="https://github.com/EMT" class="icon-github"></a></li>
-          </ul>
+          <div class="content-col content-col--3-1">
+            <h2>Eve Warren<span>Designer</span></h2>
+            <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> -->
+            <ul class="social-icons">
+              <li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
+              <li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
+              <li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
+              <li><a href="https://github.com/EMT" class="icon-github"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>  
-  </div>
+
 </section>
+
+
+<section class="page-section favorites">
+
+    <div class="section-inner">
+      
+      <div class="section-title">
+        <h1>A few of our favourite things</h1>
+      </div>
+
+      <div class="section-text">
+        <ul class="plain-list">
+          <li>The collected <a href="http://www.youtube.com/watch?v=rPt_FM-QcEI">filmic</a> works of <a href="http://www.telegraph.co.uk/culture/film/9842124/Eight-brilliant-true-stories-about-Bill-Murray.html">Bill Murray</a></li>
+          <li>Robots</li>
+          <li><a href="http://www.jeffcanham.com/">Hand Painted Lettering</a></li>
+          <li><a href="http://chrispprinters.co.uk/">Letterpress</a></li>
+          <li>The Outdoors</li>
+          <li>Procrastinating</li>
+          <li>Reading</li>
+          <li><a href="http://www.flickr.com/photos/_andygott/8514818727/in/pool-madebyfieldwork">Making Lists</a></li>
+          <li>Toys</li>
+          <li><a href="http://www.marblebeers.com/">Beer</a> &amp; Cheese</li>
+          <!--        <li>Bicycle <a href="">Racing</a></li> -->
+          <li><a href="http://www.youtube.com/watch?v=91lJhEzMaH4">John Hughes</a></li>
+          <li><a href="http://en.wikipedia.org/wiki/Life,_the_Universe_and_Everything">The Universe, and Everything</a></li>
+          <li><a href="http://thingswefind.com/Cats">Cats</a></li>
+        </ul>
+      </div>
+    </div>  
+
+</section>
+
+

@@ -4,12 +4,12 @@
 
 body {
   font-family: 'Neuzeit';
-  font-size: 15px;
-  line-height: 1.4em;
+  font-size: $type-base;
+  line-height: $line-base;
   color: rgb(109,110,113);
   // background: rgb(239,239,239);
   background: rgb(255,255,255);
-  margin-top: 6em;
+  // margin-top: 6em;
   position: relative;
   min-height: 100%;
   -webkit-font-smoothing:antialiased

@@ -81,23 +81,14 @@
 
 // All of this could do with double checking - it got quite messy at this point with the blog and the site in two different directories.
 
-body.project {
-	margin-top: 0;
-	background: rgb(255,255,255);
-}
+// body.project {
+// 	margin-top: 0;
+// 	background: rgb(255,255,255);
+// }
 
 
 
-.hero-picture {
-	height: 75%;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center center;
-	-webkit-background-size:cover;
-	background-size: cover;
-	position: relative;
-	z-index: -1;
-}
+
 
 .project .hero {
 	margin-bottom: 5%;
@@ -105,8 +96,16 @@ body.project {
 .hero {
 	width: 100%;
 
+	&:first-child {
+		margin-top: 5%;
+	}
+
+	&.team {
+		margin-bottom: 2%;
+	}
+
 	.wrapper {
-		padding-top: 5%;
+		// padding-top: 5%;
 	}
 
 	.text {

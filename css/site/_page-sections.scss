@@ -3,6 +3,153 @@
  * Styles for page setions
  */
 
+.hero-picture {
+	height: 75%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size:cover;
+	background-size: cover;
+	position: relative;
+	z-index: -1;
+}
+
+
+.page-section {
+	overflow: hidden;
+	margin-bottom: 3em;
+
+	&:first-child {
+		margin-top: 3em;
+	}
+	
+	h1,
+	h2,
+	h3 {
+		color: $fw-red;
+	}
+	h2 span {
+		display: block;
+		color: #6d6e71;
+	}
+	p {
+		margin-bottom: 1em;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	a {
+		color: rgb(23,77,89);
+		text-decoration: none;
+		-webkit-transition: all .3s ease-out;
+
+		&:hover {
+			color: rgb(82,206,201);
+		}
+	}
+}
+
+.section-title {
+	color: #939598;
+	margin-bottom: $type-large;
+
+	h1,
+	h2 {
+		font-size: $type-large;
+		line-height: $line-large;
+		margin-bottom: 0.3em;
+		max-width: $max-line-length;
+	}
+}
+
+.section-text {
+	max-width: $max-line-length;
+
+	&.section-text--large {
+		font-size: $type-large;
+		line-height: $line-large;
+	}
+	
+	h2 {
+		margin: 3em 0 1em;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+@media all and (min-width: 980px) {
+	.page-section {
+		overflow: hidden;
+		margin-bottom: 5%;
+
+		&:first-child {
+			margin-top: 5%;
+		}
+	}
+
+	.section-title {
+		width: 35%;
+		max-width: 400px;
+		float: left;
+		margin-right: 15%;
+	}
+
+	.section-text {
+		width: 50%;
+		float: right;
+		max-width: none;
+	}
+}
+
+.content-columns {
+	margin-bottom: 0;
+
+	.content-col-wrapper {
+		margin: 0 -1em -2em;
+		overflow: hidden;
+	}
+
+	.content-col {
+		box-sizing: border-box;
+		margin-bottom: 2em;
+		padding: 0 1em;
+		float: left;
+
+		&.content-col--2-1 {
+			width: 50%;
+		}
+		&.content-col--3-1 {
+			width: 33.333%;
+		}
+	}
+}
+
+.plain-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.bulleted-list {
+	list-style: none;
+	padding-left: 0;
+	
+	li {
+		list-style: none;
+
+		&:before {
+			content: '– ',
+
+		}
+	}
+}
+
+.section-inner {
+	max-width: 1500px;
+	width: 90%;
+	margin: 0 auto;
+}
+
 .hero {
 
 	h2, 
@@ -72,10 +219,21 @@
 
 }
 
+@media all and (max-width: 900px) {
+
+	.hero {
+		.hero-description {
+			float: left;
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+}
+
 .content-section-body {
 	width: 50%;
 	float: right;
-	margin-bottom: 2em;
+	// margin-bottom: 2em;
 	overflow: hidden;
 
 	.pop-it-col-2-1 {
@@ -156,6 +314,23 @@
 		&:hover {
 			color: rgb(82,206,201);
 		}
+	}
+}
+
+@media all and (max-width: 900px) {
+
+	.content-section-body {
+		float: left;
+		width: 100%;
+		max-width: 400px;
+	}
+}
+
+.favorites {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
 	}
 }
 

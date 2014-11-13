@@ -3,9 +3,13 @@
 
   {% include head.html %}
 
-    <body>
+    <body class="{% if page.header_img %}hero-header{% endif %}{% if page.body_classes %} {{ page.body_classes }}{% endif %}">
 
 	    {% include header.html %}
+		
+		{% if page.header_img %}
+			<div style="background-image: url('{{ site.baseurl }}{{ page.header_img }}');" class="hero-picture"></div>
+		{% endif %}
 
 	    <div class="page-content">
 	      {{ content }}
