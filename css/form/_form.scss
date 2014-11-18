@@ -1,11 +1,4 @@
-.hire-us form, .hire-us .thanks {
-  width: 60%;
-  margin: 2em auto;
-}
 
-.thanks {
-  display: none;
-}
 
 .button {
 padding: 1em 2em;
@@ -39,7 +32,7 @@ cursor: pointer;
 
 }
 
-.hire-us form {
+form.hire-us {
   .what {
     label {
       margin-bottom: 1em;
@@ -54,11 +47,22 @@ cursor: pointer;
 
 }
 
+form.hire-us .name, form.hire-us .email {
+  float: left;
+  width: 47.25%;
+}
+
+form.hire-us .email {
+  margin-left: 5%;
+}
+
+
+
 .form-group{
 	margin-bottom:20px;
 }
 
-.hire-us  {
+form.hire-us {
   input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], textarea {
   	box-sizing: border-box;
   	background-color: rgb(252, 252, 252);
@@ -90,9 +94,6 @@ cursor: pointer;
   }
 
   .digital-details, .print-details {
-  	display: none;
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
     padding: 1em 0;
 
     input {

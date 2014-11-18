@@ -1,0 +1,114 @@
+---
+title: "Planner"
+description: "We love making things, collaborating, identifying interesting problems and figuring out what we can build to help solve them."
+layout: default
+---
+
+<section class="page-section">
+
+    <div class="section-inner">
+      
+      <div class="section-title">
+        <h1>Interested in working with us? Send us the details via our project planner, and we’ll get back to you as soon as we can.</h1>
+      </div>
+
+      <div class="section-text section-text">
+        <form class="hire-us">
+        
+          <div class="name">
+            <p><label for="name">Name</label>
+            <input type="text" name="name" id="name"/></p>
+          </div>
+          
+          <div class="email">
+            <p><label for="email">Email</label>
+              <input class="test" name="email" id="email" type="email">
+            </p>
+          </div>
+
+          <p><label for="text_area">How can we help</label>
+          <textarea id="text_area" name="description"></textarea></p>
+
+          <p>What are you looking for? Please make a selection from the services below.</p>
+
+          <div class="print-details">
+            <div class="grid">
+              <div class="grid-col-third"><input type="checkbox" id="posters" value="Posters"> <label for="posters">Posters</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="branding" value="Branding" ><label for="branding">Branding</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="labels" value="Labels"> <label for="labels">Labels</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="books" value="Books"> <label for="books">Books</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="crafted" value="Crafted"> <label for="crafted">Crafted</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="design-other" value="Other"> <label for="design-other">Other</label></div>
+            </div>
+          </div>
+
+
+
+          
+          <div class="budget">
+            <p class="title">Budget</p>
+            <div class="ui-slider">
+              <div class="slider" ></div>
+              <input type="text" name="budget" class="value"/>
+            </div>  
+          </div>
+
+          <p>
+              <input class="button submit" type="submit" value="Submit" />
+          </p>
+          
+        </form>
+      </div>
+    </div>  
+
+</section>
+
+
+
+<script>
+
+var valueInput = $('.value');
+var sliderDiv = $('.slider');
+var minBudget = 0;
+var maxBudget = 20000;
+
+sliderDiv.noUiSlider({
+  start: [1000],
+  step: 250,
+  behaviour: 'tap-drag',
+  range: {
+    'min': minBudget,
+    'max': maxBudget
+  },
+  serialization: {
+    lower: [
+      $.Link({
+        target: valueInput,
+        format: {
+          prefix: '£',
+          decimals: 0
+        }
+      })
+    ]
+  }
+});
+
+
+sliderDiv.on('slide set', function () {
+  if(valueInput.val() == '£' + maxBudget) {
+    valueInput.val('All your money');
+  }
+  if(valueInput.val() == '£' + minBudget) {
+    valueInput.val('No budget');
+  }
+});
+
+
+var successMsg = '<div class="msg success"><div class="wrapper"><p>Everything checks out, submitting now!</p><span class="loader"></span></div></div>',
+  errorMsg = '<div class="msg error"><div class="wrapper"><p>Hey dummy, your information is wrong. Fix it.</p><span class="loader"></span></div></div>',
+  success = '.msg.success',
+  error = '.msg.error',
+  loader = '.loader';
+
+</script>
+
