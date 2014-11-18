@@ -55,7 +55,10 @@ form.hire-us .name, form.hire-us .email {
 form.hire-us .email {
   margin-left: 5%;
 }
-
+form input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
 
 
 .form-group{
@@ -65,12 +68,12 @@ form.hire-us .email {
 form.hire-us {
   input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], textarea {
   	box-sizing: border-box;
-  	background-color: rgb(252, 252, 252);
-  	border: 1px solid rgb(220, 220, 220);
+  	background-color: rgb(240,240,238);
+  	border: none;
   	display: block;
   	font-size: 1em;
   	padding: 0.4em;
-  	margin-bottom: 0.4em;
+  	margin-bottom: 1.4em;
   	width: 100%;
   	vertical-align: middle;
     font-family: 'Neuzeit';
@@ -84,7 +87,7 @@ form.hire-us {
   	font-size: 1em;
   	font-weight: bold;
   	line-height: 1.4em;
-  	margin-bottom: 0.25em;
+  	margin-bottom: 0.5em;
   	position: relative;
   	text-transform: none;
   }
@@ -94,15 +97,22 @@ form.hire-us {
   }
 
   .digital-details, .print-details {
-    padding: 1em 0;
-
+  margin-bottom: 1.4em;
     input {
       display: none;
     }
     
     .grid-col-third {
       text-align: center;
-      margin: 10px 0;
+      padding: 5px;
+      box-sizing: border-box;
+
+      label {
+        padding: 15px;
+        background: rgb(240,240,238);
+        display: block;
+      }
+
     }
 
   }
@@ -116,7 +126,8 @@ form.hire-us {
 
 
   input[type=checkbox]:checked + label {
-      color: red;
+      background: rgb(232, 57, 68);
+      color: white;
   }
 
 
@@ -126,23 +137,7 @@ form.hire-us {
   }
 }
 
-// Fade in animation testing from display none
 
-.shown {
-	display: block !important;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
 
 // Issue Testing - Red glow.
 
