@@ -1,10 +1,10 @@
 
 
 .button {
-padding: 1em 2em;
+padding: 0.75em 2em;
+font-size: 1em;
 color: rgb(255, 255, 255);
 text-decoration: none;
-
 -webkit-transition: background 0.3s;
 -moz-transition: background 0.3s;
 -ms-transition: background 0.3s;
@@ -19,15 +19,6 @@ cursor: pointer;
   
   &:hover {
     background: darken(rgb(5, 206, 123), 12%);
-  }
-
-}
-
-.error {
-  background: rgb(255, 91, 53);
-
-  &:hover {
-    background: darken(rgb(255, 91, 53), 12%);
   }
 
 }
@@ -131,17 +122,4 @@ form.hire-us {
   }
 
 
-
-  form > p, form > div, p.title {
-    margin: 0 0 20px 0;
-  }
-}
-
-
-
-// Issue Testing - Red glow.
-
-input[type="email"].issue {
-	border: 1px solid red;
-	transition: border 1s ease-out;
 }
