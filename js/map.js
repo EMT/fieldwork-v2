@@ -89,7 +89,13 @@ $(function(){
 			mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
 			navigationControl: false,
 			navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-			mapTypeId: google.maps.MapTypeId.ROADMAP
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			zoomControlOptions: {
+			  style: google.maps.ZoomControlStyle.LARGE,
+			  position: google.maps.ControlPosition.LEFT_BOTTOM
+			},
+			panControl: false
+
 		};
 
 		map = new google.maps.Map(document.getElementById('js-map'), settings);

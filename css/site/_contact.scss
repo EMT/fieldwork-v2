@@ -29,3 +29,27 @@
 		}
 	}
 }
+
+@media all and (max-height: 760px) {
+	.map{
+		height:450px;
+	}
+}
+
+@media all and (max-height: 600px) {
+	.map{
+		height:350px;
+	}
+}
+
+@media all and (max-height: 500px) {
+	.map{
+		height:300px;
+	}
+}
+
+@media all and (max-height: 400px) {
+	.map{
+		height:200px;
+	}
+}
