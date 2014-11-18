@@ -166,8 +166,16 @@ header nav a:first-of-type {
 
 @media only screen and (max-width: 900px) {
 
-	header nav {
-		width: 40%;
+	header nav, .header-social-icons {;
+		width:auto;
+	}
+
+}
+
+@media only screen and (max-width: 540px) {
+
+	.header-social-icons {
+		display:none;
 	}
 
 }
