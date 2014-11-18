@@ -143,9 +143,19 @@ bottom: -2px;
    }
 }
 
+@media only screen and (min-width: 1800px) {
+	.home-page-intro{
+		font-size:2em;
+	}
+}
 
 @media only screen and (max-width: 1330px) {
+	.home-page-intro {
+		width:40%;
+	}
+}
 
+@media only screen and (max-width: 1130px) {
 	.home-page-intro {
 		margin-left:5%;
 		position:static;
@@ -153,7 +163,6 @@ bottom: -2px;
 		margin-bottom:60px;
 
 	}
-
 }
 
 @media only screen and (max-width: 900px) {
