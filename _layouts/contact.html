@@ -1,0 +1,28 @@
+{% include top.html %}
+
+    <body class="{% if page.header_img %}hero-header{% endif %}{% if page.body_classes %} {{ page.body_classes }}{% endif %}">
+
+	    {% include header.html %}
+		
+		<div class="contact">
+		  	<div class="map" id='js-map'></div>
+
+		  	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		  	<script src='{{ site.baseurl }}/js/map.js'></script>
+
+		  	<div class="wrapper">
+			  	<ul class="category-links">
+			  		<li><a class="us" href="#">Us</a></li>
+			  		<li><a class="eating" href="#">Eating</a></li>
+			  		<li><a class="drinking" href="#">Drinking</a></li>
+			  	</ul>	
+		  	</div>
+
+		</div>
+
+	    <div class="page-content">
+	      {{ content }}
+	      {% include footer.html %}
+	    </div>
+    </body>
+</html>

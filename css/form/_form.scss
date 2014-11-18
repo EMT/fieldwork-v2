@@ -1,11 +1,4 @@
-.hire-us form, .hire-us .thanks {
-  width: 60%;
-  margin: 2em auto;
-}
 
-.thanks {
-  display: none;
-}
 
 .button {
 padding: 1em 2em;
@@ -39,7 +32,7 @@ cursor: pointer;
 
 }
 
-.hire-us form {
+form.hire-us {
   .what {
     label {
       margin-bottom: 1em;
@@ -54,19 +47,33 @@ cursor: pointer;
 
 }
 
+form.hire-us .name, form.hire-us .email {
+  float: left;
+  width: 47.25%;
+}
+
+form.hire-us .email {
+  margin-left: 5%;
+}
+form input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+
 .form-group{
 	margin-bottom:20px;
 }
 
-.hire-us  {
+form.hire-us {
   input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], textarea {
   	box-sizing: border-box;
-  	background-color: rgb(252, 252, 252);
-  	border: 1px solid rgb(220, 220, 220);
+  	background-color: rgb(240,240,238);
+  	border: none;
   	display: block;
   	font-size: 1em;
   	padding: 0.4em;
-  	margin-bottom: 0.4em;
+  	margin-bottom: 1.4em;
   	width: 100%;
   	vertical-align: middle;
     font-family: 'Neuzeit';
@@ -80,7 +87,7 @@ cursor: pointer;
   	font-size: 1em;
   	font-weight: bold;
   	line-height: 1.4em;
-  	margin-bottom: 0.25em;
+  	margin-bottom: 0.5em;
   	position: relative;
   	text-transform: none;
   }
@@ -90,18 +97,22 @@ cursor: pointer;
   }
 
   .digital-details, .print-details {
-  	display: none;
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
-    padding: 1em 0;
-
+  margin-bottom: 1.4em;
     input {
       display: none;
     }
     
     .grid-col-third {
       text-align: center;
-      margin: 10px 0;
+      padding: 5px;
+      box-sizing: border-box;
+
+      label {
+        padding: 15px;
+        background: rgb(240,240,238);
+        display: block;
+      }
+
     }
 
   }
@@ -115,7 +126,8 @@ cursor: pointer;
 
 
   input[type=checkbox]:checked + label {
-      color: red;
+      background: rgb(232, 57, 68);
+      color: white;
   }
 
 
@@ -125,23 +137,7 @@ cursor: pointer;
   }
 }
 
-// Fade in animation testing from display none
 
-.shown {
-	display: block !important;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
 
 // Issue Testing - Red glow.
 
