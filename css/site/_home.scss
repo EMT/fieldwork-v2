@@ -66,20 +66,22 @@ bottom: -2px;
 
 .featured-block {
 	display: block;
-
-	h2,
-	.featured-runner {
-		color: $grey-type;
-		font-size: $type-large;
-		line-height: $line-large;
-		width: 50%;
-		max-width: 30em;
-		margin-left: 50%;
-	}
+	
 	.featured-image {
 		background-size: cover;
 		background-position: center center;
 		padding-bottom: 50%;
+		margin-bottom: 1em;
+	}
+	h2,
+	.featured-runner {
+		color: $grey-type;
+		width: 50%;
+		max-width: 30em;
+		margin-left: 50%;
+	}
+	h2 {
+		color: rgb(62,155,185);
 	}
 }
 
