@@ -35,3 +35,13 @@
 		</div>
 	</div>
 </footer>
+
+{% if page.scripts %}
+    {% for script in page.scripts %}
+        <script src="{{ script }}"></script>
+    {% endfor %}
+{% endif %}
+
+{% if page.run %}
+    <script>{{ page.run }}</script>
+{% endif %}

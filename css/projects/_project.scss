@@ -4,76 +4,28 @@
  */
 
 .projects {
-	overflow: hidden;
-	margin: 0 -0.5em;
-	padding-bottom: 4em;
-
-	li {
-		@include border-box();
-		width: 50%;
-		float: left;
-		padding: 0 0.5em 0;
-		margin-bottom: 3em;
-		position: relative;
-	
-		figure {
-			background-color: rgb(232,57,68);
-			overflow: hidden;
-			position: relative;
-			display: block;
-			height: 0;
-			padding-bottom: 68%;
-		}
-		img {
-			display: block;
-			width: 100%;
-			transition: all .3s ease-out;
-			/* prevent weird 1px width/height/position changes on hover in Chrome */
-			position: relative;
-			-webkit-backface-visibility: hidden;
-			border: 1px solid rgb(255,255,255); 
-		}
-		a {
-			text-decoration: none;
-			color: rgb(102,102,102);
-
-			&:hover img {
-				opacity: 0.1;
-				-webkit-backface-visibility: hidden;
-			}
-			&:hover .project-index-content {
-				opacity: 1;
-			}
-		}
-
-		h2 {
-			padding-top: 0.5em;
-		}
-		.project-index-meta {
-			opacity: 0.6;
-		}
-		.project-index-content {
-			font-size: 1.3333em;
-			line-height: 1.3em;
-			color: rgb(255,255,255);
-			position: absolute;
-			top: 50%;
-			bottom: 2em;
-			left: 25%;
-			right: 0.5em;
-			max-width: 20em;
-			padding-top: 0;
-			padding-right: 3em;
-			opacity: 0;
-			transition: all .3s ease-out;
-		}
-		h2,
-		p {
-			padding-left: 25%; 
-		}
+	figure {
+		background-color: rgb(232,57,68);
+	}
+	.project-index-meta {
+		opacity: 0.6;
+	}
+	.project-index-content {
+		font-size: 1.3333em;
+		line-height: 1.3em;
+		color: rgb(255,255,255);
+		position: absolute;
+		top: 50%;
+		bottom: 2em;
+		left: 25%;
+		right: 0.5em;
+		max-width: 20em;
+		padding-top: 0;
+		padding-right: 3em;
+		opacity: 0;
+		transition: all .3s ease-out;
 	}
 }
-
 
 
 /**
