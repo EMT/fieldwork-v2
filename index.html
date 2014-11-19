@@ -1,20 +1,19 @@
 ---
 layout: home
+featured_img: /images/mavis/mavis-topimage.jpg
+featured_title: "MAVIS"
+featured_text: "A print making, internet connected, musical keyboard to encourage hands-on play and teamwork."
+featured_url: "/work/mavis"
 ---
 
-<div class="home-page-grid">
+<div class="page-section">
+    <div class="section-inner">
 
-  <div class="project-grid">
+        <a href="{{site.baseurl }}{{ page.featured_url }}" class="featured-block">
+            <h2>{{ page.featured_title }}</h2>
+            <p class="featured-runner">{{ page.featured_text }}</p>
+            <div style="background-image: url(/images/mavis/mavis-topimage.jpg)" class="featured-image"></div>
+        </a>
 
-    <div class="project-grid-col-2">
-      <a href=""><img src="{{site.baseurl}}/images/home/studio.jpg" alt=""></a>
-      <img src="{{site.baseurl}}/images/home/common-seas.png" alt=""></a>
     </div>
-    <div class="project-grid-col-2">
-      <img src="{{site.baseurl}}/images/home/dragon.png" alt=""></a>
-      <div class="grid-content-block"></div>
-    </div>
-
-  </div>
-
 </div>
