@@ -122,7 +122,8 @@ body.no-hero {
 	
 	.content-links-list-item {
 		display: block;
-		max-width: 30em;
+		// max-width: 30em;
+		margin-bottom: 1.6em;
 
 		h2,
 		h3 {
@@ -131,6 +132,10 @@ body.no-hero {
 		p {
 			margin-bottom: 1em;
 			color: $grey-type;
+		}
+
+		img {
+			max-width: 100%;
 		}
 	}
 }
