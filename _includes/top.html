@@ -12,4 +12,9 @@
     	<script src="{{ site.baseurl }}/js/jquery.nouislider.min.js"></script>
     	<script src="{{ site.baseurl }}/js/snap.svg-min.js"></script>
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+        {% if page.stylesheets %}
+            {% for stylesheet in page.stylesheets %}
+                <link rel="stylesheet" href="{{ stylesheet }}">
+            {% endfor %}
+        {% endif %}
     </head>

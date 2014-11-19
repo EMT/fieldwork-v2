@@ -1,107 +1,107 @@
-.grid .text .col-content {
-  background: rgb(244,36,52);
-  color: rgb(255,255,255);
-  padding: 0.5em;
-  @include border-box;
-  line-height: 1.4;
+// .grid .text .col-content {
+//   background: rgb(244,36,52);
+//   color: rgb(255,255,255);
+//   padding: 0.5em;
+//   @include border-box;
+//   line-height: 1.4;
 
-}
+// }
 
-.grid {
-  overflow: hidden;
-  clear: both;
-  margin: 0 -10px;
+// .grid {
+//   overflow: hidden;
+//   clear: both;
+//   margin: 0 -10px;
 
-  > img {
-    max-width: 100%;
-    margin-bottom: 1em;
-  }
-}
+//   > img {
+//     max-width: 100%;
+//     margin-bottom: 1em;
+//   }
+// }
 
-[class^="grid-col-"] {
-  // background: rgb(255, 0, 0);
-  float: left;
-  position: relative;
+// [class^="grid-col-"] {
+//   // background: rgb(255, 0, 0);
+//   float: left;
+//   position: relative;
 
-  &.tall-cube {
-    padding-bottom: 70%;
-  }
-  &.med-cube {
-    padding-bottom: 35%;
-  }
-  &.vertical-cube {
-    padding-bottom: 40%;
-  }
-  &.tiny-cube {
-    padding-bottom: 20%;
-  }
-  &.wide-cube {
-    padding-bottom: 40%;
-  }
-  &.full-size-cube {
-    padding-bottom: 65%;
-  }
-  &.extra-tall-cube {
-    padding-bottom: 150%;
-  }
+//   &.tall-cube {
+//     padding-bottom: 70%;
+//   }
+//   &.med-cube {
+//     padding-bottom: 35%;
+//   }
+//   &.vertical-cube {
+//     padding-bottom: 40%;
+//   }
+//   &.tiny-cube {
+//     padding-bottom: 20%;
+//   }
+//   &.wide-cube {
+//     padding-bottom: 40%;
+//   }
+//   &.full-size-cube {
+//     padding-bottom: 65%;
+//   }
+//   &.extra-tall-cube {
+//     padding-bottom: 150%;
+//   }
 
-  .col-content {
-    position: absolute;
-    top: 0.5em;
-    bottom: 0.5em;
-    left: 0.5em;
-    right: 0.5em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+//   .col-content {
+//     position: absolute;
+//     top: 0.5em;
+//     bottom: 0.5em;
+//     left: 0.5em;
+//     right: 0.5em;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//   }
   
-  .col-content.test {
-    background: rgb(147,149,152);
-  }
+//   .col-content.test {
+//     background: rgb(147,149,152);
+//   }
 
-}
+// }
 
 
 
-@media screen and (max-width: 700px) {
-.grid [class^="grid-col-"] {
-  width: 100%;
+// @media screen and (max-width: 700px) {
+// .grid [class^="grid-col-"] {
+//   width: 100%;
 
-  &.tall-cube {
-    padding-bottom: 125%;
-  }
-  &.med-cube {
-    padding-bottom: 60%;
-  }
-  &.vertical-cube {
-    padding-bottom: 40%;
-  }
-  &.tiny-cube {
-    padding-bottom: 60%;
-  }
-  &.wide-cube {
-    padding-bottom: 40%;
-  }
-  &.full-size-cube {
-    padding-bottom: 65%;
-  }
-  &.extra-tall-cube {
-    padding-bottom: 150%;
-  }
+//   &.tall-cube {
+//     padding-bottom: 125%;
+//   }
+//   &.med-cube {
+//     padding-bottom: 60%;
+//   }
+//   &.vertical-cube {
+//     padding-bottom: 40%;
+//   }
+//   &.tiny-cube {
+//     padding-bottom: 60%;
+//   }
+//   &.wide-cube {
+//     padding-bottom: 40%;
+//   }
+//   &.full-size-cube {
+//     padding-bottom: 65%;
+//   }
+//   &.extra-tall-cube {
+//     padding-bottom: 150%;
+//   }
 
-}
+// }
 
-}
+// }
 
-@for $i from 1 through $column-count {
+// @for $i from 1 through $column-count {
 
-  .grid-col-#{$i} {
-    width: $column-width*$i;
-  }
+//   .grid-col-#{$i} {
+//     width: $column-width*$i;
+//   }
 
-}
+// }
 
-.grid-col-third {
-  width: 33.3%;
-}
+// .grid-col-third {
+//   width: 33.3%;
+// }

@@ -9,9 +9,9 @@ body_classes: no-hero
 
   <!-- <h1>Projects</h1> -->
 
-  <ul class="projects">
+  <ul class="grid projects">
     {% for project in site.work %}
-      <li>
+      <li class="grid-item">
         <a href="{{ site.baseurl }}{{ project.url }}">
           <figure>
             <img src="{{ site.baseurl }}{{ project.thumb }}" alt="" />

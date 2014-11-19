@@ -72,6 +72,7 @@ body.no-hero {
 
 .section-text {
 	max-width: $max-line-length;
+	margin-bottom: 2em;
 
 	&.section-text--large {
 		font-size: $type-large;
@@ -79,6 +80,9 @@ body.no-hero {
 	}
 	&.section-text--cols {
 		@include column(2, 300px, 2em);
+	}
+	&:last-child {
+		margin-bottom: 0;
 	}
 	
 	h2 {
@@ -90,7 +94,8 @@ body.no-hero {
 }
 
 .content-columns {
-	margin-bottom: 0;
+	// margin-bottom: 0;
+	overflow: hidden;
 
 	.content-col-wrapper {
 		margin: 0 -1em -2em;
@@ -158,6 +163,7 @@ body.no-hero {
 	.section-text {
 		width: 50%;
 		float: right;
+		clear: right;
 		max-width: none;
 	}
 }
