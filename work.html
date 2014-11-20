@@ -5,27 +5,27 @@ layout: default
 body_classes: no-hero
 ---
 
-<div class="wrapper">
+<div class="section-inner">
 
-  <!-- <h1>Projects</h1> -->
+    <!-- <h1>Projects</h1> -->
 
-  <ul class="grid projects">
-    {% for project in site.work %}
-      <li class="grid-item">
-        <a href="{{ site.baseurl }}{{ project.url }}">
-          <figure>
-            <img src="{{ site.baseurl }}{{ project.thumb }}" alt="" />
-            <figcaption class="project-index-content">
-              {{ project.runner }}
-            </figcaption>
-          </figure>
-          <h2>{{ project.title }}</h2>
-          <p class="project-index-meta">
-            {{ project.meta | array_to_sentence_string }}
-          </p>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="grid projects">
+        {% for project in site.work %}
+            <li class="grid-item">
+                <a href="{{ site.baseurl }}{{ project.url }}">
+                    <figure>
+                        <img src="{{ site.baseurl }}{{ project.thumb }}" alt="" />
+                        <figcaption class="project-index-content">
+                            {{ project.runner }}
+                        </figcaption>
+                    </figure>
+                    <h2>{{ project.title }}</h2>
+                    <p class="project-index-meta">
+                        {{ project.meta | array_to_sentence_string }}
+                    </p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 
 </div>
