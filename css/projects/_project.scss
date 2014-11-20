@@ -32,10 +32,10 @@
  * Individual project page styles
  */
 
-.project-info {
+.project-footer {
 	width: 50%;
 	float: right;
-	padding: 3.5em 0 5em;
+	padding: 0.5em 0 5em;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
@@ -70,48 +70,3 @@
 		color: rgb(81,206,201);
 	}
 }
-
-.project-grid {
-	overflow: hidden;
-	clear: both;
-	margin: 0;
-
-	img {
-		max-width: 100%;
-	}
-
-	> img {
-		margin-bottom: 1em;
-	}
-
-	.project-grid-col-2 {
-		margin-bottom: 1em;
-		overflow: hidden;
-		position: relative;
-
-		> * {
-			@include border-box();
-			width: 50%;
-			float: left;
-			padding-left: 0.5em;
-
-			&:first-child {
-				padding-left: 0;
-				padding-right: 0.5em;
-			}
-		}
-	}
-
-	.gird-content-block {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: $fw-red;
-		color: rgb(255,255,255)
-	}
-}
-
-
-

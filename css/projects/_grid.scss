@@ -7,6 +7,10 @@
   margin: 0 -0.5em;
   padding-bottom: 4em;
 
+  img {
+    width: 100%;
+  }
+
   .grid-item {
     @include border-box();
     width: 50%;
@@ -51,6 +55,21 @@
     p {
       padding-left: 25%; 
     }
+  }
+}
+
+.media-grid {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  > img {
+    margin-bottom: 1em;
+  }
+
+  .grid-item {
+    margin-bottom: 1em;
   }
 }
 

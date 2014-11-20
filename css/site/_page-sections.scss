@@ -117,6 +117,29 @@ body.no-hero {
 	}
 }
 
+.content-links-list {
+	list-style: none;
+	
+	.content-links-list-item {
+		display: block;
+		// max-width: 30em;
+		margin-bottom: 1.6em;
+
+		h2,
+		h3 {
+			// color: rgb(62,155,185);
+		}
+		p {
+			margin-bottom: 1em;
+			color: $grey-type;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
 .plain-list {
 	list-style: none;
 	padding-left: 0;
