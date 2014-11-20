@@ -11,17 +11,15 @@
 		opacity: 0.6;
 	}
 	.project-index-content {
-		font-size: 1.3333em;
-		line-height: 1.3em;
+		font-size: $type-large;
+		line-height: $line-large;
 		color: rgb(255,255,255);
 		position: absolute;
-		top: 50%;
-		bottom: 2em;
-		left: 25%;
-		right: 0.5em;
+		top: 1em;
+		bottom: 1em;
+		left: 1em;
+		right: 1em;
 		max-width: 20em;
-		padding-top: 0;
-		padding-right: 3em;
 		opacity: 0;
 		transition: all .3s ease-out;
 	}
@@ -68,5 +66,44 @@
 	}
 	a:hover {
 		color: rgb(81,206,201);
+	}
+}
+
+
+@media all and (min-width: 600px) {
+	.projects {
+		.project-index-content {
+			font-size: $type-base;
+			line-height: $line-base;
+		}
+	}
+}
+
+@media all and (min-width: 850px) {
+	.projects {
+		.project-index-content {
+			top: 2em;
+			left: 25%;
+			right: 0.5em;
+			padding-right: 3em;
+		}
+	}
+}
+
+@media all and (min-width: 1160px) {
+	.projects {
+		.project-index-content {
+			font-size: $type-large;
+			line-height: $line-large;
+		}
+	}
+}
+
+@media all and (min-width: 1300px) {
+	.projects {
+		.project-index-content {
+			top: 50%;
+			bottom: 2em;
+		}
 	}
 }
