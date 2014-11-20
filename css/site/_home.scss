@@ -1,5 +1,6 @@
 .homepage-header {
 	background:$blue--light;
+	background: linear-gradient(to bottom, $blue--light 0%, $blue--light 99%, $white 100%); 
 	padding-top: 10%;
 	position: relative;
 }
@@ -187,6 +188,18 @@ bottom: -2px;
    }
 }
 
+
+.little-ball--alt{
+	@include vendorize(animation, little-ball-alt-spin 2s infinite ease-in-out);
+    @include vendorize(transform-origin, 1730.1px 422.25px);
+}
+
+.little-ball--alt-2{
+    @include vendorize(transform-origin, 1776.71px 422.25px);
+	@include vendorize(animation-delay, -500ms);
+}
+
+
 @media only screen and (min-width: 1800px) {
 	.home-page-intro-wrapper-outer{
 		font-size:2em;
@@ -258,6 +271,11 @@ bottom: -2px;
 	75% { @include vendorize(transform, rotate(0deg));}
 }
 
+@include keyframes(little-ball-alt-spin) {
+	0%  { @include vendorize(transform, translateY(0px) rotate(0deg));}
+	50%  { @include vendorize(transform, translateY(-40px) rotate(180deg));}
+	100%  { @include vendorize(transform, translateY(0px) rotate(360deg));}
+}
 
 @include keyframes(pulsate) {
 	0%    { @include vendorize(transform, scale(0.75));}
