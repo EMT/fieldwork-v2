@@ -1,7 +1,7 @@
 .homepage-header {
-	background:$blue--light;
-	background: linear-gradient(to bottom, $blue--light 0%, $blue--light 99%, $white 100%); 
-	padding-top: 10%;
+	// background:$blue--light;
+	// background: linear-gradient(to bottom, $blue--light 0%, $blue--light 99%, $white 100%); 
+	padding-top: 20%;
 	position: relative;
 }
 
@@ -43,11 +43,11 @@ bottom: -2px;
 	left: 50%;
 	width: 30%;
 	font-size: 1.5em;
-	color: $white;
+	// color: $white;
 	line-height: 1.4;
 
 	h1 {
-		color: $white;
+		// color: $white;
 		margin-bottom: 0.6em;
 	}
 }
