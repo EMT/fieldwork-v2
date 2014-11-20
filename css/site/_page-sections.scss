@@ -166,7 +166,7 @@ body.no-hero {
 }
 
 
-@media all and (min-width: 980px) {
+@media all and (min-width: $screen-width-small) {
 	.page-section {
 		overflow: hidden;
 		margin-bottom: 5%;
@@ -177,17 +177,26 @@ body.no-hero {
 	}
 
 	.section-title {
+		width: 32%;
+		float: left;
+	}
+
+	.section-text {
+		width: 63%;
+		float: right;
+		clear: right;
+		max-width: none;
+	}
+}
+
+@media all and (min-width: $screen-width-medium) {
+	.section-title {
 		width: 35%;
 		max-width: 400px;
-		float: left;
-		margin-right: 15%;
 	}
 
 	.section-text {
 		width: 50%;
-		float: right;
-		clear: right;
-		max-width: none;
 	}
 }
 
