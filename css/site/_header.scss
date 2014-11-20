@@ -131,7 +131,7 @@ header .marque {
 header nav {
 	float: right;
 	overflow: hidden;
-	width: 30%;
+	width: auto;
 	margin-right: 0.6em;
 }
 
@@ -157,14 +157,29 @@ header nav a:first-of-type {
 
 .header-social-icons {
 	float: right;
-	width: 20%;
 	text-align: right;
 }
 
+@media all and (min-width: $screen-width-small) {
+	.header-social-icons {
+		width: 20%;
+	}
+	header nav {
+		width: 43%;
+	}
+}
 
-@media only screen and (max-width: 900px) {
+@media all and (min-width: $screen-width-medium) {
+	header nav {
+		width: 30%;
+	}
+}
 
-	header nav, .header-social-icons {;
+
+@media only screen and (min-width: $screen-width-medium) {
+
+	header nav, 
+	.header-social-icons {;
 		width:auto;
 	}
 

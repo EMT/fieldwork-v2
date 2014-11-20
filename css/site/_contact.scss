@@ -3,8 +3,6 @@
 }
 
 .contact .category-links{
-	width:50%;
-	float:right;
 
 	a{
 		display: inline-block;
@@ -27,6 +25,17 @@
 		&.us:after{
 			background: $fw-red;
 		}
+	}
+}
+
+@media all and (min-width: $screen-width-small) {
+	float: right;
+	width: 63%;
+}
+
+@media all and (min-width: $screen-width-medium) {
+	.contact .category-links { 
+		width: 50%;
 	}
 }
 
