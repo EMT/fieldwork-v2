@@ -34,7 +34,10 @@
 	     		$header.css({paddingTop: ($(window).innerHeight() - $('#svg-wrapper').innerHeight()) + 'px'});
 
 	     		var $featuredListWrapper = $('#featured-list-wrapper');
-	     		$featuredListWrapper.css({height: $(window).innerHeight() * 0.8 + 'px'});
+	     		$featuredListWrapper.css({
+	     			paddingTop: $(window).innerHeight() * 0.1 + 'px',
+	     			paddingBottom: $(window).innerHeight() * 0.18 + 'px'
+	     		});
 	     	}
 
 	     	$(window).on('resize', function() {
