@@ -127,10 +127,18 @@ bottom: -2px;
 	}
 }
 
+.featured-list-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
 .featured-list {
 	box-sizing: border-box;
 	width: 50%;
 	float: right;
+	font-size: $type-large;
+	line-height: $line-large;
 
 	&:first-child {
 		float: left;

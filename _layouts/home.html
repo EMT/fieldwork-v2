@@ -4,7 +4,7 @@
     <body class="home-page">
 
 	    {% include header.html %}
-		<div class="homepage-header">
+		<div class="homepage-header" id="homepage-header">
 
 			<div class="home-page-intro-wrapper-outer">
 				<div class="home-page-intro-wrapper-inner">
@@ -15,7 +15,7 @@
 				</div>
 			</div>
 
-			<div class="svg-wrapper">
+			<div class="svg-wrapper" id="svg-wrapper">
 				{% include home-illustration.svg %}
 			</div>
 		</div>
@@ -27,6 +27,22 @@
 
 			{% include footer.html %}
 	    </div>
+
+	    <script>
+	    	function sizeHeader() {
+	    		var $header = $('#homepage-header');
+	     		$header.css({paddingTop: ($(window).innerHeight() - $('#svg-wrapper').innerHeight()) + 'px'});
+
+	     		var $featuredListWrapper = $('#featured-list-wrapper');
+	     		$featuredListWrapper.css({height: $(window).innerHeight() * 0.8 + 'px'});
+	     	}
+
+	     	$(window).on('resize', function() {
+	     		sizeHeader();
+	     	});
+
+	     	sizeHeader();
+	    </script>
 
     </body>
 </html>
