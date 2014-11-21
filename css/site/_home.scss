@@ -107,6 +107,83 @@ bottom: -2px;
 	h2 {
 		// color: rgb(62,155,185);
 	}
+
+	&.featured-block--alt {
+		background: rgb(255,255,255);
+		.featured-image {
+			opacity: 1;
+			transition: all .3s ease-out;
+		}
+		&:hover .featured-image {
+			opacity: 0.8;
+		}
+		.featured-block-info {
+			background: $fw-red;
+			top: 0;
+			bottom: 50%;
+			right: 25%;
+			padding: 2em 1em 1em 1em;
+		}
+	}
+}
+
+.featured-list {
+	box-sizing: border-box;
+	width: 50%;
+	float: right;
+
+	&:first-child {
+		float: left;
+		padding-right: 1em;
+	}
+
+	> h2 {
+		margin-bottom: 2em;
+	}
+	a {
+		color: $grey-type;
+		margin-bottom: 0.3em;
+		display: block;
+		// width: 80%;
+		// padding-right: 2em;
+		position: relative;
+		border-bottom: 1px solid rgba(23,77,89,0.2);
+		padding-bottom: 0.3em;
+
+		h2,
+		p {
+			display: inline;
+		}
+	}
+	&.blog-posts a.featured-list-item h2 {
+		color: $grey-type;
+	}
+	a:after {
+		content: '→';
+		font-size: 1.5em;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.featured-read-more {
+		// color: $link-color;
+		margin-top: 1.3em;
+		border-bottom: 0;
+	}
+}
+
+.home-twitter {
+	text-align: center;
+
+	.icon-twitter {
+		// display: block;
+		font-size: 3em;
+		// margin-bottom: 0.6em;
+	}
+	p {
+		margin-top: 2em;
+	}
 }
 
 
