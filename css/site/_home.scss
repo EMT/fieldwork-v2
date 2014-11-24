@@ -3,6 +3,7 @@
 	background: linear-gradient(to bottom, $blue--light 0%, $blue--light 99%, $white 100%); 
 	padding-top: 10%;
 	position: relative;
+	overflow:hidden;
 }
 
 .homepage-header > svg {
@@ -18,6 +19,20 @@ bottom: -2px;
 	height: auto;
 	position: relative;
 	padding-top: 32.95%;
+}
+
+@media only screen and (max-width: 1130px) {
+	.svg-wrapper{
+		width:156%;
+		padding-top:51.45%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.svg-wrapper{
+		width:224%;
+		padding-top:73.95%;
+	}
 }
 
 .svg-wrapper svg{
