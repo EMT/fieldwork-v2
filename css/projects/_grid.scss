@@ -45,7 +45,8 @@
             }
         }
 
-        h2 {
+        h2,
+        h3 {
             padding-top: 0.5em;
         }
     }
@@ -81,9 +82,14 @@
     .grid {
         .grid-item {
             h2,
+            h3,
             p {
                 padding-left: 25%; 
             }
+        }
+
+        .grid-item-4-1 {
+            width: 25%;
         }
     }
 }

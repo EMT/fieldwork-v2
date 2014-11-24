@@ -8,6 +8,9 @@ collections:
   work:
     output: true
     permalink: /:collection/:path/
+  featured:
+    output: false
+    permalink: /work/:path/
 
 # Build settings
 markdown: kramdown

@@ -7,7 +7,100 @@ featured_url: "/work/mavis"
 ---
 
 
+<div class="section-inner">
+    <h2>Projects</h2>
 
+    <ul class="grid projects">
+        {% for project in site.featured %}
+            <li class="grid-item">
+                <a href="{{ site.baseurl }}{{ project.url }}">
+                    <figure>
+                        <img src="{{ site.baseurl }}{{ project.thumb }}" alt="" />
+                        <figcaption class="project-index-content">
+                            {{ project.runner }}
+                        </figcaption>
+                    </figure>
+                    <h3>{{ project.title }}</h3>
+                    <p class="project-index-meta">
+                        {{ project.meta | array_to_sentence_string }}
+                    </p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+<div class="section-inner">
+    <h2>Feed</h2>
+
+    <ul class="grid home-page-blog">
+        
+            <li class="grid-item grid-item-4-1">
+                <!-- <a href=""> -->
+                    <img src="http://beta.madebyfieldwork.com/emt/wp-content/uploads/2014/06/VirtualJourney.png" alt="" />
+                    <ul class="category-icons">
+                        <li class='design'><a class='tag' href='http://beta.madebyfieldwork.com/emt/category/design/'></a></li>
+                        <li class='process'><a class='tag' href='http://beta.madebyfieldwork.com/emt/category/process/'></a></li>
+                        <li class='studio'><a class='tag' href='http://beta.madebyfieldwork.com/emt/category/studio/'></a></li>                 
+                    </ul>
+                    <h2>Building Bespoke Custom Fonts</h2>
+                    <ul class="post-meta">
+                        <li>8 August 2014</li>
+                        <li>Posted by Eve</li>
+                    </ul>
+                    <p>Since graduating at the beginning of summer I have had a lot of fun becoming the new addition to the Fieldwork team as their latest intern.</p>
+                <!-- </a> -->
+            </li>
+
+            <li class="grid-item grid-item-4-1">
+                <a href="">
+                    <img src="http://beta.madebyfieldwork.com/emt/wp-content/uploads/2014/06/VirtualJourney.png" alt="" />
+                    <ul class="category-icons">
+                        <li class='process'><a class='tag' href='http://beta.madebyfieldwork.com/emt/category/process/'></a></li>                
+                    </ul>
+                    <h2>Animating a Virtual Journey</h2>
+                    <ul class="post-meta">
+                        <li>8 August 2014</li>
+                        <li>Posted by Harry</li>
+                    </ul>
+                    <p>We’ve recently been working with Sustrans to create a new look & feel and new and improved features for their sustainable travel challenge platform.</p>
+                </a>
+            </li>
+
+            <li class="grid-item grid-item-4-1">
+                <a href="">
+                    <img src="http://beta.madebyfieldwork.com/emt/wp-content/uploads/2014/06/VirtualJourney.png" alt="" />
+                    <ul class="category-icons">
+                        <li class='process'><a class='tag' href='http://beta.madebyfieldwork.com/emt/category/process/'></a></li>
+                        <li class='studio'><a class='tag' href='http://beta.madebyfieldwork.com/emt/category/studio/'></a></li>                 
+                    </ul>
+                    <h2>Animating a Virtual Journey</h2>
+                    <ul class="post-meta">
+                        <li>8 August 2014</li>
+                        <li>Posted by Harry</li>
+                    </ul>
+                    <p>We’ve recently been working with Sustrans to create a new look & feel and new and improved features for their sustainable travel challenge platform.</p>
+                </a>
+            </li>
+
+            <li class="grid-item grid-item-4-1">
+                <a href="">
+                    <img src="http://beta.madebyfieldwork.com/emt/wp-content/uploads/2014/06/VirtualJourney.png" alt="" />
+                    <ul class="category-icons">
+                        <li class='studio'><a class='tag' href='http://beta.madebyfieldwork.com/emt/category/studio/'></a></li>                 
+                    </ul>
+                    <h2>Animating a Virtual Journey</h2>
+                    <ul class="post-meta">
+                        <li>8 August 2014</li>
+                        <li>Posted by Harry</li>
+                    </ul>
+                    <p>We’ve recently been working with Sustrans to create a new look & feel and new and improved features for their sustainable travel challenge platform.</p>
+                </a>
+            </li>
+
+    </ul>
+</div>
 
 
 <div class="page-section">
