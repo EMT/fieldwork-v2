@@ -7,7 +7,11 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/journey-tracker/jt-topimage.jpg
+header_imgs: 
+  default: /images/journey-tracker/jt-topimage-600.jpg
+  601px: /images/journey-tracker/jt-topimage-1100.jpg
+  1101px: /images/journey-tracker/jt-topimage-1500.jpg
+  1501px: /images/journey-tracker/jt-topimage-2560.jpg
 thumbs: 
   1580px: /images/project-thumbs/fwlanding-journeytracker-1580.jpg
   1100px: /images/project-thumbs/fwlanding-journeytracker-1100.jpg
@@ -37,7 +41,14 @@ thumb: /images/project-thumbs/fwlanding-journeytracker
 		<img src="{{ site.baseurl }}/images/journey-tracker/jt-iphone1.png" alt="" />
 		<img src="{{ site.baseurl }}/images/journey-tracker/jt-iphone2.png" alt="" />
 		<img src="{{ site.baseurl }}/images/journey-tracker/jt-iphone3.png" alt="" />
-		<img src="{{ site.baseurl }}/images/journey-tracker/jt-1.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/journey-tracker/jt-1-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/journey-tracker/jt-1-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/journey-tracker/jt-1-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/journey-tracker/jt-1-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/journey-tracker/jt-iphone4.png" alt="" />
 		
 	</div>
