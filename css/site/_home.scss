@@ -85,7 +85,7 @@ bottom: -2px;
 	// color: rgb(255,255,255);
 }
 
-.home-page .section-inner {
+.home-page-section {
 	margin-top: 6%;
 
 	&:first-child {
@@ -94,6 +94,8 @@ bottom: -2px;
 
 	> h2 {
 		margin-bottom: 1.6em;
+		color: rgb(202,204,205);
+		font-size: $type-large;
 	}
 }
 
@@ -111,6 +113,22 @@ bottom: -2px;
 		.post-meta {
 			margin-bottom: 1em;
 		}
+		.post-more {
+			display: block;
+			padding-top: 1em;
+		}
+	}
+}
+
+.grid.home-page-blog {
+	.grid-item {
+		h2,
+		h3,
+		p,
+		.post-meta {
+			font-size: $type-large;
+			line-height: $line-large;
+		}
 	}
 }
 
@@ -121,7 +139,8 @@ bottom: -2px;
 		font-size: 3em;
 	}
 	p {
-		margin-top: 2em;
+		margin: 2em auto 0 auto;
+		max-width: 50em;
 	}
 }
 
