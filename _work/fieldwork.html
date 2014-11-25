@@ -7,7 +7,11 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/fieldwork/fw-buscardheader.jpg
+header_imgs: 
+  default: /images/fieldwork/fw-buscardheader-600.jpg
+  601px: /images/fieldwork/fw-buscardheader-1100.jpg
+  1101px: /images/fieldwork/fw-buscardheader-1500.jpg
+  1501px: /images/fieldwork/fw-buscardheader-2560.jpg
 thumbs: 
   1580px: /images/project-thumbs/fwlanding-fwbranding-1580.jpg
   1100px: /images/project-thumbs/fwlanding-fwbranding-1100.jpg
@@ -33,24 +37,109 @@ thumb: /images/project-thumbs/fwlanding-fwbranding
 <div class="section-inner">
 
 	<div class="grid media-grid">
-
-		<img src="{{ site.baseurl }}/images/fieldwork/fw-1.jpg" alt="" />
 		
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/fieldwork/fw-6.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/fieldwork/fw-8.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/fieldwork/fw-7.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/fieldwork/fw-3.jpg" alt="" /></div>
+		<img srcset="
+				{{ site.baseurl }}/images/fieldwork/fw-1-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/fieldwork/fw-1-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/fieldwork/fw-1-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/fieldwork/fw-1-1580.jpg" alt="" />
 
-		<img src="{{ site.baseurl }}/images/fieldwork/fw-5.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/fieldwork/fw-4.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/fieldwork/fw-5.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/fieldwork/fw-9.jpg" alt="" />
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/fieldwork/fw-6-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/fieldwork/fw-6-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/fieldwork/fw-6-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/fieldwork/fw-6-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/fieldwork/fw-8-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/fieldwork/fw-8-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/fieldwork/fw-8-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/fieldwork/fw-8-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/fieldwork/fw-7-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/fieldwork/fw-7-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/fieldwork/fw-7-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/fieldwork/fw-7-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/fieldwork/fw-3-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/fieldwork/fw-3-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/fieldwork/fw-3-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/fieldwork/fw-3-1580.jpg" alt="" />
+		</div>
 		
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/fieldwork/fw-11.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/fieldwork/fw-12.jpg" alt="" /></div>
+		<img srcset="
+				{{ site.baseurl }}/images/fieldwork/fw-5-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/fieldwork/fw-5-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/fieldwork/fw-5-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/fieldwork/fw-5-1580.jpg" alt="" />
 
-		<img src="{{ site.baseurl }}/images/fieldwork/fw-10.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/fieldwork/fw-2.jpg" alt="" />
+		<img srcset="
+				{{ site.baseurl }}/images/fieldwork/fw-4-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/fieldwork/fw-4-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/fieldwork/fw-4-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/fieldwork/fw-4-1580.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/fieldwork/fw-5-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/fieldwork/fw-5-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/fieldwork/fw-5-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/fieldwork/fw-5-1580.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/fieldwork/fw-9-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/fieldwork/fw-9-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/fieldwork/fw-9-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/fieldwork/fw-9-1580.jpg" alt="" />
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/fieldwork/fw-11-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/fieldwork/fw-11-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/fieldwork/fw-11-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/fieldwork/fw-11-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/fieldwork/fw-12-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/fieldwork/fw-12-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/fieldwork/fw-12-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/fieldwork/fw-12-1580.jpg" alt="" />
+		</div>
+
+		<img srcset="
+				{{ site.baseurl }}/images/fieldwork/fw-10-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/fieldwork/fw-10-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/fieldwork/fw-10-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/fieldwork/fw-10-1580.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/fieldwork/fw-2-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/fieldwork/fw-2-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/fieldwork/fw-2-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/fieldwork/fw-2-1580.jpg" alt="" />
 
 	</div>
 
