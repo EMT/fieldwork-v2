@@ -122,6 +122,26 @@ bottom: -2px;
 
 .grid.home-page-blog {
 	.grid-item {
+		a {
+			display: block;
+
+			* {
+				-webkit-transition: all .3s ease-out;
+			}
+			
+			&:hover {
+				h2,
+				h3,
+				.post-more {
+					color: $link-hover-color;
+				}
+				.post-excerpt,
+				.post-meta {
+					opacity: 0.6;
+				}
+			}
+		}
+
 		h2,
 		h3,
 		p,

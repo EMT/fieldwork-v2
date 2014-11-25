@@ -7,7 +7,11 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/mavis/mavis-topimage-2560.jpg
+header_imgs: 
+  default: /images/mavis/mavis-topimage-600.jpg
+  601px: /images/mavis/mavis-topimage-1100.jpg
+  1101px: /images/mavis/mavis-topimage-1500.jpg
+  1501px: /images/mavis/mavis-topimage-2560.jpg
 thumb: /images/project-thumbs/fwlanding-mavis.jpg
 ---
 
@@ -40,22 +44,93 @@ thumb: /images/project-thumbs/fwlanding-mavis.jpg
 			srcset="{{ site.baseurl }}/images/mavis/mavis-2-1580.jpg 1580w, 
 		        {{ site.baseurl }}/images/mavis/mavis-2-1100.jpg 1100w,
 		        {{ site.baseurl }}/images/mavis/mavis-2-600.jpg 600w"
-			src="{{ site.baseurl }}/images/mavis/mavis-2.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/mavis/mavis-6.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/mavis/mavis-5.jpg" alt="" />
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/mavis/mavis-2-1580.jpg" alt="" />
+
+		<img 
+			srcset="{{ site.baseurl }}/images/mavis/mavis-6-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/mavis/mavis-6-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/mavis/mavis-6-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/mavis/mavis-6-1580.jpg" alt="" />
+
+		<img 
+			srcset="{{ site.baseurl }}/images/mavis/mavis-5-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/mavis/mavis-5-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/mavis/mavis-5-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/mavis/mavis-5-1580.jpg" alt="" />
 		
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/mavis/mavis-type.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/mavis/mavis-4.jpg" alt="" /></div>
+		<div class="grid-item">
+			<img
+				srcset="{{ site.baseurl }}/images/mavis/mavis-type-1580.jpg 1580w, 
+		        	{{ site.baseurl }}/images/mavis/mavis-type-1100.jpg 1100w,
+		        	{{ site.baseurl }}/images/mavis/mavis-type-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/mavis/mavis-type-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img
+				srcset="{{ site.baseurl }}/images/mavis/mavis-4-1580.jpg 1580w, 
+		        	{{ site.baseurl }}/images/mavis/mavis-4-1100.jpg 1100w,
+		        	{{ site.baseurl }}/images/mavis/mavis-4-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/mavis/mavis-4-1580.jpg" alt="" />
+		</div>
 		
-		<img src="{{ site.baseurl }}/images/mavis/mavis-pensclose.jpg" alt="" />
+		<img 
+			srcset="{{ site.baseurl }}/images/mavis/mavis-pensclose-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/mavis/mavis-pensclose-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/mavis/mavis-pensclose-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/mavis/mavis-pensclose-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/mavis/mavis-illustrations.svg" alt="" />
 		
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/mavis/mavis-woodcut.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/mavis/mavis-painting.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/mavis/mavis-stuff.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/mavis/mavis-spring.jpg" alt="" /></div>
+		<div class="grid-item">
+			<img
+				srcset="{{ site.baseurl }}/images/mavis/mavis-woodcut-1580.jpg 1580w, 
+		        	{{ site.baseurl }}/images/mavis/mavis-woodcut-1100.jpg 1100w,
+		        	{{ site.baseurl }}/images/mavis/mavis-woodcut-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/mavis/mavis-woodcut-1580.jpg" alt="" />
+		</div>
 
-		<img src="{{ site.baseurl }}/images/mavis/mavis-wires.jpg" alt="" />
+		<div class="grid-item">
+			<img
+				srcset="{{ site.baseurl }}/images/mavis/mavis-painting-1580.jpg 1580w, 
+		        	{{ site.baseurl }}/images/mavis/mavis-painting-1100.jpg 1100w,
+		        	{{ site.baseurl }}/images/mavis/mavis-painting-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/mavis/mavis-painting-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img
+				srcset="{{ site.baseurl }}/images/mavis/mavis-stuff-1580.jpg 1580w, 
+		        	{{ site.baseurl }}/images/mavis/mavis-stuff-1100.jpg 1100w,
+		        	{{ site.baseurl }}/images/mavis/mavis-stuff-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/mavis/mavis-stuff-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img
+				srcset="{{ site.baseurl }}/images/mavis/mavis-spring-1580.jpg 1580w, 
+		        	{{ site.baseurl }}/images/mavis/mavis-spring-1100.jpg 1100w,
+		        	{{ site.baseurl }}/images/mavis/mavis-spring-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/mavis/mavis-spring-1580.jpg" alt="" />
+		</div>
+	
+		<img 
+			srcset="{{ site.baseurl }}/images/mavis/mavis-wires-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/mavis/mavis-wires-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/mavis/mavis-wires-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/mavis/mavis-wires-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/mavis/mavis-ipad.svg" alt="" />
 		
 	</div>
