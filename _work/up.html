@@ -7,7 +7,11 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/up/up-headershot.jpg
+header_imgs: 
+  default: /images/up/up-topimage-600.jpg
+  601px: /images/up/up-topimage-1100.jpg
+  1101px: /images/up/up-topimage-1500.jpg
+  1501px: /images/up/up-topimage-2560.jpg
 thumbs: 
   1580px: /images/project-thumbs/fwlanding-up-1580.jpg
   1100px: /images/project-thumbs/fwlanding-up-1100.jpg
@@ -37,14 +41,29 @@ thumb: /images/project-thumbs/fwlanding-up
 		<img src="{{ site.baseurl }}/images/up/up-iphone-dash.png" alt="An employee’s dashboard on an iPhone – Up" />
 		<img src="{{ site.baseurl }}/images/up/up-iphone-weeks.svg" alt="An employee’s skill set on an iPhone – Up" />
 		<img src="{{ site.baseurl }}/images/up/up-browserdash.png" alt="An employee’s skill set on an iPhone – Up" />
-		<img src="{{ site.baseurl }}/images/up/up-medal.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/up/up-medal-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/up/up-medal-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/up/up-medal-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/up/up-medal-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/up/up-ipadskills.svg" alt="" />
 		<img src="{{ site.baseurl }}/images/up/up-iphonegraph.png" alt="" />
 		<img src="{{ site.baseurl }}/images/up/up-browserhomepage.png" alt="" />
 		<img src="{{ site.baseurl }}/images/up/up-icons.svg" alt="" />
 
 		<div class="grid-item"><img src="{{ site.baseurl }}/images/up/up-logo.svg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/up/pointing.jpg" alt="" /></div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/up/pointing-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/up/pointing-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/up/pointing-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/up/pointing-1580.jpg" alt="" />
+		</div>
 
 		<img src="{{ site.baseurl }}/images/up/up-icons2.svg" alt="" />
 	</div>
