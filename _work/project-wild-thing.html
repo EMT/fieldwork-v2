@@ -7,11 +7,15 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/project-wild-thing/pwt-topimage.jpg
-related:
-- "Plan.Do": /work/plando
-- "Up": /work/up
-thumb: /images/project-thumbs/fwlanding-pwt.jpg
+header_imgs: 
+  default: /images/project-wild-thing/pwt-topimage-600.jpg
+  601px: /images/project-wild-thing/pwt-topimage-1100.jpg
+  1101px: /images/project-wild-thing/pwt-topimage-1500.jpg
+  1501px: /images/project-wild-thing/pwt-topimage-2000.jpg
+thumbs: 
+  1580px: /images/project-thumbs/fwlanding-pwt-1580.jpg
+  1100px: /images/project-thumbs/fwlanding-pwt-1100.jpg
+thumb: /images/project-thumbs/fwlanding-pwt
 ---
 
 
@@ -21,7 +25,7 @@ thumb: /images/project-thumbs/fwlanding-pwt.jpg
 		
 		{% include project-title.html %}
 
-		<div class="section-text section-text--cols">
+		<div class="section-text section-text--large">
 			<p>The Wild Network are a collection of organisations who came together around the Project Wild Thing film, and pooled resources to help kickstart a movement to reconnect kids and nature.</p>
 			<p>We developed a brand identity, custom hand-drawn type, a series of illustrations, and a website to promote the film and get the community started. We applied the visual identity across film, web, and various printed materials.</p>
 			<p>We also made the <a href="{{ site.baseurl }}/work/wildtime">Wildtime mobile app</a>.</p>
@@ -37,17 +41,68 @@ thumb: /images/project-thumbs/fwlanding-pwt.jpg
 
 		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-logo.png" alt="" />
 		
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/project-wild-thing/pwt-sketching.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/project-wild-thing/pwt-planning.jpg" alt="" /></div>		
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/project-wild-thing/pwt-2.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/project-wild-thing/pwt-davidsquirrel.jpg" alt="" /></div>
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/project-wild-thing/pwt-sketching-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/project-wild-thing/pwt-sketching-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/project-wild-thing/pwt-sketching-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/project-wild-thing/pwt-sketching-1580.jpg" alt="" />
+		</div>
+	
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/project-wild-thing/pwt-planning-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/project-wild-thing/pwt-planning-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/project-wild-thing/pwt-planning-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/project-wild-thing/pwt-planning-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/project-wild-thing/pwt-2-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/project-wild-thing/pwt-2-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/project-wild-thing/pwt-2-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/project-wild-thing/pwt-2-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/project-wild-thing/pwt-davidsquirrel-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/project-wild-thing/pwt-davidsquirrel-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/project-wild-thing/pwt-davidsquirrel-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/project-wild-thing/pwt-davidsquirrel-1580.jpg" alt="" />
+		</div>
 		
 		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-gettingwilder.svg" alt="" />
 		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-typography.svg" alt="" />
-		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-filmposter.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/project-wild-thing/pwt-filmposter-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/project-wild-thing/pwt-filmposter-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/project-wild-thing/pwt-filmposter-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/project-wild-thing/pwt-filmposter-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-labels.svg" alt="" />
-		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-tote.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-3.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/project-wild-thing/pwt-tote-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/project-wild-thing/pwt-tote-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/project-wild-thing/pwt-tote-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/project-wild-thing/pwt-3-1580.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/project-wild-thing/pwt-3-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/project-wild-thing/pwt-3-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/project-wild-thing/pwt-3-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/project-wild-thing/pwt-3-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-ipad1.svg" alt="" />
 		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-iphone1.svg" alt="" />
 		<img src="{{ site.baseurl }}/images/project-wild-thing/pwt-iphone2.svg" alt="" />

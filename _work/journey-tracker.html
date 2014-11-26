@@ -7,11 +7,15 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/journey-tracker/jt-topimage.jpg
-related:
-- "Plan.Do": /work/plando
-- "Up": /work/up
-thumb: /images/project-thumbs/fwlanding-journeytracker.jpg
+header_imgs: 
+  default: /images/journey-tracker/jt-topimage-600.jpg
+  601px: /images/journey-tracker/jt-topimage-1100.jpg
+  1101px: /images/journey-tracker/jt-topimage-1500.jpg
+  1501px: /images/journey-tracker/jt-topimage-2560.jpg
+thumbs: 
+  1580px: /images/project-thumbs/fwlanding-journeytracker-1580.jpg
+  1100px: /images/project-thumbs/fwlanding-journeytracker-1100.jpg
+thumb: /images/project-thumbs/fwlanding-journeytracker
 ---
 
 
@@ -21,7 +25,7 @@ thumb: /images/project-thumbs/fwlanding-journeytracker.jpg
 		
 		{% include project-title.html %}
 
-		<div class="section-text section-text--cols">
+		<div class="section-text section-text--large">
 			<p>Sustrans help organisations like local authorities and universities run challenge events that encourage people to change their travel habits and move around in more active and sustainable ways. As we’d already worked on the web platform for these events, they asked us to help them build a quick, simple and mobile-friendly way for participants to get involved and log journeys.</p>
 			<p>Since so many people carry GPS enabled devices around in their pockets every day, we devised a very simple mobile app, for iOS and Android devices, that allows participants to track and log their journeys in just a few taps.</p>
 		</div>
@@ -37,7 +41,14 @@ thumb: /images/project-thumbs/fwlanding-journeytracker.jpg
 		<img src="{{ site.baseurl }}/images/journey-tracker/jt-iphone1.png" alt="" />
 		<img src="{{ site.baseurl }}/images/journey-tracker/jt-iphone2.png" alt="" />
 		<img src="{{ site.baseurl }}/images/journey-tracker/jt-iphone3.png" alt="" />
-		<img src="{{ site.baseurl }}/images/journey-tracker/jt-1.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/journey-tracker/jt-1-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/journey-tracker/jt-1-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/journey-tracker/jt-1-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/journey-tracker/jt-1-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/journey-tracker/jt-iphone4.png" alt="" />
 		
 	</div>

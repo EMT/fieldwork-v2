@@ -143,6 +143,8 @@ header nav a:first-of-type {
 }
 
 .social-icons {
+	font-size: $type-base;
+	line-height: $line-base;
 	display: inline-block;
 	line-height: 3em;
 

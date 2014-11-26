@@ -7,11 +7,15 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/plando/pd-andyipad.jpg
-related:
-- "Plan.Do": /work/plando
-- "Up": /work/up
-thumb: /images/project-thumbs/fwlanding-plando.png
+header_imgs: 
+  default: /images/plando/pd-topimage-600.jpg
+  601px: /images/plando/pd-topimage-1100.jpg
+  1101px: /images/plando/pd-topimage-1500.jpg
+  1501px: /images/plando/pd-topimage-2000.jpg
+thumbs: 
+  1580px: /images/project-thumbs/fwlanding-plando-1580.jpg
+  1100px: /images/project-thumbs/fwlanding-plando-1100.jpg
+thumb: /images/project-thumbs/fwlanding-plando
 ---
 
 
@@ -21,7 +25,7 @@ thumb: /images/project-thumbs/fwlanding-plando.png
 		
 		{% include project-title.html %}
 
-		<div class="section-text section-text--cols">
+		<div class="section-text section-text--large">
 			<p>Catch-22 came to us with an idea for a digital platform that would involve more young people with social action projects, helping them gain and evidence skills for employment at the same time.</p>
 			<p>We collaborated with a team from Catch-22 and groups of Young Advisors on a series of workshops to define key design objectives, user motivations, and product features. Then designed and developed version one of the application using an iterative and agile process.</p>
 			<p>Using the first version of Plan.Do, young people can create and manage social action projects using collaborative task lists and communication tools. They can evidence their good work by uploading photos and building an archive of project activity, and can gain skills badges within the application.</p>
@@ -40,20 +44,71 @@ thumb: /images/project-thumbs/fwlanding-plando.png
 
 		<!-- <p class="caption-r arrow-down right">Discovery Workshops</p> -->
 
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/plando/pd-workshop2.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/plando/pd-workshop3.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/plando/pd-workshop4.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/plando/pd-workshop1.jpg" alt="" /></div>
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/plando/pd-workshop2-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/plando/pd-workshop2-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/plando/pd-workshop2-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/plando/pd-workshop2-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/plando/pd-workshop3-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/plando/pd-workshop3-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/plando/pd-workshop3-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/plando/pd-workshop3-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/plando/pd-workshop4-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/plando/pd-workshop4-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/plando/pd-workshop4-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/plando/pd-workshop4-1580.jpg" alt="" />
+		</div>
+
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/plando/pd-workshop1-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/plando/pd-workshop1-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/plando/pd-workshop1-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/plando/pd-workshop1-1580.jpg" alt="" />
+		</div>
 
 		<!-- <p class="caption-r arrow-down right">UX/UI Design &amp; Development</p> -->
 		
 		<img src="{{ site.baseurl }}/images/plando/pd-iphonetasklist.svg" alt="" />
 		<img src="{{ site.baseurl }}/images/plando/pd-webbrowserdash.png" alt="" />
-		<img src="{{ site.baseurl }}/images/plando/pd-userdash.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/plando/pd-userdash-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/plando/pd-userdash-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/plando/pd-userdash-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/plando/pd-userdash-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/plando/pd-feed.png" alt="" />
-		<img src="{{ site.baseurl }}/images/plando/pd-iphone.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/plando/pd-iphone-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/plando/pd-iphone-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/plando/pd-iphone-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/plando/pd-iphone-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/plando/pd-webbrowseroverview.png" alt="" />
-		<img src="{{ site.baseurl }}/images/plando/pd-browserhomepage.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/plando/pd-browserhomepage-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/plando/pd-browserhomepage-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/plando/pd-browserhomepage-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/plando/pd-browserhomepage-1580.jpg" alt="" />
 
 		<!--  <p class="caption-r arrow-down right">Branding &amp; Iconography</p> -->
 

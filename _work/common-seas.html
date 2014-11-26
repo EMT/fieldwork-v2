@@ -7,11 +7,14 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/common-seas/cs-topimage.jpg
-related:
-- "Plan.Do": /work/plando
-- "Up": /work/up
-thumb: /images/project-thumbs/fwlanding-commonseas.jpg
+header_imgs: 
+  default: /images/common-seas/cs-topimage-600.jpg
+  601px: /images/common-seas/cs-topimage-1100.jpg
+  1581px: /images/common-seas/cs-topimage-1580.jpg
+thumbs: 
+  1580px: /images/project-thumbs/fwlanding-commonseas-1580.jpg
+  1100px: /images/project-thumbs/fwlanding-commonseas-1100.jpg
+thumb: /images/project-thumbs/fwlanding-commonseas
 ---
 
 
@@ -21,7 +24,7 @@ thumb: /images/project-thumbs/fwlanding-commonseas.jpg
 		
 		{% include project-title.html %}
 
-		<div class="section-text section-text--cols">
+		<div class="section-text section-text--large">
 			<p>Jo Royle has wanted to be the captain of sailing boat since she was 7 years old, and years spent at sea since then have taught her that people and the sea need to learn to live together. She set up Common Seas to explore these issues and work towards bringing people and the ocean together to share a common journey.</p>
 			<p>[Blurb about what we did.]</p>
 		</div>
@@ -33,14 +36,61 @@ thumb: /images/project-thumbs/fwlanding-commonseas.jpg
 
 	<div class="grid media-grid">
 		
-		<img src="{{ site.baseurl }}/images/common-seas/cs-waves.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/common-seas/cs-paintings.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/common-seas/cs-iphone1.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/common-seas/cs-ipad2.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/common-seas/cs-ipad1.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/common-seas/cs-browser.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/common-seas/cs-boat.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/common-seas/cs-verticalgarden.jpg" alt="" />
+		<img srcset="
+				{{ site.baseurl }}/images/common-seas/cs-waves-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/common-seas/cs-waves-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/common-seas/cs-waves-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/common-seas/cs-waves-1580.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/common-seas/cs-paintings-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/common-seas/cs-paintings-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/common-seas/cs-paintings-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/common-seas/cs-paintings-1580.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/common-seas/cs-iphone1-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/common-seas/cs-iphone1-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/common-seas/cs-iphone1-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/common-seas/cs-iphone1-1580.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/common-seas/cs-ipad2-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/common-seas/cs-ipad2-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/common-seas/cs-ipad2-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/common-seas/cs-ipad2-1580.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/common-seas/cs-ipad1-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/common-seas/cs-ipad1-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/common-seas/cs-ipad1-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/common-seas/cs-ipad1-1580.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/common-seas/cs-browser-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/common-seas/cs-browser-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/common-seas/cs-browser-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/common-seas/cs-browser-1580.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/common-seas/cs-boat-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/common-seas/cs-boat-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/common-seas/cs-boat-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/common-seas/cs-boat-1580.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/common-seas/cs-verticalgarden-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/common-seas/cs-verticalgarden-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/common-seas/cs-verticalgarden-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/common-seas/cs-verticalgarden-1580.jpg" alt="" />
 		
 	</div>
 

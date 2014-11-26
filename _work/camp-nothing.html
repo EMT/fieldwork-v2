@@ -7,11 +7,15 @@ meta:
 - Design
 - Development
 layout: default
-header_img: /images/camp-nothing/cn-topimage.jpg
-related:
-- "Plan.Do": /work/plando
-- "Up": /work/up
-thumb: /images/project-thumbs/fwlanding-campnothing.jpg
+header_imgs: 
+  default: /images/camp-nothing/cn-topimage-600.jpg
+  601px: /images/camp-nothing/cn-topimage-1100.jpg
+  1101px: /images/camp-nothing/cn-topimage-1500.jpg
+  1501px: /images/camp-nothing/cn-topimage-2560.jpg
+thumbs: 
+  1580px: /images/project-thumbs/fwlanding-campnothing-1580.jpg
+  1100px: /images/project-thumbs/fwlanding-campnothing-1100.jpg
+thumb: /images/project-thumbs/fwlanding-campnothing
 ---
 
 
@@ -21,7 +25,7 @@ thumb: /images/project-thumbs/fwlanding-campnothing.jpg
 		
 		{% include project-title.html %}
 
-		<div class="section-text section-text--cols">
+		<div class="section-text section-text--large">
 			<p>Good for Nothing is a growing community of creative people who donate their time and skills to good causes with intensive 48 hour hackathons. On the grounds of West Lexham Manor, Norfolk, Camp Nothing saw the launch of Good for Nothing in new cities across the country.</p>
 			<p>Our challenge was to bring together various elements—website, signage, attendee t-shirts, badges and tote bags—with a flexible visual identity that would work alongside, yet be distinct from, the existing Good for Nothing brand and capture the spirit of the event.</p>
 			<p>In true Good for Nothing fashion, we invited the team to our Manchester studio, and spent two energetic days rapidly developing a concept and initial visuals, which would become the basis for the identity.</p>
@@ -36,17 +40,65 @@ thumb: /images/project-thumbs/fwlanding-campnothing.jpg
 
 		<img src="{{ site.baseurl }}/images/camp-nothing/cn-ipad1.svg" alt="" />
 		
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/camp-nothing/cn-watching.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/camp-nothing/cn-rucksack.svg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/camp-nothing/cn-sketches.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/camp-nothing/cn-badge.jpg" alt="" /></div>
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/camp-nothing/cn-watching-1080.jpg 1080w, 
+		        	{{ site.baseurl }}/images/camp-nothing/cn-watching-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/camp-nothing/cn-watching-1080.jpg" alt="" />
+		</div>
+		
+		<div class="grid-item">
+			<img src="{{ site.baseurl }}/images/camp-nothing/cn-rucksack.svg" alt="" />
+		</div>
+		
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/camp-nothing/cn-sketches-1580.jpg 1580w, 
+		        	{{ site.baseurl }}/images/camp-nothing/cn-sketches-1100.jpg 1100w,
+		        	{{ site.baseurl }}/images/camp-nothing/cn-sketches-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/camp-nothing/cn-sketches-1580.jpg" alt="" />
+		</div>
+		
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/camp-nothing/cn-badge-1080.jpg 1080w,
+		        	{{ site.baseurl }}/images/camp-nothing/cn-badge-600.jpg 600w"
+		    	sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/camp-nothing/cn-badge-1080.jpg" alt="" />
+		</div>
+		
+		<img srcset="
+				{{ site.baseurl }}/images/camp-nothing/cn-ipad2-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/camp-nothing/cn-ipad2-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/camp-nothing/cn-ipad2-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/camp-nothing/cn-ipad2-1580.jpg" alt="" />
 
-		<img src="{{ site.baseurl }}/images/camp-nothing/cn-ipad2.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/camp-nothing/cn-ipad.jpg" alt="" />
+		<img srcset="
+				{{ site.baseurl }}/images/camp-nothing/cn-ipad-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/camp-nothing/cn-ipad-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/camp-nothing/cn-ipad-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/camp-nothing/cn-ipad-1580.jpg" alt="" />
+
 		<img src="{{ site.baseurl }}/images/camp-nothing/cn-iphone1.png" alt="" />
 		<img src="{{ site.baseurl }}/images/camp-nothing/cn-iphone2.png" alt="" />
-		<img src="{{ site.baseurl }}/images/camp-nothing/cn-dan.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/camp-nothing/cn-table.jpg" alt="" />
+
+		<img srcset="
+				{{ site.baseurl }}/images/camp-nothing/cn-dan-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/camp-nothing/cn-dan-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/camp-nothing/cn-dan-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/camp-nothing/cn-dan-1580.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/camp-nothing/cn-table-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/camp-nothing/cn-table-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/camp-nothing/cn-table-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/camp-nothing/cn-table-1580.jpg" alt="" />
 
 	</div>
 

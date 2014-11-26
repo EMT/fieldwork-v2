@@ -8,10 +8,10 @@ meta:
 - Development
 layout: default
 header_img: /images/volume-one/vol-topimage.svg
-related:
-- "Plan.Do": /work/plando
-- "Up": /work/up
-thumb: /images/project-thumbs/fwlanding-volumes.png
+thumbs: 
+  1580px: /images/project-thumbs/fwlanding-volumes-1580.jpg
+  1100px: /images/project-thumbs/fwlanding-volumes-1100.jpg
+thumb: /images/project-thumbs/fwlanding-volumes
 ---
 
 
@@ -21,7 +21,7 @@ thumb: /images/project-thumbs/fwlanding-volumes.png
 		
 		{% include project-title.html %}
 
-		<div class="section-text section-text--cols">
+		<div class="section-text section-text--large">
 			<p>Volumes is a limited edition print series. Collaborating with talented artists, illustrators, designers, coders and makers, we explore a different subject in each edition. Anything goes, as long as it fits inside an A5 folder.</p>
 			<p>A Guide to Making Things is the first (and currently only) in the series. We worked with the brilliant Hey, who interpreted our eight ideas to create illustrations, which we produced as a limited run of 100 sets of postcards, and a companion website with animated versions. The eight ideas are the guiding principals we wrote when we first started Fieldwork.</p>
 			<p>This is one of our studio projects—something we do for a combination of fun, honing our skills and team, and self-promotion (in that order).</p>
@@ -38,19 +38,57 @@ thumb: /images/project-thumbs/fwlanding-volumes.png
 
 	<div class="grid media-grid">
 
-		<img src="{{ site.baseurl }}/images/volume-one/vol-8.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/volume-one/vol-4.jpg" alt="" />
-		<img src="{{ site.baseurl }}/images/volume-one/vol-3.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/volume-one/vol-8-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/volume-one/vol-8-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/volume-one/vol-8-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/volume-one/vol-8-1580.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/volume-one/vol-4-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/volume-one/vol-4-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/volume-one/vol-4-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/volume-one/vol-4-1580.jpg" alt="" />
+		
+		<img srcset="
+				{{ site.baseurl }}/images/volume-one/vol-3-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/volume-one/vol-3-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/volume-one/vol-3-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/volume-one/vol-3-1580.jpg" alt="" />
 
 		<div class="grid-item"><img src="{{ site.baseurl }}/images/volume-one/vol-grab.svg" alt="" /></div>
 		<div class="grid-item"><img src="{{ site.baseurl }}/images/volume-one/vol-globe.svg" alt="" /></div>
 		<div class="grid-item"><img src="{{ site.baseurl }}/images/volume-one/vol-sunday.svg" alt="" /></div>
 		<div class="grid-item"><img src="{{ site.baseurl }}/images/volume-one/vol-monster.svg" alt="" /></div>
-
-		<img src="{{ site.baseurl }}/images/volume-one/vol-1.jpg" alt="" />
-
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/volume-one/vol-6.jpg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.baseurl }}/images/volume-one/vol-7.jpg" alt="" /></div>
+		
+		<img srcset="
+				{{ site.baseurl }}/images/volume-one/vol-1-1580.jpg 1580w, 
+		        {{ site.baseurl }}/images/volume-one/vol-1-1100.jpg 1100w,
+		        {{ site.baseurl }}/images/volume-one/vol-1-600.jpg 600w"
+		    sizes="90vw"
+			src="{{ site.baseurl }}/images/volume-one/vol-1-1580.jpg" alt="" />
+		
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/volume-one/vol-6-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/volume-one/vol-6-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/volume-one/vol-6-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/volume-one/vol-6-1580.jpg" alt="" />
+		</div>
+		
+		<div class="grid-item">
+			<img srcset="
+					{{ site.baseurl }}/images/volume-one/vol-7-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/volume-one/vol-7-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/volume-one/vol-7-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/volume-one/vol-6-1580.jpg" alt="" />
+		</div>
 		
 		<img src="{{ site.baseurl }}/images/volume-one/vol-web1.png" alt="" />
 		<img src="{{ site.baseurl }}/images/volume-one/vol-web2.png" alt="" />

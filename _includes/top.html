@@ -8,13 +8,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.runner %}{{ page.runner }}{% else %}{{ site.description }}{% endif %}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    	<script src="{{ site.baseurl }}/js/jquery.nouislider.min.js"></script>
-    	<script src="{{ site.baseurl }}/js/snap.svg-min.js"></script>
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
         {% if page.stylesheets %}
             {% for stylesheet in page.stylesheets %}
                 <link rel="stylesheet" href="{{ stylesheet }}">
             {% endfor %}
+        {% endif %}
+
+        {% if page.header_imgs %}
+            <style type="text/css">
+                {% for header_img in page.header_imgs %}
+                    {% if header_img[0] == 'default' %}
+                        .header-bg-img {
+                            background-image:  url({{ site.baseurl }}{{ header_img[1] }});
+                        }
+                    {% else %}
+                        @media all and (min-width: {{ header_img[0] }}) {
+                            .header-bg-img {
+                                background-image: url({{ site.baseurl }}{{ header_img[1] }});
+                            }
+                        }
+                    {% endif %}
+                {% endfor %}
+            </style>
         {% endif %}
     </head>
