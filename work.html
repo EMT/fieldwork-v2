@@ -18,7 +18,7 @@ body_classes: no-hero
                             {% for thumb in project.thumbs %}{{ site.baseurl }}{{ thumb[1] }} {{ thumb[0] }},
                             {% endfor %}{{ site.baseurl }}{{ project.thumb }}-600.jpg 600w"
                          sizes="90vw"
-                         src="{{ project.thumb }}-600.jpg" alt="" />
+                         src="{{ site.baseurl }}{{ project.thumb }}-600.jpg" alt="" />
 
                         <figcaption class="project-index-content">
                             {{ project.runner }}
