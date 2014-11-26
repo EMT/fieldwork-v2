@@ -2,7 +2,11 @@
 title: "About Us"
 description: "We love making things, collaborating, identifying interesting problems and figuring out what we can build to help solve them."
 layout: default
-header_img: /images/us/fieldwork-hero.jpg
+header_imgs: 
+  default: /images/us/fieldwork-hero-600.jpg
+  601px: /images/us/fieldwork-hero-1100.jpg
+  1101px: /images/us/fieldwork-hero-1500.jpg
+  1501px: /images/us/fieldwork-hero-2000.jpg
 ---
 
 <section class="page-section">
@@ -115,8 +119,22 @@ header_img: /images/us/fieldwork-hero.jpg
 
     <div class="section-inner">
       <div class="grid media-grid">
-        <div class="grid-item"><img src="{{ site.baseurl }}/images/us/fieldwork-shelf.jpg" alt="" /></div>
-        <div class="grid-item"><img src="{{ site.baseurl }}/images/us/fieldwork-window.jpg" alt="" /></div>
+        <div class="grid-item">
+          <img srcset="
+              {{ site.baseurl }}/images/us/fieldwork-shelf-1580.jpg 1580w, 
+                  {{ site.baseurl }}/images/us/fieldwork-shelf-1100.jpg 1100w,
+                  {{ site.baseurl }}/images/us/fieldwork-shelf-600.jpg 600w"
+            sizes="(min-width: 600px) 45vw, 90vw"
+            src="{{ site.baseurl }}/images/us/fieldwork-shelf-1580.jpg" alt="" />
+        </div>
+        <div class="grid-item">
+          <img srcset="
+              {{ site.baseurl }}/images/us/fieldwork-window-1580.jpg 1580w, 
+                  {{ site.baseurl }}/images/us/fieldwork-window-1100.jpg 1100w,
+                  {{ site.baseurl }}/images/us/fieldwork-window-600.jpg 600w"
+            sizes="(min-width: 600px) 45vw, 90vw"
+            src="{{ site.baseurl }}/images/us/fieldwork-window-1580.jpg" alt="" />
+        </div>
       </div>
     </div>  
 
