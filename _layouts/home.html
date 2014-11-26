@@ -58,7 +58,7 @@
 		     				+ '<ul class="category-icons">';
 	
 		     				for (var ci = 0, clen = data[i].categories.length; ci < clen; ci ++) {
-	                        	html += '<li class="' + convertToSlug(data[i].categories[ci]) + '"><a class="tag" href="http://beta.made.byfieldwork.com/emt/category/' + convertToSlug(data[i].categories[ci]) + '/"></a></li>';
+	                        	html += '<li data-tooltip="' + convertToSlug(data[i].categories[ci]) + '" class="' + convertToSlug(data[i].categories[ci]) + '"><a class="tag" href="http://beta.madebyfieldwork.com/emt/category/' + convertToSlug(data[i].categories[ci]) + '/"></a></li>';
 	                        }
 	                    	
 	                    	html += '</ul>'
