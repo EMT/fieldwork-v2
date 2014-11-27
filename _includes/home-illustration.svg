@@ -430,7 +430,7 @@
 			</g>
 		</g>
 	</g>
-	<g class="floating-eye">
+	<g class="floating-eye js-pong-trigger">
 		<g>
 			<path fill="#F9BE00" d="M456.7,52.7c0,18.6-15.1,33.6-33.6,33.6s-33.6-15.1-33.6-33.6H456.7z"/>
 		</g>
