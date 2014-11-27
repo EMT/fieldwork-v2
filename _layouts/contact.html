@@ -5,7 +5,8 @@
 	    {% include header.html %}
 		
 		<div class="contact">
-		  	<iframe class="map" width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/edfieldwork.kb21lg3g/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiZWRmaWVsZHdvcmsiLCJhIjoicTMwZTkydyJ9.PReYJSCAJ4cFTBOsINez8A'></iframe>
+
+			<div id="map"></div>
 
 		  	<div class="wrapper">
 			  	<ul class="category-links">
@@ -20,8 +21,19 @@
 	    <div class="page-content">
 	      {{ content }}
 	      {% include footer.html %}
-	      <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	      <script src='{{ site.baseurl }}/js/map.js'></script>
+
+	      <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+	      <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+
+	      <script>
+		      // Provide your access token
+		      L.mapbox.accessToken = 'pk.eyJ1IjoiZWRmaWVsZHdvcmsiLCJhIjoicTMwZTkydyJ9.PReYJSCAJ4cFTBOsINez8A';
+
+		      var map = L.mapbox.map('map', 'edfieldwork.kb21lg3g', { zoomControl: false })
+		          .setView([53.482, -2.235], 16);
+
+		      new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
+	      </script>
 	    </div>
     </body>
 </html>
