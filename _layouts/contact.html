@@ -6,15 +6,19 @@
 		
 		<div class="contact">
 
-			<div id="map"></div>
+			<div id="map">
+				<!--<div class="info js-map-info" style='width:20%;min-width:160px;height:100%;background:rgba(255,255,255,0.8);position:absolute;right:0;z-index:1;padding:80px 20px 0;box-sizing:border-box;'>
+					<h2>Fieldwork HQ</h2>
+				</div>-->
+			</div>
 
-		  	<div class="wrapper">
+<!-- 		  	<div class="wrapper">
 			  	<ul class="category-links">
 			  		<li><a class="us" href="#">Us</a></li>
 			  		<li><a class="eating" href="#">Eating</a></li>
 			  		<li><a class="drinking" href="#">Drinking</a></li>
 			  	</ul>	
-		  	</div>
+		  	</div> -->
 
 		</div>
 
@@ -23,103 +27,10 @@
 	      {% include footer.html %}
 
 	      <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+	      <script src='{{ site.baseurl }}/js/map.js'></script>
 	      <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
 
-	      <script>
-		      // Provide your access token
-		      L.mapbox.accessToken = 'pk.eyJ1IjoiZWRmaWVsZHdvcmsiLCJhIjoicTMwZTkydyJ9.PReYJSCAJ4cFTBOsINez8A';
-
-		      var map = L.mapbox.map('map', 'edfieldwork.kb21lg3g', { zoomControl: false })
-		          .setView([53.482, -2.235], 16);
-
-		      new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
-
-
-		      var locations = [
-		      	// {
-		      	// 	title: "",
-		      	// 	desc: "Planet Fieldwork",
-		      	// 	lat: 53.482035,
-		      	// 	lng: -2.234324,
-		      	// 	type: "fieldwork"
-		      	// },
-		      	{
-		      		title: "Soup Kitchen",
-		      		desc: "Soup, soup, a tasty soup, soup.",
-		      		lat: 53.482752,
-		      		lng: -2.234573,
-		      		type: "eating"
-		      	},
-		      	// {
-		      	// 	title: "",
-		      	// 	desc: "Mozza's",
-		      	// 	lat: 53.481548, 
-		      	// 	lng: -2.236630
-		      	// },
-		      	{
-		      		title: "",
-		      		desc: "Pie 'n' mash",
-		      		lat: 53.482845,
-		      		lng: -2.236148,
-		      		type: "eating"
-		      	},
-		      	{
-		      		title: "",
-		      		desc: "Chip barms",
-		      		lat: 53.484083,
-		      		lng: -2.234382,
-		      		type: "eating"
-		      	},
-		      	{
-		      		title: "",
-		      		desc: "Drinks on the Terrace",
-		      		lat: 53.484181,
-		      		lng: -2.236759,
-		      		type: "drinking"
-		      	},
-		      	{
-		      		title: "",
-		      		desc: "Kosmonaut",
-		      		lat: 53.481226,
-		      		lng: -2.232364,
-		      		type: "drinking"
-		      	},
-		      	{
-		      		title: "",
-		      		desc: "Posh Sandwiches",
-		      		lat: 53.480078,
-		      		lng: -2.238798,
-		      		type: "eating"
-		      	},
-		      	{	
-		      		title: "",
-		      		desc: "South of Little Italy",
-		      		lat: 53.483575,
-		      		lng: -2.237054,
-		      		type: "eating"
-		      	},
-		      	{	
-		      		title: "",
-		      		desc: "Burgers 'n' gherkins",
-		      		lat: 53.480581,
-		      		lng: -2.248030,
-		      		type: "eating"
-		      	}
-		      ];
-
-		      for (var i = 0 ; i < locations.length ; i++){
-
-			      L.marker([locations[i].lat, locations[i].lng], {
-			          icon: L.mapbox.marker.icon({
-			              // 'marker-size': 'large',
-			              // 'marker-symbol': 'bus',
-			              'marker-color': '#00c4b3'
-			          })
-			      }).addTo(map);
-
-		      }
-
-	      </script>
+	      
 	    </div>
     </body>
 </html>
