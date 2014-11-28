@@ -125,6 +125,11 @@ bottom: -2px;
 
 .grid.home-page-blog {
 	.grid-item {
+		h2,
+		h3,
+		p {
+			padding-left: 0;
+		}
 		a {
 			display: block;
 
