@@ -162,7 +162,7 @@ footer input[type="submit"] {
 @media only screen and (min-width: 850px) {
 
 	.footer-wrapper {
-		margin: 0 2em 0 -2em;
+		margin: 0 0.5em 0 -0.5em;
 	}
 
 	.footer-block {
@@ -181,11 +181,11 @@ footer input[type="submit"] {
 		vertical-align: top;
 		float: none;
 		width: 25%;
-		padding: 4% 2em;
+		padding: 4% 0.5em;
 		// margin: 2em 0;
 
 		&:first-child {
-			padding: 4% 0 4% 2em;
+			// padding: 4% 0 4% 2em;
 			width: 25%;
 		}
 		&.our-info {
