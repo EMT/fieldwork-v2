@@ -67,7 +67,12 @@ thumb: /images/project-thumbs/fwlanding-carboncoop
 		</div>
 		
 		<div class="grid-item">
-			<img src="{{ site.baseurl }}/images/carbon-coop/cc-icons.svg" alt="" />
+			<img srcset="
+					{{ site.baseurl }}/images/carbon-coop/cc-new-1580.jpg 1580w, 
+			        {{ site.baseurl }}/images/carbon-coop/cc-new-1100.jpg 1100w,
+			        {{ site.baseurl }}/images/carbon-coop/cc-new-600.jpg 600w"
+				sizes="(min-width: 600px) 45vw, 90vw"
+				src="{{ site.baseurl }}/images/carbon-coop/cc-new-1580.jpg" alt="" />
 		</div>
 		
 		<img srcset="
