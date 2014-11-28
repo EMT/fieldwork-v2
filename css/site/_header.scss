@@ -12,19 +12,11 @@ header {
 	z-index: 2;
 }
 
-// .project header {
-// 	background: rgba(255,255,255,0);
-// 	transition: all 0.3s ease-out;
-// } 
-
-.index-open header {
-	border-bottom-color: rgb(0,77,89);
-}
-.search-open header {
-	border-bottom-color: rgb(0,207,202);
-}
 
 header .marque {
+	float: left;
+	color: $fw-red;
+	text-decoration: none;
     // margin-top: 1em;
     // height: 20px;
     line-height: 3em;
@@ -40,7 +32,10 @@ header .marque img {
 header nav {
 	float: right;
 	overflow: hidden;
+	width: auto;
+	// margin-right: 0.6em;
 }
+
 header nav a {
 	text-decoration: none;
 	line-height: 3em;
@@ -59,88 +54,72 @@ header nav a:hover,
 .journal nav a.journal {
 	color: rgb(255,48,67);
 }
-nav .search,
-nav .index {
-	padding: 0;
-}
-nav .search {
-	text-indent: -999em;
-	background: transparent url('../images/icon-sprite.png') -70px 17px no-repeat;
-	height: 3em;
-	width: 14px;
-	margin: 0 0 0 0.6em;
-	position: relative;
-}
-.search-open nav .search,
-nav .search:hover {
-	border-bottom-color: transparent;
-	background-position: -70px -33px;
-}
-.search-open nav .search:after {
-	content: ' ';
-	position: absolute;
-	z-index: 10;
-	bottom: -1px;
-	right: -1px;
-	width: 0; 
-	height: 0; 
-	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
-	border-bottom: 8px solid rgb(0,207,202);
-}
-nav .index {
-	text-indent: -999em;
-	background: transparent url('../images/icon-sprite.svg') no-repeat 0 14px;
-	background-size: 200%;
-	height: 3em;
-	width: 16px;
-	margin: 0 0 0 0.6em;
-	position: relative;
-	-webkit-transition: none;
-}
-.index-open nav .index,
-nav .index:hover {
-	border-bottom-color: transparent;
-	background-position: -16px 14px;
-}
-.no-svg nav .index {
-	background-image: url('../images/icon-sprite.png');
-}
+// nav .search,
+// nav .index {
+// 	padding: 0;
+// }
+// nav .search {
+// 	text-indent: -999em;
+// 	background: transparent url('../images/icon-sprite.png') -70px 17px no-repeat;
+// 	height: 3em;
+// 	width: 14px;
+// 	margin: 0 0 0 0.6em;
+// 	position: relative;
+// }
+// .search-open nav .search,
+// nav .search:hover {
+// 	border-bottom-color: transparent;
+// 	background-position: -70px -33px;
+// }
+// .search-open nav .search:after {
+// 	content: ' ';
+// 	position: absolute;
+// 	z-index: 10;
+// 	bottom: -1px;
+// 	right: -1px;
+// 	width: 0; 
+// 	height: 0; 
+// 	border-left: 8px solid transparent;
+// 	border-right: 8px solid transparent;
+// 	border-bottom: 8px solid rgb(0,207,202);
+// }
+// nav .index {
+// 	text-indent: -999em;
+// 	background: transparent url('../images/icon-sprite.svg') no-repeat 0 14px;
+// 	background-size: 200%;
+// 	height: 3em;
+// 	width: 16px;
+// 	margin: 0 0 0 0.6em;
+// 	position: relative;
+// 	-webkit-transition: none;
+// }
+// .index-open nav .index,
+// nav .index:hover {
+// 	border-bottom-color: transparent;
+// 	background-position: -16px 14px;
+// }
+// .no-svg nav .index {
+// 	background-image: url('../images/icon-sprite.png');
+// }
 
-.index-open nav .index:after {
-	content: ' ';
-	position: absolute;
-	z-index: 10;
-	bottom: -1px;
-	right: 1px;
-	width: 0; 
-	height: 0; 
-	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
-	border-bottom: 8px solid rgb(0,77,89);
-}
+// .index-open nav .index:after {
+// 	content: ' ';
+// 	position: absolute;
+// 	z-index: 10;
+// 	bottom: -1px;
+// 	right: 1px;
+// 	width: 0; 
+// 	height: 0; 
+// 	border-left: 8px solid transparent;
+// 	border-right: 8px solid transparent;
+// 	border-bottom: 8px solid rgb(0,77,89);
+// }
 
 
 
 // TEMP ICON/HEADER STUFF.
 
 
-header .marque {
-	float: left;
-	color: $fw-red;
-	text-decoration: none;
-}
-
-header nav {
-	float: right;
-	overflow: hidden;
-	width: auto;
-	margin-right: 0.6em;
-}
-
-header nav a:first-of-type {
-	// padding-left: 0;
-}
 
 .social-icons {
 	font-size: $type-base;
@@ -180,15 +159,6 @@ header nav a:first-of-type {
 	}
 }
 
-
-// @media only screen and (min-width: $screen-width-medium) {
-
-// 	header nav, 
-// 	.header-social-icons {;
-// 		width:auto;
-// 	}
-
-// }
 
 @media only screen and (max-width: 540px) {
 

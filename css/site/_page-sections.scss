@@ -71,6 +71,7 @@ body.no-hero {
 }
 
 .section-text {
+	box-sizing: border-box;
 	max-width: $max-line-length;
 	margin-bottom: 2em;
 
@@ -197,6 +198,7 @@ body.no-hero {
 
 	.section-text {
 		width: 50%;
+		padding-left: 0.5em;
 	}
 }
 
