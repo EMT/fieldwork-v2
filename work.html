@@ -11,15 +11,14 @@ body_classes: no-hero
 
     <ul class="grid projects">
         {% assign projects = site.work | sort: 'order' %}
-        {% for project in projects %}
+        {% for project in projects | sort: 'order' %}
             <li class="grid-item">
                 <a href="{{ site.baseurl }}{{ project.url }}">
                     <figure>
-                    <img srcset="
-                            {% for thumb in project.thumbs %}{{ site.baseurl }}{{ thumb[1] }} {{ thumb[0] }},
-                            {% endfor %}{{ site.baseurl }}{{ project.thumb }}-600.jpg 600w"
-                         sizes="90vw"
-                         src="{{ site.baseurl }}{{ project.thumb }}-600.jpg" alt="" />
+                    <img {% if project.thumbs %}srcset="{% for thumb in project.thumbs %}{{ site.baseurl }}{{ thumb[1] }} {{ thumb[0] }},{% endfor %}"
+                         sizes="90vw"{% endif %}
+                         src="{{ site.baseurl }}{{ project.thumb }}"
+                         alt="" />
 
                         <figcaption class="project-index-content">
                             {{ project.runner }}
