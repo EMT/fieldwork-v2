@@ -130,8 +130,13 @@ header nav a:hover,
 	a {
 		color: rgb(102,102,102);
 		text-decoration: none;
+		border-bottom: 0 !important;
 		font-size: 1.2em;
 		transition: all 0.3s ease-out;
+
+		&:hover {
+			color: $link-hover-color;
+		}
 	}
 
 	li {

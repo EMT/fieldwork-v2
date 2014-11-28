@@ -52,12 +52,14 @@ bottom: -2px;
 
 .home-page-intro-wrapper-outer {
 	position: absolute;
+	box-sizing: border-box;
 	// bottom: 55%;
 	// top:20%;
 	// display:table;
 	top:0%;
 	height:65%;
 	left: 50%;
+	padding-left: 0.3333em;
 	width: 30%;
 	font-size: 1.5em;
 	color: $white;
@@ -89,7 +91,8 @@ bottom: -2px;
 }
 
 .home-page-section {
-	margin-top: 4%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 
 	&:first-child {
 		padding-top: 3em;
@@ -123,8 +126,16 @@ bottom: -2px;
 	}
 }
 
+.home-page-blog-wrapper {
+	background: $grey--light;
+	padding: 2% 0 5%;
+	margin-bottom: 0;
+}
+
 .grid.home-page-blog {
 	.grid-item {
+		padding-right: 1em;
+		
 		h2,
 		h3,
 		p {
@@ -132,6 +143,7 @@ bottom: -2px;
 		}
 		a {
 			display: block;
+			border: 0;
 
 			* {
 				-webkit-transition: all .3s ease-out;
@@ -157,6 +169,45 @@ bottom: -2px;
 			font-size: $type-large;
 			line-height: $line-large;
 		}
+	}
+}
+
+.home-page-social-blocks {
+	margin: 0;
+}
+
+.social-block {
+	color: $white;
+	text-align: center;
+	background-size: 100%;
+	background-size: cover;
+	
+	&.social-block--spotify {
+		background: rgb(31,195,180);
+	}
+	&.social-block--twitter {
+		background: rgb(252,90,93);
+	}
+
+	> * {
+		box-sizing: border-box;
+		padding: 5%;
+	}
+
+	a {
+		color: $white;
+		border-bottom: 1px solid rgba(255,255,255,0.4);
+	}
+	p {
+		font-size: $type-large;
+		line-height: $line-large;
+		z-index: 2;
+	}
+
+	.social-block-icon {
+		font-size: 3em;
+		border-bottom: 0;
+		margin: 16% 0 6% 0;
 	}
 }
 
@@ -192,6 +243,26 @@ bottom: -2px;
 }
 
 
+@media all and (min-width: 600px) {
+
+	.social-block {
+		position: relative;
+		width: 33.333%;
+		float: left;
+		padding-bottom: 33.333%;
+
+		> * {
+			position: absolute;
+			padding: 12%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
+
 // .inner-content {
 // 	position: absolute;
 // 	top: 10px;
@@ -209,10 +280,10 @@ bottom: -2px;
 //   background-position: bottom;
 // }
 
-.home-page-grid {
-  margin:80px 0;
-  overflow: hidden;
-}
+// .home-page-grid {
+//   margin:80px 0;
+//   overflow: hidden;
+// }
 
 // .grid-item{
 //   height: 0;

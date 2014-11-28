@@ -10,7 +10,8 @@ body_classes: no-hero
     <!-- <h1>Projects</h1> -->
 
     <ul class="grid projects">
-        {% for project in site.work %}
+        {% assign projects = site.work | sort: 'order' %}
+        {% for project in projects | sort: 'order' %}
             <li class="grid-item">
                 <a href="{{ site.baseurl }}{{ project.url }}">
                     <figure>
