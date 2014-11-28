@@ -44,6 +44,8 @@ body.no-hero {
 	}
 	a {
 		color: $link-color;
+		display: inline-block;
+		border-bottom: 1px solid $link-color;
 		text-decoration: none;
 		-webkit-transition: all .3s ease-out;
 
