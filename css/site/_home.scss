@@ -52,12 +52,14 @@ bottom: -2px;
 
 .home-page-intro-wrapper-outer {
 	position: absolute;
+	box-sizing: border-box;
 	// bottom: 55%;
 	// top:20%;
 	// display:table;
 	top:0%;
 	height:65%;
 	left: 50%;
+	padding-left: 0.3333em;
 	width: 30%;
 	font-size: 1.5em;
 	color: $white;
