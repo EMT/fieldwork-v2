@@ -93,43 +93,32 @@ for (var i = 0 ; i < locations.length ; i++){
 	    content: locations[i].desc,
 	    properties: {
 	    	'title': locations[i].desc,
-            'marker-color': i == 0 ? '#e83944' : '#00c4b3'
+            icon: {
+	            "iconUrl": i == 0 ? "../images/map/marker-red.svg" : "../images/map/marker-turquoise.svg",
+	            "iconSize": [24, 33], // size of the icon
+	            "iconAnchor": [12, 33], // point of the icon which will correspond to marker's location
+	            "popupAnchor": [0, -45], // point from which the popup should open relative to the iconA
+	        }
 	    }
 	});
 
 }
 
+myLayer.on('layeradd', function(e) {
+    var marker = e.layer,
+    feature = marker.feature;
+    marker.setIcon(L.icon(feature.properties.icon));
+});
+
 
 myLayer.setGeoJSON({
-  features: geoJson
+	features: geoJson
 });
-myLayer.on('click', function(e) {
-      map.panTo(e.layer.getLatLng());
-      $(".js-map-info").html()
-  });
 
-// myLayer.eachLayer(function(marker) {
-// 	marker.on('click', function(e){
-// 		$(".js-map-info h2").html(marker.feature.content);
-// 	})
-// })
+myLayer.on('click', function(e) {
+	map.panTo(e.layer.getLatLng());
+	$(".js-map-info").html()
+});
+
 
 map.scrollWheelZoom.disable();
-
-// function resetColors() {
-//     for (var i = 0; i < geoJson.length; i++) {
-//         geoJson[i].properties['marker-color'] = geoJson[i].properties['old-color'] ||
-//             geoJson[i].properties['marker-color'];
-//     }
-//     // myLayer.setGeoJSON(geoJson);
-// }
-
-// myLayer.on('click', function(e) {
-//     resetColors();
-//     e.layer.feature.properties['old-color'] = e.layer.feature.properties['marker-color'];
-//     e.layer.feature.properties['marker-color'] = '#ff8888';
-//     myLayer.setGeoJSON(geoJson);
-// });
-
-// map.on('click', resetColors);
-

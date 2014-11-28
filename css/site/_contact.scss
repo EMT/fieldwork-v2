@@ -2,6 +2,31 @@
 	height:600px;
 }
 
+.custom-popup .leaflet-popup-content-wrapper {
+	background:#F7323F;
+	color:#fff;
+	font-size:16px;
+	line-height:24px;
+	border-radius:0;
+	font-family: 'Neuzeit'
+}
+
+.custom-popup .leaflet-popup-content{
+	padding:10px;
+}
+.custom-popup .leaflet-popup-content-wrapper a {
+	color:rgba(255,255,255,0.5);
+}
+.custom-popup .leaflet-popup-tip-container {
+	width:16px;
+	height:10px;
+}
+.custom-popup .leaflet-popup-tip {
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+	border-top:10px solid #F7323F;
+}
+
 .contact .category-links{
 
 	a{
