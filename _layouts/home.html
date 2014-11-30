@@ -6,9 +6,9 @@
 	    {% include header.html %}
 		<div class="homepage-header" id="homepage-header">
 
-			<div class="home-page-intro-wrapper-outer">
-				<div class="home-page-intro-wrapper-inner">
-					<div class="home-page-intro">
+			<div class="section-inner home-page-intro-wrapper">
+				<div class="home-page-intro js-home-page-intro">
+					<div class="home-page-intro-inner js-home-page-intro-inner">
 						<h1>We Make Things</h1>
 						<p>From digital platforms to brand identities, we work with you, collaboratively, to make things that help your organisation do great work.</p>
 					</div>
@@ -30,14 +30,18 @@
 
 	    <script>
 	    	function sizeHeader() {
-	    		var $header = $('#homepage-header');
-	     		$header.css({paddingTop: ($(window).innerHeight() - $('#svg-wrapper').innerHeight()) + 'px'});
+	    		var $introText = $('.js-home-page-intro'),
+	    			header_height = $('#site-header').innerHeight(),
+	    			extra_height = $(window).innerHeight() - $('#svg-wrapper').innerHeight(),
+	    			intro_text_height = $introText.innerHeight(),
+	    			min_intro_text_spacing = 120;
 
-	     		var $featuredListWrapper = $('#featured-list-wrapper');
-	     		$featuredListWrapper.css({
-	     			paddingTop: $(window).innerHeight() * 0.1 + 'px',
-	     			paddingBottom: $(window).innerHeight() * 0.18 + 'px'
-	     		});
+	    		if (extra_height < intro_text_height + header_height + min_intro_text_spacing) {
+	    			extra_height = intro_text_height + header_height + min_intro_text_spacing;
+	    		}
+  			
+	    		$('#homepage-header').css({paddingTop: extra_height + 'px'});
+	    		$('.js-home-page-intro').css({bottom: (((extra_height - intro_text_height - header_height) / 2)) + 'px'});
 	     	}
 
 	     	$(window).on('resize', function() {

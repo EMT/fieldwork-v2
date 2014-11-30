@@ -77,7 +77,7 @@
 	    </animateMotion>
 	</circle>
 	<g>
-		<rect x="178.7" y="548.3" fill="#F9BE00" width="404.4" height="44.3"/>
+		<rect x="178.7" y="548.3" fill="#F9BE00" width="404.4" height="45"/>
 	</g>
 	<g>
 		<rect x="444" y="312.5" fill="#00C4B3" width="87.9" height="146.3"/>
@@ -299,7 +299,7 @@
 	</g>
 	</g>
 	<g>
-		<rect x="0" y="548.3" fill="#00C4B3" width="178.7" height="44.3"/>
+		<rect x="0" y="548.3" fill="#00C4B3" width="178.7" height="45"/>
 	</g>
 	<g>
 		<path fill="#F7323F" d="M627.3,327c-24.4,0-44.3,19.8-44.3,44.3v177h88.5v-177C671.6,346.8,651.7,327,627.3,327z"/>
@@ -366,16 +366,16 @@
 	</g>
 
 	<g>
-		<rect x="583" y="548.1" fill="#00C4B3" width="88.5" height="44.3"/>
-		<polygon fill="#022A3A" points="583,548.1 627.3,548.1 671.6,592.3 627.3,592.3 	"/>
+		<rect x="583" y="548" fill="#00C4B3" width="88.5" height="45"/>
+		<polygon fill="#022A3A" points="583,548.1 627.3,548.1 671.6,593 627.3,593 	"/>
 	</g>
 	<g>
-		<rect x="760.3" y="548.1" fill="#00C4B3" width="88.5" height="44.3"/>
-		<polygon fill="#022A3A" points="760.3,548.1 804.6,548.1 848.9,592.3 804.6,592.3 	"/>
+		<rect x="760.3" y="548" fill="#00C4B3" width="88.5" height="45"/>
+		<polygon fill="#022A3A" points="760.3,548.1 804.6,548.1 848.9,593 804.6,593 	"/>
 	</g>
 	<g>
-		<rect x="671.6" y="548.1" fill="#F7323F" width="88.8" height="44.3"/>
-		<polygon fill="#7D1A21" points="671.6,548.1 716,548.1 760.3,592.3 716,592.3 	"/>
+		<rect x="671.6" y="548" fill="#F7323F" width="88.8" height="45"/>
+		<polygon fill="#7D1A21" points="671.6,548.1 716,548.1 760.3,593 716,593 	"/>
 	</g>
 	<path fill="#004E59" d="M1672.5,573.4c0-34.3-27.9-62.3-62.3-62.3h-49.9c-14.3,0-26-11.7-26-26s11.7-26,26-26H1800v-36.3h-239.7
 		c-34.3,0-62.3,27.9-62.3,62.3s27.9,63.2,62.3,63.2h49.9c14.3,0,26,10.8,26,25.1H1672.5z"/>
@@ -400,7 +400,7 @@
 		</g>
 	</g>
 	<g>
-		<rect x="848.4" y="548.3" fill="#F9BE00" width="222.9" height="44.3"/>
+		<rect x="848.4" y="548.3" fill="#F9BE00" width="222.9" height="45"/>
 	</g>
 	<g>
 		<g>
@@ -465,7 +465,7 @@
 	<rect x="760.5" y="458.3" fill="#F9BE00" width="44.1" height="89.7"/>
 	<rect x="760.9" y="414.5" fill="#FFA400" width="43.7" height="43.9"/>
 	<g>
-		<rect x="1108.1" y="548.3" fill="#F9BE00" width="691.9" height="44.3"/>
+		<rect x="1108.1" y="548.3" fill="#F9BE00" width="691.9" height="45"/>
 	</g>
 	<g>
 		<g>
@@ -546,10 +546,10 @@
 		</g>
 	</g>
 	<g>
-		<rect x="1580.1" y="548.3" fill="#059387" width="22.1" height="44.3"/>
-		<rect x="1602.2" y="548.3" fill="#022A3A" width="22.1" height="44.3"/>
-		<rect x="1624.2" y="548.3" fill="#F9BE00" width="22.1" height="44.3"/>
-		<rect x="1646.3" y="548.3" fill="#F7323F" width="22.1" height="44.3"/>
+		<rect x="1580.1" y="548.3" fill="#059387" width="22.1" height="45"/>
+		<rect x="1602.2" y="548.3" fill="#022A3A" width="22.1" height="45"/>
+		<rect x="1624.2" y="548.3" fill="#F9BE00" width="22.1" height="45"/>
+		<rect x="1646.3" y="548.3" fill="#F7323F" width="22.1" height="45"/>
 	</g>
 	<rect x="378.4" y="89" fill="#F7323F" width="89.3" height="44.7"/>
 	<rect x="804.6" y="369.9" fill="#F9BE00" width="351.5" height="44.6"/>
