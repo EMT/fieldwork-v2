@@ -74,7 +74,7 @@
             width: 50%;
             float: left;
 
-                &:nth-child(odd) {
+            &:nth-child(odd) {
                 clear: left;
             }
         }
@@ -94,6 +94,9 @@
 
         .grid-item-4-1 {
             width: 25%;
+            &:nth-child(odd) {
+                clear: none;
+            }
         }
     }
 }

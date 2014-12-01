@@ -125,7 +125,7 @@ $(document).ready(function(){
 
 
  	// Grab and render blog post previews
- 	$.get('http://beta.madebyfieldwork.com/emt/feed/json', function(data) {
+ 	var success = function(data) {
  		var html = '', 
  			d,
  			monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -153,7 +153,18 @@ $(document).ready(function(){
  		}
 
  		$('#home-page-blog').html(html);
- 	});
+ 	}
+
+ 	var error = function(data) {
+ 		$('#home-page-blog').html('<li class="grid-item grid-item-2-1"><p>Oh no, blog posts aren’t loading right now. <a href="/emt">Go straight to the journal instead</a>.</p></li>');
+ 	}
+
+	$.ajax({
+		url: 'http://beta.madebyfieldwork.com/emt/feed/json',
+		success: success,
+		error: error,
+		dataType: 'json'
+	});
 
 
 	// Get latest tweet
