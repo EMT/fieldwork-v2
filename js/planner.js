@@ -3,12 +3,12 @@ $(document).ready(function(){
 
   var valueInput = $('.value');
   var sliderDiv = $('.slider');
-  var minBudget = 0;
-  var maxBudget = 20000;
+  var minBudget = 1000;
+  var maxBudget = 100000;
 
   sliderDiv.noUiSlider({
-    start: [1000],
-    step: 250,
+    start: [10000],
+    step: 500,
     behaviour: 'tap-drag',
     range: {
       'min': minBudget,
@@ -19,6 +19,9 @@ $(document).ready(function(){
         $.Link({
           target: valueInput,
           format: {
+            to: function(value) {
+              return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            },
             prefix: '£',
             decimals: 0
           }
@@ -29,12 +32,12 @@ $(document).ready(function(){
 
 
   sliderDiv.on('slide set', function () {
-    if(valueInput.val() == '£' + maxBudget) {
+    if(sliderDiv.val() == maxBudget) {
       valueInput.val('All your money');
     }
-    if(valueInput.val() == '£' + minBudget) {
-      valueInput.val('No budget');
-    }
+    // if(sliderDiv.val() == minBudget) {
+    //   valueInput.val('No budget');
+    // }
   });
 
 
