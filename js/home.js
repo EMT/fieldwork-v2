@@ -177,6 +177,19 @@ $(document).ready(function(){
         }
     });
     feed.run();
+
+
+    // Get LastFM
+    
+    $.getJSON('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=madebyfieldwork&api_key=c2e262a8a2491ca51184a5798afd5c4e&limit=5&format=json', function(data) {
+// console.log(data);
+		if (data.recenttracks && data.recenttracks.track && data.recenttracks.track.length) {
+			artistVal = data.recenttracks.track[0].artist["#text"],
+			trackVal = data.recenttracks.track[0].name;
+			$('#now-playing').html('Now playing: <br />' + trackVal + ' by ' + artistVal);
+		}
+	});
+
 });
 
 
