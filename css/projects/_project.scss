@@ -41,7 +41,7 @@
 }
 
 .project-social {
-	float: left;
+	// float: left;
 	// font-size: 0.6666em;
 
 	ul {
@@ -68,6 +68,23 @@
 	}
 	a:hover {
 		color: rgb(81,206,201);
+	}
+}
+
+.project-nav {
+	padding-top: 1em;
+
+	a {
+		text-decoration: none;
+		display: block;
+		float: left;
+		clear: left;
+		color: $link-color;
+		border-bottom: 1px solid rgba(119,119,119,0.4);
+
+		&:hover {
+			color: $link-hover-color;
+		}
 	}
 }
 
