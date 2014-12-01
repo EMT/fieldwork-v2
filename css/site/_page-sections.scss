@@ -61,7 +61,7 @@ body.no-hero {
 
 .section-title {
 	// color: #939598;
-	margin-bottom: $type-large;
+	margin-bottom: $type-large * 2;
 
 	h1,
 	h2,
@@ -117,6 +117,9 @@ body.no-hero {
 
 		&.content-col--2-1 {
 			width: 50%;
+			&:nth-child(odd) {
+				clear: left;
+			}
 		}
 		&.content-col--3-1 {
 			width: 33.333%;

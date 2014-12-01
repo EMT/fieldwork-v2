@@ -73,6 +73,10 @@
         .grid-item {
             width: 50%;
             float: left;
+
+                &:nth-child(odd) {
+                clear: left;
+            }
         }
     }
 }

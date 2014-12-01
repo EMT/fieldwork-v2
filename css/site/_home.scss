@@ -200,9 +200,13 @@
 }
 
 .home-page-social-blocks {
-	background: rgb(242,242,242);
-	margin: 0 auto;
-	max-width: 1920px;
+	background: rgb(219,219,219);
+	margin: 0;
+
+	.social-blocks-wrapper {
+		margin: 0 auto;
+		max-width: 1920px;
+	}
 }
 
 .social-block {
