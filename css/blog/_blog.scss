@@ -26,13 +26,13 @@
 	bottom: 150%;
 	left: 50%;
 	margin-bottom: 5px;
-	margin-left: -80px;
-	padding: 7px;
-	width: 160px;
+	margin-left: -1em;
+	padding: 0.5em 1.5em;
+	width: auto;
 	-webkit-border-radius: 3px;
 	-moz-border-radius:    3px;
 	border-radius:         3px;
-	background-color: #000;
+	background-color: rgb(0,0,0);
 	background-color: hsla(0, 0%, 20%, 0.9);
 	color: #fff;
 	content: attr(data-tooltip);
@@ -106,88 +106,136 @@
 }
 
 
+li.code[data-tooltip]:before,
 li.code a.tag,
 li.code a:after,
 .wrapper.code-main li.code a:after, 
 .code-main .no-image, .code-main .post-content .no-image {
 	background-color: $blog-code;
 }
+li.code[data-tooltip]:after {
+	border-top-color: $blog-code;
+}
 
+li.inspiration[data-tooltip]:before,
 li.inspiration a.tag,
 li.inspiration a:after,
 .wrapper.inspiration-main li.inspiration a:after,
 .inspiration-main .no-image, .inspiration-main .post-content .no-image {
 	background-color: $blog-inspiration;
 }
+li.inspiration[data-tooltip]:after {
+	border-top-color: $blog-inspiration;
+}
 
+li.made[data-tooltip]:before,
 li.made a.tag,
 li.made a:after,
 .wrapper.made-main li.made a:after,
 .made-main .no-image, .made-main .post-content .no-image {
 	background-color: $blog-made;
 }
+li.made[data-tooltip]:after {
+	border-top-color: $blog-made;
+}
 
+li.thinking[data-tooltip]:before,
 li.thinking a.tag,
 li.thinking a:after,
 .wrapper.thinking-main li.thinking a:after,
 .thinking-main .no-image {
 	background-color: $blog-thinking;
 }
+li.thinking[data-tooltip]:after {
+	border-top-color: $blog-thinking;
+}
 
+li.people[data-tooltip]:before,
 li.people a.tag,
 li.people a:after,
 .wrapper.people-main li.people a:after,
 .people-main .no-image {
 	background-color: $blog-people;
 }
+li.people[data-tooltip]:after {
+	border-top-color: $blog-people;
+}
 
+li.process[data-tooltip]:before,
 li.process a.tag,
 li.process a:after,
 .wrapper.process-main li.process a:after,
 .process-main .no-image, {
 	background-color: $blog-process;
 }
+li.process[data-tooltip]:after {
+	border-top-color: $blog-process;
+}
 
+li.ideas[data-tooltip]:before,
 li.ideas a.tag,
 li.ideas a:after,
 .wrapper.ideas-main li.ideas a:after,
 .ideas-main .no-image {
 	background-color: $blog-ideas;
 }
+li.ideas[data-tooltip]:after {
+	border-top-color: $blog-ideas;
+}
 
+li.adventures[data-tooltip]:before,
 li.adventures a.tag,
 li.adventures a:after,
 .wrapper.adventures-main li.adventures a:after,
 .adventures-main .no-image {
 	background-color: $blog-adventures;
 }
+li.adventures[data-tooltip]:after {
+	border-top-color: $blog-adventures;
+}
 
+li.design[data-tooltip]:before,
 li.design a.tag,
 li.design a:after,
 .wrapper.design-main li.design a:after,
 .design-main .no-image {
 	background-color: $blog-design;
 }
+li.design[data-tooltip]:after {
+	border-top-color: $blog-design;
+}
 
+li.studio[data-tooltip]:before,
 li.studio a.tag,
 li.studio a:after,
 .wrapper.studio-main li.studio a:after,
 .studio-main .no-image {
 	background-color: $blog-studio;
 }
+li.studio[data-tooltip]:after {
+	border-top-color: $blog-studio;
+}
 
+li.found[data-tooltip]:before,
 li.found a.tag,
 li.found a:after,
 .wrapper.found-main li.found a:after,
 .found-main .no-image {
 	background-color: $blog-found;
 }
+li.found[data-tooltip]:after {
+	border-top-color: $blog-found;
+}
 
+li.interesting[data-tooltip]:before,
 li.interesting a.tag,
 li.interesting a:after,
 .wrapper.interesting-main li.interesting a:after,
 .interesting-main .no-image {
 	background-color: $blog-interesting;
+}
+li.interesting[data-tooltip]:after {
+	border-top-color: $blog-interesting;
 }
 
 // Color
