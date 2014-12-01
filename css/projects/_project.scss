@@ -81,6 +81,7 @@
 		clear: left;
 		color: $link-color;
 		border-bottom: 1px solid rgba(119,119,119,0.4);
+		-webkit-transition: all .3s ease-out;
 
 		&:hover {
 			color: $link-hover-color;
