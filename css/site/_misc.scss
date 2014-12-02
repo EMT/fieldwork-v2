@@ -6,16 +6,32 @@
 	content: ' ';
 	position: absolute;
 	top: 50%;
-	margin-top: -47px;
+	margin-top: -25px;
 	left: 50%;
-	margin-left: -25px;
-	border-left: $white 70px solid;
-	border-top: transparent 47px solid;
-	border-bottom: transparent 47px solid;
+	margin-left: -13px;
+	border-left: rgba(255,255,255,0.7) 40px solid;
+	border-top: transparent 26px solid;
+	border-bottom: transparent 26px solid;
 	z-index: 2;
-	opacity: 0.7;
+	-webkit-transition: all .3s ease-out;
+}
+[data-embed]:before {
+	content: ' ';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	margin-top: -50px;
+	left: 50%;
+	margin-left: -50px;
+	border: rgba(255,255,255,0.7) 1px solid;
+	border-radius: 50px;
+	z-index: 2;
 	-webkit-transition: all .3s ease-out;
 }
 [data-embed]:hover:after {
-	opacity: 0.9;
+	border-left-color: rgba(255,255,255,0.9);
+}
+[data-embed]:hover:before {
+	border-color: rgba(255,255,255,0.9);
 }
