@@ -51,6 +51,7 @@ body.no-hero {
 		display: inline-block;
 		border-bottom: 1px solid rgba(119,119,119,0.4);
 		text-decoration: none;
+		-webkit-text-size-adjust: 100%;
 		-webkit-transition: all .3s ease-out;
 
 		&:hover {
