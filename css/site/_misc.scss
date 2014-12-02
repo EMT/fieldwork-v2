@@ -1,0 +1,21 @@
+[data-embed] {
+	position: relative;
+	cursor: pointer;
+}
+[data-embed]:after {
+	content: ' ';
+	position: absolute;
+	top: 50%;
+	margin-top: -47px;
+	left: 50%;
+	margin-left: -25px;
+	border-left: $white 70px solid;
+	border-top: transparent 47px solid;
+	border-bottom: transparent 47px solid;
+	z-index: 2;
+	opacity: 0.7;
+	-webkit-transition: all .3s ease-out;
+}
+[data-embed]:hover:after {
+	opacity: 0.9;
+}

@@ -53,17 +53,21 @@
 }
 
 .media-grid {
-    img {
+    img,
+    iframe {
         display: block;
         max-width: 100%;
     }
 
-    > img {
+    > * {
         margin-bottom: 1em;
     }
 
     .grid-item {
         margin-bottom: 1em;
+        &:nth-child(odd) {
+            clear: none !important;
+        }
     }
 }
 
