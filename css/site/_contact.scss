@@ -2,6 +2,12 @@
 	height:60%;
 }
 
+@media screen and (max-width: $screen-width-small) {
+	#map{
+		height:80%;
+	}
+}
+
 .custom-popup .leaflet-popup-content-wrapper {
 	background:#F7323F;
 	color:#fff;
