@@ -30,7 +30,6 @@
             /* prevent weird 1px width/height/position changes on hover in Chrome */
             position: relative;
             -webkit-backface-visibility: hidden;
-            border: 1px solid rgb(255,255,255); 
         }
         a {
             text-decoration: none;
@@ -61,6 +60,11 @@
 
     > * {
         margin-bottom: 1em;
+    }
+
+    [data-embed] {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 
     .grid-item {

@@ -59,9 +59,9 @@
 
 	$('[data-embed]').on('click', function(e) {
 		e.preventDefault();
-		var $self = $(this),
-			$parent = $self.parent();
-		$self.replaceWith($self.data('embed'));
-		$parent.fitVids();
+		var $parent = $(this),
+			$img = $parent.find('img');
+		$img.replaceWith($parent.data('embed'));
+		$parent.addClass('video-in-place').fitVids();
 	});
 </script>
