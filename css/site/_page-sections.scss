@@ -199,6 +199,7 @@ body.no-hero {
 		clear: right;
 		max-width: none;
 	}
+
 }
 
 @media all and (min-width: $screen-width-medium) {
@@ -212,5 +213,11 @@ body.no-hero {
 	}
 }
 
+
+@media all and (max-width: $screen-width-small) {
+	.content-columns .content-col.content-col--2-1{
+		width: 100%;
+	}
+}
 
 
