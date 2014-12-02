@@ -131,7 +131,10 @@ $(document).ready(function(){
  			monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
  		
  		for (var i = 0, len = Math.min(data.length, 4); i < len; i ++) {
- 			d = new Date(data[i].date);
+ 			d = data[i].date.split(' ');
+ 			d[0] = d[0].split('-');
+ 			d[1] = d[1].split(':');
+ 			d = new Date(d[0][0], d[0][1], d[0][2], d[1][0], d[1][1], d[1][2]);
  			html += '<li class="grid-item grid-item-4-1">'
      				+ '<ul class="category-icons">';
 
