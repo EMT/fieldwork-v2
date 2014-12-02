@@ -1,12 +1,12 @@
 
 $(document).ready(function(){
 
-  var valueInput = $('.value');
-  var sliderDiv = $('.slider');
+  var budgetInput = $('.budget-value');
+  var budgetSlider = $('.budget-slider');
   var minBudget = 1000;
   var maxBudget = 100000;
 
-  sliderDiv.noUiSlider({
+  budgetSlider.noUiSlider({
     start: [10000],
     step: 500,
     behaviour: 'tap-drag',
@@ -17,7 +17,7 @@ $(document).ready(function(){
     serialization: {
       lower: [
         $.Link({
-          target: valueInput,
+          target: budgetInput,
           format: {
             to: function(value) {
               return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -31,12 +31,53 @@ $(document).ready(function(){
   });
 
 
-  sliderDiv.on('slide set', function () {
-    if(sliderDiv.val() == maxBudget) {
-      valueInput.val('All your money');
+  budgetSlider.on('slide set', function () {
+    if(budgetSlider.val() == maxBudget) {
+      budgetInput.val('All your money');
     }
-    // if(sliderDiv.val() == minBudget) {
-    //   valueInput.val('No budget');
+    // if(budgetSlider.val() == minBudget) {
+    //   budgetInput.val('No budget');
+    // }
+  });
+
+
+  var timeframeInput = $('.timeframe-value');
+  var timeframeSlider = $('.timeframe-slider');
+  var minTimeframe = 1;
+  var maxTimeframe = 24;
+  var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  timeframeSlider.noUiSlider({
+    start: [4],
+    step: 1,
+    behaviour: 'tap-drag',
+    range: {
+      'min': minTimeframe,
+      'max': maxTimeframe
+    },
+    serialization: {
+      lower: [
+        $.Link({
+          target: timeframeInput,
+          format: {
+            to: function(value) {
+              var d = new Date()
+              // return d.getMonth() + value * 1;
+              return monthNames[(d.getMonth() + value * 1) % 12] + ' ' + (1 * d.getFullYear() + (Math.floor(value / 12)));
+            }
+          }
+        })
+      ]
+    }
+  });
+
+
+  timeframeSlider.on('slide set', function () {
+    if(timeframeSlider.val() == maxBudget) {
+      timeframeInput.val('All your money');
+    }
+    // if(timeframeSlider.val() == minBudget) {
+    //   timeframeInput.val('No budget');
     // }
   });
 
