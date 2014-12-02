@@ -63,7 +63,8 @@ $(document).ready(function(){
             to: function(value) {
               var d = new Date()
               // return d.getMonth() + value * 1;
-              return monthNames[(d.getMonth() + value * 1) % 12] + ' ' + (1 * d.getFullYear() + (Math.floor(value / 12)));
+              console.log((d.getMonth() * 1) + (value * 1) - 1);
+              return monthNames[(d.getMonth() + value * 1) % 12] + ' ' + (1 * d.getFullYear() + (Math.floor(((d.getMonth() * 1) + (value * 1)) / 12)));
             }
           }
         })

@@ -235,6 +235,7 @@
 		}
 		.social-block-inner {
 			background: rgba(0,0,0,0.3);
+			height: 100%;
 		}
 	}
 
@@ -245,7 +246,7 @@
 	a {
 		color: $white;
 		border-bottom: 1px solid rgba(255,255,255,0.4);
-		display: inline;
+		// display: inline;
 
 		&:hover {
 			color: rgba(255,255,255,0.7);
@@ -265,7 +266,7 @@
 	}
 	.social-block-content {
 		overflow: hidden;
-		padding: 0 10% 10%;
+		padding: 0 10% 12%;
 	}
 }
 
