@@ -89,6 +89,12 @@ body {
   overflow: visible !important;
 }
 
+@media screen and (max-width: $screen-small-width) {
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+}
+
 // Mixins
 
 @mixin border-box{
