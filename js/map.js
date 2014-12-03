@@ -1,7 +1,10 @@
 // Provide your access token
 L.mapbox.accessToken = 'pk.eyJ1IjoiZWRmaWVsZHdvcmsiLCJhIjoicTMwZTkydyJ9.PReYJSCAJ4cFTBOsINez8A';
 
-var map = L.mapbox.map('map', 'edfieldwork.kb21lg3g', { zoomControl: false })
+var map = L.mapbox.map('map', 'edfieldwork.kb21lg3g', {
+	zoomControl: false ,
+	attributionControl: false
+	})
   .setView([53.482, -2.235], 16);
 
 new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
