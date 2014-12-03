@@ -8,12 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.runner %}{{ page.runner }}{% else %}{{ site.description }}{% endif %}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-        {% if page.stylesheets %}
-            {% for stylesheet in page.stylesheets %}
-                <link rel="stylesheet" href="{{ stylesheet }}">
-            {% endfor %}
-        {% endif %}
+
+        <!--[if gte IE 9]><!-->
+            <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+            {% if page.stylesheets %}
+                {% for stylesheet in page.stylesheets %}
+                    <link rel="stylesheet" href="{{ stylesheet }}">
+                {% endfor %}
+            {% endif %}
+        <![endif]-->
+
+        <!--[if lt IE 9]><!-->
+            <link rel="stylesheet" href="{{ site.baseurl }}/css/ie.css">
+        <![endif]-->
 
         {% if page.header_imgs %}
             <style type="text/css">
