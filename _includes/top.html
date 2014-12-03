@@ -10,17 +10,17 @@
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
         <!--[if gte IE 9]><!-->
-            <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+            <!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css"> -->
             {% if page.stylesheets %}
                 {% for stylesheet in page.stylesheets %}
-                    <link rel="stylesheet" href="{{ stylesheet }}">
+                    <!-- <link rel="stylesheet" href="{{ stylesheet }}"> -->
                 {% endfor %}
             {% endif %}
         <![endif]-->
 
-        <!--[if lt IE 9]>
+       
             <link rel="stylesheet" href="{{ site.baseurl }}/css/ie.css">
-        <![endif]-->
+        
 
         {% if page.header_imgs %}
             <style type="text/css">

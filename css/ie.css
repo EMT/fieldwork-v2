@@ -1,3 +1,171 @@
-body {
-	max-width: 700px;
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+  font-family: 'Neuzeit';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/neuzeit-book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/neuzeit-book.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/neuzeit-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/neuzeit-book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Neuzeit';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/neuzeit-book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/neuzeit-book.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/neuzeit-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/neuzeit-book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?67832890');
+  src: url('../fonts/fontello.eot?67832890#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff?67832890') format('woff'),
+       url('../fonts/fontello.ttf?67832890') format('truetype'),
+       url('../fonts/fontello.svg?67832890#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/**	
+ * Base styles
+ */
+
+body {
+	font-family: 'Neuzeit';
+	font-size: 15px;
+	max-width: 700px;
+	padding: 4em 5%;
+	margin: 0 auto;
+	line-height: 1.4em;
+}
+
+img {
+	max-width: 100%;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-github:before { content: '\e800'; } /* '' */
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-instagram:before { content: '\e802'; } /* '' */
+.icon-pinterest-circled:before { content: '\e803'; } /* '' */
+.icon-globe:before { content: '\e804'; } /* '' */
+.icon-tumblr:before { content: '\e805'; } /* '' */
+.icon-facebook:before { content: '\e806'; } /* '' */
+.icon-spotify:before { content: '\e807'; } /* '' */
+.icon-gplus:before { content: '\e808'; } /* '' */
+.icon-music:before { content: '\e809'; } /* '' */
+
+
+h1, h2 {
+	font-size: 1.3em;
+	margin: 1em 0;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+
+.section-inner {
+	margin: 2em 0;
+}
+
+.homepage-header {
+	padding-top: 0 !important;
+}
+
+.social-icons {
+	overflow: hidden;
+	clear: both;
+}
+.social-icons li {
+	float: left;
+}
+
+.grid-item {
+	margin-bottom: 2em;
+}
+
