@@ -3,12 +3,12 @@ $(document).ready(function(){
 
   var budgetInput = $('.budget-value');
   var budgetSlider = $('.budget-slider');
-  var minBudget = 1000;
+  var minBudget = 0;
   var maxBudget = 100000;
 
   budgetSlider.noUiSlider({
     start: [10000],
-    step: 500,
+    step: 1000,
     behaviour: 'tap-drag',
     range: {
       'min': minBudget,
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
   budgetSlider.on('slide set', function () {
     if(budgetSlider.val() == maxBudget) {
-      budgetInput.val('All your money');
+      budgetInput.val('£100,000+');
     }
     // if(budgetSlider.val() == minBudget) {
     //   budgetInput.val('No budget');

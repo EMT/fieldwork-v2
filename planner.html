@@ -17,7 +17,7 @@ scripts:
       </div>
 
       <div class="section-text section-text">
-        <form class="hire-us">
+        <form class="hire-us" method="POST" action="http://mailer.madebyfieldwork.com/go.php">
         
           <div class="name">
             <p><label for="name">Full Name</label>
@@ -26,11 +26,16 @@ scripts:
           
           <div class="email">
             <p><label for="email">Email</label>
-              <input class="test" name="email" id="email" type="email">
+              <input class="text" name="email" id="email" type="email">
             </p>
           </div>
 
-          <p><label for="text_area">Tell us about your project, and what you hope to achieve <br />Keep it brief—we can get into the details later</label>
+          <div class="">
+            <p><label for="name">What shall we call this project? (a working title is fine)</label>
+            <input type="text" name="project_title" id="project_title"/></p>
+          </div>
+
+          <p><label for="text_area">Tell us about your project. What is it? What you hope to achieve? <br />Keep it brief—we can get into the details later</label>
           <textarea id="text_area" name="description"></textarea></p>
 
           <!-- <p>What are you looking for? Please make a selection from the services below.</p>
