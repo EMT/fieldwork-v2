@@ -117,6 +117,15 @@ myLayer.setGeoJSON({
 
 myLayer.on('click', function(e) {
 	map.panTo(e.layer.getLatLng());
+	if (e.layer.feature.properties.title == "Planet Fieldwork"){
+		console.log("fieldwork hq")
+		$(".leaflet-popup-content-wrapper").css("background", "#F7323F");
+		$(".leaflet-popup-tip").css("border-top-color", "#F7323F");
+	} else {
+		console.log("not fieldwork hq")
+		$(".leaflet-popup-content-wrapper").css("background", "#00C4B3");
+		$(".leaflet-popup-tip").css("border-top-color", "#00C4B3");
+	}
 	$(".js-map-info").html()
 });
 
