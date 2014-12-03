@@ -44,11 +44,7 @@
 	a {
 		color: $footer-type-color;
 		text-decoration: none;
-		-webkit-transition: all .3s ease-out;
-		-moz-transition: all .3s ease-out;
-		-ms-transition: all .3s ease-out;
-		-o-transition: all .3s ease-out;
-		transition: all .3s ease-out;
+		@include vendorize(transition, all .3s ease-out);
 
 		&:hover {
 			color: $link-hover-color;
@@ -71,11 +67,7 @@
 a.footer-block {
 	color: rgb(153,153,153);
 	text-decoration: none;
-	-webkit-transition: all .3s ease-out;
-	-moz-transition: all .3s ease-out;
-	-ms-transition: all .3s ease-out;
-	-o-transition: all .3s ease-out;
-	transition: all .3s ease-out;
+	@include vendorize(transition, all .3s ease-out);
 }
 
 .social li {
@@ -109,7 +101,7 @@ footer input[type="submit"] {
 	// margin-top: 1em;
 	// border-radius: 3px;
 	cursor: pointer;
-	-webkit-transition: all .3s ease-out;
+	@include vendorize(transition, all .3s ease-out);
 
 	&:hover {
 		color: $turquoise;

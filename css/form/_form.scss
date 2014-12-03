@@ -35,7 +35,7 @@ cursor: pointer;
   max-height: 3.8em;
   margin-top: -2px;
   opacity: 0;
-  -webkit-transition: all .3s ease-out;
+  @include vendorize(transition, all .3s ease-out);
 
   &.visible {
     opacity: 1;
@@ -157,7 +157,7 @@ form.hire-us {
   padding: 2em 0;
   z-index: 1000;
   color: $white;
-  -webkit-transition: bottom 0.5s ease-out;
+  @include vendorize(transition, bottom 0.5s ease-out);
 
   &.msg-success {
     background: rgb(5,206,123);

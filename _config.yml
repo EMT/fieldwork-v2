@@ -3,6 +3,7 @@ title: "Fieldwork — We Make Things"
 title_appendage: " – Fieldwork"
 description: "This is a description."
 baseurl: "/fieldwork-v2"
+asseturl: "https://4dd31530cac686690479-fe99d1e1a6eca87157ebc4c97a827cc2.ssl.cf2.rackcdn.com/2014"
 url: "http://madebyfieldwork.com"
 collections:
   work:

@@ -5,7 +5,7 @@
 	    {% include header.html %}
 		
 		{% if page.header_img %}
-			<div style="background-image: url('{{ site.baseurl }}{{ page.header_img }}');" class="hero-picture"></div>
+			<div style="background-image: url('{{ site.asseturl }}{{ page.header_img }}');" class="hero-picture"></div>
 		{% elsif page.header_imgs %}
 			<div class="hero-picture header-bg-img"></div>
 		{% endif %}

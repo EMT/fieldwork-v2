@@ -12,8 +12,7 @@ body.no-hero {
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
-	-webkit-background-size:cover;
-	background-size: cover;
+	@include vendorize(background-size, cover);
 	position: relative;
 	z-index: -1;
 }
@@ -52,7 +51,7 @@ body.no-hero {
 		border-bottom: 1px solid rgba(119,119,119,0.4);
 		text-decoration: none;
 		-webkit-text-size-adjust: 100%;
-		-webkit-transition: all .3s ease-out;
+		@include vendorize(transition, all .3s ease-out);
 
 		&:hover {
 			color: $link-hover-color;

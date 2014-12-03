@@ -20,12 +20,12 @@
                 {% for header_img in page.header_imgs %}
                     {% if header_img[0] == 'default' %}
                         .header-bg-img {
-                            background-image:  url({{ site.baseurl }}{{ header_img[1] }});
+                            background-image:  url({{ site.asseturl }}{{ header_img[1] }});
                         }
                     {% else %}
                         @media all and (min-width: {{ header_img[0] }}) {
                             .header-bg-img {
-                                background-image: url({{ site.baseurl }}{{ header_img[1] }});
+                                background-image: url({{ site.asseturl }}{{ header_img[1] }});
                             }
                         }
                     {% endif %}

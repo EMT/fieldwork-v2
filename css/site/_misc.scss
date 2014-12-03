@@ -13,7 +13,7 @@
 	border-top: transparent 26px solid;
 	border-bottom: transparent 26px solid;
 	z-index: 2;
-	-webkit-transition: all .3s ease-out;
+	@include vendorize(transition, all .3s ease-out);
 }
 [data-embed]:before {
 	content: ' ';
@@ -27,7 +27,7 @@
 	border: rgba(255,255,255,0.7) 1px solid;
 	border-radius: 50px;
 	z-index: 2;
-	-webkit-transition: all .3s ease-out;
+	@include vendorize(transition, all .3s ease-out);
 }
 [data-embed]:hover:after {
 	border-left-color: rgba(255,255,255,0.9);
