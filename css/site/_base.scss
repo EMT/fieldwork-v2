@@ -89,7 +89,7 @@ body {
   overflow: visible !important;
 }
 
-@media screen and (max-width: $screen-small-width) {
+@media screen and (max-width: $screen-width-small) {
   body {
     -webkit-text-size-adjust: 100%;
   }
