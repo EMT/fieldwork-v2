@@ -89,4 +89,27 @@ $(document).ready(function(){
     error = '.msg.error',
     loader = '.loader';
 
+  $('form.hire-us').on('submit', function(e) {
+    e.preventDefault();
+    var $self = $(this);
+
+    var success = function(data) {
+      console.log(data);
+      alert('success!');
+    }
+
+    var error = function() {
+      alert('failure!');
+    }
+
+    $.ajax({
+      method: 'post',
+      url: $self.attr('action'),
+      data: $self.serialize(),
+      success: success,
+      error: error,
+      dataType: 'json'
+    });
+  });
+
 });
