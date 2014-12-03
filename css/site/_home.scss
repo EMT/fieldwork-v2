@@ -173,7 +173,7 @@
 			border: 0;
 
 			* {
-				-webkit-transition: all .3s ease-out;
+				@include vendorize(transition, all .3s ease-out);
 			}
 			
 			&:hover {
