@@ -33,7 +33,7 @@ $(document).ready(function(){
 
   budgetSlider.on('slide set', function () {
     if(budgetSlider.val() == maxBudget) {
-      budgetInput.val('£100,000+');
+      budgetInput.val('All of your money');
     }
     // if(budgetSlider.val() == minBudget) {
     //   budgetInput.val('No budget');
@@ -74,12 +74,12 @@ $(document).ready(function(){
 
 
   timeframeSlider.on('slide set', function () {
-    if(timeframeSlider.val() == maxBudget) {
-      timeframeInput.val('All your money');
+    if(timeframeSlider.val() == minTimeframe) {
+      timeframeInput.val('No fixed deadline, but ASAP');
     }
-    // if(timeframeSlider.val() == minBudget) {
-    //   timeframeInput.val('No budget');
-    // }
+    if(timeframeSlider.val() == maxTimeframe) {
+      timeframeInput.val('Whenevs');
+    }
   });
 
 
