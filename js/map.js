@@ -1,3 +1,6 @@
+---
+---
+
 // Provide your access token
 L.mapbox.accessToken = 'pk.eyJ1IjoiZWRmaWVsZHdvcmsiLCJhIjoicTMwZTkydyJ9.PReYJSCAJ4cFTBOsINez8A';
 
@@ -123,7 +126,7 @@ for (var i = 0 ; i < locations.length ; i++){
 	    	'title': i == 0 ? locations[i].title : locations[i].title + "<br />" + '<span style="opacity:0.7">'+locations[i].desc+'</span>',
             icon: {
 	            // "iconUrl": i == 0 ? "../images/map/marker-red.svg" : "../images/map/marker-turquoise.svg",
-	            "iconUrl": i == 0 ? "https://4dd31530cac686690479-fe99d1e1a6eca87157ebc4c97a827cc2.ssl.cf2.rackcdn.com/2014/images/map/marker-red.svg" : "https://4dd31530cac686690479-fe99d1e1a6eca87157ebc4c97a827cc2.ssl.cf2.rackcdn.com/2014/images/map/marker-turquoise.svg",
+	            "iconUrl": i == 0 ? "{{site.asseturl}}/images/map/marker-red.svg" : "{{site.asseturl}}/images/map/marker-turquoise.svg",
 	            "iconSize": [24, 33], // size of the icon
 	            "iconAnchor": [12, 33], // point of the icon which will correspond to marker's location
 	            "popupAnchor": [0, -45], // point from which the popup should open relative to the iconA
