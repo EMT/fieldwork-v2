@@ -247,6 +247,9 @@ li.interesting[data-tooltip]:after {
 		color: $blog-code;
 	}
 }
+li.code a:hover {
+	color: $blog-code;
+}
 
 .blog-category.inspiration-main {
 	.cat-highlight,
@@ -255,6 +258,9 @@ li.interesting[data-tooltip]:after {
 	.blog-content h2 {
 		color: $blog-inspiration;
 	}
+}
+li.inspiration a:hover {
+	color: $blog-inspiration;
 }
 
 .blog-category.made-main {
@@ -265,6 +271,9 @@ li.interesting[data-tooltip]:after {
 		color: $blog-made;
 	}
 }
+li.made a:hover {
+	color: $blog-made;
+}
 
 .blog-category.thinking-main {
 	.cat-highlight,
@@ -273,6 +282,9 @@ li.interesting[data-tooltip]:after {
 	.blog-content h2 {
 		color: $blog-thinking;
 	}
+}
+li.thinking a:hover {
+	color: $blog-thinking;
 }
 
 .blog-category.people-main {
@@ -283,6 +295,9 @@ li.interesting[data-tooltip]:after {
 		color: $blog-people;
 	}
 }
+li.people a:hover {
+	color: $blog-people;
+}
 
 .blog-category.process-main {
 	.cat-highlight,
@@ -291,6 +306,9 @@ li.interesting[data-tooltip]:after {
 	.blog-content h2 {
 		color: $blog-process;
 	}
+}
+li.process a:hover {
+	color: $blog-process;
 }
 
 .blog-category.ideas-main {
@@ -301,6 +319,9 @@ li.interesting[data-tooltip]:after {
 		color: $blog-ideas;
 	}
 }
+li.ideas a:hover {
+	color: $blog-ideas;
+}
 
 .blog-category.adventures-main {
 	.cat-highlight,
@@ -309,6 +330,9 @@ li.interesting[data-tooltip]:after {
 	.blog-content h2 {
 		color: $blog-adventures;
 	}
+}
+li.adventures a:hover {
+	color: $blog-adventures;
 }
 
 .blog-category.design-main {
@@ -319,6 +343,9 @@ li.interesting[data-tooltip]:after {
 		color: $blog-design;
 	}
 }
+li.design a:hover {
+	color: $blog-design;
+}
 
 .blog-category.studio-main {
 	.cat-highlight,
@@ -327,6 +354,9 @@ li.interesting[data-tooltip]:after {
 	.blog-content h2 {
 		color: $blog-studio;
 	}
+}
+li.studio a:hover {
+	color: $blog-studio;
 }
 
 .blog-category.found-main {
@@ -337,6 +367,9 @@ li.interesting[data-tooltip]:after {
 		color: $blog-found;
 	}
 }
+li.found a:hover {
+	color: $blog-found;
+}
 
 .blog-category.interesting-main {
 	.cat-highlight,
@@ -345,4 +378,7 @@ li.interesting[data-tooltip]:after {
 	.blog-content h2 {
 		color: $blog-interesting;
 	}
+}
+li.interesting a:hover {
+	color: $blog-interesting;
 }

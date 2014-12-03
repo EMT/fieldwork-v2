@@ -16,11 +16,30 @@ cursor: pointer;
 
 .submit {
   background: rgb(5, 206, 123);
+  position: relative;
   
   &:hover {
     background: darken(rgb(5, 206, 123), 12%);
   }
+  &:disabled {
+    background: rgb(114,184,148);
+  }
+  &:focus {
+    outline-width: 0;
+  }
+}
 
+.btn-loader {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 3.8em;
+  margin-top: -2px;
+  opacity: 0;
+  -webkit-transition: all .3s ease-out;
+
+  &.visible {
+    opacity: 1;
+  }
 }
 
 form.hire-us {
@@ -127,4 +146,35 @@ form.hire-us {
   }
 
 
+}
+
+
+.feedback-msg {
+  position: fixed;
+  bottom: -300px;
+  left: 0;
+  right: 0;
+  padding: 2em 0;
+  z-index: 1000;
+  color: $white;
+  -webkit-transition: bottom 0.5s ease-out;
+
+  &.msg-success {
+    background: rgb(5,206,123);
+  }
+  &.msg-error {
+    background: $fw-red;
+  }
+  &.msg-visible {
+    bottom: 0;
+  }
+  
+  p {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  a {
+    color: $white;
+  }
 }

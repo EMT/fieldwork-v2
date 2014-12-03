@@ -1,6 +1,6 @@
 ---
 title: "Planner"
-description: "We love making things, collaborating, identifying interesting problems and figuring out what we can build to help solve them."
+description: "Interested in working with us?"
 layout: default
 body_classes: no-hero
 scripts:
@@ -13,11 +13,11 @@ scripts:
       
       <div class="section-title">
         <h1>Interested in working with us?</h1>
-        <p class="runner">Send us as much</p>
+        <p class="section-runner">Use this planner to give us some initial information about your project, and we’ll get back to you for a chat and next steps.</p>
       </div>
 
       <div class="section-text section-text">
-        <form class="hire-us" method="POST" action="http://mailer.dev/go.php">
+        <form class="hire-us" method="POST" action="http://mailer.madebyfieldwork.com/go.php">
         
           <div class="name">
             <p><label for="name">Full Name</label>
@@ -36,7 +36,7 @@ scripts:
           </div>
 
           <p><label for="text_area">Tell us about your project. What is it? What you hope to achieve? <br />Keep it brief—we can get into the details later</label>
-          <textarea id="text_area" name="description"></textarea></p>
+          <textarea id="description" name="description"></textarea></p>
 
           <!-- <p>What are you looking for? Please make a selection from the services below.</p>
 
@@ -73,7 +73,8 @@ scripts:
           </div>
 
           <p>
-              <input class="button submit" type="submit" value="Submit" />
+              <input class="button submit js-submit-btn" type="submit" value="Submit" />
+              <img class="btn-loader js-btn-loader" src="{{ site.baseurl }}/images/loader.gif" alt="" />
           </p>
           
         </form>
@@ -81,5 +82,7 @@ scripts:
     </div>  
 
 </section>
+
+<p class="feedback-msg js-feedback-msg msg-success">This is a test.</p>
 
 
