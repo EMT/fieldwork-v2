@@ -15,9 +15,9 @@ body_classes: no-hero
             <li class="grid-item">
                 <a href="{{ site.baseurl }}{{ project.url }}">
                     <figure>
-                        <img {% if project.thumbs %}srcset="{% for thumb in project.thumbs %}{{ site.baseurl }}{{ thumb[1] }} {{ thumb[0] }},{% endfor %}"
+                        <img {% if project.thumbs %}srcset="{% for thumb in project.thumbs %}{{ site.asseturl }}{{ thumb[1] }} {{ thumb[0] }},{% endfor %}"
                              sizes="90vw"{% endif %}
-                             src="{{ site.baseurl }}{{ project.thumb }}"
+                             src="{{ site.asseturl }}{{ project.thumb }}"
                              alt="" />
 
                         <figcaption class="project-index-content">
