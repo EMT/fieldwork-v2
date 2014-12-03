@@ -123,7 +123,7 @@ for (var i = 0 ; i < locations.length ; i++){
 	    },
 	    content: locations[i].desc,
 	    properties: {
-	    	'title': i == 0 ? locations[i].title : locations[i].title + "<br />" + '<span style="opacity:0.7">'+locations[i].desc+'</span>',
+	    	'title': i == 0 ? locations[i].title : locations[i].title + '<div style="opacity:0.7">'+locations[i].desc+'</div>',
             icon: {
 	            // "iconUrl": i == 0 ? "../images/map/marker-red.svg" : "../images/map/marker-turquoise.svg",
 	            "iconUrl": i == 0 ? "{{site.asseturl}}/images/map/marker-red.svg" : "{{site.asseturl}}/images/map/marker-turquoise.svg",
