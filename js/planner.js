@@ -83,23 +83,35 @@ $(document).ready(function(){
   });
 
 
-  var successMsg = '<div class="msg success"><div class="wrapper"><p>Everything checks out, submitting now!</p><span class="loader"></span></div></div>',
-    errorMsg = '<div class="msg error"><div class="wrapper"><p>Hey dummy, your information is wrong. Fix it.</p><span class="loader"></span></div></div>',
-    success = '.msg.success',
-    error = '.msg.error',
-    loader = '.loader';
-
   $('form.hire-us').on('submit', function(e) {
     e.preventDefault();
     var $self = $(this);
 
+    $('.js-submit-btn').attr('disabled', true);
+    $('.js-btn-loader').addClass('visible');
+    $('.js-feedback-msg').removeClass('msg-visible');
+
     var success = function(data) {
-      console.log(data);
-      alert('success!');
+      if (data) {
+        $('.js-feedback-msg')
+          .html('Thanks for getting in touch. We’ll get back to you very soon.')
+          .removeClass('msg-error')
+          .addClass('msg-success msg-visible');
+        $('#name, #email, #project_title, #description').val('');
+      }
     }
 
     var error = function() {
-      alert('failure!');
+      // alert('failure!');
+      $('.js-feedback-msg')
+        .html('Something’s wrong! Please try again, or email us instead at <a href="mailto:andy@madebyfieldwork.com">andy@madebyfieldwork.com</a>')
+        .removeClass('msg-success')
+        .addClass('msg-error msg-visible');
+    }
+
+    var complete = function() {
+      $('.js-submit-btn').attr('disabled', false);
+      $('.js-btn-loader').removeClass('visible');
     }
 
     $.ajax({
@@ -108,6 +120,7 @@ $(document).ready(function(){
       data: $self.serialize(),
       success: success,
       error: error,
+      complete: complete,
       dataType: 'json'
     });
   });
