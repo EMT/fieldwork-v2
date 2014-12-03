@@ -23,6 +23,10 @@
 	padding-top: 32.95%;
 }
 
+.home-illustration-fallback{
+	display:none;
+}
+
 @media only screen and (max-width: 800px) {
 	.svg-wrapper{
 		width:156%;
