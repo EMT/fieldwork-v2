@@ -203,7 +203,7 @@ $(document).ready(function(){
  	}
 
 	$.ajax({
-		url: 'http://beta.madebyfieldwork.com/emt/feed/json',
+		url: 'http://madebyfieldwork.com/emt/feed/json',
 		success: success,
 		error: error,
 		dataType: 'json'
