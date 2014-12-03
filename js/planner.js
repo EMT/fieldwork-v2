@@ -94,7 +94,7 @@ $(document).ready(function(){
     var success = function(data) {
       if (data) {
         $('.js-feedback-msg')
-          .html('Thanks for getting in touch. We’ll get back to you very soon.')
+          .html('<p>Thanks for getting in touch. We’ll get back to you very soon.</p>')
           .removeClass('msg-error')
           .addClass('msg-success msg-visible');
         $('#name, #email, #project_title, #description').val('');
@@ -104,7 +104,7 @@ $(document).ready(function(){
     var error = function() {
       // alert('failure!');
       $('.js-feedback-msg')
-        .html('Something’s wrong! Please try again, or email us instead at <a href="mailto:andy@madebyfieldwork.com">andy@madebyfieldwork.com</a>')
+        .html('<p>Something’s wrong! Please try again, or email us instead at <a href="mailto:andy@madebyfieldwork.com">andy@madebyfieldwork.com</a>.</p>')
         .removeClass('msg-success')
         .addClass('msg-error msg-visible');
     }

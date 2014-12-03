@@ -154,7 +154,7 @@ form.hire-us {
   bottom: -300px;
   left: 0;
   right: 0;
-  padding: 2em;
+  padding: 2em 0;
   z-index: 1000;
   color: $white;
   -webkit-transition: bottom 0.5s ease-out;
@@ -169,6 +169,11 @@ form.hire-us {
     bottom: 0;
   }
   
+  p {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+  }
   a {
     color: $white;
   }
