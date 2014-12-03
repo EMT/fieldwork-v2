@@ -19,6 +19,8 @@
 
 .custom-popup .leaflet-popup-content{
 	padding:10px;
+	text-align:center;
+	max-width:180px;
 }
 .custom-popup .leaflet-popup-content-wrapper a {
 	color:rgba(255,255,255,0.5);
