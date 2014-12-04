@@ -33,11 +33,11 @@ $(document).ready(function(){
 
   budgetSlider.on('slide set', function () {
     if(budgetSlider.val() == maxBudget) {
-      budgetInput.val('All of your money');
+      budgetInput.val('100,000+');
     }
-    // if(budgetSlider.val() == minBudget) {
-    //   budgetInput.val('No budget');
-    // }
+    if(budgetSlider.val() == minBudget) {
+      budgetInput.val('Not sure');
+    }
   });
 
 
@@ -78,7 +78,7 @@ $(document).ready(function(){
       timeframeInput.val('No fixed deadline, but ASAP');
     }
     if(timeframeSlider.val() == maxTimeframe) {
-      timeframeInput.val('Whenevs');
+      timeframeInput.val('I’m flexible');
     }
   });
 
