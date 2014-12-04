@@ -8,7 +8,7 @@ var map = L.mapbox.map('map', 'edfieldwork.kb21lg3g', {
 	zoomControl: false ,
 	attributionControl: false
 	})
-  .setView([53.482035, -2.234324], 16);
+  .setView([53.482035, -2.234324], 17);
 
 new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
 
@@ -52,6 +52,18 @@ var locations = [
 		lat: 53.482050,
 		lng: -2.231968,
 	},
+	{
+		title: "Piccadilly Station",
+		desc: "",
+		lat: 53.4774291,
+		lng: -2.2311214
+	},
+	{
+		title: "Victoria Station",
+		desc: "",
+		lat: 53.487309,
+		lng: -2.242583
+	},
 
 	// {
 	// 	title: "",
@@ -59,13 +71,13 @@ var locations = [
 	// 	lat: 53.481548, 
 	// 	lng: -2.236630
 	// },
-	// {
-	// 	title: "",
-	// 	desc: "Pie 'n' mash",
-	// 	lat: 53.482845,
-	// 	lng: -2.236148,
-	// 	type: "eating"
-	// },
+	{
+		title: "Pieminister",
+		desc: "Pie 'n' mash",
+		lat: 53.482845,
+		lng: -2.236148,
+		type: "eating"
+	},
 	// {
 	// 	title: "",
 	// 	desc: "Chip barms",
@@ -80,13 +92,49 @@ var locations = [
 	// 	lng: -2.236759,
 	// 	type: "drinking"
 	// },
+	{
+		title: "Kosmonaut",
+		desc: "",
+		lat: 53.481226,
+		lng: -2.232364,
+		type: "drinking"
+	}, 
+	{
+		title: "Koffee Pot",
+		desc: "Best breakfast in the Northern Quarter",
+		lat: 53.482925,
+		lng: -2.234387
+	},
+	{
+		title: "Common Bar",
+		desc: "Good beer, good burgers, nice atmosphere",
+		lat: 53.484232,
+		lng: -2.236029
+	},
+	{
+		title: "Lego Shop",
+		desc: "Our favourite small coloured building block supplier",
+		lat: 53.483488,
+		lng: -2.241307
+	},
+	{
+		title: "Fred Aldous", 
+		desc: "All the stationery you will ever need",
+		lat: 53.482473,
+		lng: -2.234088
+	},
+	{
+		title: "North Tea Power",
+		desc: "Proper tea and there are cakes too",
+		lat: 53.482916,
+		lng: -2.236034
+	}
 	// {
-	// 	title: "",
-	// 	desc: "Kosmonaut",
-	// 	lat: 53.481226,
-	// 	lng: -2.232364,
-	// 	type: "drinking"
-	// },
+	// 	title: "Cain and Grain",
+	// 	desc: "",
+	// 	lat: 53.484018,
+	// 	lng: -2.236431
+	// }
 	// {
 	// 	title: "",
 	// 	desc: "Posh Sandwiches",
