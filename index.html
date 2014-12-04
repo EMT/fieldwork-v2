@@ -22,7 +22,7 @@ layout: home
                     </figure>
                     <h3>{{ project.title }}</h3>
                     <p class="project-index-meta">
-                        {{ project.meta | array_to_sentence_string }}
+                        {{ project.meta | join: ', ' }}
                     </p>
                 </a>
             </li>

@@ -26,7 +26,7 @@ body_classes: no-hero
                     </figure>
                     <h2>{{ project.title }}</h2>
                     <p class="project-index-meta">
-                        {{ project.meta | array_to_sentence_string }}
+                        {{ project.meta | join: ', ' }}
                     </p>
                 </a>
             </li>

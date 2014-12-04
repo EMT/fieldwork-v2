@@ -122,7 +122,16 @@ body.no-hero {
 			}
 		}
 		&.content-col--3-1 {
-			width: 50%;
+			width: 100%;
+
+			.social-icons {
+				margin-left: -2px;
+				margin-right: -5px;
+
+				a {
+					margin-left: -2px;
+				}
+			}
 		}
 	}
 }
@@ -174,6 +183,13 @@ body.no-hero {
 	width: 90%;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+
+@media all and (min-width: 319px) {
+	.content-columns .content-col.content-col--3-1 {
+		width: 50%;
+	}
 }
 
 
