@@ -174,14 +174,15 @@ $(document).ready(function(){
  			d = data[i].date.split(' ');
  			d[0] = d[0].split('-');
  			d[1] = d[1].split(':');
- 			d = new Date(d[0][0], d[0][1], d[0][2], d[1][0], d[1][1], d[1][2]);
+ 			d = new Date(d[0][0], d[0][1] - 1, d[0][2], d[1][0], d[1][1], d[1][2]);
+
  			html += '<li class="grid-item grid-item-4-1">'
      				+ '<ul class="category-icons">';
 
      				for (var ci = 0, clen = data[i].categories.length; ci < clen; ci ++) {
                     	html += '<li data-tooltip="' + convertToSlug(data[i].categories[ci]) + '" class="' + convertToSlug(data[i].categories[ci]) + '"><a class="tag" href="http://beta.madebyfieldwork.com/emt/category/' + convertToSlug(data[i].categories[ci]) + '/"></a></li>';
                     }
-                	
+
                 	html += '</ul>'
                 	+ '<a href="' + data[i].permalink + '">'
                     	+ '<h2>' + data[i].title + '</h2>'
