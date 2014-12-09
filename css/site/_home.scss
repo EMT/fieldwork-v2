@@ -225,6 +225,10 @@
 	}
 	&.social-block--twitter {
 		background: rgb(252,90,93);
+		img {
+			max-height: 1em;
+			vertical-align: middle;
+		}
 	}
 	&.social-block--instagram {
 		padding-bottom: 100%;
