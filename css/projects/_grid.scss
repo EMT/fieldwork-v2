@@ -1,102 +1,112 @@
-.grid .text .col-content {
-  background: rgb(244,36,52);
-  color: rgb(255,255,255);
-  padding: 0.5em;
-  @include border-box;
-  line-height: 1.4;
-
-}
+/**
+ * Basic generic grid
+ */
 
 .grid {
-  overflow: hidden;
-  clear: both;
-  margin: 0 -10px;
+    overflow: hidden;
+    margin: 0 -0.5em;   
+
+    img {
+        width: 100%;
+    }
+
+    .grid-item {
+        @include border-box();
+        position: relative;
+        padding: 0 0.5em 0;
+        margin-bottom: 3em;
+
+        figure {
+            overflow: hidden;
+            position: relative;
+            display: block;
+            height: 0;
+            padding-bottom: 68%;
+        }
+        img {
+            display: block;
+            width: 100%;
+            transition: all .3s ease-out;
+            /* prevent weird 1px width/height/position changes on hover in Chrome */
+            position: relative;
+            -webkit-backface-visibility: hidden;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(102,102,102);
+
+            &:hover img {
+                opacity: 0.1;
+                -webkit-backface-visibility: hidden;
+            }
+            &:hover .project-index-content {
+                opacity: 1;
+            }
+        }
+
+        h2,
+        h3 {
+            padding-top: 0.5em;
+        }
+    }
 }
 
-[class^="grid-col-"] {
-  // background: rgb(255, 0, 0);
-  float: left;
-  position: relative;
+.media-grid {
+    img,
+    iframe {
+        display: block;
+        max-width: 100%;
+    }
 
-  &.tall-cube {
-    padding-bottom: 70%;
-  }
-  &.med-cube {
-    padding-bottom: 35%;
-  }
-  &.vertical-cube {
-    padding-bottom: 40%;
-  }
-  &.tiny-cube {
-    padding-bottom: 20%;
-  }
-  &.wide-cube {
-    padding-bottom: 40%;
-  }
-  &.full-size-cube {
-    padding-bottom: 65%;
-  }
-  &.extra-tall-cube {
-    padding-bottom: 150%;
-  }
+    > * {
+        margin-bottom: 1em;
+    }
 
-  .col-content {
-    position: absolute;
-    top: 0.5em;
-    bottom: 0.5em;
-    left: 0.5em;
-    right: 0.5em;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .col-content.test {
-    background: rgb(147,149,152);
-  }
+    [data-embed] {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
 
+    .grid-item {
+        margin-bottom: 1em;
+        &:nth-child(odd) {
+            clear: none !important;
+        }
+    }
 }
 
 
+@media all and (min-width: 600px) {
+    .grid {
+        .grid-item {
+            width: 50%;
+            float: left;
 
-@media screen and (max-width: 700px) {
-.grid [class^="grid-col-"] {
-  width: 100%;
-
-  &.tall-cube {
-    padding-bottom: 125%;
-  }
-  &.med-cube {
-    padding-bottom: 60%;
-  }
-  &.vertical-cube {
-    padding-bottom: 40%;
-  }
-  &.tiny-cube {
-    padding-bottom: 60%;
-  }
-  &.wide-cube {
-    padding-bottom: 40%;
-  }
-  &.full-size-cube {
-    padding-bottom: 65%;
-  }
-  &.extra-tall-cube {
-    padding-bottom: 150%;
-  }
-
+            &:nth-child(odd) {
+                clear: left;
+            }
+        }
+    }
 }
 
+
+@media all and (min-width: 850px) {
+    .grid {
+        .grid-item {
+            h2,
+            h3,
+            p {
+                padding-left: 25%; 
+            }
+        }
+
+        .grid-item-4-1 {
+            width: 25%;
+            &:nth-child(odd) {
+                clear: none;
+            }
+        }
+    }
 }
 
-@for $i from 1 through $column-count {
-
-  .grid-col-#{$i} {
-    width: $column-width*$i;
-  }
-
-}
-
-.grid-col-third {
-  width: 33.3%;
-}
+ 

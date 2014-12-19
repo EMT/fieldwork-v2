@@ -1,0 +1,35 @@
+{% include top.html %}
+
+    <body class="{% if page.header_img %}hero-header{% endif %}{% if page.body_classes %} {{ page.body_classes }}{% endif %}">
+
+	    {% include header.html %}
+					<div id="map" class='custom-popup'>
+				<!--<div class="info js-map-info" style='width:20%;min-width:160px;height:100%;background:rgba(255,255,255,0.8);position:absolute;right:0;z-index:1;padding:80px 20px 0;box-sizing:border-box;'>
+					<h2>Fieldwork HQ</h2>
+				</div>-->
+			</div>
+		<div class="contact">
+
+
+<!-- 		  	<div class="wrapper">
+			  	<ul class="category-links">
+			  		<li><a class="us" href="#">Us</a></li>
+			  		<li><a class="eating" href="#">Eating</a></li>
+			  		<li><a class="drinking" href="#">Drinking</a></li>
+			  	</ul>	
+		  	</div> -->
+
+		</div>
+
+	    <div class="page-content">
+	      {{ content }}
+	      {% include footer.html %}
+
+	      <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+	      <script src='{{ site.baseurl }}/js/map.js'></script>
+	      <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+
+	      
+	    </div>
+    </body>
+</html>

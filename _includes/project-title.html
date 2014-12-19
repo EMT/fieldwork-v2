@@ -1,0 +1,16 @@
+<div class="section-title">
+	<h1>{{ page.title }}</h1>
+	<p class="section-runner">{{ page.runner }}</p>
+
+	{% if page.additional %}
+		<p class="additional">{{ page.additional }}</p>
+	{% endif %}
+	
+	{% if page.meta %}
+		<ul class="project-meta">
+			{% for meta in page.meta %}
+				<li>{{ meta }}</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+</div>

@@ -1,15 +1,54 @@
 ---
 ---
 
+//	Put font-face here so that font URLs work locally and with Github pages
+
+@font-face {
+  font-family: 'Neuzeit';
+  font-weight: normal;
+  font-style: normal;
+  src: url('{{ site.baseurl }}/fonts/neuzeit-book.eot'); /* IE9 Compat Modes */
+  src: url('{{ site.baseurl }}/fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ site.baseurl }}/fonts/neuzeit-book.woff') format('woff'), /* Modern Browsers */
+       url('{{ site.baseurl }}/fonts/neuzeit-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('{{ site.baseurl }}/fonts/neuzeit-book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Neuzeit';
+  font-weight: bold;
+  font-style: normal;
+  src: url('{{ site.baseurl }}/fonts/neuzeit-book.eot'); /* IE9 Compat Modes */
+  src: url('{{ site.baseurl }}/fonts/neuzeit-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('{{ site.baseurl }}/fonts/neuzeit-book.woff') format('woff'), /* Modern Browsers */
+       url('{{ site.baseurl }}/fonts/neuzeit-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('{{ site.baseurl }}/fonts/neuzeit-book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('{{ site.baseurl }}/fonts/fontello.eot?67832890');
+  src: url('{{ site.baseurl }}/fonts/fontello.eot?67832890#iefix') format('embedded-opentype'),
+       url('{{ site.baseurl }}/fonts/fontello.woff?67832890') format('woff'),
+       url('{{ site.baseurl }}/fonts/fontello.ttf?67832890') format('truetype'),
+       url('{{ site.baseurl }}/fonts/fontello.svg?67832890#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 // Variables
 
-@import 'variables.scss';
+@import 'utilities/variables';
+@import 'utilities/mixins';
 
 // Basic site styles.
 @import 'site/reset';
 @import 'site/base';
 @import 'site/header';
 @import 'site/footer';
+@import 'site/page-sections';
+@import 'site/home';
+@import 'site/contact';
 
 // Blog styles
 @import 'blog/blog';
@@ -21,6 +60,7 @@
 
 // Form Styles for Project planner.
 @import 'form/form';
-@import 'form/loader';
-@import 'form/notifications';
 @import 'form/nouislider';
+
+// Things that either don’t fit anywhere else or haven’t been organised yet
+@import 'site/misc';

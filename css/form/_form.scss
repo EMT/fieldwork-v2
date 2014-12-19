@@ -1,17 +1,10 @@
-.hire-us form, .hire-us .thanks {
-  width: 60%;
-  margin: 2em auto;
-}
 
-.thanks {
-  display: none;
-}
 
 .button {
-padding: 1em 2em;
+padding: 0.75em 2em;
+font-size: 1em;
 color: rgb(255, 255, 255);
 text-decoration: none;
-
 -webkit-transition: background 0.3s;
 -moz-transition: background 0.3s;
 -ms-transition: background 0.3s;
@@ -23,23 +16,33 @@ cursor: pointer;
 
 .submit {
   background: rgb(5, 206, 123);
+  position: relative;
   
   &:hover {
     background: darken(rgb(5, 206, 123), 12%);
   }
-
-}
-
-.error {
-  background: rgb(255, 91, 53);
-
-  &:hover {
-    background: darken(rgb(255, 91, 53), 12%);
+  &:disabled {
+    background: rgb(114,184,148);
   }
-
+  &:focus {
+    outline-width: 0;
+  }
 }
 
-.hire-us form {
+.btn-loader {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 3.8em;
+  margin-top: -2px;
+  opacity: 0;
+  @include vendorize(transition, all .3s ease-out);
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+form.hire-us {
   .what {
     label {
       margin-bottom: 1em;
@@ -54,19 +57,33 @@ cursor: pointer;
 
 }
 
+form.hire-us .name, form.hire-us .email {
+  float: left;
+  width: 47.25%;
+}
+
+form.hire-us .email {
+  margin-left: 5%;
+}
+form input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+
 .form-group{
 	margin-bottom:20px;
 }
 
-.hire-us  {
+form.hire-us {
   input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="password"], textarea {
   	box-sizing: border-box;
-  	background-color: rgb(252, 252, 252);
-  	border: 1px solid rgb(220, 220, 220);
+  	background-color: rgb(240,240,238);
+  	border: none;
   	display: block;
   	font-size: 1em;
   	padding: 0.4em;
-  	margin-bottom: 0.4em;
+  	margin-bottom: 1.4em;
   	width: 100%;
   	vertical-align: middle;
     font-family: 'Neuzeit';
@@ -80,7 +97,7 @@ cursor: pointer;
   	font-size: 1em;
   	font-weight: bold;
   	line-height: 1.4em;
-  	margin-bottom: 0.25em;
+  	margin-bottom: 0.5em;
   	position: relative;
   	text-transform: none;
   }
@@ -90,24 +107,33 @@ cursor: pointer;
   }
 
   .digital-details, .print-details {
-  	display: none;
-    border-top: 2px solid lightgrey;
-    border-bottom: 2px solid lightgrey;
-    padding: 1em 0;
-
+  margin-bottom: 1.4em;
     input {
       display: none;
     }
     
     .grid-col-third {
       text-align: center;
-      margin: 10px 0;
+      padding: 0.5em;
+      box-sizing: border-box;
+      width: 33.3%;
+      float: left;
+
+      label {
+        padding: 15px;
+        margin-bottom: 0;
+        background: rgb(240,240,238);
+        display: block;
+      }
+
     }
 
   }
 
 
-  input[type=text].value {
+
+
+  input[type=text].slider-value {
     background: none;
     border: none;
     text-align: center;
@@ -115,37 +141,40 @@ cursor: pointer;
 
 
   input[type=checkbox]:checked + label {
-      color: red;
+      background: rgb(232, 57, 68);
+      color: white;
   }
 
 
+}
 
-  form > p, form > div, p.title {
-    margin: 0 0 20px 0;
+
+.feedback-msg {
+  position: fixed;
+  bottom: -300px;
+  left: 0;
+  right: 0;
+  padding: 2em 0;
+  z-index: 1000;
+  color: $white;
+  @include vendorize(transition, bottom 0.5s ease-out);
+
+  &.msg-success {
+    background: rgb(5,206,123);
   }
-}
-
-// Fade in animation testing from display none
-
-.shown {
-	display: block;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-}
-
-@-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-
-// Issue Testing - Red glow.
-
-input[type="email"].issue {
-	border: 1px solid red;
-	transition: border 1s ease-out;
+  &.msg-error {
+    background: $fw-red;
+  }
+  &.msg-visible {
+    bottom: 0;
+  }
+  
+  p {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  a {
+    color: $white;
+  }
 }

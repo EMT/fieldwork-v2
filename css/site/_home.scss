@@ -1,0 +1,541 @@
+.homepage-header {
+	// background:$grey--mega-light;
+	// background: linear-gradient(to bottom, $grey--mega-light 0%, $grey--mega-light 99%, $white 100%); 
+	background:$blue--light;
+	background: linear-gradient(to bottom, $blue--light 0%, $blue--light 99%, $white 100%); 
+	position: relative;
+	overflow:hidden;
+	padding-top: 20%;
+}
+
+.homepage-header > svg {
+	display: block;
+	margin-bottom: 0px;
+	position: relative;
+	bottom: -2px;
+}
+
+.svg-wrapper{
+	width: 100%;
+	display: block;
+	height: auto;
+	position: relative;
+	padding-top: 32.95%;
+}
+
+.home-illustration-fallback{
+	display:none;
+}
+
+@media only screen and (max-width: 800px) {
+	.svg-wrapper{
+		width:156%;
+		padding-top:51.45%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.svg-wrapper{
+		width:224%;
+		padding-top:73.95%;
+	}
+}
+
+.svg-wrapper svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	transform: translateZ(0);
+}
+
+.home-page {
+	margin-top: 0;
+}
+
+.home-page-intro-wrapper {
+	overflow: visible;
+}
+
+.home-page-intro {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 3em;
+	width: 100%;
+	display: table;
+}
+
+.home-page-intro-inner {
+	font-size: 1.5em;
+	color: $white;
+	line-height: 1.4;
+	box-sizing: border-box;
+	display: table-cell;
+	vertical-align: middle;
+	
+	> * {
+		max-width: 22em;
+	}
+
+	h1 {
+		font-weight: bold;
+		color: rgb(29,97,102);
+		// margin-bottom: 0.6em;
+	}
+}
+
+@media all and (min-width: $screen-width-small) {
+	.home-page-intro {
+		margin-bottom: -5%;
+	}
+
+	.home-page-intro-inner {
+		padding-left: 37%;
+
+		> * {
+			padding-left: 0.4em;
+		}
+	}
+}
+
+@media all and (min-width: $screen-width-medium) {
+	.home-page-intro {
+		margin-bottom: -11%;
+	}
+
+	.home-page-intro-inner {
+		padding-left: 50%;
+	}
+}
+
+@media all and (min-width: 1500px) {
+	.home-page-intro-inner {
+		font-size: 2em;
+
+		> * {
+			padding-left: 0.25em;
+		}
+	}
+}
+
+
+.home-page-section {
+	margin-top: 2%;
+	margin-bottom: 2%;
+
+	&:first-child {
+		padding-top: 3em;
+	}
+
+	> h2 {
+		margin-bottom: 1.6em;
+		color: rgb(202,204,205);
+		font-size: $type-large;
+	}
+}
+
+.home-page .grid {
+	.grid-item {
+		h2,
+		h3,
+		p {
+			// padding-left: 0;
+		}
+		p {
+			color: rgb(138,140,143);
+		}
+
+		.post-meta {
+			margin-bottom: 1em;
+		}
+		.post-more {
+			display: block;
+			padding-top: 1em;
+		}
+	}
+}
+
+.home-page-blog-wrapper {
+	background: $grey--light;
+	padding: 2% 0 5%;
+	margin-bottom: 0;
+}
+
+.grid.home-page-blog {
+	.grid-item {
+		padding-right: 1em;
+		
+		h2,
+		h3,
+		p {
+			padding-left: 0;
+		}
+		a {
+			display: block;
+			border: 0;
+
+			* {
+				@include vendorize(transition, all .3s ease-out);
+			}
+			
+			&:hover {
+				h2,
+				h3,
+				.post-more {
+					color: $link-hover-color;
+				}
+				.post-excerpt,
+				.post-meta {
+					opacity: 0.6;
+				}
+			}
+		}
+
+		h2,
+		h3,
+		p,
+		.post-meta {
+			font-size: $type-large;
+			line-height: $line-large;
+		}
+	}
+}
+
+.home-page-social-blocks {
+	background: rgb(219,219,219);
+	margin: 0;
+
+	.social-blocks-wrapper {
+		margin: 0 auto;
+		max-width: 1920px;
+	}
+}
+
+.social-block {
+	position: relative;
+	color: $white;
+	text-align: center;
+	background-size: 100%;
+	background-size: cover;
+	
+	&.social-block--spotify {
+		background: rgb(31,195,180);
+	}
+	&.social-block--twitter {
+		background: rgb(252,90,93);
+		img {
+			max-height: 1em;
+			vertical-align: middle;
+		}
+	}
+	&.social-block--instagram {
+		padding-bottom: 100%;
+
+		> div {
+			background-size: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		.social-block-inner {
+			background: rgba(0,0,0,0.3);
+			height: 100%;
+		}
+	}
+
+	.social-block-inner {
+		overflow: hidden;
+	}
+
+	a {
+		color: $white;
+		border-bottom: 1px solid rgba(255,255,255,0.4);
+		// display: inline;
+
+		&:hover {
+			color: rgba(255,255,255,0.7);
+		}
+	}
+	p {
+		font-size: $type-large;
+		line-height: $line-large;
+		overflow: hidden;
+		max-height: 60%;
+	}
+
+	.social-block-icon {
+		font-size: 3em;
+		border-bottom: 0;
+		padding: 10% 10% 5%;
+	}
+	.social-block-content {
+		overflow: hidden;
+		padding: 0 10% 12%;
+	}
+}
+
+.home-twitter {
+	text-align: center;
+
+	.icon-twitter {
+		font-size: 3em;
+	}
+	p {
+		margin: 2em auto 0 auto;
+		max-width: 50em;
+	}
+}
+
+.huge-type {
+	text-align: center;
+	font-size: 23px;
+	line-height: 5em;
+}
+
+
+#pong {
+	background: rgba(255,255,255,0.7);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+
+@media all and (min-width: 600px) {
+
+	.social-block,
+	.social-block.social-block--instagram {
+		width: 33.333%;
+		float: left;
+		padding-bottom: 33.333%;
+
+		.social-block-inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+
+		.social-block-icon {
+			padding: 0;
+			position: absolute;
+			top: 8%;
+			left: 0;
+			right: 0;
+		}
+		.social-block-content {
+			padding: 0;
+			position: absolute;
+			top: 35%;
+			bottom: 10%;
+			left: 8%;
+			right: 8%;
+		}
+	}
+}
+
+
+@media all and (min-width: 900px) {
+	
+	.social-block,
+	.social-block.social-block--instagram {
+		.social-block-icon {
+			top: 12%;
+		}
+		.social-block-content {
+			top: 32%;
+			left: 12%;
+			right: 12%;
+		}
+	}
+}
+
+
+@media all and (min-width: 1050px) {
+
+	.social-block,
+	.social-block.social-block--instagram {
+		.social-block-icon {
+			top: 18%;
+		}
+		.social-block-content {
+			top: 42%;
+		}
+	}
+}
+
+
+@media only screen and (min-width: 1800px) {
+
+	.home-page-intro-wrapper-outer{
+		font-size:2em;
+	}
+}
+
+
+// .inner-content {
+// 	position: absolute;
+// 	top: 10px;
+// 	right: 10px;
+// 	left: 10px;
+// 	background: lightgreen;
+// 	bottom: 10px;
+// }
+
+// .grid-item {
+// 	position: relative;
+// }
+
+// .home-page .hero-picture {
+//   background-position: bottom;
+// }
+
+// .home-page-grid {
+//   margin:80px 0;
+//   overflow: hidden;
+// }
+
+// .grid-item{
+//   height: 0;
+//   padding-bottom:67.9%; /* only works if width is 100%*/
+//   padding-bottom:34.4%;
+//   width: 50%;
+//   float: left;
+// }
+
+// .grid-item img{
+//   width:100%;
+// }
+
+.circle{
+	@include vendorize(transform-origin, center center);
+}
+
+.pipe, .arc{
+	cursor: pointer;
+	transition: all 1s;
+}
+
+.square{
+	@include vendorize(animation, slide 4s infinite ease-in-out);
+}
+
+.square-two{
+	@include vendorize(animation, slide-alt 4s infinite ease-in-out);
+	@include vendorize(animation-timing-function, cubic-bezier(0.550, 0.085, 0.680, 0.530));
+}
+
+.square--vert{
+	@include vendorize(animation, slide-vert 1s infinite ease-in-out alternate);
+	@include vendorize(animation, slide-vert 1s infinite cubic-bezier(0.770, 0.000, 0.175, 1.000) alternate);
+}
+
+.square--vert-2{
+	@include vendorize(animation-delay, -1000ms);
+}
+
+.floating-eye{
+	@include vendorize(animation, float 3s infinite ease-in-out alternate);
+	cursor: pointer;
+}
+
+.little-ball{
+	@include vendorize(animation, little-ball-spin 4s infinite cubic-bezier(0.680, -0.550, 0.265, 1.550));
+	@include vendorize(transform-origin, center center);
+	@include vendorize(transform-origin, 1417px 547.3px);
+}
+
+.little-ball-2{
+	@include vendorize(animation-delay,-1s);
+	@include vendorize(transform-origin, 1370.4px 547.4px);
+}
+
+.little-ball-3{
+	@include vendorize(transform-origin, 1322.4px 547.3px);
+}
+
+.pulsating-circles g{
+	@include vendorize(transform, scale(0.75));
+	@include vendorize(transform-origin, center center);
+	@include vendorize(animation, pulsate 3s infinite cubic-bezier(0.450, -0.600, 0.570, 1.650));
+
+}
+
+@for $i from 1 through 6{
+   .pulsating-circles g:nth-child(#{$i}){ 
+      @include vendorize(animation-delay, (#{$i * 100}ms));
+      @include vendorize(transform-origin, 378.6px 196.8px);
+   }
+}
+
+
+.little-ball--alt{
+	@include vendorize(animation, little-ball-alt-spin 2s infinite ease-in-out);
+    @include vendorize(transform-origin, 1730.1px 422.25px);
+}
+
+.little-ball--alt-2{
+    @include vendorize(transform-origin, 1776.71px 422.25px);
+	@include vendorize(animation-delay, -500ms);
+}
+
+
+
+
+@include keyframes(slide) {
+	0%   { @include vendorize(transform, translateX(0)); @include vendorize(animation-timing-function, cubic-bezier(0.325, 0.005, 0.350, 0.995));}
+	40%   { @include vendorize(transform, translateX(-261px)); }
+	50%   { @include vendorize(transform, translateX(-261px)); @include vendorize(animation-timing-function, cubic-bezier(0.575, 0.005, 0.515, 1.005));}
+	90%   { @include vendorize(transform, translateX(0)); }
+	100% { @include vendorize(transform, translateX(0)); }
+}
+
+@include keyframes(slide-alt) {
+	0%   { @include vendorize(transform, translateX(0)); @include vendorize(animation-timing-function, cubic-bezier(0.575, 0.005, 0.515, 1.005));}
+	40%   { @include vendorize(transform, translateX(-261px)); }
+	50%   { @include vendorize(transform, translateX(-261px)); @include vendorize(animation-timing-function, cubic-bezier(0.325, 0.005, 0.350, 0.995));}
+	90%   { @include vendorize(transform, translateX(0)); }
+	100% { @include vendorize(transform, translateX(0)); }
+}
+
+@include keyframes(slide-vert) {
+	0%   { @include vendorize(transform, translateY(0));}
+	100% { @include vendorize(transform, translateY(90px));}
+}
+
+@include keyframes(float) {
+	0%   { @include vendorize(transform, translateY(0px));}
+	100% { @include vendorize(transform, translateY(-10px));}
+}
+
+
+@include keyframes(little-ball-spin) {
+	0%  { @include vendorize(transform, rotate(0deg));}
+	25% { @include vendorize(transform, rotate(270deg));}
+	50% { @include vendorize(transform, rotate(270deg));}
+	75% { @include vendorize(transform, rotate(0deg));}
+}
+
+@include keyframes(little-ball-alt-spin) {
+	0%  { @include vendorize(transform, translateY(0px) rotate(0deg));}
+	50%  { @include vendorize(transform, translateY(-40px) rotate(180deg));}
+	100%  { @include vendorize(transform, translateY(0px) rotate(360deg));}
+}
+
+@include keyframes(pulsate) {
+	0%    { @include vendorize(transform, scale(0.75));}
+	20%   { @include vendorize(transform, scale(1));}
+	50%   { @include vendorize(transform, scale(1));}
+	70%   { @include vendorize(transform, scale(0.75));}
+	100%  { @include vendorize(transform, scale(0.75));}
+}

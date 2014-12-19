@@ -2,7 +2,7 @@
 // Slider - Modified vendor code.
 
 .ui-slider {
-  width: 60%;
+  width: 100%;
   margin: 2em auto;
 }
 
@@ -58,7 +58,7 @@
  */
 .noUi-horizontal {
   height: 2px;
-  margin: 20px;
+  margin: 20px 0;
 }
 .noUi-horizontal .noUi-handle {
   width: 28px;
@@ -93,7 +93,7 @@
 /* Styling;
  */
 .noUi-background {
-  background: rgb(255,255,255);
+  background: rgb(220,220,220);
 }
 .noUi-connect {
   background: rgb(245,251,253);

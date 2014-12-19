@@ -1,0 +1,36 @@
+---
+title: "Work"
+description: "A selection of projects by Fieldwork."
+layout: default
+body_classes: no-hero
+---
+
+<div class="section-inner">
+
+    <!-- <h1>Projects</h1> -->
+
+    <ul class="grid projects">
+        {% assign projects = site.work | sort: 'order' %}
+        {% for project in projects %}
+            <li class="grid-item">
+                <a href="{{ site.baseurl }}{{ project.url }}">
+                    <figure>
+                        <img {% if project.thumbs %}srcset="{% for thumb in project.thumbs %}{{ site.asseturl }}{{ thumb[1] }} {{ thumb[0] }},{% endfor %}"
+                             sizes="90vw"{% endif %}
+                             src="{{ site.asseturl }}{{ project.thumb }}"
+                             alt="" />
+
+                        <figcaption class="project-index-content">
+                            {{ project.runner }}
+                        </figcaption>
+                    </figure>
+                    <h2>{{ project.title }}</h2>
+                    <p class="project-index-meta">
+                        {{ project.meta | join: ', ' }}
+                    </p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</div>

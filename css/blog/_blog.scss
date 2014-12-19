@@ -1,236 +1,77 @@
-// Structure
-
-.banner {
-  width: 100%;
-  float: left;
-  margin-bottom: 2em;
-}
-.main-content {
-  float: left;
-  width: 65%; 
-  margin-right: 10%;
-}
-.sidebar {
-  float: right;
-  width: 25%;
-  font-size: 0.9em;
-}
-// Colors!
-
-$blog-pink: rgb(238,70,123);
-$blog-yellow: rgb(254,221,60);
-$blog-turquoise: rgb(63,212,173);
-$blog-blue: rgb(0,105,166);
-$blog-pink--light: rgb(241,133,206);
-$blog-lime-green: rgb(196,231,106);
-$blog-red: rgb(244,36,52);
-$blog-blue--light: rgb(155,230,215);
-$blog-orange: rgb(255,157,107);
-$blog-pale-green: rgb(227,231,51);
-
-// Category colors + backgrounds
-
-// Background
-
-li.code a.tag,
-li.code:hover a:after,
-.wrapper.code-main li.code a:after, 
-.post-list .code-main .no-image, .code-main .post-content .no-image {
-	background: $blog-pink;
-}
-
-li.inspiring a.tag,
-li.inspiring:hover a:after,
-.wrapper.inspiring-main li.inspiring a:after,
-.post-list .inspiring-main .no-image, .inspiring-main .post-content .no-image {
-	background: $blog-yellow;
-}
-
-li.made a.tag,
-li.made:hover a:after,
-.wrapper.made-main li.made a:after,
-.post-list .made-main .no-image, .made-main .post-content .no-image {
-	background: $blog-turquoise;
-}
-
-li.out-and-about a.tag,
-li.out-and-about:hover a:after,
-.wrapper.out-and-about-main li.out-and-about a:after,
-.post-list .out-and-about-main .no-image, .out-and-about-main .post-content .no-image {
-	background: $blog-blue;
-}
-
-li.people a.tag,
-li.people:hover a:after,
-.wrapper.people-main li.people a:after,
-.post-list .people-main .no-image, .people-main .post-content .no-image {
-	background: $blog-pink--light;
-}
-
-li.process a.tag,
-li.process:hover a:after,
-.wrapper.process-main li.process a:after,
-.post-list .process-main .no-image, .process-main .post-content .no-image {
-	background: $blog-lime-green;
-}
-
-li.ideas a.tag,
-li.ideas:hover a:after,
-.wrapper.ideas-main li.ideas a:after,
-.post-list .ideas-main .no-image, .ideas-main .post-content .no-image {
-	background: $blog-red;
-}
-
-li.found a.tag,
-li.found:hover a:after,
-.wrapper.found-main li.found a:after,
-.post-list .found-main .no-image, .found-main .post-content .no-image {
-	background: $blog-blue--light;
-}
-
-li.present a.tag,
-li.present:hover a:after,
-.wrapper.present-main li.present a:after,
-.post-list .present-main .no-image, .present-main .post-content .no-image {
-	background: $blog-orange;
-}
-
-li.studio a.tag,
-li.studio:hover a:after,
-.wrapper.studio-main li.studio a:after,
-.post-list .studio-main .no-image, .studio-main .post-content .no-image {
-	background: $blog-pale-green;
-}
-
-// Color
-
-li.code a:hover,
-.wrapper.code-main li.code a,
-.wrapper.code-main .post-content .title,
-.wrapper.code-main .post-content .caption,
-.wrapper.code-main .post-content h3,
-.wrapper.code-main .post-content h4 {
-	color: $blog-pink;
-}
-
-li.inspiring a:hover,
-.wrapper.inspiring-main li.inspiring a,
-.wrapper.inspiring-main .post-content .title,
-.wrapper.inspiring-main .post-content .caption,
-.wrapper.inspiring-main .post-content h3,
-.wrapper.inspiring-main .post-content h4 {
-	color: $blog-yellow;
-}
-
-li.made a:hover,
-.wrapper.made-main li.made a,
-.wrapper.made-main .post-content .title,
-.wrapper.made-main .post-content .caption,
-.wrapper.made-main .post-content h3,
-.wrapper.made-main .post-content h4 {
-	color: $blog-turquoise;
-}
-
-li.out-and-about a:hover,
-.wrapper.out-and-about-main li.out-and-about a,
-.wrapper.out-and-about-main .post-content .title,
-.wrapper.out-and-about-main .post-content .caption,
-.wrapper.out-and-about-main .post-content h3,
-.wrapper.out-and-about-main .post-content h4 {
-	color: $blog-blue;
-}
-
-li.people a:hover,
-.wrapper.people-main li.people a,
-.wrapper.people-main .post-content .title,
-.wrapper.people-main .post-content .caption,
-.wrapper.people-main .post-content h3,
-.wrapper.people-main .post-content h4 {
-	color: $blog-pink--light;
-}
-
-li.process a:hover,
-.wrapper.process-main li.process a,
-.wrapper.process-main .post-content .title,
-.wrapper.process-main .post-content .caption,
-.wrapper.process-main .post-content h3,
-.wrapper.process-main .post-content h4 {
-	color: $blog-lime-green;
-}
-
-li.ideas a:hover,
-.wrapper.ideas-main li.ideas a,
-.wrapper.ideas-main .post-content .title,
-.wrapper.ideas-main .post-content .caption,
-.wrapper.ideas-main .post-content h3,
-.wrapper.ideas-main .post-content h4 {
-	color: $blog-red;
-}
-
-li.found a:hover,
-.wrapper.found-main li.found a,
-.wrapper.found-main .post-content .title,
-.wrapper.found-main .post-content .caption,
-.wrapper.found-main .post-content h3,
-.wrapper.found-main .post-content h4 {
-	color: $blog-blue--light;
-}
-
-li.present a:hover,
-.wrapper.present-main li.present a,
-.wrapper.present-main .post-content .title,
-.wrapper.present-main .post-content .caption,
-.wrapper.present-main .post-content h3,
-.wrapper.present-main .post-content h4 {
-	color: $blog-orange;
-}
-
-li.studio a:hover,
-.wrapper.studio-main li.studio a,
-.wrapper.studio-main .post-content .title,
-.wrapper.studio-main .post-content .caption, 
-.wrapper.studio-main .post-content h3,
-.wrapper.studio-main .post-content h4 {
-	color: $blog-pale-green;
-}
-
-// .uncategorized {
-// 	color: ;
-// }
-
-
-// Sidebar
-
-.sidebar {
-	margin: 0 0 2em 0;
-
-	h3 {
-		padding: 1em 0;
-		color: rgb(109, 110, 113);
-		font-size: 1.2em;
-	}
-
-	h3:first-of-type {
-		padding-top: 0;
-	}
-
-	.newsletter {
-		margin-top: 1em;
-	}
-
-}
-
-// Categories links 
-.category-links a {
-	text-decoration: none;
-	color: rgb(170,170,170);
-	display: block;
-	padding: 0.3em 0;
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
 	position: relative;
+	z-index: 2;
+	cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: opacity 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+	-moz-transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+	-webkit-transform: translateY(2px);
+	-moz-transform: translateY(2px);
+	transform: translateY(2px);
+
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	margin-bottom: 5px;
+	margin-left: -1em;
+	padding: 0.5em 0.7em;
+	width: auto;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	border-radius:         3px;
+	background-color: rgb(0,0,0);
+	background-color: hsla(0, 0%, 20%, 0.9);
+	color: #fff;
+	content: attr(data-tooltip);
+	text-transform: capitalize;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+	position: absolute;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -5px;
+	width: 0;
+	border-top: 5px solid #000;
+	border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	content: " ";
+	font-size: 0;
+	line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
 }
 
 
-.category-links a:after, .category-icons a.tag  {
+
+
+.category-icons a.tag  {
 	content: '';
 	display: block;
 	height: 10px;
@@ -240,18 +81,6 @@ li.studio a:hover,
 	background: rgb(209, 211, 212);
 }
 
-.category-links a:after {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-// Icons
 
 .category-icons {
 	list-style: none;
@@ -276,390 +105,280 @@ li.studio a:hover,
 	position: absolute;
 }
 
-// Contact form ( modified old styles )
 
-.contact-form {
-	margin-bottom: 2em;
+li.code[data-tooltip]:before,
+li.code a.tag,
+li.code a:after,
+.wrapper.code-main li.code a:after, 
+.code-main .no-image, .code-main .post-content .no-image {
+	background-color: $blog-code;
 }
-.contact-form > div {
-	border-bottom: 1px solid rgb(170,170,170);
-	margin-bottom: 0.3em;
-}
-.contact-form input.text {
-	border: 0;
-	background: transparent;
-	padding: 0.7em 0;
-	color: rgb(111,124,124);
-	font-size: 1em;
-}
-.contact-form input.text:focus {
-	outline: none;
-}
-.contact-form input.button {
-	border: 0;
-	background: transparent;
-	padding: 0.3em 0;
-	font-size: 1em;
-	color: inherit;
-}
-.contact-form input.button:hover {
-	cursor: pointer;
-	color: darken(rgb(170,170,170),15%);
+li.code[data-tooltip]:after {
+	border-top-color: $blog-code;
 }
 
-
-
-// Posts lists
-
-.post-list {
-	padding: 0;
-	list-style: none;
+li.inspiration[data-tooltip]:before,
+li.inspiration a.tag,
+li.inspiration a:after,
+.wrapper.inspiration-main li.inspiration a:after,
+.inspiration-main .no-image, .inspiration-main .post-content .no-image {
+	background-color: $blog-inspiration;
+}
+li.inspiration[data-tooltip]:after {
+	border-top-color: $blog-inspiration;
 }
 
-.post-list > li {
-	margin: 2em 0;
+li.made[data-tooltip]:before,
+li.made a.tag,
+li.made a:after,
+.wrapper.made-main li.made a:after,
+.made-main .no-image, .made-main .post-content .no-image {
+	background-color: $blog-made;
+}
+li.made[data-tooltip]:after {
+	border-top-color: $blog-made;
 }
 
-.post-list > li:first-of-type {
-	margin: 0 0 2em 0;
+li.thinking[data-tooltip]:before,
+li.thinking a.tag,
+li.thinking a:after,
+.wrapper.thinking-main li.thinking a:after,
+.thinking-main .no-image {
+	background-color: $blog-thinking;
+}
+li.thinking[data-tooltip]:after {
+	border-top-color: $blog-thinking;
 }
 
-
-
-// Shared between Single + Post list
-
-.title-long, .date {
-	color: rgb(167,169,172);
-	line-height: 1.2;
+li.people[data-tooltip]:before,
+li.people a.tag,
+li.people a:after,
+.wrapper.people-main li.people a:after,
+.people-main .no-image {
+	background-color: $blog-people;
+}
+li.people[data-tooltip]:after {
+	border-top-color: $blog-people;
 }
 
-.post-image {
-	position: relative;
-	margin: 0 0 2em 0;
-	overflow: hidden;
+li.process[data-tooltip]:before,
+li.process a.tag,
+li.process a:after,
+.wrapper.process-main li.process a:after,
+.process-main .no-image, {
+	background-color: $blog-process;
+}
+li.process[data-tooltip]:after {
+	border-top-color: $blog-process;
+}
 
-	img {
-		width: 100%;
-		display: block;
+li.ideas[data-tooltip]:before,
+li.ideas a.tag,
+li.ideas a:after,
+.wrapper.ideas-main li.ideas a:after,
+.ideas-main .no-image {
+	background-color: $blog-ideas;
+}
+li.ideas[data-tooltip]:after {
+	border-top-color: $blog-ideas;
+}
+
+li.adventures[data-tooltip]:before,
+li.adventures a.tag,
+li.adventures a:after,
+.wrapper.adventures-main li.adventures a:after,
+.adventures-main .no-image {
+	background-color: $blog-adventures;
+}
+li.adventures[data-tooltip]:after {
+	border-top-color: $blog-adventures;
+}
+
+li.design[data-tooltip]:before,
+li.design a.tag,
+li.design a:after,
+.wrapper.design-main li.design a:after,
+.design-main .no-image {
+	background-color: $blog-design;
+}
+li.design[data-tooltip]:after {
+	border-top-color: $blog-design;
+}
+
+li.studio[data-tooltip]:before,
+li.studio a.tag,
+li.studio a:after,
+.wrapper.studio-main li.studio a:after,
+.studio-main .no-image {
+	background-color: $blog-studio;
+}
+li.studio[data-tooltip]:after {
+	border-top-color: $blog-studio;
+}
+
+li.found[data-tooltip]:before,
+li.found a.tag,
+li.found a:after,
+.wrapper.found-main li.found a:after,
+.found-main .no-image {
+	background-color: $blog-found;
+}
+li.found[data-tooltip]:after {
+	border-top-color: $blog-found;
+}
+
+li.interesting[data-tooltip]:before,
+li.interesting a.tag,
+li.interesting a:after,
+.wrapper.interesting-main li.interesting a:after,
+.interesting-main .no-image {
+	background-color: $blog-interesting;
+}
+li.interesting[data-tooltip]:after {
+	border-top-color: $blog-interesting;
+}
+
+// Color
+.blog-category.code-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-code;
 	}
 }
-
-.no-image {
-	position: relative;
-	height: 0;
-	padding: 5% 5% 57.4% 5%;
-	margin: 0 0 2em 0;
-	overflow: hidden;
-
-	.category {
-		color: rgba(255,255,255,0.5);
-		margin: 0;
-		font-size: 2em;
-	}
-
-	p {
-		color: rgb(255,255,255);
-		margin: 0.5em 0;
-		font-size: 1.3em;
-		line-height: 1.2;
-	}
+li.code a:hover {
+	color: $blog-code;
 }
 
-// Post
-
-.post {
-
-	.category-icons {
-		float: left;
-		width: 100%;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	.title {
-		text-align: center;
-		display: block;
-		float: left;
-		width: 50%;
-		color: rgb(88,89,91);
-	}
-
-	.under {
-		display: block;
-		margin: 0.5em 0;
-	}
-
-	.date, .go-to {
-		float: left;
-		width: 25%;
-		display: block;
-	}
-
-	.go-to a {
-		display: block;
-		height: 21px;
-		width: 37px;
-		background: url("images/blog-arrow.png");
-		float: right;
+.blog-category.inspiration-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-inspiration;
 	}
 }
-
-
-.pagination {
-
-	a {
-		text-decoration: none;
-		color: rgb(167,169,172);
-		padding: 2em 0;
-	}
-
-	span {
-		display: block;
-		margin: 1em 0 3em 0;
-	}
-
-	.next {
-		float: right;
-	}
-
-	.prev {
-		float: left;
-	}
-
+li.inspiration a:hover {
+	color: $blog-inspiration;
 }
 
-
-// Single Post
-
-.post-content:after, .images:after, .sidebar:after, .wrapper:after, .post-meta-data:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.post-content {
-	margin-bottom: 2em;
-
-	a {
-		color: rgb(167,169,172);
-	}
-
-	em {
-		font-style: italic;
-	}
-
-	strong {
-		font-weight: bold;
-	}
-
-	blockquote, q {
-		margin-left: 2em;
-		border-left: 3px solid rgb(204, 204, 204);
-		padding-left: 1em;
-	}
-
-	img {
-		margin-bottom: 0.5em;
-		max-width: 100%;
-		display: block;
-	}
-
-	// !!! Group up with image styles
-	.caption, .caption-alt {
-		font-size: 0.9em;
-	}
-
-	.caption-alt {
-		color: rgb(167, 169, 172);
-		margin-top: 0.4em;
-		display: block;
-	}
-
-	.meta-data {
-		float: left;
-		width: 10%;
-		margin-right: 5%;
-	}
-
-	.category-icons {
-		margin: 0.2em 0;
-	}
-
-	.images {
-		margin: 1em -10px;
-		float: left;
-	}
-
-	.title-img {
-		margin-bottom: 2em;
-	}
-
-	.meta-data ul {
-		float: none;
-		width: auto;
-	}
-
-	.gist {
-		font-size: 0.9em;
-		margin: 2em 0;
-	}
-
-	.inner-content {	
-	width: 85%;
-	float: right;
-
-		h1, h2, h3, h4, h5, h6 {
-			margin: 1em 0;
-		}
-
-		.title {
-			display: inline-block;
-			margin: inherit;
-		}
-
-		li {
-			color: rgb(167,169,172);
-			margin: 0.7em 0;
-			position: relative;
-			padding: 0 0 0 0.8em;
-		}
-
-		li:after {
-			content: '-';
-			position: absolute;
-			left: 0px;
-			top: 0px;
-		}
-
-		p, ul, .author, h3, h4, h5, ol, blockquote, q {
-			margin: 0.5em 0;
-			line-height: 1.5;
-			// width: 85%;
-			// float: right;
-		}
-
-
-		h4 {
-			font-size: 0.9em;
-		}
-
-		h5 {
-			font-size: 0.8em;
-		}
-
-		.gist {
-			width: 100%;
-			float: left;
-		}
-
-	}
-
-}
-
-
-
-// !!! Group up with caption - little note on how they are used.
-.images .image-col-3 {
-	width: 33.33%;
-	float: left;
-	box-sizing: border-box;
-	padding: 0 10px;
-}
-
-.images .image-col-2 {
-	width: 50%;
-	float: left;
-	box-sizing: border-box;
-	padding: 0 10px;
-}
-
-
-.image-col-1 {
-	float: left;
-	margin: 2em 0;
-	width: 100%;
-}
-
-
-
-//  Videos
-
-.video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	margin: 2em 0;
-	height: 0;
-	overflow: hidden;
-	width: 100%;
-	float: left;
-}
-
-.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-}
-
-@media only screen and (max-width: 650px) {
-
-.post-image {
-	font-size: 0.7em;
-}
-
-
-.main-content {
-	width: 100%;
-	margin: 0;
-}
-
-.sidebar {
-	width: 100%;
-}
-
-// Temp hiding style.
-.newsletter {
-	display: none;	
-}
-
-.category-links {
-	display: none;
-}
-
-.post-content .inner-content {
-	p, ul, .author, h3, h4, h5, ol, blockquote, q {
-		width: 100%;
-		margin: 0.75em 0;
-		font-size: 0.95em;
+.blog-category.made-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-made;
 	}
 }
-
-.post-content .meta-data {
-	width: auto;
-	margin-bottom: 1em;
+li.made a:hover {
+	color: $blog-made;
 }
 
-.no-image {
-	height: auto;
-	padding: 5% 5% 20% 5%;
+.blog-category.thinking-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-thinking;
+	}
+}
+li.thinking a:hover {
+	color: $blog-thinking;
 }
 
-.post-content .gist {
-	font-size: 0.8em;
+.blog-category.people-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-people;
+	}
+}
+li.people a:hover {
+	color: $blog-people;
 }
 
-
-
+.blog-category.process-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-process;
+	}
+}
+li.process a:hover {
+	color: $blog-process;
 }
 
-@media only screen and (max-width: 900px) {
-
-.post-image {
-	font-size: 0.85em;
+.blog-category.ideas-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-ideas;
+	}
+}
+li.ideas a:hover {
+	color: $blog-ideas;
 }
 
+.blog-category.adventures-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-adventures;
+	}
+}
+li.adventures a:hover {
+	color: $blog-adventures;
+}
+
+.blog-category.design-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-design;
+	}
+}
+li.design a:hover {
+	color: $blog-design;
+}
+
+.blog-category.studio-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-studio;
+	}
+}
+li.studio a:hover {
+	color: $blog-studio;
+}
+
+.blog-category.found-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-found;
+	}
+}
+li.found a:hover {
+	color: $blog-found;
+}
+
+.blog-category.interesting-main {
+	.cat-highlight,
+	.blog-content a,
+	.blog-content h3,
+	.blog-content h2 {
+		color: $blog-interesting;
+	}
+}
+li.interesting a:hover {
+	color: $blog-interesting;
 }

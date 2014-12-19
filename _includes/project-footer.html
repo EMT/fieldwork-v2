@@ -1,0 +1,14 @@
+
+	<div class="project-footer">
+		<h2 class="elements">Share</h2>
+		{% include project-social.html %}
+
+		<div class="project-nav">
+			{% if page.work_previous %}
+		    	<a class="prev" href="{{page.work_previous.url}}">Previous project: {{ page.work_previous.title }}</a> 
+			{% endif %}
+			{% if page.work_next %}
+		    	<a class="next" href="{{page.work_next.url}}">Next project: {{ page.work_next.title }}</a> 
+			{% endif %}
+		</div>
+	</div>

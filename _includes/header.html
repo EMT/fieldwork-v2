@@ -1,23 +1,22 @@
-	<header>
+
+	<header id="site-header">
 		<div>
-			<a class="marque" href="/">
-				<img class="white-marque" src="/images/fw-logo-white.svg" alt="Fieldwork – Home" />
-				<img class="red-marque" src="/images/fw-logo.svg" alt="Fieldwork – Home" />
+			<a class="marque" href="{{ site.baseurl }}/">
+				<img class="red-marque" src="{{ site.asseturl }}/images/fw-logo.svg" width='12px' height='20px' alt="Fieldwork" />
 			</a>
-			<ul class="social-icons">
+			<ul class="social-icons header-social-icons">
 				<li><a href="https://twitter.com/MadeByFieldwork" class="icon-twitter"></a></li>
 				<li><a href="http://instagram.com/madebyfieldwork" class="icon-instagram"></a></li>
 				<li><a href="https://www.facebook.com/madebyfieldwork" class="icon-facebook"></a></li>
 				<li><a href="https://github.com/EMT" class="icon-github"></a></li>
 			</ul>
 			<nav>
-				<a class="work fade-transition" href="/work">Work</a>
-				<a class="us fade-transition" href="/us">Us</a>
-				<a class="journal fade-transition" href="/emt">Feed</a>
-				<a class="contact fade-transition" href="/contact">Contact</a>
-				<a class="search" id="open-search" href="/search">Search</a>
-				<a class="index" id="open-index" href="/favourites">Favourites</a>
+				<a class="work fade-transition {% if page.url == '/work/' or page.url contains '/work/' %}selected{%endif%}" href="{{ site.baseurl }}/work">Work</a>
+				<a class="us fade-transition {% if page.url == '/us/' %}selected{%endif%}" href="{{ site.baseurl }}/us">Us</a>
+				<a class="journal fade-transition" href="http://madebyfieldwork.com/emt/">Blog</a>
+				<a class="contact fade-transition {% if page.url == '/contact/' %}selected{%endif%}" href="{{ site.baseurl }}/contact">Contact</a>
 			</nav>
 		</div>
 	</header>
+
 	

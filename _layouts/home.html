@@ -1,0 +1,33 @@
+{% include top.html %}
+
+
+    <body class="home-page">
+
+	    {% include header.html %}
+		<div class="homepage-header" id="homepage-header">
+
+			<div class="section-inner home-page-intro-wrapper">
+				<div class="home-page-intro js-home-page-intro">
+					<div class="home-page-intro-inner js-home-page-intro-inner">
+						<h1>We Make Things</h1>
+						<p>From digital platforms to brand identities, we work with you, collaboratively, to make things that help your organisation do great work.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="svg-wrapper" id="svg-wrapper">
+				{% include home-illustration.svg %}
+				<img class="home-illustration-fallback js-home-illustration-fallback" width='100%' src="{{ site.asseturl }}/images/home/header-illustration.png" alt="">
+			</div>
+		</div>
+
+
+	    <div class="page-content">
+		    {{ content }}
+			{% include footer.html %}
+	    </div>
+
+	    <script src='{{ site.baseurl }}/js/home.js?v2'></script>
+
+    </body>
+</html>

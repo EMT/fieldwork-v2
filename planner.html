@@ -1,0 +1,88 @@
+---
+title: "Planner"
+description: "Interested in working with us? Use this planner to give us some initial information about your project, and we’ll get back to you for a chat and next steps."
+layout: default
+body_classes: no-hero
+scripts:
+- "/js/planner.js"
+---
+
+<section class="page-section">
+
+    <div class="section-inner overflow-visible">
+      
+      <div class="section-title">
+        <h1>Interested in working with us?</h1>
+        <p class="section-runner">Use this planner to give us some initial information about your project, and we’ll get back to you for a chat and next steps.</p>
+      </div>
+
+      <div class="section-text section-text">
+        <form class="hire-us" method="POST" action="http://mailer.madebyfieldwork.com/go.php">
+        
+          <div class="name">
+            <p><label for="name">Full Name</label>
+            <input type="text" name="name" id="name"/></p>
+          </div>
+          
+          <div class="email">
+            <p><label for="email">Email</label>
+              <input class="text" name="email" id="email" type="email">
+            </p>
+          </div>
+
+          <div class="">
+            <p><label for="name">What’s this project called? (a working title is fine)</label>
+            <input type="text" name="project_title" id="project_title"/></p>
+          </div>
+
+          <p><label for="text_area">Tell us about your project. What is it? What you hope to achieve? <br />Keep it brief—we can get into the details later</label>
+          <textarea id="description" name="description"></textarea></p>
+
+          <!-- <p>What are you looking for? Please make a selection from the services below.</p>
+
+          <div class="print-details">
+            <div class="grid">
+              <div class="grid-col-third"><input type="checkbox" id="posters" value="Posters"> <label for="posters">Posters</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="branding" value="Branding" ><label for="branding">Branding</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="labels" value="Labels"> <label for="labels">Labels</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="books" value="Books"> <label for="books">Books</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="crafted" value="Crafted"> <label for="crafted">Crafted</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="design-other" value="Other"> <label for="design-other">Other</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="website" value="Website"> <label for="website">Website</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="app" value="App"> <label for="app">App</label></div>
+              <div class="grid-col-third"><input type="checkbox" id="digital-other" value="Other"> <label for="digital-other">Other</label></div>
+            </div>
+          </div> -->
+
+
+          <div class="timeframe">
+            <p class="title">When does this project need to be finished?</p>
+            <div class="ui-slider">
+              <div class="timeframe-slider" ></div>
+              <input type="text" name="timeframe" class="timeframe-value slider-value"/>
+            </div>  
+          </div>
+
+          
+          <div class="budget">
+            <p class="title">What do you expect to spend on this project?</p>
+            <div class="ui-slider">
+              <div class="budget-slider" ></div>
+              <input type="text" name="budget" class="budget-value slider-value"/>
+            </div>  
+          </div>
+
+          <p>
+              <input class="button submit js-submit-btn" type="submit" value="Submit" />
+              <img class="btn-loader js-btn-loader" src="{{ site.asseturl }}/images/loader.gif" alt="" />
+          </p>
+          
+        </form>
+      </div>
+    </div>  
+
+</section>
+
+<div class="feedback-msg js-feedback-msg msg-success">This is a test.</div>
+
+

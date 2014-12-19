@@ -1,0 +1,104 @@
+#map{
+	height:60%;
+}
+
+@media screen and (max-width: $screen-width-small) {
+	#map{
+		height:70%;
+	}
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+	background:#F7323F;
+	color:#fff;
+	font-size:16px;
+	line-height:24px;
+	border-radius:0;
+	font-family: 'Neuzeit'
+}
+
+.custom-popup .leaflet-popup-content{
+	padding:10px;
+	text-align:center;
+	width:200px;
+}
+.custom-popup .leaflet-popup-content-wrapper a {
+	color:rgba(255,255,255,0.5);
+}
+.custom-popup .leaflet-popup-tip-container {
+	width:16px;
+	height:10px;
+}
+.custom-popup .leaflet-popup-tip {
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+	border-top:10px solid #F7323F;
+}
+
+.marker-title{
+	div{
+		opacity: 0.7;
+		line-height: 1.3;
+	}
+}
+
+.contact .category-links{
+
+	a{
+		display: inline-block;
+		float:left;
+		margin-right: 40px;
+		padding-left:1.2em;
+
+		&:after{
+			left:0;
+		}
+
+		&.eating:after{
+			background: $turquoise;
+		}
+
+		&.drinking:after{
+			background: $orange;
+		}
+
+		&.us:after{
+			background: $fw-red;
+		}
+	}
+}
+
+@media all and (min-width: $screen-width-small) {
+	float: right;
+	width: 63%;
+}
+
+@media all and (min-width: $screen-width-medium) {
+	.contact .category-links { 
+		width: 50%;
+	}
+}
+
+@media all and (max-height: 760px) {
+	.map{
+		height:450px;
+	}
+}
+
+@media all and (max-height: 600px) {
+	.map{
+		height:350px;
+	}
+}
+
+@media all and (max-height: 500px) {
+	.map{
+		height:300px;
+	}
+}
+
+@media all and (max-height: 400px) {
+	.map{
+		height:200px;
+	}
+}

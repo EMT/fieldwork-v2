@@ -1,20 +1,74 @@
 ---
-layout: default
+description: "We make things. From digital platforms to brand identities, we work with you, collaboratively, to make things that help your organisation do great work."
+layout: home
 ---
 
-<div class="home">
 
-  <h1>Posts</h1>
+<div class="section-inner home-page-section">
+    <h2>Projects</h2>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul class="grid projects">
+        {% for project in site.featured %}
+            <li class="grid-item">
+                <a href="{{ site.baseurl }}{{ project.url }}">
+                    <figure>
+                        <img {% if project.thumbs %}srcset="{% for thumb in project.thumbs %}{{ site.asseturl }}{{ thumb[1] }} {{ thumb[0] }},{% endfor %}"
+                             sizes="90vw"{% endif %}
+                             src="{{ site.asseturl }}{{ project.thumb }}"
+                             alt="" />
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+                        <figcaption class="project-index-content">
+                            {{ project.runner }}
+                        </figcaption>
+                    </figure>
+                    <h3>{{ project.title }}</h3>
+                    <p class="project-index-meta">
+                        {{ project.meta | join: ', ' }}
+                    </p>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
+
+
+<div class="page-section home-page-blog-wrapper">
+    <div class="section-inner home-page-section overflow-visible">
+        <h2>Feed</h2>
+        <ul class="grid home-page-blog overflow-visible" id="home-page-blog">
+            <li class="grid-item"><p>Loading…</p></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="page-section home-page-section home-page-social-blocks">
+    <div class="social-blocks-wrapper">
+
+        <div class="social-block social-block--spotify">
+            <div class="social-block-inner">
+                <a href="http://www.last.fm/user/madebyfieldwork" class="social-block-icon icon-music"></a>
+                <p class="social-block-content" id="now-playing">Loading…</p>
+            </div>
+        </div>
+
+        <div class="social-block social-block--twitter">
+            <div class="social-block-inner">
+                <a href="https://twitter.com/MadeByFieldwork" class="social-block-icon icon-twitter"></a>
+                <div class="social-block-content" id="latest-tweet">Loading…</div>
+            </div>
+        </div>
+
+        <div class="social-block social-block--instagram">
+            <div id="instagramImage">
+                <div class="social-block-inner">
+                    <a href="https://instagram.com/MadeByFieldwork" class="social-block-icon icon-instagram"></a>
+                    <p class="social-block-content" id="instagramCaption">Loading…</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

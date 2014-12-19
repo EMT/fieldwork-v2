@@ -1,186 +1,127 @@
 
-// All of this could do with double checking - it got quite messy at this point with the blog and the site in two different directories.
+/**
+ * Projects index page styles
+ */
 
-body.project {
-	margin-top: 0;
-	background: rgb(255,255,255);
-}
+.projects {
+	padding-bottom: 4%;
 
-body.project footer {
-	position: static;
-}
-
-.project header {
-	transition: all 0.2s ease-in;
-	background: rgba(255,255,255,0);
-}
-
-.project header nav a {
-	color: rgb(255,255,255);
-	transition: all 0.2s ease-in;
-}
-
-.project header .red-marque {
-	display: none;
-	opacity: 0;
-}
-
-.project header.visible {
-	background: rgba(255,255,255,1);
-
-	nav a {
-		color: rgb(102, 102, 102);
+	figure {
+		background-color: rgb(232,57,68);
+		img {
+			border: 1px solid rgb(255,255,255);
+		}
 	}
-
-	.white-marque {
-		display: none;
+	.project-index-meta {
+		opacity: 0.6;
+	}
+	.project-index-content {
+		font-size: $type-large;
+		line-height: $line-large;
+		color: rgb(255,255,255);
+		position: absolute;
+		top: 1em;
+		bottom: 1em;
+		left: 1em;
+		right: 1em;
+		max-width: 20em;
 		opacity: 0;
-	}
-
-	.red-marque {
-		display: inherit;
-		opacity: 1;
+		transition: all .3s ease-out;
 	}
 }
 
 
-.hero-picture {
-	height: 65%;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-background-size:cover;
-	background-size: cover;
+/**
+ * Individual project page styles
+ */
+
+.project-footer {
+	width: 50%;
+	float: right;
+	padding: 3.5em 0 5em 0.5em;
+	@include vendorize(box-sizing, border-box);
 }
 
-@media screen and (min-width: 950px) {
-	.hero-picture {
-		background-attachment: fixed;
-	}
-}
+.project-social {
+	// float: left;
+	// font-size: 0.6666em;
 
-.hero {
-	width: 100%;
-	margin-bottom: 5%;
-
-	.wrapper {
-		padding-top: 5%;
-	}
-
-	.text {
-		width: 100%;
-		background: white;
-	}
-	
-	.project-description {
-		width: 50%;
-		float: left;
-
-		p {
-			font-size: 1.04em;
-		}
-
-		h2 {
-			color: red;
-			margin-bottom: 0.5em;
-		}
-	}
-
-	.project-title {
-		width: 25%;
-		float: left;
-		margin-right: 25%;
-		color: rgb(147,149,152);
-	}
-
-	.hero .wrapper:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-	
-	
-	h1 {
-	    margin-bottom: 0.3em;
-	    color: rgb(88,89,91);
-	}
-
-	.project-title {
-	    font-size: 1.55em;	
-	}
-
-	p {
-		line-height: 1.3;
-		margin-bottom: 1em;
-	}
-	
-
-}
-
-	.project-info {
-		width: 50%;
-		float: right;
-		padding: 3em 0;
-		box-sizing: border-box;
-		-moz-box-sizing: border-box;
-
-	li, .client {
-		color: rgb(167,169,172);
-	}
-
-	li {
-		margin: 0.5em 0;
-	}
-
-	span {
-		display: block;
-	}
-	
-	.elements {
-		margin-top: 2.5em;
-		margin-bottom: 0.5em;
-	}
-
-	.clients {
-		margin-bottom: 0.5em;
-	}
-
-	.info-title {
-		margin-bottom: 2.5em;
-	}
-
-	}
-
-
-.gif {
-	background-size: auto 90% !important; 
-	background-color: rgb(239,238,237);
-}
-
-
-@media screen and (max-width: 900px) {
-
-.hero {
-	.project-description {
-		width: 100%;
+	ul {
+		list-style: none;
 		margin: 0;
 	}
-
-	.project-title {
-		width: 100%;
-		margin: 0 0 5% 0;
+	li {
+		display: inline-block;
 	}
-
-	.wrapper {
-		padding-top: 10%;
+	li:before {
+		content: '  /  ';
+	}
+	li:first-child:before {
+		content: '';
+	}
+	a {
+		text-decoration: none;
+		color: rgb(23,77,89);
+		@include vendorize(transition, all .3s ease-out);
+	}
+	a:hover {
+		color: rgb(81,206,201);
 	}
 }
+
+.project-nav {
+	padding-top: 1em;
+
+	a {
+		text-decoration: none;
+		display: block;
+		float: left;
+		clear: left;
+		color: $link-color;
+		border-bottom: 1px solid rgba(119,119,119,0.4);
+		@include vendorize(transition, all .3s ease-out);
+
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
 }
 
-@media screen and (max-width: 600px) {
 
-.project-info {
-	width: 100%;
+@media all and (min-width: 600px) {
+	.projects {
+		.project-index-content {
+			font-size: $type-base;
+			line-height: $line-base;
+		}
+	}
 }
 
+@media all and (min-width: 850px) {
+	.projects {
+		.project-index-content {
+			top: 2em;
+			left: 25%;
+			right: 0.5em;
+			padding-right: 3em;
+		}
+	}
+}
+
+@media all and (min-width: 1160px) {
+	.projects {
+		.project-index-content {
+			font-size: $type-large;
+			line-height: $line-large;
+		}
+	}
+}
+
+@media all and (min-width: 1300px) {
+	.projects {
+		.project-index-content {
+			top: 50%;
+			bottom: 2em;
+		}
+	}
 }
