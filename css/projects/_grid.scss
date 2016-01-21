@@ -69,6 +69,7 @@
 
     .grid-item {
         margin-bottom: 1em;
+        
         &:nth-child(odd) {
             clear: none !important;
         }
@@ -131,6 +132,18 @@
         }
     }
 }
+
+.media-grid-new {
+    > * {
+        margin-bottom: 0;
+    }
+
+    .grid-item {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 
 @-webkit-keyframes animated-panorama-wrapper {
     from {

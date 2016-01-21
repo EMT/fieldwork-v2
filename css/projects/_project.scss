@@ -27,6 +27,28 @@
 		max-width: 20em;
 		opacity: 0;
 		transition: all .3s ease-out;
+
+		@media all and (min-width: 600px) {
+			font-size: $type-base;
+			line-height: $line-base;
+		}
+
+		@media all and (min-width: 850px) {
+			top: 2em;
+			left: 25%;
+			right: 0.5em;
+			padding-right: 3em;
+		}
+
+		@media all and (min-width: 1160px) {
+			font-size: $type-large;
+			line-height: $line-large;
+		}
+
+		@media all and (min-width: 1300px) {
+			top: 50%;
+			bottom: 2em;
+		}
 	}
 }
 
@@ -35,11 +57,74 @@
  * Individual project page styles
  */
 
+.project-title {
+	margin: 0 0 1em 0;
+	padding-top: 3em;
+	font-weight: bold;
+	color: $fw-red;
+
+	@media all and (min-width: 400px) {
+		padding-top: 0;
+	}
+}
+
+.project-section {
+	font-size: 1.13333em;
+	line-height: 1.4em;
+	padding: 25% 0;
+	max-width: 1500px;
+
+	@media all and (min-width: 400px) {
+		padding-top: 9em;
+		padding-bottom: 8em;
+	}
+
+	> div {
+		box-sizing: border-box;
+
+		@media all and (min-width: 800px) {
+			width: 63%;
+			float: right;
+			clear: both;
+			padding-left: 8px;
+		}
+
+		@media all and (min-width: 1060px) {
+			width: 50%;
+		}
+		
+		> * {
+			max-width: 34em;
+		}
+	}
+
+	h2 {
+		color: $fw-red;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+}
+
 .project-footer {
-	width: 50%;
+	width: 100%;
 	float: right;
-	padding: 3.5em 0 5em 0.5em;
+	padding: 3em 0 5em;
 	@include vendorize(box-sizing, border-box);
+
+	@media all and (min-width: 800px) {
+		width: 63%;
+		float: right;
+		clear: both;
+		padding: 3.5em 0 5em 8px;
+	}
+
+	@media all and (min-width: 1060px) {
+		width: 50%;
+	}
 }
 
 .project-social {
@@ -87,41 +172,3 @@
 	}
 }
 
-
-@media all and (min-width: 600px) {
-	.projects {
-		.project-index-content {
-			font-size: $type-base;
-			line-height: $line-base;
-		}
-	}
-}
-
-@media all and (min-width: 850px) {
-	.projects {
-		.project-index-content {
-			top: 2em;
-			left: 25%;
-			right: 0.5em;
-			padding-right: 3em;
-		}
-	}
-}
-
-@media all and (min-width: 1160px) {
-	.projects {
-		.project-index-content {
-			font-size: $type-large;
-			line-height: $line-large;
-		}
-	}
-}
-
-@media all and (min-width: 1300px) {
-	.projects {
-		.project-index-content {
-			top: 50%;
-			bottom: 2em;
-		}
-	}
-}
