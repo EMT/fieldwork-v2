@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1580 1080" enable-background="new 0 0 1580 1080" xml:space="preserve">
+<rect fill="#F3F3F3" width="1580" height="1080"/>
+<g>
+	<polygon fill="#EFA518" points="1218,722.3 1187.9,692.2 1187.9,649.6 1218,619.5 1260.6,619.5 1290.8,649.6 1290.8,692.2 
+		1260.6,722.3 	"/>
+	<path fill="#785E6C" d="M1187.9,722.3c-56.8,0-102.9,46.1-102.9,102.9h102.9V722.3z"/>
+	<rect x="1187.9" y="722.3" fill="#CBD2B6" width="102.9" height="102.9"/>
+	<rect x="1085" y="619.5" fill="#5FA887" width="102.9" height="102.9"/>
+	<polygon fill="#5FA887" points="1187.9,825.2 1290.8,825.2 1290.8,722.3 	"/>
+</g>
+<rect x="318.1" y="773.8" fill="#7FB774" width="102.9" height="51.4"/>
+<rect x="318.1" y="722.3" fill="#DA635A" width="102.9" height="51.4"/>
+<rect x="421" y="619.5" fill="#E8804D" width="102.9" height="102.9"/>
+<circle fill="#EFA518" cx="369.6" cy="670.9" r="51.4"/>
+<polygon fill="#5FA887" points="421,825.2 523.9,825.2 523.9,722.3 "/>
+<g>
+	<rect x="701.6" y="259.6" fill="#CBD2B6" width="102.9" height="102.9"/>
+	<polygon fill="#818069" points="701.6,259.6 701.6,362.5 804.4,362.5 	"/>
+	<circle fill="#E8804D" cx="753" cy="414" r="51.4"/>
+	<rect x="804.4" y="259.7" fill="#DA635A" width="102.9" height="51.4"/>
+	<rect x="804.4" y="311.2" fill="#EFA518" width="102.9" height="51.4"/>
+	<rect x="804.4" y="362.6" fill="#785E6C" width="102.9" height="102.9"/>
+</g>
+<g>
+	<g>
+		<rect x="318.1" y="259.6" fill="#CBD2B6" width="102.9" height="102.9"/>
+		<polygon fill="#818069" points="318.1,259.6 318.1,362.5 421,362.5 		"/>
+	</g>
+	<polygon fill="#E8804D" points="318.1,465.4 421,465.4 421,362.5 	"/>
+	<rect x="421" y="259.6" fill="#5FA887" width="102.9" height="205.8"/>
+</g>
+<g>
+	<rect x="1085" y="259.6" fill="#EFA518" width="102.9" height="205.8"/>
+	<path fill="#7FB774" d="M1290.8,362.5c-56.8,0-102.9,46.1-102.9,102.9h102.9V362.5z"/>
+	<rect x="1187.9" y="259.6" fill="#DA635A" width="102.9" height="51.4"/>
+	<rect x="1187.9" y="311" fill="#008080" width="102.9" height="51.4"/>
+</g>
+<g>
+	<rect x="804.4" y="619.5" fill="#008080" width="102.9" height="205.8"/>
+	<rect x="701.6" y="722.3" fill="#E8804D" width="102.9" height="102.9"/>
+	<polygon fill="#EFA518" points="774.3,619.5 804.4,649.6 804.4,692.2 774.3,722.3 731.7,722.3 701.6,692.2 701.6,649.6 
+		731.7,619.5 	"/>
+</g>
+</svg>
