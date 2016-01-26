@@ -1,0 +1,7 @@
+{% capture srcset %}
+    {% for i in resized %}
+        {{ site.asseturl }}/{{ i.path }} {{ i.width }}w,
+    {% endfor %}
+{% endcapture %}
+
+<img src="{{site.asseturl}}/{{ path }}" srcset="{{ srcset | strip_newlines }} {{site.asseturl}}/{{ original.path }} {{ original.width }}w" alt="{{alt}}">

@@ -3,8 +3,8 @@ title: "Fieldwork — We Make Things"
 title_appendage: " – Fieldwork"
 description: "This is a description."
 baseurl: "/fieldwork-v2"
-asseturl: "https://4dd31530cac686690479-fe99d1e1a6eca87157ebc4c97a827cc2.ssl.cf2.rackcdn.com/2014"
-#asseturl: ""
+# asseturl: "https://4dd31530cac686690479-fe99d1e1a6eca87157ebc4c97a827cc2.ssl.cf2.rackcdn.com/2014"
+asseturl: "/fieldwork-v2"
 url: "http://madebyfieldwork.com"
 collections:
   work:
@@ -20,3 +20,41 @@ permalink: pretty
 sass: 
   sass_dir: css
   sourcemap: true
+
+
+responsive_image:
+  # [Required]
+  # Path to the image template.
+  template: _includes/responsive-image.html
+
+  # [Optional, Default: 85]
+  # Quality to use when resizing images.
+  # default_quality: 90
+
+  # [Optional, Default: []]
+  # An array of resize configuration objects. Each object must contain at least
+  # a `width` value.
+  sizes:
+    - width: 2500
+    - width: 1500
+    - width: 1100
+    - width: 600  # [Required] How wide the resized image will be.
+
+  # [Optional, Default: assets]
+  # The base directory where assets are stored. This is used to determine the
+  # `dirname` value in `output_path_format` below.
+  base_path: assets
+
+  # [Optional, Default: assets/resized/%{filename}-%{width}x%{height}.%{extension}]
+  # The template used when generating filenames for resized images. Must be a
+  # relative path.
+  #
+  # Parameters available are:
+  #   %{dirname}     Directory of the file relative to `base_path` (assets/sub/dir/some-file.jpg => sub/dir)
+  #   %{basename}    Basename of the file (assets/some-file.jpg => some-file.jpg)
+  #   %{filename}    Basename without the extension (assets/some-file.jpg => some-file)
+  #   %{extension}   Extension of the file (assets/some-file.jpg => jpg)
+  #   %{width}       Width of the resized image
+  #   %{height}      Height of the resized image
+  #
+  output_path_format: assets/resized/%{width}/%{basename}
