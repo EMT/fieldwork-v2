@@ -109,8 +109,8 @@ $(document).ready(function(){
 				balls[i].vy = 0;
 			}
 
-			// $(".js-circle").eq(i).css("transform", "translateX("+balls[i].translateX+"px) translateY("+balls[i].translateY+"px) rotate("+balls[i].rotation+"deg)");
-			$(".js-circle").eq(i).attr("transform", "translate("+balls[i].translateX+" "+balls[i].translateY+") rotate("+balls[i].rotation+" 138.8 329.292)");
+			$(".js-circle").eq(i).attr("transform", "translate("+balls[i].translateX+" "+balls[i].translateY+")");
+			$(".js-circle .inner-circle").eq(i).attr("transform", "rotate("+balls[i].rotation+" 138.8 329.292)");
 
 		}
 
