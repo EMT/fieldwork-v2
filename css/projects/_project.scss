@@ -75,17 +75,12 @@
 	max-width: 1500px;
 
 	@media all and (min-width: 400px) {
-		padding-top: 9em;
-		padding-bottom: 8em;
+		padding-top: 153px;
+		padding-bottom: 136px;
 	}
 
 	&.project-intro {
-		font-size: 2em;
-
-		@media all and (min-width: 400px) {
-			padding-top: 4.5em;
-			padding-bottom: 4em;
-		}
+		font-size: 1.5em;
 	}
 
 	> div {
