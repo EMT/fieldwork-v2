@@ -79,6 +79,15 @@
 		padding-bottom: 8em;
 	}
 
+	&.project-intro {
+		font-size: 2em;
+
+		@media all and (min-width: 400px) {
+			padding-top: 4.5em;
+			padding-bottom: 4em;
+		}
+	}
+
 	> div {
 		box-sizing: border-box;
 
