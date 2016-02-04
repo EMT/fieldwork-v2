@@ -75,8 +75,12 @@
 	max-width: 1500px;
 
 	@media all and (min-width: 400px) {
-		padding-top: 9em;
-		padding-bottom: 8em;
+		padding-top: 153px;
+		padding-bottom: 136px;
+	}
+
+	&.project-intro {
+		font-size: 1.5em;
 	}
 
 	> div {
@@ -106,6 +110,18 @@
 
 	p {
 		margin-bottom: 1em;
+	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(119,119,119,0.4);
+		color: $link-color;
+		@include vendorize(transition, all .3s ease-out);
+
+		&:hover {
+			color: $link-hover-color;
+		}
 	}
 }
 

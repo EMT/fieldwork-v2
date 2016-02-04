@@ -15,7 +15,7 @@ twitter:
 
 
 
-<div class="project-section wrapper">
+<div class="project-section project-intro wrapper">
 	<div>
 		<h1 class="project-title">{{ page.title }}</h1>
 
@@ -27,7 +27,7 @@ twitter:
 
 <div class="section-full-bleed">
 
-	<div class="grid media-grid media-grid-new">
+	<div class="grid media-grid media-grid-new" style="background-color: rgb(127, 199, 179);">
 		{% responsive_image path: images/the-wild-network/twn-devices.png, alt: "" %}
 	</div>
 
@@ -41,7 +41,7 @@ twitter:
 	</div>
 
 	<div class="grid media-grid media-grid-new">
-		{% responsive_image path: images/the-wild-network/twn-boards.jpg, alt: "" %}
+		{% responsive_image path: images/the-wild-network/twn-illustrations-01.png, alt: "" %}
 	</div>
 	
 	<div class="project-section wrapper">
@@ -53,23 +53,7 @@ twitter:
 	</div>
 
 	<div class="grid media-grid media-grid-new">
-		<div class="grid-item">
-			{% responsive_image path: images/propeller/catch-22-girl-looking-down.jpg, alt: "Girl looking downwards" %}
-		</div>
-		<div class="grid-item">
-			{% responsive_image path: images/propeller/propeller-prototyping.jpg, alt: "Prototyping Propeller with pen and paper" %}
-		</div>
-		<div class="grid-item">
-			{% responsive_image path: images/propeller/propeller-on-mobile.jpg, alt: "Propeller on mobile" %}
-		</div>
-		<div class="grid-item">
-			<video autoplay loop>
-				<source src="{{ site.asseturl }}/images/propeller/icon-movement.mp4" type="video/mp4">
-				<!-- <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg">
-				<source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm"> -->
-				Your browser doesn't support HTML5 video tag.
-			</video>
-		</div>
+		{% responsive_image path: images/the-wild-network/twn-boards.jpg, alt: "" %}
 	</div>
 
 	{% include project-footer.html %}
