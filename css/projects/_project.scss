@@ -81,6 +81,10 @@
 
 	&.project-intro {
 		font-size: 1.5em;
+
+		@media (min-width: 1500px) {
+			font-size: 2em;
+		}
 	}
 
 	> div {
