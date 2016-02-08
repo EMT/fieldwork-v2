@@ -9,6 +9,12 @@
         <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.runner %}{{ page.runner }}{% else %}{{ site.description }}{% endif %}">
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
         
+        {% if page.asseturl.contains 'http' %}
+            {% assign abs_asset_url = page.asseturl %}
+        {% else %}
+            {% assign abs_asset_url = 'http://madebyfieldwork.com' + page.asseturl %}
+        {% endif %}
+
         {% if page.thumb %}
             {% assign social_img = page.thumb %}
         {% endif %}
@@ -22,7 +28,7 @@
         {% endif %}
 
         {% if social_img %}
-            <meta property="og:image" content="{{ site.asseturl }}{{ social_img }}"/>
+            <meta property="og:image" content="{{ abs_asset_url }}{{ social_img }}"/>
         {% endif %}
 
         {% if page.twitter %}
@@ -30,7 +36,7 @@
             <meta name="twitter:site" content="@madebyfieldwork">
             <meta name="twitter:title" content="{{ social_title }}">
             <meta name="twitter:description" content="{{ social_description }}">
-            <meta property="twitter:image:src" content="{{ site.asseturl }}{{ social_img[1] }}"/>
+            <meta property="twitter:image:src" content="{{ abs_asset_url }}{{ social_img }}"/>
         {% endif %}
 
         <!--[if gte IE 9]><!-->
