@@ -1,13 +1,13 @@
 ---
 order: 1
 title: "See+Do"
-runner: "Using reasearch and technology to provide organisations with the information they need to do better work."
+runner: "A simple, focussed website listing things to see and do in and around Manchester."
 layout: default
 thumbs: 
-  1580w: /images/project-thumbs/fwlanding-substance-1580.jpg
-  1100w: /images/project-thumbs/fwlanding-substance-1100.jpg
-  600w: /images/project-thumbs/fwlanding-substance-600.jpg
-thumb: /images/project-thumbs/fwlanding-substance-1100.jpg
+  1580w: /images/project-thumbs/fwlanding-seeanddo-1580.jpg
+  1100w: /images/project-thumbs/fwlanding-seeanddo-1100.jpg
+  600w: /images/project-thumbs/fwlanding-seeanddo-600.jpg
+thumb: /images/project-thumbs/fwlanding-seeanddo-1100.jpg
 twitter: 
   card: summary_large_image
 ---
@@ -15,11 +15,11 @@ twitter:
 
 
 
-<div class="project-section wrapper">
+<div class="project-section project-intro wrapper">
 	<div>
 		<h1 class="project-title">{{ page.title }}</h1>
 
-		<p>On the whole, homes are pretty inefficient when it comes to making the most of the energy they consume. Energy efficiency has come a long way in recent years, though, and most houses can benefit from improvement measures, the cost of which can be offset by energy savings over time. Using less energy is a big win for everyone.</p>
+		<p>It isn’t always easy to strike a good work/life balance. Towards the end of a busy 2015 we realised we’d been missing out on local events. Manchester has plenty of meetups, workshops, exhibitions and gigs, and we hadn’t been making the most of our city.</p>
 	</div>
 </div>	
 
@@ -29,46 +29,49 @@ twitter:
 <div class="section-full-bleed">
 
 	<div class="grid media-grid media-grid-new">
-		{% responsive_image path: images/see-and-do/device-shots.jpg, alt: "See+Do on various devices" %}
+		{% responsive_image path: images/see-and-do/sd-devices.jpg, alt: "`See+Do website on a collection of iPads and iPhones" %}
 	</div>
 
 	<div class="project-section wrapper">
 		<div>
-			<h2>It’s Complicated</h2>
+			<h2>Remove the Clutter</h2>
 
-			<p>Home energy assessment is complicated. The tools used to model energy use have several hundred data points, most of which are measured and filled in manually. If you’re at the point where you’re ready to invest in work to make your home more efficient, it makes sense to work with an architect to get the modelling right and make sure you invest in the most cost-effective measures for your specific situation. But how do you reach this point?</p>
+			<p>We need to be prompted to search out local events, a place to list them, and a plan to attend them. Initially, we thought about using an internal online chat to list local goings-on. This would have worked well enough as a listing for the Fieldwork team, but it probably wouldn’t have motivated us to regularly research and find out what’s on.</p>
+			
+			<p>See+Do is a simple list of upcoming events. It’s a public website, so we’re motivated to keep the content fresh, which pushes us to pro-actively find interesting things that are happening around town. It doesn’t help us plan to attend events, but we might address that in a future iteration.</p>
 
-			<p>This project aims to provide an entry point for curious homeowners. It’s an antidote to the overwhelming level of detail that can quickly put people off when they start researching home energy efficiency, and it’s a simple, inviting web application that can be easily passed along and shared without a lengthy explanation.</p>
+			<p>The design is stripped-back and simple, with a single purpose. We want See+Do to feel refreshing and easy to use when compared to the cluttered layouts of the event guides we encountered during our research.</p>
 		</div>
 	</div>
 	
 	<div class="grid media-grid media-grid-new">
 		<div class="grid-item">
-			<img src="/fieldwork-v2/images/see-and-do/title-animation.gif" alt="See+Do title animating">
+			<img src="{{ site.asseturl }}/images/see-and-do/sd-title-animation.gif" alt="Animated title from the See+Do website">
 		</div>
 		<div class="grid-item">
-			{% responsive_image path: images/see-and-do/see-and-do-hand-holding-phone.jpg, alt: "See+Do on a mobile device" %}
+			{% responsive_image path: images/see-and-do/sd-holding-phone.jpg, alt: "See+Do website on a mobile device" %}
 		</div>
 		<div class="grid-item">
-			{% responsive_image path: images/see-and-do/see-and-do-placeholder.png %}
+			{% responsive_image path: images/see-and-do/sd-studiochat.jpg %}
 		</div>
 		<div class="grid-item">
-			<img src="/fieldwork-v2/images/see-and-do/emoji-animation.gif" alt="The See+Do emojis animating">
+			<img src="{{ site.asseturl }}/images/see-and-do/sd-emoji-animation.gif" alt="The See+Do emojis animating">
 		</div>
 	</div>
-	
+
+
 	<div class="project-section wrapper">
 		<div>
-			<h2>How Big is Your House?</h2>
+			<h2>Realising Small Ideas</h2>
 
-			<p>To reduce the data entry required to perform the calculations and produce results, we partnered with Ordnance Survey as a data source for information. Using OS data, we’re able to start with a postcode and lookup data like square footage, ceiling heights and building outline, all of which can be used to make calculations more accurate. This moves a lot of the complexity into the background, out of the way of the user.</p>
+			<p>We’re making a concerted effort to quickly and iteratively implement small ideas like See+Do. From concept to launch in just a few days, this is a work in progress and a little rough around the edges, but working in this way prevents the loss of momentum that causes so many self-initiated projects to die before they see the light of day.</p>
 
-			<p>Using the same underlying calculator as Carbon Co-op’s professional tool gives us the benefit of being able to export a user’s data as a starting point for a professional assessment, should they choose to get in touch and want to take the next step.</p>
+			<p><a href="https://see-and-do.com/">See+Do</a></p>
 		</div>
 	</div>
 
 	<div class="grid media-grid media-grid-new">
-		{% responsive_image path: images/see-and-do/see-and-do-emojis.png, alt: "Selection of See+Do emojis" %}
+		{% responsive_image path: images/see-and-do/sd-emojis.png, alt: "Selection of See+Do emojis" %}
 	</div>
 
 	{% include project-footer.html %}

@@ -4,4 +4,4 @@
     {% endfor %}
 {% endcapture %}
 
-<img src="{{site.asseturl}}/{{ path }}" srcset="{{ srcset | strip_newlines }} {{site.asseturl}}/{{ original.path }} {{ original.width }}w" alt="{{alt}}">
+<img src="{{site.baseurl}}/{{ path }}" srcset="{{ srcset | strip_newlines }} {{site.baseurl}}/{{ original.path }} {{ original.width }}w" alt="{{alt}}">
