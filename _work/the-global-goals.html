@@ -28,7 +28,9 @@ twitter:
 <div class="section-full-bleed">
 
 	<div class="grid media-grid media-grid-new">
-		{% responsive_image path: images/propeller/propeller-mobile-shots.jpg, alt: "Propeller on mobile devices" %}
+		<div data-embed='<iframe src="//player.vimeo.com/video/154573141?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
+			<img src="http://i.vimeocdn.com/video/498685705.webp?mw=1920&q=70" alt="" />
+		</div>
 	</div>
 
 	<div class="project-section wrapper">
@@ -41,10 +43,10 @@ twitter:
 
 	<div class="grid media-grid media-grid-new">
 		<div class="grid-item">
-			{% responsive_image path: images/propeller/catch-22-activities.jpg, alt: "Catch 22 activites" %}
+			{% responsive_image path: images/the-global-goals/gg-grid-image-1.jpg, alt: "Catch 22 activites" %}
 		</div>
 		<div class="grid-item">
-			{% responsive_image path: images/propeller/propeller-brand-ideas.jpg, alt: "Propeller brand ideas" %}
+			{% responsive_image path: images/the-global-goals/gg-grid-image-2.jpg, alt: "Propeller brand ideas" %}
 		</div>
 	</div>
 	
@@ -57,12 +59,7 @@ twitter:
 	</div>
 
 	<div class="grid media-grid media-grid-new">
-		<video autoplay loop>
-			<source src="{{ site.asseturl }}/images/propeller/propeller-ident.mp4" type="video/mp4">
-			<!-- <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg">
-			<source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm"> -->
-			Your browser doesn't support HTML5 video tag.
-		</video>
+		{% responsive_image path: images/the-global-goals/gg-devices.jpg, alt: "Catch 22 activites" %}
 	</div>
 
 	{% include project-footer.html %}
