@@ -40,16 +40,16 @@
         {% endif %}
 
         <!--[if gte IE 9]><!-->
-            <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?v=1">
+            <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css?v=2">
             {% if page.stylesheets %}
                 {% for stylesheet in page.stylesheets %}
-                    <link rel="stylesheet" href="{{ stylesheet }}?v=1">
+                    <link rel="stylesheet" href="{{ stylesheet }}?v=2">
                 {% endfor %}
             {% endif %}
         <![endif]-->
 
         <!--[if lt IE 9]>
-            <link rel="stylesheet" href="{{ site.baseurl }}/css/ie.css?v=1">
+            <link rel="stylesheet" href="{{ site.baseurl }}/css/ie.css?v=2">
         <![endif]-->
 
         {% if page.header_imgs %}
