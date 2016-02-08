@@ -6,8 +6,9 @@
     overflow: hidden;
     margin: 0 -0.5em;   
 
-    img {
+    img, video {
         width: 100%;
+        display:block;
     }
 
     .grid-item {
