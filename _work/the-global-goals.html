@@ -29,7 +29,7 @@ twitter:
 
 	<div class="grid media-grid media-grid-new">
 		<div data-embed='<iframe src="//player.vimeo.com/video/154573141?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'>
-			<img src="http://i.vimeocdn.com/video/498685705.webp?mw=1920&q=70" alt="" />
+			{% responsive_image path: images/the-global-goals/gg-cover-image-2.jpg, alt: "Individual goal pages shown on mobile phones" %}
 		</div>
 	</div>
 
@@ -42,12 +42,7 @@ twitter:
 	</div>
 
 	<div class="grid media-grid media-grid-new">
-		<div class="grid-item">
-			{% responsive_image path: images/the-global-goals/gg-grid-image-1.jpg, alt: "Individual goal pages shown on mobile phones" %}
-		</div>
-		<div class="grid-item">
-			{% responsive_image path: images/the-global-goals/gg-grid-image-2.jpg, alt: "People in Africa holding up cups of water and printed version of the “Clean Water & Sanitation” Global Goal" %}
-		</div>
+		{% responsive_image path: images/the-global-goals/gg-browsers.jpg, alt: "The Global Goals website shown on a tablet and a mobile phone" %}
 	</div>
 	
 	<div class="project-section wrapper">
@@ -59,7 +54,28 @@ twitter:
 	</div>
 
 	<div class="grid media-grid media-grid-new">
-		{% responsive_image path: images/the-global-goals/gg-devices.jpg, alt: "The Global Goals website shown on a tablet and a mobile phone" %}
+		<div class="grid-item">
+			{% responsive_image path: images/the-global-goals/gg-zero-hunger.jpg, alt: "Individual goal pages shown on mobile phones" %}
+		</div>
+		<div class="grid-item">
+			<div class="grid-item">
+				{% responsive_image path: images/the-global-goals/gg-typequote.jpg, alt: "People in Africa holding up cups of water and printed version of the “Clean Water & Sanitation” Global Goal" %}
+			</div>
+			<div class="grid-item">
+				{% responsive_image path: images/the-global-goals/gg-lfcshirts.jpg, alt: "People in Africa holding up cups of water and printed version of the “Clean Water & Sanitation” Global Goal" %}
+				{% responsive_image path: images/the-global-goals/gg-dizzygoals.jpg, alt: "People in Africa holding up cups of water and printed version of the “Clean Water & Sanitation” Global Goal" %}
+			</div>
+		</div>
+		<div class="grid-item">
+			<img src="/images/the-global-goals/gg-ident-1500.gif" 
+				srcset="/images/the-global-goals/gg-ident-1100.gif 1100w,
+					/images/the-global-goals/gg-ident-600.gif 600w,
+					/images/the-global-goals/gg-ident-1500.gif 1500w" 
+				alt="Project Everyone logo, animated to demonstrate how many handwritten Everyones can work">
+		</div>
+		<div class="grid-item">
+			{% responsive_image path: images/the-global-goals/gg-grid-image-2.jpg, alt: "Individual goal pages shown on mobile phones" %}
+		</div>
 	</div>
 
 	{% include project-footer.html %}
