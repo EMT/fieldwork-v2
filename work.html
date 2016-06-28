@@ -12,7 +12,7 @@ body_classes: no-hero
     <ul class="grid projects">
         {% assign projects = site.work | sort: 'order' %}
         {% for project in projects %}
-            <li class="grid-item">
+            <li class="grid-item grid-item--3-col">
                 <a href="{{ site.baseurl }}{{ project.url }}">
                     <figure>
                         <img {% if project.thumbs %}srcset="{% for thumb in project.thumbs %}{{ site.asseturl }}{{ thumb[1] }} {{ thumb[0] }},{% endfor %}"

@@ -2,9 +2,10 @@
  * Basic generic grid
  */
 
-.grid {
+.grid,
+.grid--3-col {
     overflow: hidden;
-    margin: 0 -0.5em;   
+    margin: 0 -0.5em;
 
     img, video {
         width: 100%;
@@ -70,7 +71,7 @@
 
     .grid-item {
         margin-bottom: 1em;
-        
+
         &:nth-child(odd) {
             clear: none !important;
         }
@@ -223,7 +224,7 @@
             h2,
             h3,
             p {
-                padding-left: 25%; 
+                padding-left: 25%;
             }
         }
 
@@ -233,7 +234,20 @@
                 clear: none;
             }
         }
+
+        .grid-item--3-col {
+            width: 33.333%;
+            float: left;
+
+            &:nth-child(odd) {
+                clear: none;
+            }
+
+            &:nth-child(3n+4) {
+                clear: left;
+            }
+        }
     }
 }
 
- 
+
