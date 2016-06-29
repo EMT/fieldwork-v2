@@ -33,6 +33,12 @@
             position: relative;
             -webkit-backface-visibility: hidden;
         }
+
+        figcaption {
+            transform: translateY(15px);
+            transition-easing: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        }
+
         a {
             text-decoration: none;
             color: rgb(102,102,102);
@@ -43,6 +49,9 @@
             }
             &:hover .project-index-content {
                 opacity: 1;
+            }
+            &:hover figcaption {
+                transform: translateY(0);
             }
         }
 
