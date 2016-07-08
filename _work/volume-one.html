@@ -6,10 +6,12 @@ meta:
 - Print design
 - Website design
 - Development
+scripts:
+- /js/work/volume-one.js
 layout: default
 header_img: /images/volume-one/vol-topimage.svg
 thumb: /images/project-thumbs/fwlanding-volumes.png
-twitter: 
+twitter:
   card: summary_large_image
 ---
 
@@ -17,7 +19,7 @@ twitter:
 <div class="page-section">
 
 	<div class="wrapper">
-		
+
 		{% include project-title.html %}
 
 		<div class="section-text section-text--large">
@@ -28,7 +30,7 @@ twitter:
 				<li><a href="http://volumes.madebyfieldwork.com/making/">A Guide to Making Things website</a></li>
 			</ul>
 		</div>
-	</div>	
+	</div>
 
 </div>
 
@@ -37,23 +39,27 @@ twitter:
 
 	<div class="grid media-grid">
 
-		
+		<div class="grid-item" style="background: #62bfb7; width: 100%">
+			{% include work/volume-one/monster.svg %}
+		</div>
+
+
 		<img srcset="
-				{{ site.asseturl }}/images/volume-one/vol-8-1580.jpg 1580w, 
+				{{ site.asseturl }}/images/volume-one/vol-8-1580.jpg 1580w,
 		        {{ site.asseturl }}/images/volume-one/vol-8-1100.jpg 1100w,
 		        {{ site.asseturl }}/images/volume-one/vol-8-600.jpg 600w"
 		    sizes="90vw"
 			src="{{ site.asseturl }}/images/volume-one/vol-8-1580.jpg" alt="" />
-		
+
 		<img srcset="
-				{{ site.asseturl }}/images/volume-one/vol-4-1580.jpg 1580w, 
+				{{ site.asseturl }}/images/volume-one/vol-4-1580.jpg 1580w,
 		        {{ site.asseturl }}/images/volume-one/vol-4-1100.jpg 1100w,
 		        {{ site.asseturl }}/images/volume-one/vol-4-600.jpg 600w"
 		    sizes="90vw"
 			src="{{ site.asseturl }}/images/volume-one/vol-4-1580.jpg" alt="" />
-		
+
 		<img srcset="
-				{{ site.asseturl }}/images/volume-one/vol-3-1580.jpg 1580w, 
+				{{ site.asseturl }}/images/volume-one/vol-3-1580.jpg 1580w,
 		        {{ site.asseturl }}/images/volume-one/vol-3-1100.jpg 1100w,
 		        {{ site.asseturl }}/images/volume-one/vol-3-600.jpg 600w"
 		    sizes="90vw"
@@ -63,36 +69,36 @@ twitter:
 		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/vol-globe.svg" alt="" /></div>
 		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/vol-sunday.svg" alt="" /></div>
 		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/vol-monster.svg" alt="" /></div>
-		
+
 		<img srcset="
-				{{ site.asseturl }}/images/volume-one/vol-1-1580.jpg 1580w, 
+				{{ site.asseturl }}/images/volume-one/vol-1-1580.jpg 1580w,
 		        {{ site.asseturl }}/images/volume-one/vol-1-1100.jpg 1100w,
 		        {{ site.asseturl }}/images/volume-one/vol-1-600.jpg 600w"
 		    sizes="90vw"
 			src="{{ site.asseturl }}/images/volume-one/vol-1-1580.jpg" alt="" />
-		
+
 		<div class="grid-item">
 			<img srcset="
-					{{ site.asseturl }}/images/volume-one/vol-6-1580.jpg 1580w, 
+					{{ site.asseturl }}/images/volume-one/vol-6-1580.jpg 1580w,
 			        {{ site.asseturl }}/images/volume-one/vol-6-1100.jpg 1100w,
 			        {{ site.asseturl }}/images/volume-one/vol-6-600.jpg 600w"
 				sizes="(min-width: 600px) 45vw, 90vw"
 				src="{{ site.asseturl }}/images/volume-one/vol-6-1580.jpg" alt="" />
 		</div>
-		
+
 		<div class="grid-item">
 			<img srcset="
-					{{ site.asseturl }}/images/volume-one/vol-7-1580.jpg 1580w, 
+					{{ site.asseturl }}/images/volume-one/vol-7-1580.jpg 1580w,
 			        {{ site.asseturl }}/images/volume-one/vol-7-1100.jpg 1100w,
 			        {{ site.asseturl }}/images/volume-one/vol-7-600.jpg 600w"
 				sizes="(min-width: 600px) 45vw, 90vw"
 				src="{{ site.asseturl }}/images/volume-one/vol-6-1580.jpg" alt="" />
 		</div>
-		
+
 		<img src="{{ site.asseturl }}/images/volume-one/vol-web1.png" alt="" />
 		<img src="{{ site.asseturl }}/images/volume-one/vol-web2.png" alt="" />
 		<img src="{{ site.asseturl }}/images/volume-one/vol-web3.png" alt="" />
-		
+
 	</div>
 
 	{% include project-footer.html %}
