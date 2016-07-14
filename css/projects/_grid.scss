@@ -248,6 +248,12 @@
             width: 33.333%;
             float: left;
 
+            h2,
+            h3,
+            p {
+                padding-left: 0;
+            }
+
             &:nth-child(odd) {
                 clear: none;
             }
