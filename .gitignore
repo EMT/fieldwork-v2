@@ -2,3 +2,6 @@
 .sass-cache
 _site
 assets
+.jekyll-metadata
+
+node_modules/

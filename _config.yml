@@ -15,10 +15,16 @@ collections:
     output: false
     permalink: /work/:path/
 
+exclude:
+  - webpack.config.js
+  - package.json
+  - react
+  - node_modules
+
 # Build settings
 markdown: kramdown
 permalink: pretty
-sass: 
+sass:
   sass_dir: css
   sourcemap: true
 
