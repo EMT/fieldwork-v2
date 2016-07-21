@@ -9,98 +9,65 @@ meta:
 scripts:
 - /js/work/volume-one.js
 layout: default
-header_img: /images/volume-one/vol-topimage.svg
 thumb: /images/project-thumbs/fwlanding-volumes.png
 twitter:
   card: summary_large_image
 ---
 
+<div class="project-section project-intro wrapper">
+	<div>
+		<h1 class="project-title">{{ page.title }}</h1>
+		<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
+</div>
 
-<div class="page-section">
+<div class="section-full-bleed">
 
-	<div class="wrapper">
+	<div class="grid media-grid media-grid-new">
+			{% responsive_image path: images/volume-one/volumes_header-image.png, alt: "Bosville Site on a monitor" %}
+	</div>
 
-		{% include project-title.html %}
-
-		<div class="section-text section-text--large">
-			<p>Volumes is a limited edition print series. Collaborating with talented artists, illustrators, designers, coders and makers, we explore a different subject in each edition. Anything goes, as long as it fits inside an A5 folder.</p>
-			<p>A Guide to Making Things is the first (and currently only) in the series. We worked with the brilliant Hey, who interpreted our eight ideas to create illustrations, which we produced as a limited run of 100 sets of postcards, and a companion website with animated versions. The ideas are the guiding principals we wrote when we first started Fieldwork.</p>
-			<p>This is one of our studio projects—something we do for a combination of fun, honing our skills and team, and self-promotion (in that order).</p>
-			<ul>
-				<li><a href="http://volumes.madebyfieldwork.com/making/">A Guide to Making Things website</a></li>
-			</ul>
+	<div class="project-section wrapper">
+		<div>
+			<h2>It’s Complicated</h2>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+			<p>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 		</div>
 	</div>
 
-</div>
+	<div class="grid media-grid media-grid-new">
+		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/volumes_image-1.png" alt="" /></div>
+		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/volumes_image-2.png" alt="" /></div>
+		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/volumes_image-3.png" alt="" /></div>
+		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/volumes_image-4.png" alt="" /></div>
+	</div>
 
+	<div class="project-section wrapper">
+		<div>
+			<h2>It’s Complicated</h2>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+			<p>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+		</div>
+	</div>
 
-<div class="section-inner">
-
-	<div class="grid media-grid">
-
-		<div class="grid-item" style="background: #62bfb7; width: 100%">
+	<div class="grid media-grid ">
+		<div class="grid-item" style="background: #61c2b8; width: 100%; padding: 5% 0;">
 			{% include work/volume-one/monster.svg %}
 		</div>
+	</div>
 
-
-		<img srcset="
-				{{ site.asseturl }}/images/volume-one/vol-8-1580.jpg 1580w,
-		        {{ site.asseturl }}/images/volume-one/vol-8-1100.jpg 1100w,
-		        {{ site.asseturl }}/images/volume-one/vol-8-600.jpg 600w"
-		    sizes="90vw"
-			src="{{ site.asseturl }}/images/volume-one/vol-8-1580.jpg" alt="" />
-
-		<img srcset="
-				{{ site.asseturl }}/images/volume-one/vol-4-1580.jpg 1580w,
-		        {{ site.asseturl }}/images/volume-one/vol-4-1100.jpg 1100w,
-		        {{ site.asseturl }}/images/volume-one/vol-4-600.jpg 600w"
-		    sizes="90vw"
-			src="{{ site.asseturl }}/images/volume-one/vol-4-1580.jpg" alt="" />
-
-		<img srcset="
-				{{ site.asseturl }}/images/volume-one/vol-3-1580.jpg 1580w,
-		        {{ site.asseturl }}/images/volume-one/vol-3-1100.jpg 1100w,
-		        {{ site.asseturl }}/images/volume-one/vol-3-600.jpg 600w"
-		    sizes="90vw"
-			src="{{ site.asseturl }}/images/volume-one/vol-3-1580.jpg" alt="" />
-
-		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/vol-grab.svg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/vol-globe.svg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/vol-sunday.svg" alt="" /></div>
-		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/vol-monster.svg" alt="" /></div>
-
-		<img srcset="
-				{{ site.asseturl }}/images/volume-one/vol-1-1580.jpg 1580w,
-		        {{ site.asseturl }}/images/volume-one/vol-1-1100.jpg 1100w,
-		        {{ site.asseturl }}/images/volume-one/vol-1-600.jpg 600w"
-		    sizes="90vw"
-			src="{{ site.asseturl }}/images/volume-one/vol-1-1580.jpg" alt="" />
-
-		<div class="grid-item">
-			<img srcset="
-					{{ site.asseturl }}/images/volume-one/vol-6-1580.jpg 1580w,
-			        {{ site.asseturl }}/images/volume-one/vol-6-1100.jpg 1100w,
-			        {{ site.asseturl }}/images/volume-one/vol-6-600.jpg 600w"
-				sizes="(min-width: 600px) 45vw, 90vw"
-				src="{{ site.asseturl }}/images/volume-one/vol-6-1580.jpg" alt="" />
+	<div class="project-section wrapper">
+		<div>
+			<h2>It’s Complicated</h2>
+			<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
+			<p>Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 		</div>
+	</div>
 
-		<div class="grid-item">
-			<img srcset="
-					{{ site.asseturl }}/images/volume-one/vol-7-1580.jpg 1580w,
-			        {{ site.asseturl }}/images/volume-one/vol-7-1100.jpg 1100w,
-			        {{ site.asseturl }}/images/volume-one/vol-7-600.jpg 600w"
-				sizes="(min-width: 600px) 45vw, 90vw"
-				src="{{ site.asseturl }}/images/volume-one/vol-6-1580.jpg" alt="" />
-		</div>
-
-		<img src="{{ site.asseturl }}/images/volume-one/vol-web1.png" alt="" />
-		<img src="{{ site.asseturl }}/images/volume-one/vol-web2.png" alt="" />
-		<img src="{{ site.asseturl }}/images/volume-one/vol-web3.png" alt="" />
-
+	<div class="grid media-grid media-grid-new">
+		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/volumes_image-6.png" alt="" /></div>
+		<div class="grid-item"><img src="{{ site.asseturl }}/images/volume-one/volumes_image-7.png" alt="" /></div>
 	</div>
 
 	{% include project-footer.html %}
-
 </div>
