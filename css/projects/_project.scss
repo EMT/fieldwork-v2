@@ -2,9 +2,37 @@
 /**
  * Projects index page styles
  */
+.project-item.grid-item.grid-item--3-col:nth-child(3n+3):after {
+    content: '';
+    clear: both;
+    display: block;
+}
 
 .projects {
 	padding-bottom: 4%;
+
+	.grid-item.project-item {
+		margin-bottom: 0.7em;
+	}
+
+	.grid-item.project-item h2 {
+		padding-top: 0;
+	}
+
+	a {
+		position: relative;
+	    display: table;
+	}
+
+	.project-details {
+		position: absolute;
+    	top: 0;
+    	left: 0;
+	    font-size: 1.25em;
+	    padding-top: 1em;
+	    padding-left: 1em;
+	    color: white;
+	}
 
 	figure {
 		background-color: $fw-red;
@@ -13,8 +41,16 @@
 		}
 	}
 	.project-index-meta {
-		opacity: 0.6;
+		opacity: 0;
+		transition: .3s ease-out;
 	}
+
+	a:hover {
+		.project-index-meta {
+			opacity: 0.6;
+		}
+	}
+
 	.project-index-content {
 		font-size: $type-large;
 		line-height: $line-large;
@@ -35,7 +71,7 @@
 
 		@media all and (min-width: 850px) {
 			top: 2em;
-			left: 25%;
+			left: 1em;
 			right: 0.5em;
 			padding-right: 3em;
 		}
@@ -46,7 +82,7 @@
 		}
 
 		@media all and (min-width: 1300px) {
-			top: 50%;
+			top: 30%;
 			bottom: 2em;
 		}
 	}

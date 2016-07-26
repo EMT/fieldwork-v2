@@ -7,12 +7,12 @@ body_classes: no-hero
 
 <div class="section-inner">
 
-    <!-- <h1>Projects</h1> -->
-
     <ul class="grid projects">
         {% assign projects = site.work | sort: 'order' %}
+
         {% for project in projects %}
-            <li class="grid-item grid-item--3-col">
+
+            <div class="project-item grid-item grid-item--3-col{%if project.large-block %} col--2-span{% if project.large-block == 'right' %} col--right-align{%endif%}{%endif%} ">
                 <a href="{{ site.baseurl }}{{ project.url }}">
                     <figure>
                         <img {% if project.thumbs %}srcset="{% for thumb in project.thumbs %}{{ site.asseturl }}{{ thumb[1] }} {{ thumb[0] }},{% endfor %}"
@@ -24,12 +24,15 @@ body_classes: no-hero
                             {{ project.runner }}
                         </figcaption>
                     </figure>
-                    <h2>{{ project.title }}</h2>
-                    <p class="project-index-meta">
-                        {{ project.meta | join: ', ' }}
-                    </p>
+                    <div class="project-details">
+                        <h2>{{ project.title }}</h2>
+                        <p class="project-index-meta">
+                            {{ project.meta | join: ', ' }}
+                        </p>
+                    </div>
                 </a>
-            </li>
+            </div>
+
         {% endfor %}
     </ul>
 

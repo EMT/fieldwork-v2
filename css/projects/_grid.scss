@@ -262,6 +262,14 @@
                 clear: left;
             }
         }
+
+        .grid-item--3-col.col--2-span {
+           width: 66.666%;
+        }
+
+        .grid-item--3-col.col--right-align {
+            float: right;
+        }
     }
 }
 
